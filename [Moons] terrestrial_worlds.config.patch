@@ -1,0 +1,214 @@
+[
+		//==============================================================================================================|
+		// DISCLAMER: Not a plug-and-play solution. You must still assemble your own patch even if with the help of this
+		// cheat sheet.
+		//==============================================================================================================|
+    [
+		// Template for future use
+	
+        {"op": "test", "path": "/planetTypes/CHANGE_ME"},
+        {
+            "op": "add",
+            "path": "/planetTypes/CHANGE_ME/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Vanilla Moons
+		//==============================================================================================================|
+    [
+        {
+            "op": "add",
+            "path": "/planetTypes/moon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Frackin' Universe - 729480149
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Moons
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/crystalmoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/crystalmoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/icemoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/icemoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/metallicmoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/metallicmoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/moon_desert"},
+        {
+            "op": "add",
+            "path": "/planetTypes/moon_desert/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/moon_stone"},
+        {
+            "op": "add",
+            "path": "/planetTypes/moon_stone/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/moon_toxic"},
+        {
+            "op": "add",
+            "path": "/planetTypes/moon_toxic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/moon_volcanic"},
+        {
+            "op": "add",
+            "path": "/planetTypes/moon_volcanic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/moon_shadow"},
+        {
+            "op": "add",
+            "path": "/planetTypes/moon_shadow/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Arcana - 2359135864
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Moons
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/arcana_redMoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_redMoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_frostMoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_frostMoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_cyberMoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_cyberMoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_toxicMoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_toxicMoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Maple32 - 2568667104
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Moons
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/safemoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/safemoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// K'Rakoth Mod - 2604255131
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Moons
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/atprk_chthonianmoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/atprk_chthonianmoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Project Ancient Cosmos - 2644341899
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Moons(?)
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/pf_halfmoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/pf_halfmoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Lava Moon - 1453674099
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/lavamoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/lavamoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Spirit Moon - 2225929124
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/SMspiritmoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/SMspiritmoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Glass Moon - 2229171570
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/GMglassmoon"},
+        {
+            "op": "add",
+            "path": "/planetTypes/GMglassmoon/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ]
+]

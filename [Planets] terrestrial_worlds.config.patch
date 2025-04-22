@@ -1,0 +1,1514 @@
+[
+		//==============================================================================================================|
+		// DISCLAMER: Not a plug-and-play solution. You must still assemble your own patch even if with the help of this
+		// cheat sheet.
+		//==============================================================================================================|
+		// All planets are clustered together by their mod name (with ID's), if multiple mods share an author they've
+		// also been put next to each other. Certain entries have comments added (or commented out entirely) if patching
+		// them could cause issues. *So please test before publishing!*
+		//==============================================================================================================|
+    [
+		// Template for future use
+	
+        {"op": "test", "path": "/planetTypes/CHANGE_ME"},
+        {
+            "op": "add",
+            "path": "/planetTypes/CHANGE_ME/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Vanilla Planets
+		//==============================================================================================================|
+    [
+		// Garden has a preset number of 2 dungeons, so we test if someone removed it first
+	
+        {
+            "op": "test",
+            "path": "/planetTypes/garden/layers/surface/dungeonCountRange",
+            "inverse": true
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/garden/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {
+            "op": "add",
+            "path": "/planetTypes/garden/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {
+            "op": "add",
+            "path": "/planetTypes/forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/desert/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/snow/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/toxic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/alien/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/tundra/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/midnight/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+		// While there *is* an array for dungeons on tentacle already, I decided to comment it out because it may or may not break the main story, not really sure though
+      //  {
+      //      "op": "add",
+      //      "path": "/planetTypes/tentacle/layers/surface/dungeons/-",
+      //      "value": [1, "CHANGE_ME"]
+      //  },
+    ],
+		//==============================================================================================================|
+		// Frackin' Universe - 729480149
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/ffunknown"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ffunknown/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/shadow"},
+        {
+            "op": "add",
+            "path": "/planetTypes/shadow/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+		// Dublicate Barren planet?
+        {"op": "test", "path": "/planetTypes/barren"},
+        {
+            "op": "add",
+            "path": "/planetTypes/barren/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/superdense"},
+        {
+            "op": "add",
+            "path": "/planetTypes/superdense/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/eden"},
+        {
+            "op": "add",
+            "path": "/planetTypes/eden/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/tabularasa"},
+        {
+            "op": "add",
+            "path": "/planetTypes/tabularasa/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arboreal"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arboreal/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arboreal2"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arboreal2/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arborealdark"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arborealdark/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/atropus"},
+        {
+            "op": "add",
+            "path": "/planetTypes/atropus/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/atropusdark"},
+        {
+            "op": "add",
+            "path": "/planetTypes/atropusdark/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/bloodstone"},
+        {
+            "op": "add",
+            "path": "/planetTypes/bloodstone/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/chromatic"},
+        {
+            "op": "add",
+            "path": "/planetTypes/chromatic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/desertwastes"},
+        {
+            "op": "add",
+            "path": "/planetTypes/desertwastes/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/desertwastesdark"},
+        {
+            "op": "add",
+            "path": "/planetTypes/desertwastesdark/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/frozenvolcanic"},
+        {
+            "op": "add",
+            "path": "/planetTypes/frozenvolcanic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/snowdark"},
+        {
+            "op": "add",
+            "path": "/planetTypes/snowdark/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/tundradark"},
+        {
+            "op": "add",
+            "path": "/planetTypes/tundradark/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/fungus"},
+        {
+            "op": "add",
+            "path": "/planetTypes/fungus/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/shoggothbiome"},
+        {
+            "op": "add",
+            "path": "/planetTypes/shoggothbiome/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/icewaste"},
+        {
+            "op": "add",
+            "path": "/planetTypes/icewaste/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/icewastedark"},
+        {
+            "op": "add",
+            "path": "/planetTypes/icewastedark/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/infernus"},
+        {
+            "op": "add",
+            "path": "/planetTypes/infernus/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/infernusdark"},
+        {
+            "op": "add",
+            "path": "/planetTypes/infernusdark/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/irradiated"},
+        {
+            "op": "add",
+            "path": "/planetTypes/irradiated/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/lightless"},
+        {
+            "op": "add",
+            "path": "/planetTypes/lightless/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/mountainous"},
+        {
+            "op": "add",
+            "path": "/planetTypes/mountainous/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/penumbra"},
+        {
+            "op": "add",
+            "path": "/planetTypes/penumbra/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/protoworld"},
+        {
+            "op": "add",
+            "path": "/planetTypes/protoworld/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/protoworlddark"},
+        {
+            "op": "add",
+            "path": "/planetTypes/protoworlddark/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/slimeworld"},
+        {
+            "op": "add",
+            "path": "/planetTypes/slimeworld/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/sulphuric"},
+        {
+            "op": "add",
+            "path": "/planetTypes/sulphuric/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/sulphuricdark"},
+        {
+            "op": "add",
+            "path": "/planetTypes/sulphuricdark/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/tarball"},
+        {
+            "op": "add",
+            "path": "/planetTypes/tarball/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/thickjungle"},
+        {
+            "op": "add",
+            "path": "/planetTypes/thickjungle/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/urbanwasteland"},
+        {
+            "op": "add",
+            "path": "/planetTypes/urbanwasteland/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/urbanwasteland2"},
+        {
+            "op": "add",
+            "path": "/planetTypes/urbanwasteland2/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/astral"},
+        {
+            "op": "add",
+            "path": "/planetTypes/astral/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/fugasgiant"},
+        {
+            "op": "add",
+            "path": "/planetTypes/fugasgiant/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/fugasgiant2"},
+        {
+            "op": "add",
+            "path": "/planetTypes/fugasgiant2/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/futentaclet10"},
+        {
+            "op": "add",
+            "path": "/planetTypes/futentaclet10/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		// Adding dungeons to gas giants may cause the game to crash, so test!
+    [
+        {"op": "test", "path": "/planetTypes/fugasgiant3"},
+        {
+            "op": "add",
+            "path": "/planetTypes/fugasgiant3/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/fugasgiant4"},
+        {
+            "op": "add",
+            "path": "/planetTypes/fugasgiant4/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/fugasgiant5"},
+        {
+            "op": "add",
+            "path": "/planetTypes/fugasgiant5/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Arcana - 2359135864
+		// Note: Some planets in this mod aren't supposed to have dungeons what aren't tailored for said planets, so please consult Arcana's
+		// terrestrial_worlds.config.patch before adding anything
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/arcana_arcaneForest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_arcaneForest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_arcaneDesert"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_arcaneDesert/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_arcaneTundra"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_arcaneTundra/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_verdant"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_verdant/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_blistering"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_blistering/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_windswept"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_windswept/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_goldenForest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_goldenForest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_illuminated"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_illuminated/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_desolate"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_desolate/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_sanguine"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_sanguine/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_ferocious"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_ferocious/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_animus"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_animus/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_evoaquatic"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_evoaquatic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_superstormExpanse"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_superstormExpanse/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_ardentTaiga"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_ardentTaiga/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_stahlernBadlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_stahlernBadlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_timeless"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_timeless/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_automated"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_automated/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_viridescent"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_viridescent/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_solarized"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_solarized/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_bambooForest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_bambooForest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_azureDesert"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_azureDesert/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_eminsnow"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_eminsnow/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_senbonzakura"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_senbonzakura/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_vermilion"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_vermilion/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_amorous"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_amorous/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_nightmist"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_nightmist/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_empyrean"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_empyrean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_redTerminus"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_redTerminus/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Maple32 - 2568667104
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/m32verdurous"},
+        {
+            "op": "add",
+            "path": "/planetTypes/m32verdurous/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/m32geyser"},
+        {
+            "op": "add",
+            "path": "/planetTypes/m32geyser/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/shatter"},
+        {
+            "op": "add",
+            "path": "/planetTypes/shatter/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/m32industrialforest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/m32industrialforest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/m32steppe"},
+        {
+            "op": "add",
+            "path": "/planetTypes/m32steppe/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/m32bluster"},
+        {
+            "op": "add",
+            "path": "/planetTypes/m32bluster/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Galaxy in Conflict - 2754886445
+		// Note: Most of these are probably instanced
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/gic_razed_forest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gic_razed_forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gic_protectedcolony"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gic_protectedcolony/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gic_crusade"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gic_crusade/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gic_wildlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gic_wildlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gic_barrenrock"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gic_barrenrock/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gic_colonized_barrenrock"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gic_colonized_barrenrock/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gic_afflictedcolonized_barrenrock"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gic_afflictedcolonized_barrenrock/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gic_atmospheric_wartorn"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gic_atmospheric_wartorn/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gic_barrenfreeze"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gic_barrenfreeze/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gic_frosted"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gic_frosted/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gic_denseplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gic_denseplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// K'Rakoth Mod - 2604255131
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/atprk_ashworld"},
+        {
+            "op": "add",
+            "path": "/planetTypes/atprk_ashworld/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/atprk_ruinedworld"},
+        {
+            "op": "add",
+            "path": "/planetTypes/atprk_ruinedworld/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Crystal Planet - 1090233799
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/isn_crystal"},
+        {
+            "op": "add",
+            "path": "/planetTypes/isn_crystal/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Radioactive Planet - 1099963583
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/isn_radioactive"},
+        {
+            "op": "add",
+            "path": "/planetTypes/isn_radioactive/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Magnetic Planet - 1138527530
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/isn_magnetic"},
+        {
+            "op": "add",
+            "path": "/planetTypes/isn_magnetic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Landable Gas Giants v1 - 1475245421
+		// Note: Adding dungeons to gas giants might make the game crash, so test
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/gasgiant"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gasgiant/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gasgiant_forest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gasgiant_forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Landable Gas Giants v2 - 3422280518
+		// Note: Adding dungeons to gas giants might make the game crash, so test
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/gasgiant"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gasgiant/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gasgiant_forest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gasgiant_forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gasgiant_warm"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gasgiant_warm/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gasgiant_cool"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gasgiant_cool/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/gasgiant_irradiated"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gasgiant_irradiated/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// CityBound - 742434873
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/populated"},
+        {
+            "op": "add",
+            "path": "/planetTypes/populated/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Another City Terraformer?! (Earth-Like City Planet) - 2444233793
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/city"},
+        {
+            "op": "add",
+            "path": "/planetTypes/city/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Grassland Planet - 2582440502
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/om_grasslandplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/om_grasslandplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Starry Planets - 2157200368
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/om_starryplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/om_starryplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Hallowed Planets - 1973038872
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/hallowplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/hallowplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Money Planet - 2289877827
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/om_moneyplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/om_moneyplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Divine Planet - 2548371664
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/om_divineplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/om_divineplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Project Ancient Cosmos - 2644341899
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/pf_star"},
+        {
+            "op": "add",
+            "path": "/planetTypes/pf_star/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/pf_cybernetic"},
+        {
+            "op": "add",
+            "path": "/planetTypes/pf_cybernetic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/pf_darkgarden"},
+        {
+            "op": "add",
+            "path": "/planetTypes/pf_darkgarden/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Starburst Rework - 3025139283
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/pf_stormy"},
+        {
+            "op": "add",
+            "path": "/planetTypes/pf_stormy/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// LostBound - 3440851272
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/frostcity"},
+        {
+            "op": "add",
+            "path": "/planetTypes/frostcity/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// The Ironsides - 2177711780
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/ironsides_greyExpanse"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ironsides_greyExpanse/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Nebula Pack - 1709257267
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/nebula"},
+        {
+            "op": "add",
+            "path": "/planetTypes/nebula/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/corrupted"},
+        {
+            "op": "add",
+            "path": "/planetTypes/corrupted/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Winter Planet Pack - 2233339365
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/WMwintercity"},
+        {
+            "op": "add",
+            "path": "/planetTypes/WMwintercity/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/WMwinterjungle"},
+        {
+            "op": "add",
+            "path": "/planetTypes/WMwinterjungle/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Hydrolyth Stuff - 1429593691
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/illusion"},
+        {
+            "op": "add",
+            "path": "/planetTypes/illusion/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Lepidia: Gloamfall Pt. 1 - 1755805853
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/gloam"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gloam/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Cosetropilis Planet - 2582274902
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/tidal_cosetropilis"},
+        {
+            "op": "add",
+            "path": "/planetTypes/tidal_cosetropilis/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Overgrown Planet - 2587899098
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/tidal_overgrown"},
+        {
+            "op": "add",
+            "path": "/planetTypes/tidal_overgrown/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Oriata Desert planet - 2211506494
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/oriatadesert"},
+        {
+            "op": "add",
+            "path": "/planetTypes/oriatadesert/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Solar Seared - 2228442297
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/solarseared"},
+        {
+            "op": "add",
+            "path": "/planetTypes/solarseared/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Drayx City - 2253948929
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/drayxcity"},
+        {
+            "op": "add",
+            "path": "/planetTypes/drayxcity/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Arias City - 2287570791
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/ariascity"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ariascity/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Hypothermic Planet - 2329389933
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/hypothermic"},
+        {
+            "op": "add",
+            "path": "/planetTypes/hypothermic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Anomalous Empyerian Planet - 2393201436
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/anomalousempyrean"},
+        {
+            "op": "add",
+            "path": "/planetTypes/anomalousempyrean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Nightshade Planet - 2438077302
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/nightshade"},
+        {
+            "op": "add",
+            "path": "/planetTypes/nightshade/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Arctic Everwood Planet - 2491627322
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/arcticeverwood"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcticeverwood/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Thermal Surge Planet - 2552968317
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/tidal_thermalsurge"},
+        {
+            "op": "add",
+            "path": "/planetTypes/tidal_thermalsurge/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Voided: Expansion Mod (WIP) - 2822921122
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/v-voltage"},
+        {
+            "op": "add",
+            "path": "/planetTypes/v-voltage/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/v-toxicwasteland"},
+        {
+            "op": "add",
+            "path": "/planetTypes/v-toxicwasteland/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		// Note: probably unused
+  //  [
+  //      {"op": "test", "path": "/planetTypes/v-terraintest"},
+  //      {
+  //          "op": "add",
+  //          "path": "/planetTypes/v-terraintest/layers/surface/dungeons/-",
+  //          "value": [1, "CHANGE_ME"]
+  //      }
+  //  ],
+		//==============================================================================================================|
+		// The Aether - 1941217152
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/AM_aether"},
+        {
+            "op": "add",
+            "path": "/planetTypes/AM_aether/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// My Enternia 2.3: Alta Cafe & Monster Buffet - 2006558650
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/ct_alterash_planet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ct_alterash_planet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		// Could be an instanced planet, commenting out just in case
+  //  [
+  //	
+  //      {"op": "test", "path": "/planetTypes/ct_alterash_prime_planet"},
+  //      {
+  //          "op": "add",
+  //          "path": "/planetTypes/ct_alterash_prime_planet/layers/surface/dungeons/-",
+  //          "value": [1, "CHANGE_ME"]
+  //      }
+  //  ],
+		//==============================================================================================================|
+		// Kenopsea - 2331991026
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/csbi_blacktundra"},
+        {
+            "op": "add",
+            "path": "/planetTypes/csbi_blacktundra/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/rs_kenopsea"},
+        {
+            "op": "add",
+            "path": "/planetTypes/rs_kenopsea/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/rs_kenopseablank"},
+        {
+            "op": "add",
+            "path": "/planetTypes/rs_kenopseablank/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/rs_kenopseafields"},
+        {
+            "op": "add",
+            "path": "/planetTypes/rs_kenopseafields/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Nitrogen Deep - 2003959183
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/nitrogendeep"},
+        {
+            "op": "add",
+            "path": "/planetTypes/nitrogendeep/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Kawaii Mod - 2199731506
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/kawaii"},
+        {
+            "op": "add",
+            "path": "/planetTypes/kawaii/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Starbound x Xenoblade - 2816359505
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/gaur"},
+        {
+            "op": "add",
+            "path": "/planetTypes/gaur/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Betabound - 2010607826
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/sb_tentacle"},
+        {
+            "op": "add",
+            "path": "/planetTypes/sb_tentacle/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Tentacle Planet - 1436287529
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/tentaplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/tentaplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Virtua Planet - 1897946579
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/kkgsvirtua"},
+        {
+            "op": "add",
+            "path": "/planetTypes/kkgsvirtua/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Astral Infection Planet - 3257889482
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/astralinfectionplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/astralinfectionplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Depression Planet - 2208365760
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/greyscale"},
+        {
+            "op": "add",
+            "path": "/planetTypes/greyscale/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Hellish Planet - 2022935092
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/hellishplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/hellishplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Superbarren Planet - 1462080052
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/superbarren"},
+        {
+            "op": "add",
+            "path": "/planetTypes/superbarren/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Flatworld Planet - 2666409177
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/flat_wasteland"},
+        {
+            "op": "add",
+            "path": "/planetTypes/flat_wasteland/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ]
+]

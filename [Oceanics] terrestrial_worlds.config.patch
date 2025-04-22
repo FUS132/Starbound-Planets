@@ -1,0 +1,254 @@
+[
+		//==============================================================================================================|
+		// DISCLAMER: Not a plug-and-play solution. You must still assemble your own patch even if with the help of this
+		// cheat sheet.
+		//==============================================================================================================|
+		// WARNING: Adding non-oceanic dungeons to these planets may cause the game to crash, so test!
+		//==============================================================================================================|
+    [
+		// Template for future use
+	
+        {"op": "test", "path": "/planetTypes/CHANGE_ME"},
+        {
+            "op": "add",
+            "path": "/planetTypes/CHANGE_ME/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Vanilla Planets
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Oceanic Planets
+		//-------------------------------------------------------|
+        {
+            "op": "add",
+            "path": "/planetTypes/ocean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+           "op": "add",
+            "path": "/planetTypes/arctic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/magma/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+		//==============================================================================================================|
+		// Frackin' Universe - 729480149
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Oceanic Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/arcticdark"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcticdark/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/bog"},
+        {
+            "op": "add",
+            "path": "/planetTypes/bog/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/strangesea"},
+        {
+            "op": "add",
+            "path": "/planetTypes/strangesea/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/bloodstonesea"},
+        {
+            "op": "add",
+            "path": "/planetTypes/bloodstonesea/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/nitrogensea"},
+        {
+            "op": "add",
+            "path": "/planetTypes/nitrogensea/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/magmadark"},
+        {
+            "op": "add",
+            "path": "/planetTypes/magmadark/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/sulphuricocean"},
+        {
+            "op": "add",
+            "path": "/planetTypes/sulphuricocean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/aethersea"},
+        {
+            "op": "add",
+            "path": "/planetTypes/aethersea/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/tidewater"},
+        {
+            "op": "add",
+            "path": "/planetTypes/tidewater/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Arcana - 2359135864
+		// Note: Some planets in this mod aren't supposed to have dungeons what aren't tailored for said planets, so please consult Arcana's
+		// terrestrial_worlds.config.patch before adding anything
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Oceanic Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/arcana_turbulent"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_turbulent/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_arcaneSea"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_arcaneSea/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_neonSea"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_neonSea/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+	],
+	[
+        {"op": "test", "path": "/planetTypes/arcana_azureSea"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_azureSea/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_ruinous"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_ruinous/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Maple32 - 2568667104
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Oceanic Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/m32stormyocean"},
+        {
+            "op": "add",
+            "path": "/planetTypes/m32stormyocean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// K'Rakoth Mod - 2604255131
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Oceanic Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/atprk_boilingocean"},
+        {
+            "op": "add",
+            "path": "/planetTypes/atprk_boilingocean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Hallowed Planets - 1973038872
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Oceanic Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/healingocean"},
+        {
+            "op": "add",
+            "path": "/planetTypes/healingocean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Starry Planets - 2157200368
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Oceanic Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/om_starryplanetocean"},
+        {
+            "op": "add",
+            "path": "/planetTypes/om_starryplanetocean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Kawaii Mod - 2199731506
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Oceanic Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/kawaiiocean"},
+        {
+            "op": "add",
+            "path": "/planetTypes/kawaiiocean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Yuogurt Planet - 1658085077
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/yogurtocean"},
+        {
+            "op": "add",
+            "path": "/planetTypes/yogurtocean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ]
+]
