@@ -13,7 +13,6 @@
 		//==============================================================================================================|
     [
 		// Template for future use
-	
         {"op": "test", "path": "/planetTypes/CHANGE_ME"},
         {
             "op": "add",
@@ -26,7 +25,6 @@
 		//==============================================================================================================|
     [
 		// Garden has a preset number of 2 dungeons, so we test if someone removed it first
-	
         {
             "op": "test",
             "path": "/planetTypes/garden/layers/surface/dungeonCountRange",
