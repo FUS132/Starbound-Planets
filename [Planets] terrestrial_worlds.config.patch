@@ -9,7 +9,7 @@
 		//==============================================================================================================|
 		// All planets except for vanilla have "test" operations added as a crash precaution and for ease of copying,
 		// but if you want to cut on load-time a bit, planets from the same mod can be merged together under 1 pair of
-		// square brackets (like, for example, Vanilla Planets down below) and just 1 planet test at the top.
+		// square brackets (like, for example, Vanilla Planets down below) and have just 1 planet test at the top.
 		//==============================================================================================================|
     [
 		// Template for future use
@@ -466,7 +466,8 @@
 		//==============================================================================================================|
 		// Arcana - 2359135864
 		// Note: Some planets in this mod aren't supposed to have dungeons what aren't tailored for said planets,
-		// so please consult Arcana's terrestrial_worlds.config.patch inside "Modded Biomes" before adding anything.
+		// so please consult Arcana's terrestrial_worlds.config.patch inside "Modded Biomes" before adding anything,
+		// and test the changes you do implement!
 		//==============================================================================================================|
 		
 		//-------------------------------------------------------|
@@ -761,8 +762,8 @@
     ],
 		//==============================================================================================================|
 		// Galaxy in Conflict - 2754886445
-		// Note: Most of these are probably instanced.
-		// TODO: figure out which ones those are .
+		// Note: All of these have preset dungeons and strict spawn limits assigned to them, leaving this section here
+		// still just in case someone wants to do something with it.
 		//==============================================================================================================|
     [
         {"op": "test", "path": "/planetTypes/gic_razed_forest"},
@@ -1344,16 +1345,15 @@
             "value": [1, "CHANGE_ME"]
         }
     ],
-		// Could be an instanced planet, commenting out just in case
-  //  [
-  //	
-  //      {"op": "test", "path": "/planetTypes/ct_alterash_prime_planet"},
-  //      {
-  //          "op": "add",
-  //          "path": "/planetTypes/ct_alterash_prime_planet/layers/surface/dungeons/-",
-  //          "value": [1, "CHANGE_ME"]
-  //      }
-  //  ],
+    [
+  	
+        {"op": "test", "path": "/planetTypes/ct_alterash_prime_planet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ct_alterash_prime_planet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
 		//==============================================================================================================|
 		// Kenopsea - 2331991026 AND Black Ice - 3331962844
 		//==============================================================================================================|
