@@ -1,0 +1,265 @@
+{
+  "name" : "drownedcave",
+  "friendlyName" : "Drowned Depths",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "squidcritter" ],
+          [ 1, "jellycritter" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "drownedcavelargefish" ],
+          [ 1, "drownedcavelargefishaggro" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "smallFishOcean1" ],
+          [ 1, "smallFishOcean2" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "M32steamspiderscommon" ]
+        ]
+      }
+    ]
+  },
+
+  "parallax" : "/parallax/underground/drownedcave.parallax",
+
+  "mainBlock" : "wetlimestone",
+  "subBlocks" : [ "glowcoral", "ambrite", "biorock", "mud", "ferron" ],
+  "ores" : "depth2",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/ocean_underwater.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/ocean_underwater.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/sfx/M32music/homemade/eerie.ogg", "/music/forsaken-grotto.ogg", "/music/ocean-exploration2.ogg", "/music/scorian-flow.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/M32music/homemade/drafty-cavern.ogg", "/music/drosera.ogg", "/music/the-deep.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 1.0,
+
+    "ceilingGrassMod" : [ "moss" ],
+    "ceilingGrassModDensity" : 0.8,
+
+    "items" : [
+    {
+      "mode" : "ceiling",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:uncommon",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "drownedcavemicros" ]
+    }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 1.0,
+
+    "items" : [
+    {
+      "mode" : "ceiling",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:uncommon",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "drownedcavemicros" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "sunlessseafloor" ]
+    },
+    /*
+    {
+      "mode" : "floor",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:rare",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "cavespikes" ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:rare",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "cavespikes" ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:superCommon",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "cavewaterspawner" ]
+    },
+    {
+      "mode" : "background",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:common",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "cavewaterspawner" ]
+    },
+    */
+
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 4,
+        "distribution" : "/biomes/distributions.config:undergroundOreRocks",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.60, "copperrocksmall" ], [0.20, "copperrock" ], [0.15, "silverrocksmall" ], [0.5, "silverrock" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:common",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "coral",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "embercoral1" ], [0.20, "embercoral2" ], [0.20, "embercoral3" ], [0.20, "embercoral4" ], [0.20, "embercoral5" ], [0.20, "oshroom1" ], [0.20, "oshroom2" ], [0.20, "oshroom3" ], [0.20, "oshroom4" ], [0.20, "oshroom5" ]]
+          }
+        ]
+      },
+      {
+        "mode" : "background",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundFossils",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.15, "dirtyfossil1" ], [0.15, "dirtyfossil2" ], [0.15, "dirtyfossil3" ], [0.15, "dirtyfossil4" ], [0.1, "dirtyfossil5" ], [0.1, "dirtyfossil6" ], [0.1, "dirtyfossil7" ], [0.1, "dirtyfossil8" ] ],
+            "parameters" : {  "materials" : ["glowcoral", "ambrite", "bonematerial"]}
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:layer1Chests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChallengeDoors",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "challengedoor" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  },
+
+  "hueShiftOptions" : [0]
+}
