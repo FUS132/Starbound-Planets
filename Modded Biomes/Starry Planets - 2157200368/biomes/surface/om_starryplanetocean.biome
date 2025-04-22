@@ -1,0 +1,399 @@
+{
+  "name" : "om_starryplanetocean",
+  "friendlyName" : "Starry Ocean",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 2,
+        "pool" : [
+          [ 0.1111, "om_starryfish1" ],
+          [ 0.1111, "om_starrycrab1" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "tidefly" ],
+          [ 0.3, "seahornet" ],
+          [ 0.3, "wavebird" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      }, 
+      {
+        "select" : 3,
+        "pool" : "nightTerrors"
+      },      
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      },
+      {
+        "select" : 8,
+        "pool" : [
+          [ 1, "gullcritter" ],
+          [ 1, "jellycritter" ],
+          [ 1, "crabcritter" ],
+          [ 1, "fishcritter" ],
+          [ 1, "fishberrycritter" ],
+          [ 1, "fishchilicritter" ],
+          [ 1, "fishlemoncritter" ],
+          [ 1, "glowingfishcritter" ],
+          [ 1, "poisonfishcritter" ],
+          [ 1, "skellyfishcritter" ],
+          [ 1, "tortoisecritter" ],
+          [ 0.25, "bioluminfireflyspawner" ],
+          [ 2, "om_starryfloatingstarcritter" ],
+          [ 2, "om_starryfloatingstarcritter2" ],
+          [ 2, "om_starrybutterflycritter" ],
+          [ 2, "prismelementalcritter" ],
+          [ 1, "glowingballcritter" ],
+          [ 2, "glowingball2critter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "om_starryplanet",
+      "statusSettings" : {
+        "stats" : {
+          "poisonStatusImmunity" : {
+            "baseValue" : 1.0
+          }
+        }
+      }
+    }
+  },
+
+  "hueShiftOptions" : [-165, -120, -15, 0, 50, 125, 170],
+
+  "weather" : [
+    [0, [
+      "/weather.config:om_starryplanet",
+      "/weather.config:om_starryplanet2",
+      "/weather.config:om_starryplanet3"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // sunny pink day, pink/peach sunrise and blue/pink sunset
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+      "dayColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+      "eveningColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [40, 20, 60],
+      "dayLightColor" : [40, 20, 60],
+      "eveningLightColor" : [40, 20, 60],
+      "nightLightColor" : [40, 20, 60]
+    },
+     {
+      // sunny sky blue day, blue/purple sunrise and blue/purple sunset
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [23, 51, 51, 80], [52, 41, 68, 160] ],
+      "dayColors" : [ [23, 51, 51, 80], [52, 41, 68, 160] ],
+      "eveningColors" : [ [23, 51, 51, 80], [52, 41, 68, 160] ],
+      "nightColors" : [ [23, 51, 51, 80], [52, 41, 68, 160] ],
+
+      "morningLightColor" : [16, 51, 51],
+      "dayLightColor" : [16, 51, 51],
+      "eveningLightColor" : [16, 51, 51],
+      "nightLightColor" : [16, 51, 51]
+    },
+	{
+      // sunny navy blue day, navy blue sunrise and navy blue sunset
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [0, 14, 38, 80], [52, 41, 68, 160] ],
+      "dayColors" : [ [0, 14, 38, 80], [52, 41, 68, 160] ],
+      "eveningColors" : [ [0, 14, 38, 80], [52, 41, 68, 160] ],
+      "nightColors" : [ [0, 14, 38, 80], [52, 41, 68, 160] ],
+
+      "morningLightColor" : [5, 18, 38],
+      "dayLightColor" : [5, 18, 38],
+      "eveningLightColor" : [5, 18, 38],
+      "nightLightColor" : [5, 18, 38]
+    },
+	{
+      // sunny hot pink day, purple/pink sunrise and hot pink/wine sunset
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [33, 0, 42, 80], [71, 40, 54, 160] ],
+      "dayColors" : [ [33, 0, 42, 80], [71, 40, 54, 160] ],
+      "eveningColors" : [ [33, 0, 42, 80], [71, 40, 54, 160] ],
+      "nightColors" : [ [33, 0, 42, 80], [71, 40, 54, 160] ],
+
+      "morningLightColor" : [31, 3, 41],
+      "dayLightColor" : [31, 3, 41],
+      "eveningLightColor" : [31, 3, 41],
+      "nightLightColor" : [31, 3, 41]
+    },
+	{
+      // sunny turquoise day, teal/sky blue sunrise and dark teal/blue sunset
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [0, 42, 20, 80], [40, 63, 71, 160] ],
+      "dayColors" : [ [0, 42, 20, 80], [40, 63, 71, 160] ],
+      "eveningColors" : [ [0, 42, 20, 80], [40, 63, 71, 160] ],
+      "nightColors" : [ [0, 42, 20, 80], [40, 63, 71, 160] ],
+
+      "morningLightColor" : [3, 41, 20],
+      "dayLightColor" : [3, 41, 20],
+      "eveningLightColor" : [3, 41, 20],
+      "nightLightColor" : [3, 41, 20]
+    },
+	{
+      // sunny sky blue day, blue/purple sunrise and sky blue/wine sunset
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [108, 223, 255, 5], [58, 42, 70] ],
+      "dayColors" : [ [108, 223, 255, 5], [58, 42, 70] ],
+      "eveningColors" : [ [108, 223, 255, 5], [58, 42, 70] ],
+      "nightColors" : [ [108, 223, 255, 5], [58, 42, 70] ],
+
+      "morningLightColor" : [44, 151, 178],
+      "dayLightColor" : [44, 151, 178],
+      "eveningLightColor" : [44, 151, 178],
+      "nightLightColor" : [44, 151, 178]
+    },
+	{
+      // sunny turquoise day, teal/sky blue sunrise and dark teal/blue sunset Version 2
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [0, 89, 75, 80], [0, 25, 22, 160] ],
+      "dayColors" : [ [0, 89, 75, 80], [0, 25, 22, 160] ],
+      "eveningColors" : [ [0, 89, 75, 80], [0, 25, 22, 160] ],
+      "nightColors" : [ [0, 89, 75, 80], [0, 25, 22, 160] ],
+
+      "morningLightColor" : [0, 63, 53],
+      "dayLightColor" : [0, 63, 53],
+      "eveningLightColor" : [0, 63, 53],
+      "nightLightColor" : [0, 63, 53]
+    },
+	{
+      // sunny green/pink day, light green/wine pink sunrise and dark green/dark blood wine sunset
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [0, 89, 17, 80], [38, 0, 22, 160] ],
+      "dayColors" : [ [0, 89, 17, 80], [38, 0, 22, 160] ],
+      "eveningColors" : [ [0, 89, 17, 80], [38, 0, 22, 160] ],
+      "nightColors" : [ [0, 89, 17, 80], [38, 0, 22, 160] ],
+
+      "morningLightColor" : [0, 51, 8],
+      "dayLightColor" : [0, 51, 8],
+      "eveningLightColor" : [0, 51, 8],
+      "nightLightColor" : [0, 51, 8]
+    },
+	{
+      // sunny bright green/sky blue day, soft green/baby blue sunrise and grass green/dark-sky blue sunset
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [22, 76, 0, 80], [0, 63, 63, 160] ],
+      "dayColors" : [ [22, 76, 0, 80], [0, 63, 63, 160] ],
+      "eveningColors" : [ [22, 76, 0, 80], [0, 63, 63, 160] ],
+      "nightColors" : [ [22, 76, 0, 80], [0, 63, 63, 160] ],
+
+      "morningLightColor" : [19, 63, 0],
+      "dayLightColor" : [19, 63, 0],
+      "eveningLightColor" : [19, 63, 0],
+      "nightLightColor" : [19, 63, 0]
+    }
+  ],
+
+  "mainBlock" : "om_starryplanetsand",
+  "subBlocks" : [ "om_starryplanetsandstone", "om_starryplanet_rock", "om_starryplanet_rock2" ],
+  "ores" : "om_starryplanetsurface",
+
+  "parallax" : "/parallax/surface/om_starryplanetocean.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/ocean_surface_calm.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/ocean_surface_calm.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/accretion-disc.ogg", "/music/arctic-exploration1.ogg", "/music/arctic-exploration2.ogg", "/music/crystal-exploration2.ogg", "/music/crystal-exploration1.ogg", "/music/cygnus-x1.ogg", "/music/epsilon-indi.ogg", "/music/eridanus-supervoid.ogg", "/music/error-0xbfaf000.ogg","/music/europa.ogg","/music/forest-loop.ogg", "/music/forsaken-grotto.ogg", "/music/haiku.ogg", "/music/home-concept-loop.ogg", "/music/hymn-to-the-stars.ogg", "/music/large-magellanic-cloud.ogg", "/music/M54.ogg", "/music/mira.ogg", "/music/ocean-exploration2.ogg", "/music/stellarformation.ogg", "/music/title-theme-concept-old.ogg", "/music/The_Home_of_Stars-Omeruin.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/arctic-exploration1.ogg", "/music/arctic-exploration2.ogg", "/music/mira.ogg", "/music/crystal-exploration1.ogg", "/music/crystal-exploration2.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/forsaken-grotto.ogg", "/music/cygnus-x1.ogg", "/music/epsilon-indi.ogg", "/music/horsehead-nebula.ogg", "/music/hymn-to-the-stars.ogg", "/music/jupiter.ogg", "/music/large-magellanic-cloud.ogg", "/music/M54.ogg", "/music/ocean-exploration2.ogg", "/music/on-the-beach-at-night.ogg", "/music/The_Home_of_Stars2-Omeruin.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "om_starrygrass2" ],
+    "grassModDensity" : 0.3,
+
+    "items" : [
+      // CHESTS
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "om_starryChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+// MICRO DUNGEONS
+      {
+        "mode" : "floor",
+        "priority" : 4,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:starryplanetBiomeEncounterDungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "om_starryplanetencounters" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "om_starryplanetoceanencounters" ]
+      },
+      // CAPSULE STUFF
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      // PLANTS
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 75,
+        "treeStemList" : [ "om_starrydesertpalm", "om_starrybark", "om_starrybeach", "om_starryblank", "om_starrycross", "om_starrypalm", "om_starrytwirl" ],
+        "treeFoliageList" : [ "om_starrypalmleaves", "om_starrypalmy", "om_starrypalmlush" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "om_starbush7" ], [0.35, "om_starbush8" ], [0.35, "om_starbush9" ], [0.35, "om_startallgrass1" ], [0.35, "om_startallgrass2" ], [0.35, "om_startallgrass3" ], [0.35, "om_startallgrass4" ], [0.35, "seashell1" ], [0.35, "seashell2" ], [0.35, "seashell3" ], [0.35, "seashell4" ], [0.35, "seashell5" ], [0.35, "seashell6" ], [0.35, "seashell7" ], [0.35, "seashell8" ], [0.35, "om_starcone1" ], [0.35, "om_starcone2" ], [0.35, "om_starcone3" ], [0.35, "om_starcone4" ], [0.35, "om_starcone5" ], [0.35, "om_starcoral1" ], [0.35, "om_starcoral2" ], [0.35, "om_starcoral3" ], [0.35, "om_starcoral4" ], [0.35, "om_starcoral5" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "om_stargrass1" ], [0.35, "om_stargrass2" ], [0.35, "om_stargrass3" ], [0.35, "om_stargrass4" ], [0.35, "om_stargrass5" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildom_starrystarfruitseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "om_starrygrass2" ],
+    "grassModDensity" : 0.9,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  }
+}

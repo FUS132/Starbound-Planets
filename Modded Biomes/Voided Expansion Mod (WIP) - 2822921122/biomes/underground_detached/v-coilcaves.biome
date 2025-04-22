@@ -1,0 +1,84 @@
+{
+  "name" : "v-coilcaves",
+  "friendlyName" : "Coil Caves",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1.0, "v-electricelemental" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "v-voltage",
+      "statusSettings" : {
+        "stats" : {
+          "electricResistance" : {
+            "baseValue" : 0.5
+          },
+          "poisonResistance" : {
+            "baseValue" : -0.25
+          },
+          "electricStatusImmunity" : {
+            "baseValue" : 1.0
+          },
+          "protection" : {
+            "baseValue" : 20.0
+          }
+        }
+      }
+    }
+  },
+
+  "mainBlock" : "v-ironrock",
+  "subBlocks" : [ "v-copperrock" ],
+  // "ores" : "v-shallowundergroundvoltage",
+
+  "undergroundPlaceables" : {
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 99.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "v-coilcavesmicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:v-railgunPickup",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "v-railgunpickup"] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1.0, "v-ironspikes1" ], [1.0, "v-ironspikes2" ], [1.0, "v-ironspikes3" ], [1.0, "v-ironspikes4" ], [1.0, "v-ironspikes5" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  }
+}

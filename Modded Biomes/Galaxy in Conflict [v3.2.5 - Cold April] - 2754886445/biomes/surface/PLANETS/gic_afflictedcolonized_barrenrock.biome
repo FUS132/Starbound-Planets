@@ -1,0 +1,142 @@
+{
+  "name" : "gic_afflictedcolonized_barrenrock",
+  "friendlyName" : "Afflicted Colonized Barren Rock",
+  "airless" : false,
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:gic_afflictedcolony"
+    ]]
+  ],
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "gic_sentryskimmer_neutral" ]
+        ]
+      }
+    ]
+  },
+
+//  "statusEffects" : ["breathProtection"],
+
+  "skyOptions" : [
+
+    {
+      // dark peachy massacre
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+      "dayColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+      "eveningColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+      "nightColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+
+      "morningLightColor" : [40, 40, 80],
+      "dayLightColor" : [40, 40, 80],
+      "eveningLightColor" : [40, 40, 80],
+      "nightLightColor" : [40, 40, 80]
+    }
+
+//    {
+//      "mainColor" : [0, 0, 0],
+//      "morningColors" : [ [0, 0, 0], [0, 0, 0] ],
+//      "dayColors" : [ [0, 0, 0], [0, 0, 0] ],
+//      "eveningColors" : [ [0, 0, 0], [0, 0, 0] ],
+//      "nightColors" : [ [0, 0, 0, 0], [0, 0, 0, 0] ],
+//      "morningLightColor" : [25, 25, 25],
+//      "dayLightColor" : [25, 25, 25],
+//      "eveningLightColor" : [25, 25, 25],
+//      "nightLightColor" : [25, 25, 25]
+//    }
+  ],
+
+  "mainBlock" : "obsidian",
+  "subBlocks" : [ "ash", "rock14" ],
+
+//  "mainBlock" : "moondust",
+//  "subBlocks" : [ "rock03", "direstone", "rock15" ],
+  "ores" : "moon",
+
+  "parallax" : "/parallax/surface/midnight.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : ["/sfx/environmental/tundra_night.ogg"]
+    },
+    "night" : {
+      "tracks" : ["/sfx/environmental/tundra_night.ogg"]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [
+	  
+	  "/music/Remnant2/gic_remnant2_nerud_phantomwasteland_nowentering_conversation_mix.ogg"
+	  
+	  ]
+    },
+    "night" : {
+      "tracks" : [
+	  
+	  "/music/Remnant2/gic_remnant2_nerud_phantomwasteland_ambience_mix.ogg"
+	  
+	  ]
+    }
+  },
+  
+  
+  
+  
+  
+//	  "/music/projectwarlock/gic_projectwarlock_Industrial_Toxin2.ogg",	  
+//	  "/music/projectwarlock/gic_projectwarlock_Industrial_Terminus_Outtake.ogg",	  
+//	  "/music/projectwarlock/gic_projectwarlock_Industrial_Meltdown_Outtake.ogg",
+//	  "/music/projectwarlock/gic_projectwarlock_Industrial_Infestation_Outtake.ogg",	  
+//	  "/music/projectwarlock/gic_projectwarlock_Industrial_District7.ogg",	  
+//	  "/music/projectwarlock/gic_projectwarlock_Industrial_Blue.ogg",
+//	  "/music/projectwarlock/gic_projectwarlock_Industrial_Foundry.ogg"  
+  
+//  	  "/music/projectwarlock/gic_projectwarlock_industrial_chemicalpower.ogg",	  
+//	  "/music/projectwarlock/gic_projectwarlock_industrial_metallurgy.ogg",	  
+//	  "/music/projectwarlock/gic_projectwarlock_industrial_gristle.ogg",	
+//	  "/music/projectwarlock/gic_projectwarlock_Industrial_NewOrder_Outtake.ogg",	  
+//	  "/music/projectwarlock/gic_projectwarlock_Industrial_Devastation.ogg",	  
+//	  "/music/projectwarlock/gic_projectwarlock_Industrial_Forge.ogg",	
+//	  "/music/projectwarlock/gic_projectwarlock_JerryandLukes_FinalTheme.ogg"
+  
+  
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "ash" ],
+    "grassModDensity" : 0.2,
+    "items" : [
+
+	  
+	  
+//      {
+//        "mode" : "floor",
+//        "priority" : 1,
+//        "variants" : 1,
+//        "distribution" : "/biomes/gic_customdistributions.config:gic_moondungeonMicrodungeon",
+//
+//        "type" : "microdungeon",
+//        "microdungeons" : [ "gic_barrenworldmicrodungeons" ]
+//      }
+	  
+    ]
+
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 0.2,
+
+    "items" : [
+    ]
+  }
+}

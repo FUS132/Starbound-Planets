@@ -1,0 +1,31 @@
+[{
+        "op": "add",
+        "path": "/planetTypes/hypothermic",
+        "value": {
+            "threatRange": [5, 5],
+            "layers": {
+                "surface": {
+                    "primaryRegion": ["hypothermic"],
+                    "secondaryRegions" : [ "toxic", "arctic", "midnight", "volcanic", "magma", "tundra", "barren" ],
+                    "dungeonCountRange": [3, 3],
+                    "dungeons": [ [1.0, "florancanyon"], [1.0, "apexcamp"], [1.0, "humancamp"] ]
+                }
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/hypothermic",
+        "value": {
+            "caveLiquid": ["water"],
+            "caveLiquidChanceRange": [20, 100],
+            "blockSelector": ["remixedSwampySurface", "remixedSurface", "remixedPoolsSurface"],
+            "fgCaveSelector": ["surfaceCaves"],
+            "bgOreSelector": ["normalVeins", "richVeins"],
+            "biome": [
+                [0, ["hypothermic"]]
+            ],
+            "subRegion": ["steamspring", "bioluminescence", "geode", "rust"]
+        }
+    }
+]

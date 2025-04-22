@@ -1,0 +1,574 @@
+{
+  "name" : "tarball",
+  "friendlyName" : "Tar Ball",
+
+  "statusEffects" : [ "ffbiomeheat1" ],
+
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 3,
+        "pool" : [
+          [ 0.1, "bandraflora2" ],
+          [ 0.1, "anglure3" ],
+          [ 0.1, "petricub" ],
+          [ 0.1, "quagmutt" ],
+          [ 0.1, "smoglin" ],
+          [ 0.1, "taroni" ],
+          [ 0.13, "tarslime" ],
+          [ 0.11, "fuparasprite" ],
+          [ 0.1, "futargolem" ],
+          [ 0.1, "pyropod" ],
+          [ 0.1, "voltip" ],
+          [ 0.1, "tarpin" ],
+          [ 0.1, "pandorasboxhummingbug"]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "fuoildrip" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : "nightTerrors"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "magma",
+      "statusSettings" : {
+        "stats" : {
+            "lavaImmunity" : {
+              "baseValue" : 1.0
+            },
+            "blacktarimmunityImmunity" : {
+              "baseValue" : 1.0
+            },
+            "fireStatusImmunity" : {
+              "baseValue" : 1.0
+            },
+            "ffextremeheatImmunity" : {
+              "baseValue" : 1.0
+            }
+        }
+      }
+    }
+  },
+
+  "hueShiftOptions" : [-180, -160, -140, -120, -100, -80, -60, -40, -20, 0, 20, 40, 60, 80, 100, 120, 140, 160, 180],
+
+    "weather" : [
+      [0, [
+        "/weather.config:volcanic"
+      ]]
+  ],
+
+
+  "skyOptions" : [
+    // green tinted bright
+    {
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [123, 224, 150], [124, 230, 164] ],
+      "dayColors" : [ [130, 255, 190], [135, 255, 195] ],
+      "eveningColors" : [ [100, 200, 130], [111, 211, 150] ],
+      "nightColors" : [ [0, 50, 0], [0, 50, 0] ],
+
+      "morningLightColor" : [90, 150, 110],
+      "dayLightColor" : [45, 100, 55],
+      "eveningLightColor" : [25, 50, 30],
+      "nightLightColor" : [0, 12, 0]
+    },
+    //greentinted medium
+    {
+      "mainColor" : [220, 220, 220],
+
+      "morningColors" : [ [123, 224, 150], [124, 230, 164] ],
+      "dayColors" : [ [130, 255, 190], [135, 255, 195] ],
+      "eveningColors" : [ [100, 200, 130], [111, 211, 150] ],
+      "nightColors" : [ [0, 50, 0], [0, 50, 0] ],
+
+      "morningLightColor" : [90, 150, 110],
+      "dayLightColor" : [45, 100, 55],
+      "eveningLightColor" : [25, 50, 30],
+      "nightLightColor" : [0, 12, 0]
+    },
+    //green tinted dark
+    {
+      "mainColor" : [150, 150, 150],
+
+      "morningColors" : [ [123, 224, 150], [124, 230, 164] ],
+      "dayColors" : [ [130, 255, 190], [135, 255, 195] ],
+      "eveningColors" : [ [100, 200, 130], [111, 211, 150] ],
+      "nightColors" : [ [0, 50, 0], [0, 50, 0] ],
+
+      "morningLightColor" : [90, 150, 110],
+      "dayLightColor" : [45, 100, 55],
+      "eveningLightColor" : [25, 50, 30],
+      "nightLightColor" : [0, 12, 0]
+    },
+    //yellow tinted
+    {
+      "mainColor" : [180, 180, 180],
+
+      "morningColors" : [ [230, 192, 17], [230, 200, 164] ],
+      "dayColors" : [ [230, 192, 50], [230, 192, 50] ],
+      "eveningColors" : [ [181, 152, 44], [181, 152, 44] ],
+      "nightColors" : [ [143, 120, 36], [143, 120, 36] ],
+
+      "morningLightColor" : [230, 192, 17],
+      "dayLightColor" : [230, 192, 50],
+      "eveningLightColor" : [181, 152, 44],
+      "nightLightColor" : [72, 30, 0]
+    },
+    //yellow tinted dark
+    {
+      "mainColor" : [170, 170, 170],
+
+      "morningColors" : [ [230, 192, 17], [230, 200, 164] ],
+      "dayColors" : [ [230, 192, 50], [230, 192, 50] ],
+      "eveningColors" : [ [181, 152, 44], [181, 152, 44] ],
+      "nightColors" : [ [143, 120, 36], [143, 120, 36] ],
+
+      "morningLightColor" : [230, 192, 17],
+      "dayLightColor" : [230, 192, 50],
+      "eveningLightColor" : [181, 152, 44],
+      "nightLightColor" : [72, 30, 0]
+    },
+    // light reddish
+    {
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [255, 224, 129], [252, 230, 164] ],
+      "dayColors" : [ [255, 152, 107], [255, 183, 152] ],
+      "eveningColors" : [ [254, 121, 69], [254, 165, 129] ],
+      "nightColors" : [ [70, 20, 0, 60], [70, 20, 0, 160] ],
+
+      "morningLightColor" : [202, 177, 100],
+      "dayLightColor" : [202, 138, 100],
+      "eveningLightColor" : [202, 100, 100],
+      "nightLightColor" : [70, 20, 0]
+    }
+  ],
+
+    "mainBlock" : "tar",
+    "subBlocks" : [ "magmatile4", "obsidian", "tarstone" ],
+  "ores" : "surface",
+
+  "parallax" : "/parallax/surface/tarball.parallax",
+
+    "ambientNoises" : {
+      "day" : {
+        "tracks" : [ "/sfx/environmental/forest_day.ogg", "/sfx/environmental/forest_day2.ogg", "/sfx/environmental/volcanic_day.ogg" ]
+      },
+      "night" : {
+        "tracks" : [ "/sfx/environmental/forest_night.ogg", "/sfx/environmental/forest_night2.ogg", "/sfx/environmental/volcanic_night.ogg" ]
+      }
+    },
+
+    "musicTrack" : {
+      "day" : {
+        "tracks" : [ "/music/Temporis.ogg","/music/ultramarine.ogg","/music/crystal-exploration1.ogg", "/music/drosera.ogg", "/music/inviolate-loop.ogg", "/music/lava-exploration1.ogg", "/music/ultramarine.ogg", "/music/arctic-constellation1.ogg", "/music/body-electric-loop.ogg", "/music/mercury.ogg", "/music/Nomads.ogg", "/music/psyche.ogg" ]
+      },
+      "night" : {
+        "tracks" : [ "/music/ultramarine.ogg","/music/devils_tritone.ogg", "/music/crystal-exploration2.ogg", "/music/desert-exploration2.ogg", "/music/lava-exploration2.ogg", "/music/mira.ogg", "/music/tranquility-base.ogg", "/music/arctic-constellation1.ogg", "/music/body-electric-loop.ogg", "/music/mercury.ogg", "/music/Nomads.ogg", "/music/casiopeia.ogg" ]
+      }
+     },
+
+
+    "surfacePlaceables" : {
+      "grassMod" : [ "tar" ],
+      "grassModDensity" : 0.9,
+
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.35, "wildtyvokkseed" ],
+              [0.35, "wildtalonseedseed" ],
+              [0.35, "wilddeathblossomseed" ],
+              [0.35, "wildporphisplantseed" ],
+              [0.35, "wildblexplantseed" ],
+			  [0.35, "wildlactariusindigoseed" ]
+              ],
+              "parameters" : { "startingStage" : 3 }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 180,
+          "treeStemHueShiftMax" : 15,
+          "treeStemList" : [ "burnttreestem", "barren", "old", "skeletal", "stripey", "ashy", "coal", "magma" ],
+          "treeFoliageList" : [ "burntleaves", "burntmoss", "aridblank", "autumny", "patchy", "piney", "weirdly", "willowy", "pitchy" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffAverage",
+
+          "type" : "bush",
+          "bushes" : [
+            {
+              "name" : "moltenbones",
+              "baseHueShiftMax" : 40,
+              "modHueShiftMax" : 180
+            },
+            {
+              "name" : "tarbones",
+              "baseHueShiftMax" : 40,
+              "modHueShiftMax" : 180
+            },
+            {
+              "name" : "skulls",
+              "baseHueShiftMax" : 40,
+              "modHueShiftMax" : 180
+            }
+          ]
+        },
+
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseLarge",
+
+          "type" : "bush",
+          "bushes" : [
+            {
+              "name" : "tarcrystal",
+              "baseHueShiftMax" : 20,
+              "modHueShiftMax" : 0
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+          "type" : "bush",
+          "bushes" : [
+            {
+              "name" : "tarbulb",
+              "baseHueShiftMax" : 20,
+              "modHueShiftMax" : 0
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "grass",
+          "grasses" : [ "tar", "tiberia" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ultraRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "tarman" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "basicChest", "ffbasicChest", "ffbasicChest2" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "tarChest", "tarUndergroundChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "statuspod" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "weaponChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDist",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.5,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+          "type" : "microdungeon",
+          "microdungeons" : [ "tarpitsmicrodungeons" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.5,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:randomEncounter",
+          "type" : "microdungeon",
+          "microdungeons" : [ "volcanicmicrodungeons", "foundrymicrodungeons" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDistTerrainfeatures",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "terrainfeatures" ]
+        }
+      ]
+    },
+
+    "undergroundPlaceables" : {
+      "grassMod" : [ "tar" ],
+      "grassModDensity" : 0.7,
+
+      "items" : [
+	{
+	  "mode" : "floor",
+	  "priority" : 1,
+	  "variants" : 1,
+	  "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+	  "type" : "microdungeon",
+	  "microdungeons" : [ "randomencounterfire", "shroomencounterfire", "eyeencounterfire", "colourfulencounterfire", "boneencounterfire", "humanencounterfire", "glitchencounterfire", "apexencounterfire", "avianencounterfire", "floranencounterfire", "fulabs", "fubandits", "newhumanmicro", "newavianmicro","furandomencounter", "fuapexencounter", "fuglitchencounter", "fuavianencounter", "fuhumanencounter" ]
+	},
+
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "basicChest", "ffbasicChest", "ffbasicChest2" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "tarChest", "tarUndergroundChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "techChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "weaponChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "statuspod" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffunCommon",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 220,
+          "treeStemHueShiftMax" : 220,
+          "treeStemList" : [ "shadowvine", "tarvine" ],
+          "treeFoliageList" : [ "nofoliagevine", "" ]
+        },
+         {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.35, "wildalgaeseed" ],
+              [0.35, "wildrockrootseed" ],
+              [0.35, "wildpasakavineseed" ],
+              [0.35, "wildporphisplantseed" ],
+              [0.35, "wildtyvokkseed" ]
+              ],
+              "parameters" : { "startingStage" : 3 }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "grass",
+          "grasses" : [ "tar" ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+          "type" : "bush",
+          "bushes" : [
+            {
+              "name" : "ceilingtardrip",
+              "baseHueShiftMax" : 20,
+              "modHueShiftMax" : 0
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+          "type" : "bush",
+          "bushes" : [
+            {
+              "name" : "tarcrystal",
+              "baseHueShiftMax" : 20,
+              "modHueShiftMax" : 0
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffAverage",
+
+          "type" : "bush",
+          "bushes" : [
+            {
+              "name" : "moltenbones",
+              "baseHueShiftMax" : 0,
+              "modHueShiftMax" : 0
+            },
+            {
+              "name" : "tarbulb",
+              "baseHueShiftMax" : 20,
+              "modHueShiftMax" : 0
+            },
+            {
+              "name" : "tarbones",
+              "baseHueShiftMax" : 20,
+              "modHueShiftMax" : 0
+            }
+          ]
+        }
+      ]
+    }
+
+}

@@ -1,0 +1,10 @@
+{
+  "version" : "1.1",
+  "tags" : "Crafting and Building|Planets and Environments|Cheats and God Items|Furniture and Objects",
+  "author" : "A S T R O ",
+  "description" : "\n\nWith Permision from WW and Pixelflame I present to you...\nUpdate Version 1.1: Attempt to remove flowers from Terraforming process. // Attempt to add more zooming ships to the front of the buildings.\n\nThe Omega Pixel City Terraformer!\n\nI've always wanted the best of both worlds from WW and Pixel Flame's Return to Earth 2.0. \n\nSo I decided to make a terraformer that could do both! \n\nWith a few changes here and there we have it here folks! \n\nEnjoy!\n\nSpawnID: terraformercity2",
+  "name" : "Another City Terraformer?!",
+  "friendlyName" : "Another City Terraformer?!",
+  "steamContentId" : "2444233793",
+  "link" : "steam://url/CommunityFilePage/2444233793"
+}

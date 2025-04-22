@@ -1,0 +1,10 @@
+{
+  "version" : "1.0",
+  "tags" : "Planets and Environments",
+  "author" : "Projectmayhme1983",
+  "description" : "Addds a glass moon to the game. Has some stained glass colors randomly. No enemies.",
+  "name" : "Glass Moon",
+  "friendlyName" : "Glass Moon",
+  "steamContentId" : "2229171570",
+  "link" : "steam://url/CommunityFilePage/2229171570"
+}

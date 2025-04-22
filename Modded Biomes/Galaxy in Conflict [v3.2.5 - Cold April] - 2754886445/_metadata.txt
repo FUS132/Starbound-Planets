@@ -1,0 +1,12 @@
+{
+  "version" : "v3.2.5A",
+  "tags" : "Crafting and Building|Miscellaneous|Planets and Environments|NPCs and Creatures|Weapons|Quests|Dungeons|Ships|Species|User Interface|Furniture and Objects|Food and Farming|In-Game Tools|Mechanics|Vehicles and Mounts|Armor and Clothes",
+  "author" : "WeebWing",
+  "description" : "[TAG]",
+  "name" : "Galaxy_in_Conflict",
+  "priority" : 9999,
+  "friendlyName" : "Galaxy in Conflict [v3.2.5 - Cold April]",
+  "steamContentId" : "2754886445",
+  "link" : "steam://url/CommunityFilePage/2754886445",
+  "includes" : []
+}

@@ -1,0 +1,332 @@
+{
+  "name" : "gic_floranliberationfront_territory",
+  "friendlyName" : "Liberation",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1.0, "gic_gleap" ],
+          [ 1.0, "gic_nutmidge" ],
+          [ 1.0, "gic_poptop" ]
+        ]
+      },
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "butterbee" ],
+          [ 1, "fawnfly" ],
+          [ 1, "mudstag" ]
+        ]
+      },
+	  
+	  
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "shadowmoth" ],
+          [ 1, "cinderfly" ],
+          [ 1, "ashsprite" ]
+        ]
+      },
+      {
+        "select" : 3,
+        "pool" : "generatedGroundAggroDay"
+      }, 
+      {
+        "select" : 5,
+        "pool" : "nightTerrors"
+      },      
+      {
+        "select" : 4,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "squeekcritter" ],
+          [ 1, "mousecritter" ],
+          [ 1, "spidercritter" ],
+          [ 1, "ravencritter" ],
+          [ 1, "wurmcritter" ],
+          [ 1, "vulturecritter" ],
+          [ 1, "appofloatcritter" ]
+        ]
+      },
+      {
+        "select" : 7,
+        "pool" : [
+          [ 1, "birdcritter" ],
+          [ 1, "hedgehogcritter" ],
+          [ 1, "tortoisecritter" ],
+          [ 1, "mousecritter" ],
+          [ 1, "bunnycritter" ],
+          [ 1, "snailcritter" ],
+          [ 1, "fishcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "snow"
+    }
+  },
+
+  "hueShiftOptions" : [ -20, -10, 0, 10, 20 ],
+
+  "weather" : [
+    [0, [
+      "/weather.config:gic_atmospheric_wartorn_lightconflict"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // sunny earth days, red/orange sunrise and purple/red sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [212, 100, 0], [235, 210, 146] ],
+	  
+      "dayColors" : [ [242, 120, 0], [255, 230, 176]],
+	  
+      "eveningColors" : [ [125, 17, 158], [210, 52, 50] ],
+	  
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [140, 71, 10],
+	  
+      "dayLightColor" : [205, 118, 2],
+	  
+      "eveningLightColor" : [160, 120, 0],
+	  
+      "nightLightColor" : [80, 40, 0]
+    }
+  ],
+
+  "mainBlock" : "dirt",
+  "subBlocks" : [ "dirt", "rock15", "stonerubble", "drydirt" ],
+  "ores" : "surface",
+
+  "parallax" : "/parallax/surface/gic_razed_forest.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/arid_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/arid_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+	//Chillax African Beats to steal diamonds to
+    "day" : {
+      "tracks" : [ 
+	  
+	  "/music/farcry2/gic_farcry2_roadfromafrica.ogg",
+	  "/music/farcry2/gic_farcry2_speaktothedead.ogg",
+	  "/music/farcry2/gic_farcry2_eighteenbullets.ogg",
+	  "/music/farcry2/gic_farcry2_spirits.ogg",
+	  "/music/farcry2/gic_farcry2_youcarrywhatyoumust.ogg",
+	  "/music/farcry2/gic_farcry2_intotheillness.ogg",
+	  "/music/farcry2/gic_farcry2_darkriver.ogg",
+	  "/music/farcry2/gic_farcry2_northernwarlord.ogg",
+	  "/music/farcry2/gic_farcry2_thereisonlywar.ogg",
+	  "/music/farcry2/gic_farcry2_theedgeofthevillage.ogg",
+	  "/music/farcry2/gic_farcry2_theghostinthedrug.ogg",
+	  "/music/farcry2/gic_farcry2_tothosewhokill.ogg"
+
+	  ]
+    },
+
+    "night" : {
+      "tracks" : [ 
+	  
+	  "/music/farcry2/gic_farcry2_roadfromafrica.ogg",
+	  "/music/farcry2/gic_farcry2_speaktothedead.ogg",
+	  "/music/farcry2/gic_farcry2_eighteenbullets.ogg",
+	  "/music/farcry2/gic_farcry2_spirits.ogg",
+	  "/music/farcry2/gic_farcry2_youcarrywhatyoumust.ogg",
+	  "/music/farcry2/gic_farcry2_intotheillness.ogg",
+	  "/music/farcry2/gic_farcry2_darkriver.ogg",
+	  "/music/farcry2/gic_farcry2_northernwarlord.ogg",
+	  "/music/farcry2/gic_farcry2_thereisonlywar.ogg",
+	  "/music/farcry2/gic_farcry2_theedgeofthevillage.ogg",
+	  "/music/farcry2/gic_farcry2_theghostinthedrug.ogg",
+	  "/music/farcry2/gic_farcry2_tothosewhokill.ogg"
+	  
+	  ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "ash" ],
+    "grassModDensity" : 0.8,
+	
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.4,
+
+    "items" : [
+
+
+
+      {
+        "mode" : "floor",
+        "priority" : 0.3,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "barbedwire" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "gic_groundfire" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+
+      {
+        "mode" : "floor",
+        "priority" : 4,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gic_floranliberationfront_territorymicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 4,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gic_floranliberationfront_territorymicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 4,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gic_floranliberationfront_territorymicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 4,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gic_floranliberationfront_territorymicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 4,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gic_floranliberationfront_territorymicrodungeons" ]
+      },
+
+
+
+
+
+	  
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      }
+  
+	  
+	  
+
+	  
+	  
+	  
+
+
+	  
+    ]
+  },
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  "undergroundPlaceables" : {
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 0.4,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.3,
+
+    "items" : [
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 10,
+        "treeStemList" : [ "desertvine" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "grass",
+        "grasses" : [ "testflower7", "testflower8" ]
+      }
+    ]
+  }
+}

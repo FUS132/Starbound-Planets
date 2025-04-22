@@ -1,0 +1,42 @@
+{
+  "name" : "GMglassmooncorelayer",
+  "friendlyName" : "Glass Moon Core",
+
+  "parallax" : "/parallax/underground/GMglassrockunderground.parallax",
+
+  "mainBlock" : "GMglassrock",
+  "subBlocks" : [ "GMglassstone" ],
+  "ores" : "none",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/moon_underground.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/moon_underground.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : []
+    },
+    "night" : {
+      "tracks" : []
+    }
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [ {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "snowChest" ]
+      } ]
+  },
+
+  "hueShiftOptions" : [-180, -135, -90, -45, 0, 45, 90, 135, 180]
+}

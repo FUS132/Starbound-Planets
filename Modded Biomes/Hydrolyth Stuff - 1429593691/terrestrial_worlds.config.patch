@@ -1,0 +1,220 @@
+[
+  {
+    "op": "add",
+    "path": "/planetTypes/illusion",
+    "value": {
+      "threatRange": [
+        7,
+        7
+      ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [
+            "illusion"
+          ],
+          "secondaryRegions": [
+            "midnight",
+            "desert",
+            "savannah",
+            "barren"
+          ],
+          "dungeons": [
+            [
+              1,
+              "apextestfacility"
+            ],
+            [
+              1,
+              "apexbase"
+            ],
+            [
+              1,
+              "apexcamp"
+            ],
+            [
+              1,
+              "apexcity"
+            ],
+            [
+              1,
+              "aviantemple"
+            ],
+            [
+              1,
+              "aviantomb"
+            ],
+            [
+              1,
+              "avianvillage"
+            ],
+            [
+              1,
+              "aviannativevillage"
+            ],
+            [
+              1,
+              "avianairship"
+            ],
+            [
+              1,
+              "floranhuntinggrounds"
+            ],
+            [
+              1,
+              "florancanyon"
+            ],
+            [
+              1,
+              "floranvillagetower"
+            ],
+            [
+              1,
+              "floranhutvillage"
+            ],
+            [
+              4,
+              "dungeoncrawler"
+            ],
+            [
+              4,
+              "evilfortress"
+            ],
+            [
+              4,
+              "glitchcastle"
+            ],
+            [
+              4,
+              "glitchvillage"
+            ],
+            [
+              1,
+              "hylotlruinedcastle"
+            ],
+            [
+              1,
+              "hylotlcity"
+            ],
+            [
+              1,
+              "humanprison"
+            ],
+            [
+              1,
+              "humancamp"
+            ],
+            [
+              1,
+              "glitchsewer"
+            ],
+            [
+              1,
+              "novakidvillage"
+            ]
+          ]
+        },
+        "subsurface": {
+          "primaryRegion": [
+            "desertsubsurface"
+          ]
+        },
+        "underground1": {
+          "primaryRegion": [
+            "undergroundillusion1"
+          ],
+          "secondaryRegions": [
+            "fleshcaves",
+            "tarunderground",
+            "minivillageunderground"
+          ]
+        },
+        "underground2": {
+          "primaryRegion": [
+            "undergroundillusion1"
+          ],
+          "secondaryRegions": [
+            "icecaves",
+            "stonecaves",
+            "bonecaves"
+          ]
+        },
+        "underground3": {
+          "primaryRegion": [
+            "undergroundillusion1"
+          ],
+          "secondaryRegions": [
+            "luminouscaves",
+            "tarunderground",
+            "stonecaves"
+          ]
+        },
+        "core": {
+          "primaryRegion": [
+            "illusioncore"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/illusion",
+    "value": {
+      "blockSelector": [
+        "remixedMildSurface"
+      ],
+      "fgCaveSelector": [
+        "surfaceCaves"
+      ],
+      "bgCaveSelector": [
+        "empty"
+      ],
+      "biome": [
+        [
+          0,
+          [
+            "illusion"
+          ]
+        ]
+      ],
+      "subRegion": [
+        "oasis",
+        "tar",
+        "colourful",
+        "bones"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/undergroundillusion1",
+    "value": {
+      "caveLiquid": [
+        "water"
+      ],
+      "biome": [
+        [
+          1,
+          [
+            "undergroundillusion"
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/illusioncore",
+    "value" : {
+      "caveLiquid" : ["lava"],
+	  "oceanLiquid" : ["corelava"],
+      "fgCaveSelector" : [ "coreCaves" ],
+      "bgCaveSelector" : [ "coreBackgroundCaves" ],
+      "oceanLevelOffset" : -20,
+      "caveLiquidSeedDensityRange" : [4.0, 4.0],
+      "biome": [
+        [1,["coreillusion"]]
+      ]
+    }
+  }
+]

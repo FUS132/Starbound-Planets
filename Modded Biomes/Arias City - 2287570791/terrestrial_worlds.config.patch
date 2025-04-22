@@ -1,0 +1,33 @@
+[{
+        "op": "add",
+        "path": "/planetTypes/ariascity",
+        "value": {
+            "threatRange": [1, 4],
+            "layers": {
+                "surface": {
+                    "primaryRegion": ["ariascity"],
+                    "secondaryRegions": [],
+                    "dungeonCountRange": [0, 2],
+                    "dungeons": [
+                        [1.0, "naturalcave"]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/ariascity",
+        "value": {
+            "caveLiquid": ["water"],
+            "caveLiquidChanceRange": [20, 100],
+            "blockSelector": ["remixedSwampySurface", "remixedSurface", "remixedPoolsSurface"],
+            "fgCaveSelector": ["surfaceCaves"],
+            "bgOreSelector": ["normalVeins", "richVeins"],
+            "biome": [
+                [0, ["ariascity"]]
+            ],
+            "subRegion": ["oasis", "prism"]
+        }
+    }
+]

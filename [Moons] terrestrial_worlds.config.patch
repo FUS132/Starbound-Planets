@@ -3,6 +3,10 @@
 		// DISCLAMER: Not a plug-and-play solution. You must still assemble your own patch even if with the help of this
 		// cheat sheet.
 		//==============================================================================================================|
+		// All planets except for vanilla have "test" operations added as a crash precaution and for ease of copying,
+		// but if you want to cut on load-time a bit, planets from the same mod can be merged together under 1 pair of
+		// square brackets (like, for example, Vanilla Planets in the [Planets] patch) and just 1 planet test at the top.
+		//==============================================================================================================|
     [
 		// Template for future use
 	

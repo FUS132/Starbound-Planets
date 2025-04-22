@@ -1,0 +1,157 @@
+{
+  "name" : "ct_alterash_enchanted",
+  "friendlyName" : "Enchanted Meadows",
+  "description" : "^#8080f0;Vionostera^reset;, or enchanted land, is an almost magical place full of mystical things, hence the name.  \nBlue fields of dense grass with pink tops of ^#8080f0;blossoming ayakas^reset;, ^#8080f0;enchanted orbs^reset; and rare ^#8080f0;beakseed^reset; bushes showing above the surface.  \nUnder the ground there are glowing ^#8080f0;enchanted bushes^reset;, lighting up the caves with pink bioluminescence.\n\nThis place looks almost magical, even though this kind of view is a somewhat common for the ionized temperate climate.  \nAt its core, this place is an anomaly, caused by high concentration of conflicting energies.\n\nA much rarer variation of this biome is called ^#f080f0;Invertia^reset;.",
+  "longdescription" : "\nMore information about the Enchantment phenomenon can be discovered with the ^#8080f0;Enchanted Datamass^reset;.",
+  "icon" : "/items/active/alta/loot/ct_enchanted_loot.png",
+  "mainBlock" : "moonstone",
+  "subBlocks" : [ "moonrock", "cloudblock" ],
+  "ores" : "prismore",
+
+  "hueShiftOptions" : [0],
+  "parallax" : "/parallax/surface/ct_alterash_garden.parallax",
+
+  "spawnProfile" : {
+    "monsterParameters" : { "colors" : "ocean", "statusSettings" : { "stats" : { "electricStatusImmunity" : { "baseValue" : 1.0 } } } },
+    "groups" : [
+      { "select" : 1, "pool" : [ [ 1, "ct_astral_narfin_spawn" ] ] },
+      { "select" : 1, "pool" : [ [ 1, "ct_alterash_night_spawn" ] ] },
+      // Bugs
+      { "select" : 1, "pool" : [ [ 1, "ct_vio_zych_spawn" ] ] },
+      // Critter
+      { "select" : 3, "pool" : [ [ 1, "ct_miazmur_spawn"], [ 0.15, "prismelementalcritter"], [ 0.15, "bioluminfireflyspawner"] ] }
+    ]
+  },
+
+  "ambientNoises" : {
+    "day" : { "tracks" : [ "/sfx/environmental/forest_day.ogg", "/sfx/environmental/forest_day2.ogg" ] },
+    "night" : { "tracks" : [ "/sfx/environmental/forest_night.ogg", "/sfx/environmental/forest_night2.ogg" ] }
+  },
+  "musicTrack" : {
+    "day" : { "tracks" : [ "/music/epsilon-indi.ogg", "/music/hymn-to-the-stars.ogg", "/music/procyon.ogg", "/music/stellarformation.ogg", "/music/vast-immortal-suns.ogg", "/music/atlas.ogg", "/music/blue-straggler.ogg", "/music/cygnus-x1.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/m54.ogg", "/music/on-the-beach-at-night.ogg" ] },
+    "night" : { "tracks" : [ "/sfx/environmental/tundra_night.ogg", "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/psyche.ogg", "/music/accretion-disc.ogg", "/music/cygnus-x1.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/m54.ogg", "/music/nomads.ogg", "/music/on-the-beach-at-night.ogg" ] }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "colourfulgrass" ], "grassModDensity" : 0.9,
+    "ceilingGrassMod" : [ "undergrowth" ], "ceilingGrassModDensity" : 0.5,
+    "items" : [
+      // Tech
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:surfaceCapsules", "type" : "object",
+        "objectSets" : [ { "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:overgroundChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_alta_pod_tier1" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:overgroundChests", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "statuspod" ] ], "parameters" : { } } ]
+      },
+      // Dungeons
+      {
+        "mode" : "floor", "priority" : 2, "variants" : 2, "distribution" : "/biomes/distributions.config:tiyDist", "type" : "microdungeon",
+        "microdungeons" : ["oasis", "blank", "none" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon", "type" : "microdungeon",
+        "microdungeons" : [ "encounterdungeons" ]
+      },
+      // Growth
+      {
+        "mode" : "floor", "priority" : 0.5, "variants" : 4, "distribution" : "/biomes/distributions.config:scatteredSmall", "type" : "grass",
+        "grasses" : [ "grass", "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:scatteredSmall", "type" : "bush",
+        "bushes" : [ { "name" : "ct_valley_bush", "baseHueShiftMax" : 0, "modHueShiftMax" : 0, "baseHueShiftMin" : 0, "modHueShiftMin" : 0 } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:scatteredSmall", "type" : "bush",
+        "bushes" : [ { "name" : "ct_valley_bush", "baseHueShiftMax" : -105, "modHueShiftMax" : 0, "baseHueShiftMin" : -105, "modHueShiftMin" : 0 } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:denseLarge", "type" : "tree",
+        "treeFoliageHueShiftMax" : 0, "treeFoliageHueShiftMin" : 0, "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "ct_ayaka_blossom_stem" ], "treeFoliageList" : [ "ct_ayaka_blossom_leaves" ]
+      },
+      {
+        "mode" : "floor", "priority" : 2, "variants" : 1, "distribution" : "/biomes/distributions.config:denseSurfaceCrops", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "wildbeakseedseed" ] ], "parameters" : { "startingStage" : 2 } } ]
+      },
+      // Other
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_enchanted_chest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_enchanted_chest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 3, "distribution" : "/biomes/distributions.config:scatteredSmall", "type" : "object",
+        "objectSets" : [ { "pool" : [ [0.35, "prismrock1" ], [0.35, "prismrock2" ], [0.35, "prismrock3" ] ], "parameters" : { } } ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "grass" ], "grassModDensity" : 0.9,
+    "ceilingGrassMod" : [ "undergrowth" ], "ceilingGrassModDensity" : 0.3,
+    "items" : [
+      // Tech
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundCapsules", "type" : "object",
+        "objectSets" : [ { "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_alta_pod_tier1" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundChests", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "statuspod" ] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundweaponChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      // Growth
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 4, "period" : 5, "distribution" : "/biomes/distributions.config:scatteredLarge", "type" : "grass",
+        "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      {
+        "mode" : "ceiling", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:denseMedium", "type" : "tree",
+        "treeStemList" : [ "ct_ayaka_roots" ], "treeFoliageList" : [ "" ], "treeFoliageHueShiftMax": 0, "treeStemHueShiftMax": 0
+      },
+      {
+        "mode" : "floor", "priority" : 2, "variants" : 1, "distribution" : "/biomes/distributions.config:denseSurfaceCrops", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "wildbeakseedseed" ] ], "parameters" : { "startingStage" : 2 } } ]
+      },
+      // Other
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundCapsules", "type" : "bush",
+        "bushes" : [ { "name" : "ct_crystal", "baseHueShiftMax" : 40, "modHueShiftMax" : 0, "baseHueShiftMin" : 40, "modHueShiftMin" : 0 } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundCapsules", "type" : "bush",
+        "bushes" : [ { "name" : "ct_crystal", "baseHueShiftMax" : 90, "modHueShiftMax" : 0, "baseHueShiftMin" : 90, "modHueShiftMin" : 0 } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_enchanted_chest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_enchanted_chest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 3, "distribution" : "/biomes/distributions.config:undergroundCapsules", "type" : "object",
+        "objectSets" : [ { "pool" : [ [0.35, "prismrock1" ], [0.35, "prismrock2" ], [0.35, "prismrock3" ] ], "parameters" : { } } ]
+      }
+    ]
+  },
+  "wiki" : { "aliases" : { "Vionostera" : { }, "Enchanted" : { }, "\"enchanted\" area" : { "icon" : "none" } } }
+}

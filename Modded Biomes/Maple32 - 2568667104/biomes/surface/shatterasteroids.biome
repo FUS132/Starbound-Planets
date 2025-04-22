@@ -1,0 +1,94 @@
+{
+  "name" : "shatterasteroids",
+  "friendlyName" : "Floating Fragments",
+
+  "mainBlock" : "meteoriterock",
+  "subBlocks" : [ "obsidian", "magmarock" ],
+  "ores" : "depth3",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "m32firepteropod" ],
+          [ 1, "masteroidM32" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "phoenixfly" ],
+          [ 0.3, "heathugger" ],
+          [ 0.3, "glowbug" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "volcanic",
+        "statusSettings" : {
+        "stats" : {
+          "lavaImmunity" : {
+            "baseValue" : 1.0
+          },
+          "fireStatusImmunity" : {
+            "baseValue" : 1.0
+          }
+        }
+      }
+    }
+  },
+
+  "statusEffects" : [ "biomeheat", "biomeextremeheat" ],
+
+  "parallax" : "/parallax/surface/shatter.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/ocean_underwater.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/ocean_underwater.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/sfx/M32music/homemade/planetary-heartbeat.ogg", "/music/lava-exploration1.ogg", "/music/drosera.ogg", "/music/inviolate-loop.ogg", "/music/desert-exploration2.ogg", "/music/ultramarine-loop.ogg", "/music/body-electric-loop.ogg", "/music/mercury.ogg", "/music/psyche.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/lava-exploration2.ogg", "/music/crystal-exploration2.ogg", "/music/mira.ogg", "/music/tranquility-base.ogg", "/music/arctic-constellation1.ogg", "/music/nomads.ogg", "/music/casiopeia.ogg", "/music/error-0xbfaf000.ogg", "/music/accretion-disc.ogg" ]
+    }
+  },
+
+  "weather" : [
+    [0, [
+      "/m32weather.config:shatter"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // dark peachy massacre
+      "mainColor" : [200, 21, 0],
+
+      "morningColors" : [ [70, 20, 0], [70, 20, 0] ],
+      "dayColors" : [ [70, 20, 0], [70, 20, 0] ],
+      "eveningColors" : [ [70, 20, 0], [70, 20, 0] ],
+      "nightColors" : [ [70, 20, 0, 200], [70, 20, 0, 200] ],
+
+      "morningLightColor" : [100, 77, 0],
+      "dayLightColor" : [100, 38, 0],
+      "eveningLightColor" : [100, 0, 0],
+      "nightLightColor" : [70, 20, 0]
+    }
+  ],
+
+  "hueShiftOptions" : [0],
+
+  "surfacePlaceables" : {
+    //"grassMod" : [ "blackash" ],
+    //"grassModDensity" : 0.9,
+    "items" : []
+  }
+}

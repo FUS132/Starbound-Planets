@@ -1,0 +1,842 @@
+[
+	{"op" : "add","path" : "/planetSizes/bigger",
+	 "value" : {
+	  "size" :           [11000, 7000],
+	  "gravityRange" :   [90   , 110 ],
+	  "dayLengthRange" : [700  , 1000],
+	  "layerDefaults" : {
+	    "secondaryRegionPeriod" : [1500, 3000],
+	    "secondaryRegionSize" :   [0.2 , 0.92],
+	    "secondaryRegionCount" :  [1   , 4   ],
+	    "subRegionSize" :         [0.15, 0.5 ],
+	    "dungeonCountRange" :     [0   , 6   ]
+	  },
+	  "layers" : {
+	    "space"        : { "baseHeight" : 6500, "layerLevel" : 6200 },
+	    "atmosphere"   : { "baseHeight" : 5500, "layerLevel" : 5000 },
+	    "surface"      : { "baseHeight" : 4000, "layerLevel" : 3700 },
+	    "subsurface"   : { "baseHeight" : 3000, "layerLevel" : 2700 },
+	    "underground1" : { "baseHeight" : 1500, "layerLevel" : 1300 },
+	    "underground2" : { "baseHeight" : 900 , "layerLevel" : 750  },
+	    "underground3" : { "baseHeight" : 700 , "layerLevel" : 600  },
+	    "core"         : { "baseHeight" : 200 , "layerLevel" : 0    }
+	  }
+	 }
+	},
+	//Base gas giant
+    {"op" : "add","path" : "/planetTypes/gasgiant",
+			"value" : {
+				"threatRange" : [6,8],
+				"layers" : {
+  					"atmosphere" : {
+						"primaryRegion" : [ "atmosphere"],
+						"secondaryRegions" : [],
+                        "dungeons" : [ ]
+                    },                  
+					"surface" : {
+						"primaryRegion" : [ "gasgiant"],
+						"secondaryRegions" : [],
+                        "dungeons" : [ ]
+                    },
+                    "subsurface" : {
+                        "primaryRegion" : [ "gasgiantunderground" ]
+                    },
+    				"underground1" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                    "dungeonCountRange" : [0, 2], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+
+                            [1.0,"challengeroomsGG1"],
+                            [1.0,"challengeroomsGG2"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+				"underground2" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                        "dungeonCountRange" : [0, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                            [1.0,"challengeroomsGG3"],
+                            [1.0,"challengeroomsGG4"],
+                            [1.0,"challengeroomsGG5"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+				"underground3" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                        "dungeonCountRange" : [0, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                            [1.0,"challengeroomsGG6"],
+                            [1.0,"challengeroomsGG7"],
+                            [1.0,"challengeroomsGG8"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+                "core" : {
+                        "dungeonCountRange" : [3, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                           [1.0,"challengeroomsGG9"],
+                            [1.0,"challengeroomsGG0"]
+                            , [1.0,"ancientvault_electricGG"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+                        "primaryRegion" : [ "GGcore",
+                        "GGcoreRuins" ]
+				}
+			}
+		}
+	},   
+
+	{"op" : "add","path" : "/regionTypes/gasgiant",
+		"value" :
+		{
+			"blockSelector" : [ "asteroids", "asteroidfield", "remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			
+			"fgCaveSelector" : [ "empty" ],
+			"bgCaveSelector" : [ "empty" ],
+			"fgOreSelector" : ["largeClumps"],
+			"bgOreSelector" : ["largeClumps"],
+			"oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -50,
+			"biome" : [ [ 0, [ "gasgiant" ] ] ],
+			
+			"subRegion" : [ ]
+		}
+	},
+
+//Cave Layer
+	{"op" : "add","path" : "/regionTypes/gasgiantunderground",
+		"value" :
+		{
+
+			"blockSelector" : [ "asteroids", "asteroidfield", "remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : [ "empty" ],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -50,
+			
+			"fgOreSelector" : ["largeClumps"],
+			"bgOreSelector" : ["largeClumps"],
+			
+			"biome" : [ [0, [ "gasgiantunderground"]]]
+			
+		}
+	},  
+//Core Layer
+	{"op" : "add","path" : "/regionTypes/GGcore",
+		"value" :
+		{
+			"blockSelector" : [ "asteroids", "asteroidfield", "remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			
+            "oceanLiquid": ["fuel"],
+            "oceanLevelOffset": 0,
+			
+			"fgcaveSelector" : [ "empty" ],
+			
+			"fgOreSelector" : ["largeClumps"],
+			"bgOreSelector" : ["largeClumps"],
+			
+			"biome" : [ [0, [ "GGcore" ]] ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/GGcoreRuins",
+		"value" :
+		{
+			"blockSelector" :  [ "asteroids", "asteroidfield", "remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty"],
+			"bgCaveSelector" : [ "empty" ],
+            "oceanLiquid": ["fuel"],
+            "oceanLevelOffset": 0,
+			
+			"fgcaveSelector" : [ "empty" ],
+			
+			"fgOreSelector" : ["largeClumps"],
+			"bgOreSelector" : ["largeClumps"],
+			
+			"biome" : [ [0, [ "GGcoreRuins" ]] ]
+		}
+	},
+
+////////////////////////////////////// Lush/Forest gas giant
+// FOREST
+	{"op" : "add","path" : "/planetTypes/gasgiant_forest",
+		"value" : {
+			"threatRange" : [6,10],
+			"layers" : {
+				"surface" : {
+					"primaryRegion" : [ "gasgiant_forest","gasgiant_forest_continental","gasgiant_lush","gasgiant_lush_continental"],
+					"secondaryRegions" : ["gasgiant_forest","gasgiant_forest_continental","gasgiant_lush","gasgiant_lush_continental","gasgiant_forest_void", "gasgiant_lakes"],
+					"dungeons" : []
+				},
+				"subsurface" : {
+					"primaryRegion" : [ "gasgiant_forest_underground","gasgiant_forest_underground_glowshroom","gasgiant_toxic","gasgiant_forest_underground_infested","gasgiant_geode" ],
+					"secondaryRegions" : ["gasgiant_forest_underground","gasgiant_forest_underground_glowshroom","gasgiant_forest_underground_infested","gasgiant_geode" ]
+				},
+				"underground1" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                    "dungeonCountRange" : [0, 2], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+
+                            [1.0,"challengeroomsGG1"],
+                            [1.0,"challengeroomsGG2"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+				"underground2" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                        "dungeonCountRange" : [0, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                            [1.0,"challengeroomsGG3"],
+                            [1.0,"challengeroomsGG4"],
+                            [1.0,"challengeroomsGG5"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+				"underground3" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                        "dungeonCountRange" : [0, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                            [1.0,"challengeroomsGG6"],
+                            [1.0,"challengeroomsGG7"],
+                            [1.0,"challengeroomsGG8"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+                "core" : {
+                        "dungeonCountRange" : [3, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                           [1.0,"challengeroomsGG9"],
+                            [1.0,"challengeroomsGG0"],
+                           [1.0,"ancientvault_electricGG"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+                        "primaryRegion" : [ "GGcore",
+                        "GGcoreRuins" ]
+				}
+            }
+		}
+	}, 
+
+	{"op" : "add","path" : "/regionTypes/gasgiant_forest",
+		"value" :
+		{
+			"blockSelector" : [ "remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_forest"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : ["gasgiant_forest_rocks"]
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_forest_rocks",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield"],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_forest"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : [ ]
+		}
+	},
+//LUSH
+	{"op" : "add","path" : "/regionTypes/gasgiant_lush",
+		"value" :
+		{
+			"blockSelector" : [ "remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_lush"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : ["gasgiant_lush_rocks"]
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_lush_rocks",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield"],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_lush"]]],
+			"subRegion" : [ ]
+		}
+	},
+//Forest void
+	{"op" : "add","path" : "/regionTypes/gasgiant_forest_void",
+		"value" :
+		{
+			"blockSelector" : [ "empty" ],
+            "fgCaveSelector" : [ "surfaceCaves" ],
+            "bgCaveSelector" : [ "empty" ],
+			"biome" : [ [0, [ "gasgiant_forest_void"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7
+		}
+	},
+//Forest continent
+    {"op" : "add","path" : "/regionTypes/gasgiant_forest_continental",
+		"value" :
+		{
+            "blockSelector" : [ "remixedMildSurface" ],
+            //"fgCaveSelector" : [ "surfaceCaves" ],
+            //"bgCaveSelector" : [ "empty" ],
+           "fgCaveSelector" : [ "floatingCavesSpikes" ],
+            "bgCaveSelector" : [ "floatingBackgroundCavesSpikes" ],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_forest_continental"]]],
+			"subRegion" : [ ]
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_lush_continental",
+		"value" :
+		{
+            "blockSelector" : [ "remixedMildSurface" ],
+            //"fgCaveSelector" : [ "surfaceCaves" ],
+            //"bgCaveSelector" : [ "empty" ],
+            //"subBlockSelector" : [ "lowHillsSurface" ],
+           "fgCaveSelector" : [ "floatingCavesSpikes" ],
+            "bgCaveSelector" : [ "floatingBackgroundCavesSpikes" ],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_lush_continental"]]],
+			"subRegion" : [ ]
+		}
+	},
+//Sub-surface layer
+    {"op" : "add","path" : "/regionTypes/gasgiant_forest_underground",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface"  ],
+			"fgCaveSelector" : [ "surfaceCaves","empty" ],
+			"bgCaveSelector" : [ "empty" ],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_forest_underground" ]]],
+			"subRegion" : ["gasgiant_forest_underground_glowshroom","gasgiant_forest_underground_infested" ]
+
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_forest_underground_glowshroom",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface"  ],
+			"fgCaveSelector" : [ "surfaceCaves","empty" ],
+			"bgCaveSelector" : [ "empty" ],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			
+			"biome" : [ [0, [ "gasgiant_forest_underground_glowshroom" ]]],
+			"subRegion" : ["gasgiant_forest_underground","gasgiant_forest_underground_infested"]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_forest_underground_infested",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface"  ],
+			"fgCaveSelector" : [ "surfaceCaves","empty" ],
+			"bgCaveSelector" : [ "empty" ],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			
+			"biome" : [ [0, [ "gasgiant_forest_underground_infested" ]]],
+			"subRegion" : ["gasgiant_forest_underground","gasgiant_forest_underground_glowshroom"]
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_geode",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_geode"]]],
+			"subRegion" : [ ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_toxic",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "surfaceCaves","empty"],
+			"bgCaveSelector" : ["empty"],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_toxic" ]]],
+			"subRegion" : [ ]
+		}
+	},
+
+////////////////////////////////////// Desert/Savahnnah gas giant
+ {"op" : "add","path" : "/planetTypes/gasgiant_warm",
+		"value" : {
+			"threatRange" : [6,10],
+			"layers" : {
+				"surface" : {
+					"primaryRegion" : [ "gasgiant_desert","gasgiant_desert_continental","gasgiant_savannah","gasgiant_savannah_continental", "gasgiant_lakes"],
+					"secondaryRegions" : ["gasgiant_desert","gasgiant_desert_continental","gasgiant_savannah","gasgiant_savannah_continental","gasgiant_desert_void", "gasgiant_lakes"],
+					"dungeons" : []
+				},
+				"subsurface" : {
+					"primaryRegion" : [ "gasgiant_forest_underground","gasgiant_geode" ],
+					"secondaryRegions" : ["gasgiant_forest_underground","gasgiant_geode" ]
+				},
+				"underground1" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                    "dungeonCountRange" : [0, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                            [1.0,"challengeroomsGG0"],
+                            [1.0,"challengeroomsGG1"],
+                            [1.0,"challengeroomsGG2"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+				"underground2" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                        "dungeonCountRange" : [0, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                            [1.0,"challengeroomsGG3"],
+                            [1.0,"challengeroomsGG4"],
+                            [1.0,"challengeroomsGG5"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+				"underground3" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                        "dungeonCountRange" : [0, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                            [1.0,"challengeroomsGG6"],
+                            [1.0,"challengeroomsGG7"],
+                            [1.0,"challengeroomsGG8"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+                "core" : {
+                      "dungeonCountRange" : [3, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                           [1.0,"challengeroomsGG0"],
+                           [1.0,"challengeroomsGG9"],
+                           [1.0,"ancientvault_fireGG"]
+                            ], //a pool of said big dungeons. You can find them in packed\dungeons.
+                        "primaryRegion" : [ "GGcore",
+                        "GGcoreRuins" ]
+				}
+            }
+        }
+	}, 
+    // DESERT
+	{"op" : "add","path" : "/regionTypes/gasgiant_desert",
+		"value" :
+		{
+			"blockSelector" : [ "remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_desert"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : ["gasgiant_desert_rocks"]
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_desert_rocks",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield"],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_desert"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : [ ]
+		}
+	},
+//SAVANNAH
+	{"op" : "add","path" : "/regionTypes/gasgiant_savannah",
+		"value" :
+		{
+			"blockSelector" : [ "remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_savannah"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : ["gasgiant_savannah_rocks"]
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_savannah_rocks",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield"],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_savannah"]]],
+			"subRegion" : [ ]
+		}
+	},
+//DESERT void
+	{"op" : "add","path" : "/regionTypes/gasgiant_desert_void",
+		"value" :
+		{
+			"blockSelector" : [ "empty" ],
+			"fgCaveSelector" : [ "empty" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_desert_void"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7
+		}
+	},
+//Desert continent
+    {"op" : "add","path" : "/regionTypes/gasgiant_desert_continental",
+		"value" :
+		{
+            "blockSelector" : [ "remixedMildSurface" ],
+           "fgCaveSelector" : [ "floatingCavesSpikes" ],
+            "bgCaveSelector" : [ "floatingBackgroundCavesSpikes" ],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_desert_continental"]]],
+			"subRegion" : []
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_savannah_continental",
+		"value" :
+		{
+            "blockSelector" : [ "remixedMildSurface" ],
+           "fgCaveSelector" : [ "floatingCavesSpikes" ],
+            "bgCaveSelector" : [ "floatingBackgroundCavesSpikes" ],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_savannah_continental"]]],
+			"subRegion" : [ ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_lakes",
+		"value" :
+		{
+            "oceanLevelOffset": -7,
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_lakes"]]],
+            "oceanLiquid": ["denseGas"],
+			"caveLiquid" : ["water"],
+			"subRegion" : [ ]
+		}
+	},
+
+////////////////////////////////////// Snowy/Frozen gas giant
+
+    {"op" : "add","path" : "/planetTypes/gasgiant_cool",
+		"value" : {
+			"threatRange" : [6,10],
+			"layers" : {
+				"surface" : {
+					"primaryRegion" : [ "gasgiant_snow","gasgiant_ice","gasgiant_snowbio","gasgiant_snowy_continental","gasgiant_frozen_continental","gasgiant_lakes_ice"],
+					"secondaryRegions" : ["gasgiant_snow","gasgiant_ice","gasgiant_snowbio","gasgiant_snow_void", "gasgiant_lakes_ice","gasgiant_snowy_continental","gasgiant_frozen_continental"],
+					"dungeons" : []
+				},
+				"subsurface" : {
+					"primaryRegion" : [ "gasgiant_forest_underground","gasgiant_forest_underground_glowshroom","gasgiant_toxic","gasgiant_forest_underground_infested","gasgiant_geode" ],
+					"secondaryRegions" : ["gasgiant_forest_underground","gasgiant_forest_underground_glowshroom","gasgiant_forest_underground_infested","gasgiant_geode" ]
+				},
+				"underground1" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                    "dungeonCountRange" : [0, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                            [1.0,"challengeroomsGG0"],
+                            [1.0,"challengeroomsGG1"],
+                            [1.0,"challengeroomsGG2"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+				"underground2" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                        "dungeonCountRange" : [0, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                            [1.0,"challengeroomsGG3"],
+                            [1.0,"challengeroomsGG4"],
+                            [1.0,"challengeroomsGG5"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+				"underground3" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                        "dungeonCountRange" : [0, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                            [1.0,"challengeroomsGG6"],
+                            [1.0,"challengeroomsGG7"],
+                            [1.0,"challengeroomsGG8"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+                "core" : {
+                      "dungeonCountRange" : [3, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                           [1.0,"challengeroomsGG0"],
+                           [1.0,"challengeroomsGG9"],
+                           [1.0,"ancientvault_iceGG"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+                        "primaryRegion" : [ "GGcore",
+                        "GGcoreRuins" ]
+				}
+			}
+		}
+	}, 
+    //SNOWY
+	{"op" : "add","path" : "/regionTypes/gasgiant_snow",
+		"value" :
+		{
+			"blockSelector" : [ "remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_snow"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : []
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_snow_void",
+		"value" :
+		{
+			"blockSelector" : [ "empty"],
+			"fgCaveSelector" : [ "empty"],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_snow_void"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : []
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_snowbio",
+		"value" :
+		{
+			"blockSelector" : [ "remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_snowbio"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : []
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_ice",
+		"value" :
+		{
+			"blockSelector" : [ "remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_ice"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : []
+		}
+	},
+    //Snow continent
+    {"op" : "add","path" : "/regionTypes/gasgiant_snowy_continental",
+		"value" :
+		{
+            "blockSelector" : [ "remixedMildSurface" ],
+           "fgCaveSelector" : [ "floatingCavesSpikes" ],
+            "bgCaveSelector" : [ "floatingBackgroundCavesSpikes" ],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_snowy_continental"]]],
+			"subRegion" : []
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_frozen_continental",
+		"value" :
+		{
+            "blockSelector" : [ "remixedMildSurface" ],
+           "fgCaveSelector" : [ "floatingCavesSpikes" ],
+            "bgCaveSelector" : [ "floatingBackgroundCavesSpikes" ],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_frozen_continental"]]],
+			"subRegion" : [ ]
+		}
+	},
+
+    {"op" : "add","path" : "/regionTypes/gasgiant_lakes_ice",
+		"value" :
+		{
+            "oceanLevelOffset": -7,
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+            "oceanLiquid": ["denseGas"],
+			"biome" : [ [0, [ "gasgiant_lakes_ice"]]],
+			"caveLiquid" : ["water"],
+			"subRegion" : [ ]
+		}
+	},
+    /////////////////////////////////////////////////////////////////////Irradiated gas giant
+
+    {"op" : "add","path" : "/planetTypes/gasgiant_irradiated",
+		"value" : {
+			"threatRange" : [6,10],
+			"layers" : {
+				"surface" : {
+					"primaryRegion" : [ "gasgiant_alien","gasgiant_lakes_toxic",
+                    //"gasgiant_jungle",
+                    "gasgiant_alien_continental"
+                    //,"gasgiant_jungle_continental"
+                    ],
+					"secondaryRegions" : ["gasgiant_alien","gasgiant_alien_continental","gasgiant_lakes_toxic","gasgiant_irradiated_void"],
+					"dungeons" : []
+				},
+				"subsurface" : {
+					"primaryRegion" : [ "gasgiant_forest_underground","gasgiant_forest_underground_glowshroom","gasgiant_toxic","gasgiant_forest_underground_infested","gasgiant_geode" ],
+					"secondaryRegions" : ["gasgiant_forest_underground","gasgiant_forest_underground_glowshroom","gasgiant_forest_underground_infested","gasgiant_geode" ]
+				},
+				"underground1" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                    "dungeonCountRange" : [0, 2], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+
+                            [1.0,"challengeroomsGG1"],
+                            [1.0,"challengeroomsGG2"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+				"underground2" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                        "dungeonCountRange" : [0, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                            [1.0,"challengeroomsGG3"],
+                            [1.0,"challengeroomsGG4"],
+                            [1.0,"challengeroomsGG5"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+				"underground3" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+                        "dungeonCountRange" : [0, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                            [1.0,"challengeroomsGG6"],
+                            [1.0,"challengeroomsGG7"],
+                            [1.0,"challengeroomsGG8"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+					"secondaryRegions" : [  ]
+				},
+                "core" : {
+                        "dungeonCountRange" : [3, 3], // how many big dungeons can be on your planet?
+                        "dungeons" : [
+                           [1.0,"challengeroomsGG0"],
+                           [1.0,"challengeroomsGG9"],
+                           [1.0,"ancientvault_poisonGG"]
+                            ],// a pool of said big dungeons. You can find them in packed\dungeons.
+                        "primaryRegion" : [ "GGcore",
+                        "GGcoreRuins" ]
+				}
+			}
+		}
+	}, 
+    //IRRADIATED
+	{"op" : "add","path" : "/regionTypes/gasgiant_alien",
+		"value" :
+		{
+			"blockSelector" : [ "remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_alien"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : []
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_irradiated_void",
+		"value" :
+		{
+			"blockSelector" : [ "empty"],
+			"fgCaveSelector" : [ "empty"],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_irradiated_void"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : []
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_jungle",
+		"value" :
+		{
+			"blockSelector" : [ "remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_forest"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : []
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_lakes_toxic",
+		"value" :
+		{
+			"blockSelector" : [ "remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_lakes_toxic"]]],
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+			"subRegion" : []
+		}
+	},
+    //Continent
+    {"op" : "add","path" : "/regionTypes/gasgiant_alien_continental",
+		"value" :
+		{
+            "blockSelector" : [ "remixedMildSurface" ],
+           "fgCaveSelector" : [ "floatingCavesSpikes" ],
+            "bgCaveSelector" : [ "floatingBackgroundCavesSpikes" ],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_alien_continental"]]],
+			"subRegion" : []
+		}
+	},
+    {"op" : "add","path" : "/regionTypes/gasgiant_jungle_continental",
+		"value" :
+		{
+            "blockSelector" : [ "remixedMildSurface" ],
+           "fgCaveSelector" : [ "floatingCavesSpikes" ],
+            "bgCaveSelector" : [ "floatingBackgroundCavesSpikes" ],
+            
+            "oceanLiquid": ["denseGas"],
+            "oceanLevelOffset": -7,
+            
+			"biome" : [ [0, [ "gasgiant_forest_continental"]]],
+			"subRegion" : [ ]
+		}
+	}
+]

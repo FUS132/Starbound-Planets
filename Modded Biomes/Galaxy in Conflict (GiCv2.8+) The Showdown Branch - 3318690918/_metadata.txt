@@ -1,0 +1,10 @@
+{
+  "version" : "2.8+",
+  "tags" : "Crafting and Building|Miscellaneous|Planets and Environments|Musical Instruments and Songs|NPCs and Creatures|Weapons|Quests|Dungeons|Cheats and God Items|Ships|Species|User Interface|Furniture and Objects|Character Improvements|Food and Farming|In-Game Tools|Mechanics|Vehicles and Mounts|Armor and Clothes",
+  "author" : "GiC Dev Team",
+  "description" : "This mod adds:\n+Planets\n+Dungeons\n+Quests/Missions\n+Equipment, Armor, and Weapons\n+Bosses, Enemies, and NPC's\n\nMore specifically, it adds content that was needlessly deleted:\n+Weapons & Weapon Visuals\n+Space Encounters\n+Planetary Exploration\n+An entire Post-Ruin Campaign\n+Much more...\n\nThis was just an archived version but new development has begun based on this branch!\n\nIt is not an overhaul; It should be compatible with mods you regularly play with.\nThis includes [GiC] sub-mods made by others.\n\n-You are advised to use StarExtension or OpenStarbound as they provide optimizations that will allow you to better enjoy GiCv2.8+\n\n-Report anomalies in the #bug-reporting channel in our new Discord: https://discord.gg/vGFMSCZvee \n\n[spoiler]© 2022 Popovici. GiCv2.8+ is not authorized for posting on Steam, except under the Steam account named ''Pop-Top Atlas'' and is not authorized for posting on other platforms or individual redistribution.[/spoiler]",
+  "name" : "Galaxy_in_Conflict",
+  "friendlyName" : "Galaxy in Conflict (GiCv2.8+) The Showdown Branch",
+  "steamContentId" : "3318690918",
+  "link" : "steam://url/CommunityFilePage/3318690918"
+}

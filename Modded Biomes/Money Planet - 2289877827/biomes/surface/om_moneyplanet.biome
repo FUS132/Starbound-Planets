@@ -1,0 +1,562 @@
+{
+  "name" : "om_moneyplanet",
+  "friendlyName" : "Money",
+  
+  "statusEffects" : [ "biomeom_money","om_moneyglow" ],
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 35,
+        "pool" : [
+          [ 0.111, "gleap" ],
+          [ 0.111, "nutmidge" ],
+          [ 0.111, "poptop" ],
+          [ 0.111, "adultpoptop" ],
+          [ 0.111, "crustoise" ],
+          [ 0.111, "tintic" ],
+          [ 0.111, "batong" ],
+          [ 0.111, "spookit" ],
+          [ 0.111, "peblit" ],
+          [ 0.111, "iguarmor" ],
+          [ 0.111, "scaveran" ],
+          [ 0.111, "voltip" ],
+          [ 0.111, "fennix" ],
+          [ 0.111, "lilodon" ],
+          [ 0.111, "petricub" ],
+          [ 0.111, "wisper" ],
+          [ 0.111, "skimbus" ],
+          [ 0.111, "pulpin" ],
+          [ 0.111, "capricoat" ],
+          [ 0.111, "scandroid" ],
+          [ 0.111, "bobot" ],
+          [ 0.111, "monopus" ],
+          [ 0.111, "snaggler" ],
+          [ 0.111, "oculob" ],
+          [ 0.111, "agrobat" ],
+          [ 0.111, "squeem" ],
+          [ 0.111, "snaunt" ],
+          [ 0.111, "pteropod" ],
+          [ 0.111, "crutter" ],
+          [ 0.111, "snuffish" ],
+          [ 0.111, "crabcano" ],
+          [ 0.111, "pyromantle" ],
+          [ 0.111, "ignome" ],
+          [ 0.111, "smoglin" ],
+          [ 0.111, "bobfae" ],
+          [ 0.111, "quagmutt" ],
+          [ 0.111, "ringram" ],
+          [ 0.111, "pipkin" ],
+          [ 0.111, "sporgus" ],
+          [ 0.111, "anglure" ],
+          [ 0.111, "lumoth" ],
+          [ 0.111, "oogler" ],
+          [ 0.111, "narfin" ],
+          [ 0.111, "toumingo" ],
+          [ 0.111, "trictus" ],
+          [ 0.111, "mandraflora" ],
+          [ 0.111, "bulbop" ],
+          [ 0.111, "hypnare" ],
+          [ 0.111, "yokat" ],
+          [ 0.111, "orbide" ],
+          [ 0.111, "taroni" ],
+          [ 0.111, "hemogoblin" ],	
+          [ 0.111, "apexmutant" ],
+          [ 0.111, "apexbrainmutant" ],
+          [ 0.111, "gosmet" ],
+          [ 0.111, "ixoling" ],
+          [ 0.111, "kluexsentry" ],
+          [ 0.111, "kluextotem" ],
+          [ 0.111, "minidrone" ],
+          [ 0.111, "moontant" ],
+          [ 0.111, "po" ],
+          [ 0.111, "pogolem" ],
+          [ 0.111, "swarpion" ],
+          [ 0.111, "tentaclebomb" ],
+          [ 0.111, "tentacleclam" ],
+          [ 0.111, "tentaclecrawler" ],
+          [ 0.111, "tentacleghost" ],
+          [ 0.111, "tentaclegnat" ],
+          [ 0.111, "tentaclespawner" ],
+          [ 0.111, "triplod" ],
+          [ 0.111, "parasprite" ],
+          [ 0.111, "cosmicintruder" ]
+        ]
+      },
+      {
+        "select" : 42,
+        "pool" : [
+          [ 0.3, "butterbee" ],
+          [ 0.3, "fawnfly" ],
+          [ 0.3, "mudstag" ],
+          [ 0.3, "sandclown" ],
+          [ 0.3, "sunskipper" ],
+          [ 0.3, "blueback" ],
+          [ 0.3, "greentip" ],
+          [ 0.3, "redwing" ],
+          [ 0.3, "seahornet" ],
+          [ 0.3, "tidefly" ],
+          [ 0.3, "wavebird" ],
+          [ 0.3, "dewhopper" ],
+          [ 0.3, "dustmoth" ],
+          [ 0.3, "muddancer" ],
+          [ 0.3, "frostfleck" ],
+          [ 0.3, "frostfly" ],
+          [ 0.3, "icetip" ],
+          [ 0.3, "hivehog" ],
+          [ 0.3, "shellcreep" ],
+          [ 0.3, "xenofly" ],
+          [ 0.3, "brightstripe" ],
+          [ 0.3, "thornbee" ],
+          [ 0.3, "vineclimber" ],
+          [ 0.3, "gasgiant" ],
+          [ 0.3, "scuttleploom" ],
+          [ 0.3, "stinkjack" ],
+          [ 0.3, "orphanfly" ],
+          [ 0.3, "polarmoth" ],
+          [ 0.3, "snowskater" ],
+          [ 0.3, "aurorabee" ],
+          [ 0.3, "driftbell" ],
+          [ 0.3, "shardwing" ],
+          [ 0.3, "fireygiant" ],
+          [ 0.3, "flameroach" ],
+          [ 0.3, "lavahopper" ],
+          [ 0.3, "ashsprite" ],
+          [ 0.3, "cinderfly" ],
+          [ 0.3, "shadowmoth" ],
+          [ 0.3, "glowbug" ],
+          [ 0.3, "heathugger" ],
+          [ 0.3, "phoenixfly" ]
+        ]
+      },
+      {
+        "select" : 100,
+        "pool" : [
+          [ 1, "apexscabcritter" ],
+          [ 1, "appofloatcritter" ],
+          [ 1, "armadillocritter" ],
+          [ 1, "ashrockcritter" ],
+          [ 1, "avianscabcritter" ],
+          [ 1, "ballooncritter" ],
+          [ 1, "bigwormcritter" ],
+          [ 1, "birdcritter" ],
+          [ 1, "blipcritter" ],
+          [ 1, "bloodtoadcritter" ],
+          [ 1, "bluebutterflycritter" ],
+          [ 1, "bouncebagcritter" ],
+          [ 1, "bouncercritter" ],
+          [ 1, "bowbirdcritter" ],
+          [ 1, "breakercritter" ],
+          [ 1, "breakerfemalecritter" ],
+          [ 1, "bunnycritter" ],
+          [ 1, "cellcritter" ],
+          [ 1, "chevcritter" ],
+          [ 1, "ciclesnailcritter" ],
+          [ 1, "cliffcritter" ],
+          [ 1, "crabcritter" ],
+          [ 1, "crystalbirdcritter" ],
+          [ 1, "crystaltortoisecritter" ],
+          [ 1, "dancercritter" ],
+          [ 1, "darkballcritter" ],
+          [ 1, "darknessscabcritter" ],
+          [ 1, "darkoneeyecritter" ],
+          [ 1, "darkthreeeyescritter" ],
+          [ 1, "darkwormcritter" ],
+          [ 1, "dartcritter" ],
+          [ 1, "deserttortoisecritter" ],
+          [ 1, "eggcellcritter" ],
+          [ 1, "eyefriendcritter" ],
+          [ 1, "eyepodcritter" ],
+          [ 1, "firekrawlcritter" ],
+          [ 1, "firerockcritter" ],
+          [ 1, "floatbagcritter" ],
+          [ 1, "floatinggeodecritter" ],
+          [ 1, "floranscabcritter" ],
+          [ 1, "flurlcritter" ],
+          [ 1, "frogcritter" ],
+          [ 1, "frozenowlcritter" ],
+          [ 1, "glitchscabcritter" ],
+          [ 1, "gloopcritter" ],
+          [ 1, "glowingball2critter" ],
+          [ 1, "glowingballcritter" ],
+          [ 1, "groopcritter" ],
+          [ 1, "gullcritter" ],
+          [ 1, "harecritter" ],
+          [ 1, "hazmatcritter" ],
+          [ 1, "hedgehogcritter" ],
+          [ 1, "hollowcritter" ],
+          [ 1, "humanscabcritter" ],
+          [ 1, "hylotlscabcritter" ],
+          [ 1, "icescabcritter" ],
+          [ 1, "jellocritter" ],
+          [ 1, "jellycritter" ],
+          [ 1, "krawlcritter" ],
+          [ 1, "largegeodecritter" ],
+          [ 1, "leafscabcritter" ],
+          [ 1, "loopacritter" ],
+          [ 1, "maggotcritter" ],
+          [ 1, "magmawormcritter" ],
+          [ 1, "mousecritter" ],
+          [ 1, "orenibblercritter" ],
+          [ 1, "owlcritter" ],
+          [ 1, "penguinscabcritter" ],
+          [ 1, "petalcritter" ],
+          [ 1, "poofincritter" ],
+          [ 1, "prismelementalcritter" ],
+          [ 1, "prismscabcritter" ],
+          [ 1, "quibblecritter" ],
+          [ 1, "ravencritter" ],
+          [ 1, "reasonablecritter" ],
+          [ 1, "redbreastcritter" ],
+          [ 1, "rolypolycritter" ],
+          [ 1, "sackbagcritter" ],
+          [ 1, "savybirdcritter" ],
+          [ 1, "sealcritter" ],
+          [ 1, "skywurmcritter" ],
+          [ 1, "slugbluecritter" ],
+          [ 1, "slugcritter" ],
+          [ 1, "sluggreencritter" ],
+          [ 1, "smallgeodecritter" ],
+          [ 1, "snailcritter" ],
+          [ 1, "snakecritter" ],
+          [ 1, "snooglecritter" ],
+          [ 1, "snorecritter" ],
+          [ 1, "snowbcritter" ],
+          [ 1, "snowflakescritter" ],
+          [ 1, "snowymolecritter" ],
+          [ 1, "spidercritter" ],
+          [ 1, "spindycritter" ],
+          [ 1, "sporelingcritter" ],
+          [ 1, "squeekcritter" ],
+          [ 1, "squirrelcritter" ],
+          [ 1, "steambirdcritter" ],
+          [ 1, "steamspidercritter" ],
+          [ 1, "swarmcritter" ],
+          [ 1, "swarmflyingcritter" ],
+          [ 1, "symbiotecritter" ],
+          [ 1, "tinycrocodilecritter" ],
+          [ 1, "tortoisecritter" ],
+          [ 1, "toucritter" ],
+          [ 1, "toxiccrabcritter" ],
+          [ 1, "tritrotscritter" ],
+          [ 1, "volcanicflowercritter" ],
+          [ 1, "vulturecritter" ],
+          [ 1, "wintercritter" ],
+          [ 1, "wurmcritter" ],
+          [ 1, "yeticritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "desert"
+    }
+  },
+
+  "weather" : [
+    [0, [
+      "/weather.config:om_moneyplanet",
+	  "/weather.config:om_moneyplanet2"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // sunny earth days, red/orange sunrise and purple/red sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [242, 120, 0], [255, 230, 176] ],
+      "dayColors" : [ [115, 224, 255], [255, 255, 255] ],
+      "eveningColors" : [ [125, 17, 158], [210, 52, 50] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [40, 20, 60]
+    },
+    {
+      // sunny green day, darkgreen/yellow sunrise and purple/blue sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [68, 164, 84], [243, 201, 115] ],
+      "dayColors" : [ [115, 255, 204], [255, 255, 255] ],
+      "eveningColors" : [ [43, 17, 118], [244, 161, 231] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [20, 91, 100],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [40, 20, 60]
+    },
+    {
+      // sunny lilac day, blue/orange sunrise and blue/green sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [0, 24, 55], [255, 140, 49] ],
+      "dayColors" : [ [176, 115, 255], [255, 255, 255] ],
+      "eveningColors" : [ [100, 86, 173], [0, 222, 73] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [40, 20, 60]
+    },
+    {
+      // sunny pink day, pink/peach sunrise and blue/pink sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [197, 48, 174], [253, 161, 96] ],
+      "dayColors" : [ [255, 116, 122], [255, 255, 255] ],
+      "eveningColors" : [ [88, 42, 91], [175, 20, 50] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [180, 120, 120],
+      "nightLightColor" : [40, 20, 60]
+    },
+    {
+      // sunny orange day, orange/yellow sunrise and green/orange sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [174, 89, 47], [255, 197, 54] ],
+      "dayColors" : [ [255, 186, 116], [255, 255, 255] ],
+      "eveningColors" : [ [3, 90, 92], [250, 138, 77] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [180, 120, 120],
+      "nightLightColor" : [40, 20, 60]
+    },
+	{
+      // GREEN AS MONEY
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [0, 191, 15], [0, 191, 15] ],
+      "dayColors" : [ [0, 127, 10], [0, 127, 10] ],
+      "eveningColors" : [ [0, 89, 5], [0, 89, 5] ],
+      "nightColors" : [ [0, 38, 1, 80], [0, 38, 1, 160] ],
+
+      "morningLightColor" : [0, 255, 17],
+      "dayLightColor" : [0, 191, 15],
+      "eveningLightColor" : [0, 127, 10],
+      "nightLightColor" : [0, 63, 3]
+    }
+  ],
+
+  "mainBlock" : "treasurehoard",
+  "subBlocks" : [ "goldblock", "silverblock", "crystalblock", "geodeblock" ],
+  "ores" : "om_moneyplanetall",
+
+  "parallax" : "/parallax/surface/om_moneyplanet.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/desert_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/desert_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/epsilon-indi.ogg", "/music/hymn-to-the-stars.ogg", "/music/procyon.ogg", "/music/stellarformation.ogg", "/music/vast-immortal-suns.ogg", "/music/atlas.ogg", "/music/blue-straggler.ogg", "/music/cygnus-x1.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/m54.ogg", "/music/on-the-beach-at-night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/psyche.ogg", "/music/accretion-disc.ogg", "/music/cygnus-x1.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/m54.ogg", "/music/nomads.ogg", "/music/on-the-beach-at-night.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ ],
+    "grassModDensity" : 0.9,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "encounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "om_moneyChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "om_moneybush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "om_moneybush2",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpyLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "om_moneytwisted" ],
+        "treeFoliageList" : [ "om_moneyleaves" ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ ],
+    "grassModDensity" : 0.9,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "om_moneyvine"],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "techChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      }
+    ]
+  }
+}

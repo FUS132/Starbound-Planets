@@ -1,0 +1,481 @@
+{
+  "name" : "isn_crystal",
+  "friendlyName" : "Crystal",
+
+  "statusEffects" : [ ],
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 5,
+        "pool" : [
+          [ 0.2, "isn_ruballe" ],
+          [ 0.2, "isn_snipaz" ],
+          [ 0.2, "isn_emerain" ],
+          [ 0.2, "isn_sappire" ],
+          [ 0.2, "isn_illumethyst" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "dustmoth" ],
+          [ 0.3, "brightstripe" ],
+          [ 0.3, "shardwing" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      }, 
+      {
+        "select" : 3,
+        "pool" : "nightTerrors"
+      },      
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      },
+      {
+        "select" : 4,
+        "pool" : [
+          [ 1, "floatinggeodecritter" ],
+          [ 1, "reasonablecritter" ],
+          [ 1, "crystaltortoisecritter" ],
+          [ 1, "crystalbirdcritter" ],
+          [ 1, "snowflakescritter" ],
+          [ 1, "smallgeodecritter" ],
+          [ 1, "prismelementalcritter" ],
+          [ 1, "hollowcritter" ],
+          [ 1, "poofincritter" ],
+          [ 1, "ciclesnailcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "isn_crystal"
+    }
+  },
+
+  "hueShiftOptions" : [-128, -64, -32, -8, 0, 8, 32, 64, 128],
+
+  "weather" : [
+    [0, [
+      "/weather.config:isn_crystal",
+      "/weather.config:isn_crystal_alwaysclear",
+      "/weather.config:isn_crystal_alwaysdust"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // cycle through rainbow starting with red
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [64, 0, 0], [64, 16, 16] ],
+      "dayColors" : [ [255, 255, 0], [255, 255, 64] ],
+      "eveningColors" : [ [0, 64, 0], [16, 64, 16] ],
+      "nightColors" : [ [0, 8, 8], [0, 8, 8] ],
+
+      "morningLightColor" : [64, 0, 0],
+      "dayLightColor" : [255, 255, 200],
+      "eveningLightColor" : [0, 64, 0],
+      "nightLightColor" : [0, 8, 8]
+    },
+    {
+      // cycle through rainbow starting with green
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [0, 64, 0], [16, 64, 16] ],
+      "dayColors" : [ [0, 255, 255], [64, 255, 255] ],
+      "eveningColors" : [ [0, 0, 64], [16, 16, 64] ],
+      "nightColors" : [ [0, 0, 8], [0, 0, 8] ],
+
+      "morningLightColor" : [0, 64, 0],
+      "dayLightColor" : [200, 255, 255],
+      "eveningLightColor" : [0, 0, 64],
+      "nightLightColor" : [0, 8, 8]
+    },
+    {
+      // cycle through rainbow starting with blue
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [0, 0, 64], [16, 16, 64] ],
+      "dayColors" : [ [255, 0, 255], [255, 64, 255] ],
+      "eveningColors" : [ [64, 0, 0], [64, 16, 16] ],
+      "nightColors" : [ [8, 8, 0], [8, 8, 0] ],
+
+      "morningLightColor" : [0, 0, 64],
+      "dayLightColor" : [255, 200, 255],
+      "eveningLightColor" : [64, 0, 0],
+      "nightLightColor" : [8, 8, 0]
+    },
+    {
+      // cycle through rainbow starting with purple
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [64, 0, 64], [64, 16, 64] ],
+      "dayColors" : [ [255, 0, 0], [255, 64, 64] ],
+      "eveningColors" : [ [64, 64, 0], [64, 64, 16] ],
+      "nightColors" : [ [0, 8, 0], [0, 8, 0] ],
+
+      "morningLightColor" : [64, 0, 64],
+      "dayLightColor" : [255, 200, 200],
+      "eveningLightColor" : [64, 0, 0],
+      "nightLightColor" : [0, 8, 0]
+    }
+  ],
+
+  "mainBlock" : "crystalblock",
+  "subBlocks" : [ "isn_glowcrystal_r", "isn_glowcrystal_y", "isn_glowcrystal_g", "isn_glowcrystal_b", "isn_glowcrystal_p" ],
+
+  "parallax" : "/parallax/surface/isn_crystal.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/aviantemple.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/crystal_underground.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/crystal-exploration1.ogg", "/music/crystal-exploration2.ogg", "/music/ocean-exploration2.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/arctic-exploration1.ogg", "/music/arctic-exploration2.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/mercury.ogg", "/music/cygnus-x1.ogg", "/music/horsehead-nebula.ogg", "/music/temple-of-kluex.ogg", "/music/mira.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "isn_crystal_flowers" ],
+    "grassModDensity" : 1,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "crystalChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.05, "isn_crystalprism_1" ], [0.05, "isn_crystalprism_2" ], [0.05, "isn_crystalprism_3" ], [0.05, "isn_crystalprism_4" ], [0.05, "isn_crystalprism_5" ]  ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:potsRare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.1, "geodelowanatural" ], [0.1, "geodebnatural" ], [0.1, "geodecnatural" ], [0.1, "geodednatural" ], [0.1, "geodehighanatural" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeRareMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "isn_crystal_microdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "encounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "geometric" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDistTerrainfeatures",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "terrainfeatures" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "iceplatforming" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:moderateClumps",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 12,
+        "treeStemList" : [ "geometricstem", "purewhite" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "geometricshard1" ], [0.35, "geometricshard2" ], [0.35, "geometricshard3" ], [0.35, "geometricshard4" ], [0.35, "geometricshard5" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildeggshootseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wilddiodiaseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "snow" ],
+    "grassModDensity" : 0.8,
+
+    "ceilingGrassMod" : [ "ceilingsnow" ],
+    "ceilingGrassModDensity" : 0.8,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "crystalChest" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 10,
+        "treeStemList" : [ "isn_crystal_ceiling_vine" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "techChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "ceilingice", "ceilingthinice", "ceilingiceballs", "ceilingsnow" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:hazardUndergroundMid",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "icestalagmite1" ], [0.20, "icestalagmite2" ], [0.20, "icestalagmite3" ], [0.20, "icestalagmite4" ] ]
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingMid",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "icestalactite1" ], [0.20, "icestalactite2" ], [0.20, "icestalactite3" ], [0.20, "icestalactite4" ] ]
+          }
+        ]
+      }
+    ]
+  }
+}

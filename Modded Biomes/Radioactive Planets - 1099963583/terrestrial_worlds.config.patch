@@ -1,0 +1,32 @@
+[
+	{	"op" : "add",
+		"path" : "/planetTypes/isn_radioactive",
+		"value" : {
+			"threatRange" : [1, 10],
+			"layers" : {
+				"surface" : {
+				  "primaryRegion" : ["isn_radioactive"],
+				  "secondaryRegions" : [ "desert", "scorchedcity" ],
+				  "dungeons" :
+				  [
+				  [1.0, "isn_radplant"], [1.0, "glitchsewer"], [1.0, "wreck"]
+				  ]
+				}
+			}
+		}
+	},
+	{	"op" : "add",
+		"path" : "/regionTypes/isn_radioactive",
+		"value" : {
+		  "caveLiquid" : [ "poison" ],
+		  "caveLiquidSeedDensityRange" : [1, 3],
+		  "blockSelector" : [ "remixedMildSurface" ],
+		  "fgCaveSelector" : [ "surfaceCaves" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "isn_radioactive" ]]
+		  ],
+		  "subRegion" : ["tar", "rust", "bones"]
+		}
+	}
+]

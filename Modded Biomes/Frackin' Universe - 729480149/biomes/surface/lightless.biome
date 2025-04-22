@@ -1,0 +1,481 @@
+{
+  "name" : "lightless",
+  "friendlyName" : "Lightless Sphere",
+  "statusEffects" : [ "erchiussickness2", "biomeairless", "superdarkstatlarge" ],
+  "breathable" : false,
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 4,
+        "pool" : [
+          [ 0.0866, "shadowbat" ],
+          [ 0.0366, "shadowgolem" ],
+          [ 0.0866, "bandraflora4" ],
+          [ 0.0766, "fuparasprite" ],
+          [ 0.0866, "anglure5" ],
+          [ 0.0866, "pteropod2" ],
+          [ 0.0266, "darkmetroid" ],
+          [ 0.0666, "furatthing2" ],
+          [ 0.0666, "crutter2" ],
+          [ 0.0666, "fearmoth" ],
+          [ 0.0666, "shadowtop" ],
+          [ 0.0666, "adultshadowtop" ],
+          [ 0.0666, "shadowyokat" ],
+          [ 0.0466, "doomspirit" ],
+          [ 0.0666, "illumitop" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 0.4, "slugbluecritter" ],
+          [ 0.3, "sackbagcritter" ],
+          [ 0.3, "fubat" ],
+          [ 0.3, "shadowmoth" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 0.1, "bee_reaper" ],
+          [ 0.1, "bee_exspiravit" ],
+          [ 0.3, "bee_shrouded" ],
+          [ 0.1, "bee_mason" ],
+          [ 0.1, "bee_inventor" ],
+          [ 0.1, "bee_reaper" ],
+          [ 0.2, "bee_mason" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : "nightTerrors"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      }
+    ],
+    "monsterParameters" : {
+	  "colors" : "shadow",
+      "statusSettings" : {
+        "stats" : {
+            "biooozeImmunity" : {
+              "baseValue" : 1.0
+            },
+            "poisonStatusImmunity" : {
+              "baseValue" : 1.0
+            }
+        }
+      }
+    }
+  },
+
+  "hueShiftOptions" : [-120, -110, -100, -90, -80, -70, -60, -50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120],
+
+  "weather" : [
+    [0, [
+      "/weather.config:lightless"
+    ]]
+  ],
+
+  "skyOptions" : [
+    //total darkness
+    {
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [0, 0, 0], [0, 0, 0] ],
+      "dayColors" : [ [0, 0, 0], [0, 0, 0] ],
+      "eveningColors" : [ [0, 0, 0], [0, 0, 0] ],
+      "nightColors" : [ [0, 0, 0], [0, 0, 0] ],
+
+      "morningLightColor" : [0, 0, 0],
+      "dayLightColor" : [0, 0, 0],
+      "eveningLightColor" : [0, 0, 0],
+      "nightLightColor" : [0, 0, 0]
+    }
+
+  ],
+
+
+  "mainBlock" : "darkness",
+  "subBlocks" : [ "darkstone", "blackslime", "hiveold" ],
+  "ores" : "ff_surfaceshadowOres",
+
+  "parallax" : "/parallax/surface/lightless.parallax",
+
+    "ambientNoises" : {
+      "day" : {
+        "tracks" : [ "/sfx/environmental/aviantemple.ogg" ]
+      },
+      "night" : {
+        "tracks" : [ "/sfx/environmental/aviantemple.ogg" ]
+      }
+    },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/fog.ogg","/music/depthsOfDespair.ogg","/music/scorian-flow.ogg","/music/a_thing.ogg","/music/devils_tritone.ogg", "/music/darkambient2a.ogg","/music/lava-exploration1.ogg", "/music/crystal-exploration1.ogg", "/music/crystal-exploration2.ogg", "/music/accretion-disc.ogg", "/music/arctic-exploration1.ogg", "/music/error-0xbfaf000.ogg", "/music/casiopeia.ogg", "/music/Nomads.ogg", "/music/forsaken-grotto.ogg", "/music/accretion-disc.ogg", "/music/tranquility-base.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/fog.ogg","/music/Myst.ogg","/music/scorian-flow.ogg","/music/a_thing.ogg","/music/lava-exploration1.ogg", "/music/crystal-exploration1.ogg", "/music/crystal-exploration2.ogg", "/music/accretion-disc.ogg", "/music/arctic-exploration1.ogg", "/music/error-0xbfaf000.ogg", "/music/casiopeia.ogg", "/music/Nomads.ogg", "/music/forsaken-grotto.ogg", "/music/accretion-disc.ogg", "/music/tranquility-base.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "darkgrass" ],
+    "grassModDensity" : 0.9,
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffunCommon",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.35, "wilddarklightflower" ],
+              [0.35, "wildshadowrootseed" ],
+              [0.10, "exoniteseed" ]
+              ],
+              "parameters" : { "startingStage" : 3 }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "basicChest", "ffbasicChest", "ffbasicChest2" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "weaponChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "statuspod" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDist",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDistTerrainfeatures",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "terrainfeatures", "rockclimb","rocktunnel",  "toxicmicrodungeons", "sandstone", "blockpile", "loops", "flats", "reversepyramids" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "darkmicrodungeons", "hivemicrodungeons" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:randomEncounter",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "fu_dae_microdungeons", "alienmicrodungeons", "furedhives", "fuelders", "fuencountercultist", "randomencounter", "shroomencounter", "tarpitsmicrodungeons" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDistPlatform",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "greenplatforming" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "grass",
+          "grasses" : [ "lightlessgrass" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "bush",
+          "bushes" : [
+            {
+              "name" : "lightless",
+              "baseHueShiftMax" : 0,
+              "modHueShiftMax" : 0
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffCommon",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.35, "rotbulb1" ],
+              [0.35, "rotbulb2" ],
+              [0.35, "rotbulb3" ],
+              [0.35, "tonguebush1" ],
+              [0.35, "tonguebush2" ],
+              [0.35, "shadecoral1" ],
+              [0.35, "shadecoral2" ],
+              [0.35, "shadecoral3" ],
+              [0.35, "shadecoral4" ],
+              [0.35, "blobbush1" ],
+              [0.35, "blobbush2" ],
+              [0.35, "blobbush3" ],
+              [0.35, "shadowgrass1" ],
+              [0.35, "shadowgrass2" ],
+              [0.35, "shadowgrass3" ],
+              [0.35, "shadowgrass4" ]
+              ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.35, "monolith1" ],
+              [0.35, "monolith2" ],
+              [0.35, "monolith3" ],
+              [0.35, "monolith4" ],
+              [0.35, "plynth1" ],
+              [0.35, "plynth2" ],
+              [0.35, "mound3" ],
+              [0.35, "mound4" ]
+              ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "ffRareLootShadowChest" ]
+        }
+      ]
+    },
+    "undergroundPlaceables" : {
+      "grassMod" : [ "blackslimegrass", "darkgrass" ],
+      "grassModDensity" : 0.2,
+
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "basicChest", "ffbasicChest", "ffbasicChest2" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "ffRareLootShadowChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "techChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "weaponChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "statuspod" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ], [0.01, "weaponupgradeanvil2" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "grass",
+          "grasses" : [ "lightlessgrass" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffCommon",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.35, "rotbulb1" ],
+              [0.35, "rotbulb2" ],
+              [0.35, "rotbulb3" ],
+              [0.35, "tonguebush1" ],
+              [0.35, "tonguebush2" ],
+              [0.35, "shadecoral1" ],
+              [0.35, "shadecoral2" ],
+              [0.35, "shadecoral3" ],
+              [0.35, "shadecoral4" ],
+              [0.35, "blobbush1" ],
+              [0.35, "blobbush2" ],
+              [0.35, "blobbush3" ],
+              [0.35, "shadowgrass1" ],
+              [0.35, "shadowgrass2" ],
+              [0.35, "shadowgrass3" ],
+              [0.35, "shadowgrass4" ]
+              ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "buglike1" ], [0.35, "buglike2" ], [0.35, "buglike3" ], [0.35, "buglike4" ], [0.35, "buglike5" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "buglike6" ], [0.35, "buglike7" ], [0.35, "buglike8" ], [0.35, "buglike9" ], [0.35, "buglike10" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 0,
+          "treeStemHueShiftMax" : 30,
+          "treeStemList" : [ "lightlessvine" ],
+          "treeFoliageList" : [ "nofoliagevine" ]
+        }
+      ]
+    }
+}

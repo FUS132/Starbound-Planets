@@ -1,0 +1,97 @@
+{
+  "name" : "GGcoreRuins",
+  "friendlyName" : "Gas Giant Core",
+
+    "spawnProfile" : {
+    "groups" : [
+		{
+			"select" : 1,
+			"pool" : [
+			[0.0004, "AncientSentinel"]
+			]
+		}
+	]
+  },
+  
+    "mainBlock" : "meteoriterock",
+    "subBlocks" : [ "magmarock" ],
+	"ores" : "asteroid",
+
+  "weather" : [
+    [0, [
+      "/weather.config:gasgiant"
+    ]]
+  ],
+  
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/magma_underground.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/magma_underground.ogg" ]
+    }
+  },
+	"parallax" : "/parallax/core/GGcore2.parallax",
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/the-eternal-tide.ogg",  "/music/scorian-flow.ogg", "/music/ocean-exploration2.ogg", "/music/lava-exploration2.ogg","/music/lava-exploration1.ogg", "/music/inviolate-loop.ogg", "/music/forsaken-grotto.ogg"]
+    },
+    "night" : {
+      "tracks" : [ "/music/the-eternal-tide.ogg",  "/music/scorian-flow.ogg", "/music/ocean-exploration2.ogg", "/music/lava-exploration2.ogg","/music/lava-exploration1.ogg", "/music/inviolate-loop.ogg", "/music/forsaken-grotto.ogg"]
+    }
+  },
+  "surfacePlaceables" : {
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 9,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "challengeroomsGG0" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChallengeDoors",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "challengedoor" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  },
+  "undergroundPlaceables" : {
+    "items" : [
+    {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 9,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "challengeroomsGG0" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChallengeDoors",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "challengedoor" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  }
+}

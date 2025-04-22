@@ -1,0 +1,156 @@
+{
+  "name" : "ct_alterash_riverside",
+  "friendlyName" : "Alterash Riversides",
+  "description" : "This steppe area is riddled with rivers and underground waters and thus has rich vegetation that you would commonly find in places like these, like thickets of reeds and willow-like trees. ^#b0e0fc;Altas^reset; use this coastal zone for resorts and camping, using the reeds as crafting materials for tents and deck chairs. Underneath the ground you can find many different semi-flooded caves with crystal-clear water and interesting rock formations.\n\nThis place is a home to brightly-colored ^#497c64;verriskoywa^reset; flowers, these swampy plains are full of tall grass and willow-like trees called ^#497c64;gianas^reset;.  \nProfessional chefs often come here in search of a rare spice - ^#497c64;veraltai^reset;, made from petals of ^#497c64;koywa altos^reset;.\n\nUnder the ground there are harmless [[moonrock stalactites|Lunatai Stalactite]] with water from the rivers slowly dripping onto just as harmless [[moonrock stalagmites|Lunatai Stalagmite]], forming dense electrified ponds right under the surface.",
+  "icon" : "/items/active/alta/loot/ct_koywa_loot.png",
+  "mainBlock" : "moondust",
+  "subBlocks" : [ "moonstone" ],
+  "ores" : "prismore",
+
+  "hueShiftOptions" : [40, 50],
+  "parallax" : "/parallax/surface/ct_alterash_garden.parallax",
+
+  "spawnProfile" : {
+    "monsterParameters" : { "colors" : "ocean", "statusSettings" : { "stats" : { "electricStatusImmunity" : { "baseValue" : 1.0 } } } },
+    "groups" : [
+      {"select": 1, "pool": [[1, "lilodon"]]},
+      // Night
+      { "select" : 1, "pool" : [ [ 1, "ct_alterash_night_spawn" ] ] },
+      // Bugs
+      { "select" : 1, "pool" : [ [ 1, "ct_strizychar_spawn" ] ] },
+      // Critters Land & Water
+      { "select" : 1, "pool" : [ [1,"leafscabcritter"], [1,"bouncercritter"], [1,"fireflyspawner"] ] },
+      // Critters Land
+      { "select" : 1, "pool" : [ [1, "ct_riverside_crab_spawn" ], [1, "ct_baratoad_spawn" ], [1, "ct_koyscream_spawn" ] ] },
+      // Critters Water
+      { "select" : 2, "pool" : [ [1, "ct_alta_jelly_spawn" ], [1, "ct_kudok_squid_spawn" ], [1, "ct_nia_squid_night_spawn" ] ] }
+    ]
+  },
+
+  "ambientNoises" : {
+    "day" : { "tracks" : [ "/sfx/environmental/forest_day.ogg", "/sfx/environmental/forest_day2.ogg" ] },
+    "night" : { "tracks" : [ "/sfx/environmental/forest_night.ogg", "/sfx/environmental/forest_night2.ogg" ] }
+  },
+  "musicTrack" : {
+    "day" : { "tracks" : [ "/music/epsilon-indi.ogg", "/music/hymn-to-the-stars.ogg", "/music/procyon.ogg", "/music/stellarformation.ogg", "/music/vast-immortal-suns.ogg", "/music/atlas.ogg", "/music/blue-straggler.ogg", "/music/cygnus-x1.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/m54.ogg", "/music/on-the-beach-at-night.ogg" ] },
+    "night" : { "tracks" : [ "/sfx/environmental/tundra_night.ogg", "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/psyche.ogg", "/music/accretion-disc.ogg", "/music/cygnus-x1.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/m54.ogg", "/music/nomads.ogg", "/music/on-the-beach-at-night.ogg" ] }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "thickgrass" ], "grassModDensity" : 0.9,
+    "ceilingGrassMod" : [ "undergrowth" ], "ceilingGrassModDensity" : 0.9,
+    "items" : [
+      // Tech
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:surfaceCapsules", "type" : "object",
+        "objectSets" : [ { "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:overgroundChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_alta_pod_tier1" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:overgroundChests", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "statuspod" ] ], "parameters" : { } } ]
+      },
+      // Dungeons
+      {
+        "mode" : "floor", "priority" : 2, "variants" : 2, "distribution" : "/biomes/distributions.config:tiyDist", "type" : "microdungeon",
+        "microdungeons" : [ "aridplatforming", "blank", "none" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon", "type" : "microdungeon",
+        "microdungeons" : [ "encounterdungeons" ]
+      },
+      // Growth
+      {
+        "mode" : "floor", "priority" : 0.5, "variants" : 4, "distribution" : "/biomes/distributions.config:denseSmall", "type" : "grass",
+        "grasses" : [ "grass", "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:scatteredLarge", "type" : "tree",
+        "treeFoliageHueShiftMax" : 20, "treeFoliageHueShiftMin" : -20, "treeStemHueShiftMax" : 15, "treeStemHueShiftMin" : 15,
+        "treeStemList" : [ "skeletal" ], "treeFoliageList" : [ "willowy" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:denseMedium", "type" : "bush",
+        "bushes" : [ { "name" : "ct_verriskoywa_grass", "baseHueShiftMax" : 0, "modHueShiftMax" : 0, "baseHueShiftMin" : 0, "modHueShiftMin" : 0 } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:denseSmall", "type" : "bush",
+        "bushes" : [ { "name" : "ct_verriskoywa_grass", "baseHueShiftMax" : 0, "modHueShiftMax" : 0, "baseHueShiftMin" : 0, "modHueShiftMin" : 0 } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 3, "distribution" : "/biomes/distributions.config:denseMedium", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "ct_verriskoywa_grass1"], [1, "ct_verriskoywa_grass2"], [1, "ct_verriskoywa_grass3"], [1, "ct_verriskoywa_grass4"] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 3, "distribution" : "/biomes/distributions.config:denseSmall", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "ct_verriskoywa_grass1"], [1, "ct_verriskoywa_grass2"], [1, "ct_verriskoywa_grass3"], [1, "ct_verriskoywa_grass4"] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:scatteredLarge", "type" : "object",
+        "objectSets" : [
+          { "pool" : [ [1, "ct_verriskoywa_alto"], [1, "ct_verriskoywa_alto_twin"] ], "parameters" : { } },
+          { "pool" : [ [1, "ct_verriskoywa_faro"], [1, "ct_verriskoywa_faro_twin"] ], "parameters" : { } },
+          { "pool" : [ [1, "ct_verriskoywa_miko"], [1, "ct_verriskoywa_miko_twin"] ], "parameters" : { } }
+        ]
+      },
+      // Other
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_koywa_chest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_koywa_chest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 3, "distribution" : "/biomes/distributions.config:scatteredSmall", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "prismrock1"], [1, "prismrock2"], [1, "prismrock3"] ], "parameters" : { } } ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "thickgrass" ], "grassModDensity" : 0.9,
+    "ceilingGrassMod" : [ "undergrowth" ], "ceilingGrassModDensity" : 0.6,
+    "items" : [
+      // Tech
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundCapsules", "type" : "object",
+        "objectSets" : [ { "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_alta_pod_tier1" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundChests", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "statuspod" ] ], "parameters" : { } } ]
+      },
+      // Growth
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 4, "period" : 5, "distribution" : "/biomes/distributions.config:scatteredLarge", "type" : "grass",
+        "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      {
+        "mode" : "ceiling", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:scatteredSmall", "type" : "tree",
+        "treeStemList" : [ "ct_ayaka_roots" ], "treeFoliageList" : [ "" ], "treeFoliageHueShiftMax": 0, "treeStemHueShiftMax": 0
+      },
+      // Other
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_koywa_chest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_koywa_chest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 3, "distribution" : "/biomes/distributions.config:scatteredSmall", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "prismrock1"], [1, "prismrock2"], [1, "prismrock3"] ], "parameters" : { } } ]
+      }
+    ]
+  }
+}

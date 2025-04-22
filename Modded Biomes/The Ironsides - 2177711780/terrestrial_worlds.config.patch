@@ -1,0 +1,125 @@
+[
+  {
+    "op": "add",
+    "path": "/planetTypes/ironsides_greyExpanse",
+    "value": {
+      "threatRange" : [5, 6],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["ironsides_greyExpanse"],
+          "secondaryRegions" : ["volcanic", "scorchedcity" ],
+          "dungeons": [
+		  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+          [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+		  [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+          [1.0, "humanprison"], [1.0, "humancamp"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "ironsides_greyExpanse_underground_1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "ironsides_greyExpanse_underground_2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "ironsides_greyExpanse_underground_3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "ironsides_greyExpanse_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/ironsides_greyExpanse",
+    "value": {
+      "caveLiquid": [
+        "water"
+      ],
+      "blockSelector": [
+        "remixedMildSurface"
+      ],
+      "fgCaveSelector": [
+        "surfaceCaves"
+      ],
+      "bgCaveSelector": [
+        "empty"
+      ],
+      "biome": [
+        [
+          0,
+          [
+            "ironsides_greyExpanse"
+          ]
+        ]
+      ],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/ironsides_greyExpanse_underground_1",
+    "value": {
+      "caveLiquid": [ "water" ],
+      "biome": [
+        [
+          0,
+          [
+            "ironsides_greyExpanse_underground_1"
+          ]
+        ]
+      ],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/ironsides_greyExpanse_underground_2",
+    "value": {
+      "caveLiquid": [ "water" ],
+      "biome": [
+        [
+          0,
+          [
+            "ironsides_greyExpanse_underground_2"
+          ]
+        ]
+      ],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/ironsides_greyExpanse_underground_3",
+    "value": {
+      "caveLiquid": [ "water" ],
+      "biome": [
+        [
+          0,
+          [
+            "ironsides_greyExpanse_underground_3"
+          ]
+        ]
+      ],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/ironsides_greyExpanse_underground_4",
+    "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [
+        [
+          0,
+          [
+            "ironsides_greyExpanse_underground_4"
+          ]
+        ]
+      ],
+      "subRegion": []
+    }
+  }
+]

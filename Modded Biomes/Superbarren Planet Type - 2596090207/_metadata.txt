@@ -1,0 +1,10 @@
+{
+  "version" : "1.0",
+  "tags" : "Planets and Environments|Cheats and God Items",
+  "author" : "The Turtle Pun Guy",
+  "description" : "A helpful new planet type for those looking for nothing whatsoever, the Superbarren planets are a great place for construction, just like standard barren planets, however Superbarren planets come with no distracting parallax and made entirely from grid-lined light metal, making them great for tests and demos. They're also perfectly flat and come with no hostile lifeforms, so if you want to take your favourite vehicles for a long and uneventful spin the Superbarren planets are a perfect place to do so. Just be careful not to disturb the local fauna!\n\nSPECIFICATIONS\n\nSuperbarren planets can be found in all system tiers. They have no treasure of any kind but also no threats to your health. They come with one sky coloration that is well-lit during the day and conveniently pitch-dark at night. They are completely flat, and have a solid foreground and background of gridded light metal. There is no parallax so the sky is visible no matter how deep you go, removing the need for underground lighting.\n\nPROS & CONS\n\nPros:\n-Good for construction, demos & tests\n\n-Plentiful supply of light metal blocks\n\n-Good place to build a home base\n\n-Fun for the whole family\n\nCons:\n-None, Gloopers removed! Yay!",
+  "name" : "Superbarren Planet Type \"No Gloops\"",
+  "steamContentId" : "2596090207",
+  "friendlyName" : "Superbarren Planet Type",
+  "link" : "steam://url/CommunityFilePage/2596090207"
+}

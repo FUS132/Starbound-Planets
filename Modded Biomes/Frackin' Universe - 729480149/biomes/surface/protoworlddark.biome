@@ -1,0 +1,769 @@
+{
+  "name" : "protoworlddark",
+  "friendlyName" : "Proto-World",
+  "statusEffects" : [ "protoweather2" ],
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 3,
+        "pool" : [
+          [ 0.07, "fumoontant" ],
+          [ 0.07, "bandraflora3" ],
+          [ 0.06, "tentaclecometspore" ],
+          [ 0.07, "shocktop" ],
+          [ 0.1, "fualien" ],
+          [ 0.06, "crutter2" ],
+          [ 0.08, "gloop" ],
+          [ 0.08, "glarp" ],
+          [ 0.07, "wattsper" ],
+          [ 0.07, "electropod" ],
+          [ 0.05, "fubahamut" ],
+          [ 0.07, "squidbeast" ],
+          [ 0.07, "snaunt2" ],
+          [ 0.07, "fuallergen2" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 0.2, "bee_redbanded" ],
+          [ 0.1, "bee_stellar" ],
+          [ 0.2, "hellbeetle" ],
+          [ 0.1, "phoenixfly" ],
+          [ 0.2, "bouncercritter" ],
+          [ 0.2, "glowingball2critter" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : "nightTerrors"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      }
+    ],
+    "monsterParameters" : {
+      "statusSettings" : {
+        "stats" : {
+          "biooozeImmunity" : {
+            "baseValue" : 1.0
+          }
+        }
+      }
+    }
+  },
+
+  "hueShiftOptions" : [-30, -25, -20, -15, -10, -5, 0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:protoworld",
+      "/weather.config:arborealrainy",
+      "/weather.config:thickjungle",
+      "/weather.config:fugentle",
+      "/weather.config:fugentlewindy",
+      "/weather.config:fugentlerainy",
+      "/weather.config:fugentleveryrainy",
+      "/weather.config:fugentlefoggy",
+      "/weather.config:fugentlepretty"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      "mainColor" : [60, 0, 0],
+
+      "morningColors" : [ [30, 0, 0], [10, 0, 0] ],
+      "dayColors" : [ [60, 0, 0], [20, 0, 0] ],
+      "eveningColors" : [ [30, 0, 0], [10, 0, 0] ],
+      "nightColors" : [ [0, 0, 0], [0, 0, 0] ],
+
+      "morningLightColor" : [20, 8, 8],
+      "dayLightColor" : [40, 17, 17],
+      "eveningLightColor" : [20, 8, 8],
+      "nightLightColor" : [0, 0, 0]
+    },
+    {
+      "mainColor" : [60, 0, 0],
+
+      "morningColors" : [ [30, 0, 0], [10, 0, 0] ],
+      "dayColors" : [ [60, 0, 0], [20, 0, 0] ],
+      "eveningColors" : [ [30, 0, 0], [10, 0, 0] ],
+      "nightColors" : [ [0, 0, 0], [0, 0, 0] ],
+
+
+      "morningLightColor" : [28, 8, 8],
+      "dayLightColor" : [56, 17, 17],
+      "eveningLightColor" : [28, 8, 8],
+      "nightLightColor" : [0, 0, 0]
+    },
+    {
+      "mainColor" : [40, 0, 60],
+
+      "morningColors" : [ [20, 0, 30], [5, 0, 10] ],
+      "dayColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "eveningColors" : [ [20, 0, 30], [5, 0, 10] ],
+      "nightColors" : [ [0, 0, 0], [0, 0, 0] ],
+
+      "morningLightColor" : [17, 19, 56],
+      "dayLightColor" : [17, 19, 56],
+      "eveningLightColor" : [8, 9, 28],
+      "nightLightColor" : [0, 0, 0]
+    },
+    {
+      "mainColor" : [40, 0, 60],
+
+      "morningColors" : [ [20, 0, 30], [5, 0, 10] ],
+      "dayColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "eveningColors" : [ [20, 0, 30], [5, 0, 10] ],
+      "nightColors" : [ [0, 0, 0], [0, 0, 0] ],
+
+      "morningLightColor" : [8, 9, 28],
+      "dayLightColor" : [17, 19, 56],
+      "eveningLightColor" : [8, 9, 28],
+      "nightLightColor" : [0, 0, 0]
+    },
+    {
+      "mainColor" : [40, 0, 60],
+
+      "morningColors" : [ [20, 0, 30], [5, 0, 10] ],
+      "dayColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "eveningColors" : [ [20, 0, 30], [5, 0, 10] ],
+      "nightColors" : [ [0, 0, 0], [0, 0, 0] ],
+
+      "morningLightColor" : [13, 13, 15],
+      "dayLightColor" : [26, 26, 31],
+      "eveningLightColor" : [13, 13, 15],
+      "nightLightColor" : [0, 0, 0]
+    },
+    {
+      "mainColor" : [40, 0, 60],
+
+      "morningColors" : [ [20, 0, 30], [5, 0, 10] ],
+      "dayColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "eveningColors" : [ [20, 0, 30], [5, 0, 10] ],
+      "nightColors" : [ [0, 0, 0], [0, 0, 0] ],
+
+      "morningLightColor" : [13, 13, 15],
+      "dayLightColor" : [26, 26, 31],
+      "eveningLightColor" : [13, 13, 15],
+      "nightLightColor" : [0, 0, 0]
+    },
+    {
+      "mainColor" : [40, 0, 60],
+
+      "morningColors" : [ [20, 0, 30], [5, 0, 10] ],
+      "dayColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "eveningColors" : [ [20, 0, 30], [5, 0, 10] ],
+      "nightColors" : [ [0, 0, 0], [0, 0, 0] ],
+
+      "morningLightColor" : [14, 13, 15],
+      "dayLightColor" : [29, 26, 31],
+      "eveningLightColor" : [14, 13, 15],
+      "nightLightColor" : [0, 0, 0]
+    },
+    {
+      "mainColor" : [40, 0, 60],
+
+      "morningColors" : [ [20, 0, 30], [5, 0, 10] ],
+      "dayColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "eveningColors" : [ [20, 0, 30], [5, 0, 10] ],
+      "nightColors" : [ [0, 0, 0], [0, 0, 0] ],
+
+      "morningLightColor" : [14, 7, 7],
+      "dayLightColor" : [28, 14, 14],
+      "eveningLightColor" : [14, 7, 7],
+      "nightLightColor" : [0, 0, 0]
+    },
+    {
+      "mainColor" : [0, 40, 60],
+
+      "morningColors" : [ [0, 20, 30], [0, 5, 10] ],
+      "dayColors" : [ [0, 40, 60], [0, 10, 20] ],
+      "eveningColors" : [ [0, 20, 30], [0, 5, 10] ],
+      "nightColors" : [ [0, 0, 0], [0, 0, 0] ],
+
+      "morningLightColor" : [12, 14, 12],
+      "dayLightColor" : [24, 28, 24],
+      "eveningLightColor" : [12, 14, 12],
+      "nightLightColor" : [0, 0, 0]
+    },
+    {
+      "mainColor" : [50, 0, 0],
+
+      "morningColors" : [ [123, 224, 150], [124, 230, 164] ],
+      "dayColors" : [ [130, 255, 190], [135, 255, 195] ],
+      "eveningColors" : [ [100, 200, 130], [111, 211, 150] ],
+      "nightColors" : [ [0, 50, 0], [0, 50, 0] ],
+
+      "morningLightColor" : [90, 150, 110],
+      "dayLightColor" : [45, 100, 55],
+      "eveningLightColor" : [25, 50, 30],
+      "nightLightColor" : [0, 12, 0]
+    },
+    {
+      "mainColor" : [0, 70, 0],
+
+      "morningColors" : [ [124, 124, 200], [134, 134, 225] ],
+      "dayColors" : [ [70, 70, 150], [70, 70, 170] ],
+      "eveningColors" : [ [30, 30, 100], [30, 30, 120] ],
+      "nightColors" : [ [14, 14, 75], [14, 14, 90] ],
+
+      "morningLightColor" : [122, 122, 200],
+      "dayLightColor" : [90, 90, 150],
+      "eveningLightColor" : [50, 50, 100],
+      "nightLightColor" : [12, 12, 50]
+    },
+    {
+      "mainColor" : [0, 0, 70],
+
+      "morningColors" : [ [124, 124, 200], [134, 134, 225] ],
+      "dayColors" : [ [70, 70, 150], [70, 70, 170] ],
+      "eveningColors" : [ [30, 30, 100], [30, 30, 120] ],
+      "nightColors" : [ [14, 14, 75], [14, 14, 90] ],
+
+      "morningLightColor" : [122, 122, 200],
+      "dayLightColor" : [90, 90, 150],
+      "eveningLightColor" : [50, 50, 100],
+      "nightLightColor" : [12, 12, 50]
+    },
+//white
+    {
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [255, 255, 255], [255, 255, 225] ],
+      "dayColors" : [ [190, 190, 190], [190, 190, 190] ],
+      "eveningColors" : [ [120, 120, 120], [120, 120, 120] ],
+      "nightColors" : [ [75, 75, 75], [75, 75, 75] ],
+
+      "morningLightColor" : [255, 255, 255],
+      "dayLightColor" : [220, 220, 220],
+      "eveningLightColor" : [180, 180, 180],
+      "nightLightColor" : [90, 90, 90]
+    },
+     {
+       "mainColor" : [0, 0, 10],
+
+       "morningColors" : [ [255, 224, 129], [252, 230, 164] ],
+       "dayColors" : [ [255, 152, 107], [255, 183, 152] ],
+       "eveningColors" : [ [254, 121, 69], [254, 165, 129] ],
+       "nightColors" : [ [60, 0, 0], [20, 0, 0] ],
+
+       "morningLightColor" : [202, 177, 100],
+       "dayLightColor" : [202, 138, 100],
+       "eveningLightColor" : [202, 100, 100],
+       "nightLightColor" : [40, 17, 17]
+    },
+    {
+      "mainColor" : [5, 20, 80],
+
+      "morningColors" : [ [255, 224, 129], [252, 230, 164] ],
+      "dayColors" : [ [255, 152, 107], [255, 183, 152] ],
+      "eveningColors" : [ [254, 121, 69], [254, 165, 129] ],
+      "nightColors" : [ [60, 0, 0], [20, 0, 0] ],
+
+      "morningLightColor" : [202, 177, 100],
+      "dayLightColor" : [202, 138, 100],
+      "eveningLightColor" : [202, 100, 100],
+      "nightLightColor" : [40, 17, 17]
+    },
+    {
+      "mainColor" : [66, 20, 0],
+
+      "morningColors" : [ [255, 224, 129], [252, 230, 164] ],
+      "dayColors" : [ [255, 152, 107], [255, 183, 152] ],
+      "eveningColors" : [ [254, 121, 69], [254, 165, 129] ],
+      "nightColors" : [ [60, 0, 0], [20, 0, 0] ],
+
+      "morningLightColor" : [202, 177, 100],
+      "dayLightColor" : [202, 138, 100],
+      "eveningLightColor" : [202, 100, 100],
+      "nightLightColor" : [40, 17, 17]
+    },
+    {
+      "mainColor" : [0, 77, 0],
+
+      "morningColors" : [ [123, 224, 150], [124, 230, 164] ],
+      "dayColors" : [ [130, 255, 190], [135, 255, 195] ],
+      "eveningColors" : [ [100, 200, 130], [111, 211, 150] ],
+      "nightColors" : [ [0, 50, 0], [0, 50, 0] ],
+
+      "morningLightColor" : [90, 150, 110],
+      "dayLightColor" : [45, 100, 55],
+      "eveningLightColor" : [25, 50, 30],
+      "nightLightColor" : [0, 12, 0]
+    },
+    {
+      "mainColor" : [40, 0, 40],
+
+      "morningColors" : [ [123, 224, 150], [124, 230, 164] ],
+      "dayColors" : [ [130, 255, 190], [135, 255, 195] ],
+      "eveningColors" : [ [100, 200, 130], [111, 211, 150] ],
+      "nightColors" : [ [0, 50, 0], [0, 50, 0] ],
+
+      "morningLightColor" : [90, 150, 110],
+      "dayLightColor" : [45, 100, 55],
+      "eveningLightColor" : [25, 50, 30],
+      "nightLightColor" : [0, 12, 0]
+    }
+
+
+  ],
+
+
+    "mainBlock" : "bioblock",
+    "subBlocks" : [ "biostone", "bioblock2", "biogravel" ],
+    "ores" : "ff_surfaceprotoOres",
+
+  "parallax" : "/parallax/surface/protoworld.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/jungle_day.ogg", "/sfx/environmental/jungle_day2.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/jungle_night.ogg", "/sfx/environmental/jungle_night2.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/Expiation.ogg","/music/Srinagar.ogg","/music/MelodyofMisery.ogg","/music/TentacleExploration2.ogg","/music/gravitational-collapse.ogg","/music/tentacle-exploration1.ogg","/music/forsaken-grotto.ogg", "/music/lava-exploration1.ogg", "/music/drosera.ogg", "/music/crystal-exploration1.ogg", "/music/inviolate-loop.ogg", "/music/body-electric-loop.ogg", "/music/europa.ogg", "/music/haiku.ogg","/music/mira.ogg","/music/ultramarine.ogg", "/music/desert-exploration1.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/Expiation.ogg","/music/SomethingIntoDarkness.ogg","/music/TentacleExploration2.ogg","/music/gravitational-collapse.ogg","/music/tentacle-exploration1.ogg","/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mira.ogg", "/music/crystal-exploration1.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg","/music/lava-exploration2.ogg", "/music/Nomads.ogg", "/music/ultramarine.ogg", "/music/forsaken-grotto.ogg", "/music/desert-exploration2.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "protograss" ],
+    "grassModDensity" : 0.9,
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDist",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "grass",
+          "grasses" : [ "protodeco1", "protodeco2", "jungleflower3" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.65, "wilderithianalgaeseed" ],
+              [0.65, "wildblisterbushplantseed" ],
+              [0.65, "wildcorvexseed" ],
+              [0.65, "wildmutaviskseed" ],
+              [0.65, "wildvextongueseed" ],
+              [0.65, "wildnakatiseed" ],
+              [0.65, "wildguamseed" ]
+              ],
+              "parameters" : { "startingStage" : 3 }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseSmall",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+        "pool" : [
+              [0.50, "bioplant1" ],
+              [0.50, "bioplant2" ],
+              [0.50, "bioplant3" ],
+              [0.50, "bioplant4" ],
+              [0.50, "bioplant5" ],
+              [0.50, "bioplant15" ],
+              [0.50, "bioplant16" ],
+              [0.50, "bioplant17" ],
+              [0.50, "bioplant18" ],
+	      [0.50, "bioplant21" ],
+	      [0.50, "bioplant22" ],
+		[0.50, "bioplant23" ],
+		[0.50, "bioplant24" ],
+		[0.50, "bioplant25" ],
+		[0.50, "bioplant26" ],
+		[0.50, "bioplant27" ],
+		[0.50, "bioplant28" ],
+		[0.50, "bioplant29" ],
+              [0.50, "waterpod" ]
+              ],
+              "parameters" : {  }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseLarge",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+        "pool" : [
+              [0.50, "bioplant11" ],
+              [0.50, "bioplant12" ],
+              [0.50, "bioplant13" ],
+              [0.50, "bioplant14" ],
+              [0.50, "bioplant6" ],
+              [0.50, "bioplant7" ],
+              [0.50, "bioplant8" ],
+              [0.50, "bioplant9" ],
+              [0.50, "bioplant10" ],
+              [0.10, "bioplant19" ],
+              [0.50, "bioplant20" ]
+              ],
+              "parameters" : {  }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "basicChest", "ffbasicChest", "ffbasicChest2" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "fflabChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "ffprotoChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "statuspod" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseSmall",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 180,
+          "treeStemHueShiftMax" : 15,
+          "treeStemList" : [ "prototree" ],
+          "treeFoliageList" : [ "protoleaves" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseLarge",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 180,
+          "treeStemHueShiftMax" : 15,
+          "treeStemList" : [ "twisty", "woody", "oldwood", "crackly", "palmlike", "alienweird", "alienbubble", "alienstriped" ],
+          "treeFoliageList" : [ "lushy", "junglepalm", "jungly", "jungleleaf", "alienbigleaf", "aliencircle" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "weaponChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "alienmicrodungeons" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:mainBiomeRareMicrodungeon",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "protomini2" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDistTerrainfeatures",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "terrainfeatures", "rockclimb", "rocktunnel", "toxicmicrodungeons", "sandstone", "blockpile", "loops", "flats", "reversepyramids" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:randomEncounter",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "fu_dae_microdungeons","randomencounter", "alienmicrodungeons", "wastelandbuildings", "rarebuildings", "furedhives", "fuencounters", "fulabs", "fuhives", "fuelders", "fuavali", "fubandits" ]
+        }
+      ]
+    },
+    "undergroundPlaceables" : {
+      "grassMod" : [ "protograss" ],
+      "grassModDensity" : 0.2,
+
+      "items" : [
+{
+  "mode" : "floor",
+  "priority" : 1,
+  "variants" : 1,
+  "distribution" : "/biomes/distributions.config:ultraRare",
+
+  "type" : "microdungeon",
+  "microdungeons" : [ "outpostundergroundencounter", "humanundergroundencounter", "glitchundergroundencounter", "floranundergroundencounter", "apexundergroundencounter" , "avianundergroundencounter", "undergroundencounter", "treasureroom", "genericundergroundencounter"]
+},
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "basicChest", "ffbasicChest", "ffbasicChest2" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "fflabChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "ffprotoChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "techChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "weaponChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "statuspod" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 300,
+          "treeStemHueShiftMax" : 300,
+          "treeStemList" : [ "bubblevine", "glitteringroot2", "vineroot2", "twistedvine2", "purplevine" ],
+          "treeFoliageList" : [ "flowery2", "starry2", "dreamy2", "nofoliagevine" ]
+        },
+
+           {
+             "mode" : "floor",
+             "priority" : 1.0,
+             "variants" : 1,
+             "distribution" : "/biomes/distributions.config:potsRare",
+
+             "type" : "object",
+             "objectSets" : [
+               {
+                 "pool" : [ [0.50, "ffbioshroom" ],[0.50, "ffbioshroom1" ],[0.50, "ffbioshroom2" ],[0.50, "ffbioshroom3" ] ],
+                 "parameters" : { "startingStage" : 3 }
+               }
+             ]
+           },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+        "pool" : [
+              [0.50, "bioplant1" ],
+              [0.50, "bioplant2" ],
+              [0.50, "bioplant3" ],
+              [0.50, "bioplant4" ],
+              [0.50, "bioplant5" ],
+              [0.50, "bioplant15" ],
+              [0.50, "bioplant16" ],
+              [0.50, "bioplant17" ],
+              [0.50, "bioplant18" ],
+	      [0.50, "bioplant21" ],
+	      [0.50, "bioplant22" ],
+		[0.50, "bioplant23" ],
+		[0.50, "bioplant24" ],
+		[0.50, "bioplant25" ],
+		[0.50, "bioplant26" ],
+		[0.50, "bioplant27" ],
+		[0.50, "bioplant28" ],
+		[0.50, "bioplant29" ],
+              [0.50, "waterpod" ]
+              ],
+              "parameters" : {  }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.35, "plynth1" ],
+              [0.35, "plynth2" ],
+              [0.35, "monolith1" ],
+              [0.35, "monolith2" ],
+              [0.35, "monolith3" ],
+              [0.35, "monolith4" ],
+              [0.35, "elderidol" ]
+              ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffunCommon",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.35, "wildalgaeseed" ],
+              [0.35, "wilderithianalgaeseed" ],
+              [0.35, "wildblisterbushplantseed" ],
+              [0.35, "wildighantseed" ],
+              [0.35, "wildpasakavineseed" ],
+              [0.35, "wildslimeplantseed" ],
+              [0.35, "wildvextongueseed" ]
+              ],
+              "parameters" : { "startingStage" : 3 }
+            }
+          ]
+        }
+      ]
+    }
+
+}

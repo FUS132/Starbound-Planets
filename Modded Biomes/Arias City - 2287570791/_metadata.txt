@@ -1,0 +1,11 @@
+{
+  "version" : "0.01",
+  "tags" : "Planets and Environments",
+  "author" : "aethermirage",
+  "description" : "This mod adds in a new planet called the Arias city, a heavily colonized forest planet mostly inhabited by the four members of the arias genus and some very angry wildlife.\n\nThese worlds can have oasis and prism as sub-biomes, can be tier 2-10 and possess no hazards aside from the hazardous animals that call these worlds home.",
+  "name" : "Arias_City",
+  "friendlyName" : "Arias City",
+  "steamContentId" : "2287570791",
+  "link" : "steam://url/CommunityFilePage/2287570791",
+  "includes" : ["TrueSpace"]
+}

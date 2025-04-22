@@ -1,0 +1,48 @@
+[
+	{	"op" : "add",
+		"path" : "/planetTypes/isn_magnetic",
+		"value" : {
+			"threatRange" : [1, 10],
+			"layers" : {
+				"atmosphere" : {
+				  "primaryRegion" : ["isn_magnetic_sky"]
+				},
+				"surface" : {
+				  "primaryRegion" : ["isn_magnetic"],
+				  "secondaryRegions" : [ ],
+				  "dungeons" :
+				  [
+				  [1.0, "apextestfacility"], [1.0, "aviantomb"], [1.0, "avianairship"], [1.0, "floranhuntinggrounds"],
+				  [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "humanprison"], [1.0, "glitchsewer"]
+				  ]
+				}
+			}
+		}
+	},
+	{	"op" : "add",
+		"path" : "/regionTypes/isn_magnetic",
+		"value" : {
+		  "blockSelector" : [ "isn_magnetic" ],
+		  "caveLiquidSeedDensityRange" : [20, 20],
+		  "encloseLiquids" : true,
+		  "fillMicrodungeons" : true,
+		  "fgCaveSelector" : [ "surfaceCaves" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "caveLiquid" : [ "isn_liquid_metal" ],
+		  "biome" : [
+			[0, [ "isn_magnetic" ]]
+		  ],
+		  "subRegion" : ["steamspring", "rust", "desert"]
+		}
+	},
+	{	"op" : "add",
+		"path" : "/regionTypes/isn_magnetic_sky",
+		"value" : {
+		  "blockSelector" : [ "asteroids" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "isn_magnetic_sky" ]]
+		  ]
+		}
+	}
+]

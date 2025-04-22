@@ -1,0 +1,47 @@
+{
+  "name" : "GGcore",
+  "friendlyName" : "Gas Giant Core",
+
+    "spawnProfile" : {
+    "groups" : [
+		{
+			"select" : 1,
+			"pool" : [
+			[0.0001, "AncientSentinel"]
+			]
+		}
+	]
+  },
+  
+    "mainBlock" : "meteoriterock",
+    "subBlocks" : [ "magmarock" ],
+	"ores" : "asteroid",
+
+  "weather" : [
+    [0, [
+      "/weather.config:gasgiant"
+    ]]
+  ],
+  
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/magma_underground.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/magma_underground.ogg" ]
+    }
+  },
+	"parallax" : "/parallax/core/GGcore.parallax",
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/ultramarine.ogg","/music/ultramarine-loop.ogg", "/music/psyche.ogg", "/music/on-the-beach-at-night.ogg", "/music/mira.ogg", "/music/lava-exploration2.ogg","/music/lava-exploration1.ogg", "/music/inviolate-loop.ogg"]
+      },
+    "night" : {
+      "tracks" : [ "/music/ultramarine.ogg","/music/ultramarine-loop.ogg", "/music/psyche.ogg", "/music/on-the-beach-at-night.ogg", "/music/mira.ogg", "/music/lava-exploration2.ogg","/music/lava-exploration1.ogg", "/music/inviolate-loop.ogg"]
+      }
+  },
+
+  "undergroundPlaceables" : {
+    "items" : []
+  }
+}

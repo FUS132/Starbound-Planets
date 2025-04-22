@@ -1,0 +1,54 @@
+{
+  "name" : "gic_smallspacestation",
+  "friendlyName" : "Small Space Station",
+//  "airless" : true,
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:ue_clear"
+    ]]
+  ],
+
+//  "spawnProfile" : {
+//    "groups" : [
+//      {
+//        "select" : 1,
+//        "pool" : [
+//          [ 1, "ue_sentryskimmer_neutral" ]
+//       ]
+//      }
+//    ]
+//  },
+
+  "statusEffects" : [ ],
+
+  "mainBlock" : "moondust",
+  "subBlocks" : [ "rock03", "direstone", "rock15" ],
+//  "ores" : "ue_barrenrockorespawn",
+
+  "parallax" : "/parallax/surface/space.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/moon_surface.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/moon_surface.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : ["/music/custom/elitedangerous_menu.ogg"]
+    },
+    "night" : {
+      "tracks" : ["/music/custom/elitedangerous_menu.ogg"]
+    }
+  },
+
+  "surfacePlaceables" : {},
+
+  "undergroundPlaceables" : {}
+}

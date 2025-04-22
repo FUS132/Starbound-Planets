@@ -1,0 +1,157 @@
+{
+  "name" : "gic_otherworld_frozenhellscape_night",
+  "friendlyName" : "Frostland",
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:gic_frostland"
+    ]]
+  ],
+
+  "spawnProfile" : {
+    "groups" : [
+//      {
+//        "select" : 8,
+//        "pool" : "generatedGround"
+//      }
+    ],
+    "monsterParameters" : {
+      "colors" : "ice"
+    }
+  },
+
+  "skyOptions" : [
+    {
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [242, 120, 0], [255, 230, 176] ],
+      "dayColors" : [ [115, 224, 255], [255, 255, 255] ],
+      "eveningColors" : [ [125, 17, 158], [210, 52, 50] ],
+      "nightColors" : [ [24, 38, 53, 20], [58, 42, 70, 40] ], //80, 160
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [0, 0, 0] //40, 20, 60
+    }
+  ],
+
+  "mainBlock" : "snow",
+  "subBlocks" : [ "frozendirt", "gic_permafrost", "rock03" ],
+  "ores" : "gic_atmosphericplanetorespawn",
+
+  "parallax" : "/parallax/surface/gic_otherworld_frozenhellscape_night.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/snow_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/snow_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [
+	  "/music/frostpunk/gic_frostpunk_frostland.ogg",
+	  "/music/frostpunk/gic_frostpunk_maintheme.ogg",
+	  "/music/frostpunk/gic_frostpunk_beforethestorm.ogg",
+	  "/music/frostpunk/gic_frostpunk_movingon.ogg",
+	  "/music/frostpunk/gic_frostpunk_orderatmospheric2.ogg"
+	  ]
+    },
+    "night" : {
+      "tracks" : [
+		"/music/metro2033/gic_metro2033_theanomaly.ogg",
+		"/music/metro2033/gic_metro2033_maintheme.ogg",
+		"/music/metro2033/gic_Metro2033_GhostTunnel.ogg",
+		"/music/metro2033/gic_Metro2033_ADogInTheBoiler.ogg",
+		"/music/metro2033/gic_Metro2033_TheTower.ogg",
+		"/music/metro2033/gic_Metro2033_Hope.ogg"
+	  
+	  ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "snow" ],
+    "grassModDensity" : 1,
+    "items" : [
+	
+	
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "barbedwire" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "gic_rusted_landmine" ] ], //originally explosive barrel
+            "parameters" : { }
+          }
+        ]
+      },
+	
+	
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDistTerrainfeatures",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "terrainfeatures" ]
+      },
+	  
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gic_colonized_frostedmicrodungeons" ]
+      }
+	  
+	  
+    ]
+
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "snow" ],
+    "grassModDensity" : 0.2,
+
+    "items" : [
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+[
+
+
+   {"op" : "add",
+   "path" : "/planetTypes/superbarren",
+   "value" :
+     {
+      "threatRange" : [1, 1],
+      "layers" : {
+        "surface" : {
+          "primaryRegion" : ["superbarren"]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["superbarrenunderground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["superbarrenunderground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["superbarrenunderground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["superbarrenunderground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["superbarrenunderground"]
+        }
+      }
+    }
+   },
+   
+  {"op" : "add",
+  "path" : "/regionTypes/superbarren",
+  "value" :
+    {
+      "blockSelector" : [ "superbarrenSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "superbarren" ]] 
+	  ]
+    }
+   },
+   
+   
+  {"op" : "add",
+  "path" : "/regionTypes/superbarrenunderground",
+  "value" :
+    {
+      "fgCaveSelector" : [ "empty" ],
+      "caveLiquid" : [ ],
+      "biome" : [
+        [0, [ "superbarrenunderground"]]
+      ]
+    }
+  }
+]

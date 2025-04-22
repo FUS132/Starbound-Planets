@@ -1,0 +1,13 @@
+{
+  "version" : "4.0",
+  "tags" : "Planets and Environments|NPCs and Creatures",
+  "author" : "Joseph K",
+  "description" : "THIS IS NOT MY MOD, IT WAS MADE BY \"JOSEPH K\" ( https://community.playstarbound.com/members/joseph-k.825472/ ) \n\nAdds tentacle planets that can be flown to with your ship.\n\nTentacle planets existed back in early access and were replaced with The Ruin, \nI liked the idea of tentacle planets so I made a mod that adds them. \nTentacle planets feature: all dungeons (except underwater ones) and most micro dungeons as well as the old tentacle background. \nTentacle planets can be found at frozen and fiery stars, if the mod doesn't work please let me know and I'll try to do something about it.\n\nVersion 4.0\n\nLots of new enemies!\n\nGiant Tentacle\nSpawns on the surface of Tentacle Planets. Does no damage but deals knockback and serves as a large obstacle.\n\nTentacomet Spore (Ground)\nSpawns everywhere on Tentacle Planets and sometimes falls out of the sky on the surface. Has high health and defense and rams the player to do damage.\n\nTentacomet Spore (Air)\nSpawns everywhere on Tentacle Planets. Has the same amount of max... \n\n",
+  "requires" : [],
+  "name" : "Tentacle Planets",
+  "friendlyName" : "Tentacle Planets",
+  "steamContentId" : "1436287529",
+  "priority" : -1,
+  "link" : "steam://url/CommunityFilePage/1436287529",
+  "includes" : []
+}

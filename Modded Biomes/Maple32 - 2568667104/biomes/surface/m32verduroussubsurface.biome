@@ -1,0 +1,287 @@
+{
+"name" : "m32verduroussubsurface",
+"friendlyName" : "Burly Branches",
+
+  "statusEffects" : [ "toxicatmosphere" ],
+
+  "spawnProfile" : {
+  "groups" : [
+    {
+      "select" : 1,
+      "pool" : [
+        [ 1, "m32beeswarmsubsurface" ]
+      ]
+    },
+    {
+      "select" : 1,
+      "pool" : [
+        [ 0.4, "glowbug" ],
+        [ 0.3, "shadowmoth" ],
+        [ 0.3, "vineclimber" ]
+      ]
+    },
+    {
+      "select" : 1,
+      "pool" : "generatedGroundAggroDay"
+    },
+    {
+      "select" : 3,
+      "pool" : "nightTerrors"
+    },
+    {
+      "select" : 2,
+      "pool" : "generatedGround"
+    },
+    {
+      "select" : 2,
+      "pool" : "generatedFlying"
+    },
+    {
+      "select" : 4,
+      "pool" : [
+        [ 1, "swarmcritter" ],
+        [ 1, "swarmflyingcritter" ],
+        [ 1, "rolypolycritter" ],
+        [ 1, "maggotcritter" ],
+        [ 1, "frogcritter" ],
+        [ 1, "fireflyspawner" ],
+        [ 1, "fishcritter" ]
+      ]
+    },
+    {
+      "select" : 1,
+      "pool" : [
+        [ 1, "fireflyspawner2" ]
+      ]
+    }
+  ]
+  },
+
+  "hueShiftOptions" : [-30, -20, -15, -10, -5, 0, 5, 10, 15, 20, 30],
+
+  "skyOptions" : [
+    {
+      // sunny earth days, red/orange sunrise and purple/red sunset
+      "mainColor" : [40, 100, 40],
+
+      "morningColors" : [ [68, 168, 121], [68, 168, 121] ],
+      "dayColors" : [ [184, 233, 210], [184, 233, 210] ],
+      "eveningColors" : [ [0, 136, 73], [0, 136, 73] ],
+      "nightColors" : [ [0, 38, 21, 200], [0, 38, 21, 200] ],
+
+
+      "morningLightColor" : [50, 155, 100],
+      "dayLightColor" : [150, 255, 200],
+      "eveningLightColor" : [50, 100, 70],
+      "nightLightColor" : [40, 60, 50]
+    }
+  ],
+
+
+    "mainBlock" : "fullwood2",
+    "subBlocks" : [ "fullwood1", "vine", "plantmatter", "petalblock" ],
+    "ores" : "m32treeores",
+
+  "parallax" : "/parallax/surface/m32verdurous.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/jungle_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/jungle_night2.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/casiopeia.ogg", "/music/error-0xbfaf000.ogg", "/music/forsaken-grotto.ogg", "/music/tranquility-base.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/M32music/homemade/clockwork-anxiety.ogg", "/music/drosera.ogg", "/music/horsehead-nebula.ogg", "/music/lava-exploration2.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "aridgrass" ],
+    "grassModDensity" : 0.7,
+
+    "ceilingGrassMod" : [ "moss" ],
+    "ceilingGrassModDensity" : 1.0,
+
+    "items" : [
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:denseMedium",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.35, "flowerred" ], [0.35, "flowerblue" ], [0.35, "floweryellow" ], [0.35, "junglebush1" ], [0.35, "junglebush2" ], [0.35, "junglebush3" ], [0.35, "junglebush4" ], [0.35, "junglebush5" ], [0.35, "junglebush6" ], [0.35, "junglebush7" ], [0.35, "junglebush8" ], [0.35, "junglebush9" ], [0.35, "junglebush10" ], [0.35, "junglebush11" ], [0.35, "junglebush12" ], [0.35, "junglebush13" ], [0.35, "junglebush14" ], [0.35, "junglebush15" ], [0.35, "junglebush16" ], [0.35, "junglebush17" ], [0.35, "junglebush18" ] ],
+          "parameters" : { }
+        }
+      ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+      "type" : "object",
+      "objectSets" : [
+      {
+        "pool" : [ [0.5, "swampindustrialchest" ], [0.5, "wreckcrate1" ] ],
+        "parameters" : {
+        "treasurePools" : [ "verdurouschesttreasure" ]
+        }
+      }
+      ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 2.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:denseLarge",
+
+      "type" : "tree",
+      "treeFoliageHueShiftMax" : 0,
+      "treeStemHueShiftMax" : 15,
+      "treeStemList" : [ "magictree" ],
+      "treeFoliageList" : [ "" ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 1,
+      "variants" : 10,
+      "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "m32rooftophutVerd", "m32spiketophut" ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 0.1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:superCommon",
+
+      "type" : "tree",
+      "treeFoliageHueShiftMax" : 100,
+      "treeStemHueShiftMax" : 100,
+      "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+      "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+    }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "aridgrass" ],
+    "grassModDensity" : 0.7,
+
+    "ceilingGrassMod" : [ "moss" ],
+    "ceilingGrassModDensity" : 1.0,
+
+    "items" : [
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:denseMedium",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.35, "flowerred" ], [0.35, "flowerblue" ], [0.35, "floweryellow" ], [0.35, "junglebush1" ], [0.35, "junglebush2" ], [0.35, "junglebush3" ], [0.35, "junglebush4" ], [0.35, "junglebush5" ], [0.35, "junglebush6" ], [0.35, "junglebush7" ], [0.35, "junglebush8" ], [0.35, "junglebush9" ], [0.35, "junglebush10" ], [0.35, "junglebush11" ], [0.35, "junglebush12" ], [0.35, "junglebush13" ], [0.35, "junglebush14" ], [0.35, "junglebush15" ], [0.35, "junglebush16" ], [0.35, "junglebush17" ], [0.35, "junglebush18" ] ],
+          "parameters" : { }
+        }
+      ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 2.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:denseLarge",
+
+      "type" : "tree",
+      "treeFoliageHueShiftMax" : 0,
+      "treeStemHueShiftMax" : 15,
+      "treeStemList" : [ "magictree" ],
+      "treeFoliageList" : [ "" ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 0.5,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.35, "glowroot1" ], [0.35, "glowroot2" ], [0.35, "glowroot3" ], [0.35, "glowroot4" ], [0.35, "glowroot5" ] ],
+          "parameters" : { }
+        }
+      ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 0.5,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:rare",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [1.0, "globlight" ] ],
+          "parameters" : { }
+        }
+      ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 1,
+      "variants" : 2,
+      "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "m32rooftophutVerd", "m32spiketophut" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1,
+      "variants" : 3,
+      "distribution" : "/biomes/distributions.config:common",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "m32verdurousfloor", "underground1bmicrodungeons", "underground1cmicrodungeons" ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 0.1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:superCommon",
+
+      "type" : "tree",
+      "treeFoliageHueShiftMax" : 100,
+      "treeStemHueShiftMax" : 100,
+      "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+      "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.2, "wickerbasket1" ], [0.2, "wickerbasket2" ], [0.2, "wickerbasket3" ], [0.2, "wickerbasket4" ], [0.2, "wickerbasket5" ] ],
+          "parameters" : { }
+        }
+      ]
+    }
+    ]
+  }
+}

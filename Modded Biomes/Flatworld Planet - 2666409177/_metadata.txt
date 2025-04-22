@@ -1,0 +1,11 @@
+{
+  "version" : "1.2.4",
+  "tags" : "Crafting and Building|Miscellaneous|Planets and Environments|NPCs and Creatures|Cheats and God Items|Food and Farming|Vehicles and Mounts",
+  "author" : "A penguin with a copper cap",
+  "description" : "I didn't like the way Superbarren planets looked and how they had mobs on them, so I made my own superflat planet.\n\n[i]Edit: As of October 2023 the flat wasteland planets are now known as Flatworlds. I've been making small changes the past week or so trying to fix issues with and improve it such as removing snow and changing the name to better fit in modded universes.[/i]\n\nThis planet has dirt and rain, so you can farm on it easily. It also has the Barren planet parallax, and there are caves and ore below the surface, but you have to dig pretty deep to find them.\n\nIt also has a gentle, pale red appearance and name so that it doesn't stick out like a sore thumb like other planet mods.\n\nTheir surface is also a good source of clay and moonrock.\nCompatible with Truespace, they are considered \"Warm\" planets. Without Truespace they'll spawn around Tier 1 and Tier 6 stars.\n\nMy first and probably only planet mod, considering I don't know how to make custom dungeons.",
+  "name" : "FlatWasteland",
+  "friendlyName" : "Flatworld Planet",
+  "steamContentId" : "2666409177",
+  "link" : "steam://url/CommunityFilePage/2666409177",
+  "includes" : ["TrueSpace"]
+}

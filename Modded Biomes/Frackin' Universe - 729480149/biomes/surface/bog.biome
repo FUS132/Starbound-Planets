@@ -1,0 +1,806 @@
+{
+  "name" : "bog",
+  "friendlyName" : "Bog",
+
+
+ "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 3,
+        "pool" : [
+          [ 0.1, "furatthing" ],
+          [ 0.1, "seedspawn" ],
+          [ 0.1, "derrick" ],
+          [ 0.1, "batong" ],
+          [ 0.1, "fureptar" ],
+          [ 0.1, "toumingo" ],
+          [ 0.1, "quagmutt" ],
+	        [ 0.1, "fugiantbee" ],
+	        [ 0.1, "fusnapper" ],
+	        [ 0.1, "fuallergen" ],
+          [ 0.1, "pandorasboxhummingbug"]
+        ]
+      },
+      {
+        "select" : 5,
+        "pool" : [
+          [ 0.10, "fudragonflycritter" ],
+          [ 0.05, "fireflyspawner" ],
+          [ 0.10, "muddancer" ],
+          [ 0.12, "fumothcritter" ],
+          [ 0.12, "futinycockroach" ],
+          [ 0.12, "bee_digger" ],
+          [ 0.12, "bee_orchid" ],
+          [ 0.12, "bee_bumblebee" ],
+          [ 0.12, "bee_goldensaint" ],
+	  [ 0.05, "mudstag" ]
+        ]
+      },
+      {
+        "select" : 3,
+        "pool" : [
+	  [ 0.11, "funewt" ],
+	  [ 0.11, "mousecritter" ],
+	  [ 0.22, "frogcritter" ],
+	  [ 0.22, "owlcritter" ],
+	  [ 0.22, "snakecritter" ],
+	  [ 0.33, "squeekcritter" ],
+	  [0.22, "tinycrocodilecritter" ],
+          [ 0.3, "futoadcritter" ],
+          [ 0.3, "fusnowgoosecritter" ],
+          [ 0.2, "furaccooncritter" ],
+          [ 0.2, "fuibiscritter" ],
+          [ 0.111, "fuduckcritter" ],
+          [ 0.111, "warmdeer" ],
+          [ 0.05, "fuplantsnakecritter" ],
+          [ 0.05, "fubearcritter" ],
+          [ 0.1, "fuweaselcritter" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : "nightTerrors"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      }
+    ],
+    "monsterParameters" : {
+      "statusSettings" : {
+        "stats" : {
+          "poisonStatusImmunity" : {
+            "baseValue" : 1.0
+          }
+        }
+      }
+    }
+  },
+
+  "hueShiftOptions" : [-40, -30, -20, -10, 0, 10, 20, 30, 40],
+
+  "weather" : [
+    [0, [
+      "/weather.config:bog",
+      "/weather.config:bograiny",
+      "/weather.config:bogweird"
+    ]]
+  ],
+
+  "skyOptions" : [
+
+    {
+      "mainColor" : [170, 255, 170],
+
+      "morningColors" : [ [129, 204, 129], [164, 200, 164] ],
+      "dayColors" : [ [79, 170, 80], [79, 175, 75] ],
+      "eveningColors" : [ [55, 90, 55], [55, 90, 55] ],
+      "nightColors" : [ [12, 50, 10], [12, 50, 10] ],
+
+      "morningLightColor" : [97, 180, 97],
+      "dayLightColor" : [60, 130, 50],
+      "eveningLightColor" : [60, 80, 60],
+      "nightLightColor" : [17, 40, 17]
+    },
+    {
+      "mainColor" : [90, 150, 90],
+
+      "morningColors" : [ [129, 204, 129], [164, 200, 164] ],
+      "dayColors" : [ [79, 170, 80], [79, 175, 75] ],
+      "eveningColors" : [ [55, 90, 55], [55, 90, 55] ],
+      "nightColors" : [ [12, 50, 10], [12, 50, 10] ],
+
+      "morningLightColor" : [97, 180, 97],
+      "dayLightColor" : [60, 130, 50],
+      "eveningLightColor" : [60, 80, 60],
+      "nightLightColor" : [17, 40, 17]
+    },
+    {
+      "mainColor" : [200, 255, 200],
+
+      "morningColors" : [ [129, 204, 129], [164, 200, 164] ],
+      "dayColors" : [ [79, 170, 80], [79, 175, 75] ],
+      "eveningColors" : [ [55, 90, 55], [55, 90, 55] ],
+      "nightColors" : [ [12, 50, 10], [12, 50, 10] ],
+
+      "morningLightColor" : [97, 180, 97],
+      "dayLightColor" : [60, 130, 50],
+      "eveningLightColor" : [60, 80, 60],
+      "nightLightColor" : [17, 40, 17]
+    },
+    {
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [190, 220, 190], [200, 255, 200] ],
+      "dayColors" : [ [200, 255, 200], [220, 255, 220] ],
+      "eveningColors" : [ [150, 200, 150], [150, 200, 150] ],
+      "nightColors" : [ [75, 115, 75], [80, 100, 80] ],
+
+      "morningLightColor" : [190, 220, 190],
+      "dayLightColor" : [200, 255, 200],
+      "eveningLightColor" : [150, 200, 150],
+      "nightLightColor" : [75, 120, 75]
+    },
+    {
+      "mainColor" : [120, 255, 255],
+
+      "morningColors" : [ [190, 220, 190], [200, 255, 200] ],
+      "dayColors" : [ [200, 255, 200], [220, 255, 220] ],
+      "eveningColors" : [ [150, 200, 150], [150, 200, 150] ],
+      "nightColors" : [ [75, 115, 75], [80, 100, 80] ],
+
+      "morningLightColor" : [190, 220, 190],
+      "dayLightColor" : [200, 255, 200],
+      "eveningLightColor" : [150, 200, 150],
+      "nightLightColor" : [75, 120, 75]
+    }
+  ],
+
+
+  "mainBlock" : "swampdirtff",
+  "subBlocks" : [ "clay", "mud", "wetdirt" ],
+  "ores" : "ff_surfacebogOres",
+
+  "parallax" : "/parallax/surface/bog.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/ambiance/bogambiance1.ogg", "/sfx/ambiance/bogambiance3.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/ambiance/bogambiance2.ogg", "/sfx/ambiance/fungalambiance2.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/Pure.ogg","/music/Temporis.ogg","/music/forsaken-grotto.ogg", "/music/hymn-to-the-stars.ogg", "/music/procyon.ogg", "/music/vast-immortal-suns.ogg", "/music/drosera.ogg", "/music/mira.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/horsehead-nebula.ogg", "/music/on-the-beach-at-night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/fog.ogg","/music/Pure.ogg","/music/Myst.ogg","/music/devils_tritone.ogg", "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/crystal-exploration2.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "mossgrass2", "boggrass", "lushgrass", "aridgrass" ],
+    "grassModDensity" : 0.9,
+
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.5,
+
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffCommon",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+                [0.45, "wildreedseed" ]
+          ],
+              "parameters" : { "startingStage" : 3 }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+                [0.55, "wildalgaeseed" ],
+          	[0.35, "wildpussplumseed" ],
+          	[0.25, "wildthornitoxseed" ],
+          	[0.35, "wildwartweedseed" ],
+          	[0.35, "wildbloodrootseed" ],
+          	[0.35, "wildminkocoapodseed" ],
+          	[0.35, "wildjillyrootseed" ],
+          	[0.35, "wildginsengseed" ]
+          ],
+              "parameters" : { "startingStage" : 3 }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffunCommon",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+            [0.35, "flowerred" ],
+            [0.35, "flowerblue" ],
+            [0.35, "floweryellow" ],
+            [0.35, "flowerblack" ],
+            [0.35, "flowerbrown" ],
+            [0.35, "flowergrey" ],
+            [0.35, "flowerorchid" ],
+            [0.35, "flowerorchid2" ],
+            [0.35, "flowerorchid3" ],
+            [0.35, "flowerpink" ],
+            [0.35, "flowerpurple" ]
+          ],
+              "parameters" : { "startingStage" : 3 }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.15, "reedseed1" ],
+              [0.15, "reedseed2" ],
+              [0.15, "reedseed3" ],
+              [0.15, "reedseed4" ],
+              [0.15, "reedseed5" ],
+              [0.15, "tallgrass1" ],
+              [0.15, "tallgrass2" ],
+              [0.15, "tallgrass3" ],
+              [0.15, "tallgrass4" ]
+          ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffCommon",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.15, "waterpod" ],
+              [0.15, "jungleplant_ff1" ],
+              [0.15, "spearleaf" ],
+              [0.15, "spearleaf2" ],
+              [0.15, "spearleaf3" ],
+              [0.15, "goldspiral1" ],
+              [0.15, "purpleflower1" ],
+              [0.15, "purpleflower2" ],
+              [0.15, "purpleflower3" ],
+              [0.15, "purpleflower4" ],
+              [0.15, "redcap2" ],
+              [0.15, "redcap3" ],
+              [0.15, "redcap" ],
+              [0.15, "smalltree1" ],
+              [0.15, "smalltree2" ],
+              [0.15, "smalltree3" ],
+              [0.15, "shrubby1" ],
+              [0.15, "shrubby2" ],
+              [0.15, "shrubby3" ],
+              [0.15, "orangebush" ],
+              [0.15, "bladeplant1" ],
+              [0.15, "ferny1" ],
+              [0.15, "fireflies1"]
+          ],
+              "parameters" : { }
+            }
+          ]
+        },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "gasprimer" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseLarge",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.15, "rootbush1" ],
+              [0.15, "rootbush2" ],
+              [0.15, "rootbush3" ],
+              [0.15, "rootbush4" ],
+              [0.15, "rootbush5" ],
+              [0.15, "swamproot1" ],
+              [0.15, "swamproot2" ],
+              [0.15, "swamproot3" ],
+              [0.15, "swamproot4" ],
+              [0.15, "swamproot5" ]
+          ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDist",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none", "treehouses" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+          "type" : "grass",
+          "grasses" : [ "blueslime", "glowmushroom", "leafsy", "mushroom", "sprout", "thickgrass", "tiberia", "vine", "weedy" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "basicChest", "ffbasicChest", "ffbasicChest2" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "fflabChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "swampChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "statuspod" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "weaponChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "bogmini" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:mainBiomeRareMicrodungeon",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "swampmicrodungeons" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDistTerrainfeatures",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "terrainfeatures", "rockclimb","rocktunnel",  "toxicmicrodungeons", "sandstone", "blockpile", "loops", "flats", "reversepyramids" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:randomEncounter",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "fu_dae_microdungeons", "randomencounter", "fungalmini", "shroomencounter", "eyeencounter", "colourfulencounter", "boneencounter", "humanencounter", "glitchencounter", "floranencounter", "apexencounter", "avianencounter", "fubandits","fuencounters",  "fulabs", "fuavali", "fuelders", "fuencountercultist", "newhumanmicro", "newavianmicro", "minigreenruins", "fuhives", "furandomencounter", "fuapexencounter", "fuglitchencounter", "fuavianencounter", "fuhumanencounter" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDistPlatform",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "greenplatforming" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+          "type" : "bush",
+          "bushes" : [
+            {
+              "name" : "swampshrub",
+              "baseHueShiftMax" : 20,
+              "modHueShiftMax" : 0
+            },
+            {
+              "name" : "tallgrass",
+              "baseHueShiftMax" : 20,
+              "modHueShiftMax" : 0
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+          "type" : "bush",
+          "bushes" : [
+            {
+              "name" : "swampplant",
+              "baseHueShiftMax" : 20,
+              "modHueShiftMax" : 0
+            },
+            {
+              "name" : "swampbush",
+              "baseHueShiftMax" : 20,
+              "modHueShiftMax" : 0
+            },
+            {
+              "name" : "swampshrub",
+              "baseHueShiftMax" : 20,
+              "modHueShiftMax" : 0
+            },
+            {
+              "name" : "tallgrass",
+              "baseHueShiftMax" : 20,
+              "modHueShiftMax" : 0
+            },
+            {
+              "name" : "podbush",
+              "baseHueShiftMax" : 0,
+              "modHueShiftMax" : 0
+            }
+          ]
+        },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 40,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "weeping" ],
+        "treeFoliageList" : [ "weepingleaves" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:ffunCommon",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "weeping" ],
+        "treeFoliageList" : [ "" ]
+      },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffunCommon",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 40,
+          "treeStemHueShiftMax" : 15,
+          "treeStemList" : [ "cocoa", "fleshy", "grumpy", "roottree", "something", "wood" ],
+          "treeFoliageList" : [ "frumpy", "hanging", "leafy", "lushgreen", "redleaves", "scraggy" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffRare",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 15,
+          "treeStemHueShiftMax" : 15,
+          "treeStemList" : [ "deadtree1" ],
+          "treeFoliageList" : [ "deadmoss", "deadleaves" ]
+        },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:potsRare",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "magictree", "magictree2" ],
+        "treeFoliageList" : [ "" ]
+      },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffRare",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 15,
+          "treeStemHueShiftMax" : 15,
+          "treeStemList" : [ "tearnutstem" ],
+          "treeFoliageList" : [ "tearnutfoliage" ]
+        }
+      ]
+    },
+    "undergroundPlaceables" : {
+      "grassMod" : [ "mossgrass1" ],
+      "grassModDensity" : 0.3,
+
+      "ceilingGrassMod" : [ "roots", "moss" ],
+      "ceilingGrassModDensity" : 0.3,
+
+      "items" : [
+           {
+             "mode" : "floor",
+             "priority" : 1.0,
+             "variants" : 1,
+             "distribution" : "/biomes/distributions.config:potsRare",
+
+             "type" : "object",
+             "objectSets" : [
+               {
+                 "pool" : [ [0.50, "ffbioshroom" ],[0.50, "ffbioshroom1" ],[0.50, "ffbioshroom2" ],[0.50, "ffbioshroom3" ] ],
+                 "parameters" : { "startingStage" : 3 }
+               }
+             ]
+           },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.15, "rootbush1" ],
+              [0.15, "rootbush2" ],
+              [0.15, "rootbush3" ],
+              [0.15, "rootbush4" ],
+              [0.15, "rootbush5" ],
+              [0.15, "swamproot1" ],
+              [0.15, "swamproot2" ],
+              [0.15, "swamproot3" ],
+              [0.15, "swamproot4" ],
+              [0.15, "swamproot5" ]
+              ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffunCommon",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.15, "redcap2" ],
+              [0.15, "redcap3" ],
+              [0.15, "redcap" ]
+              ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "basicChest", "ffbasicChest", "ffbasicChest2" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "fflabChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "swampChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "techChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "weaponChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "statuspod" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 180,
+          "treeStemHueShiftMax" : 20,
+          "treeStemList" : [ "wildernessvine", "sulphurvine", "swampvine" ],
+          "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "grass",
+          "grasses" : [ "ceilingweedy" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "grass",
+          "grasses" : [ "weedy" ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+          "type" : "grass",
+          "grasses" : [ "ceilingmushroom" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+          "type" : "grass",
+          "grasses" : [ "mushroom" ]
+        }
+      ]
+    }
+}

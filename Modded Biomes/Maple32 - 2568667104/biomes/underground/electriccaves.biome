@@ -1,0 +1,196 @@
+{
+  "name" : "electriccaves",
+  "friendlyName" : "Computer Corridors",
+
+  "statusEffects" : [ "biomeradiation" ],
+
+  "spawnProfile" : {
+    "groups" : [
+    {
+      "select" : 2,
+      "pool" : [
+        [ 0.2, "scandroid" ],
+        [ 0.3, "voltip" ],
+        [ 0.2, "bobot" ],
+        [ 0.3, "beepbot" ]
+      ]
+    },
+    {
+      "select" : 1,
+      "pool" : [
+        [ 1, "M32steamspiderscommon" ]
+      ]
+    }
+    ]
+  },
+
+  "parallax" : "/parallax/underground/electriccaves.parallax",
+
+  "mainBlock" : "metallic",
+  "subBlocks" : [ "Nuucomputers", "junktech", "rustyblock" ],
+  "ores" : "depth1",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/objects/bunkerserver.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/objects/bunkerserver.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/body-electric-loop.ogg", "/sfx/M32music/homemade/sucker-pumps.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/tranquility-base.ogg", "/sfx/M32music/homemade/gassy-geyser.ogg" ]
+    }
+  },
+
+  "undergroundPlaceables" : {
+
+    "grassMod" : [ "metal" ],
+    "grassModDensity" : 1.0,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "m32electriccavesdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:layer3Chests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "techChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChallengeDoors",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "challengedoor" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "undergroundencounterdungeons" ]
+      },
+      {
+        "mode" : "background",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "lightningtrap" ], [1, "cel1" ], [1, "drum1" ], [1, "drum2" ], [1, "bunkervent" ], [0.3, "bunkerpanel1" ], [0.2, "outpostservicepanel" ], [0.1, "electricsign" ], [0.2, "bunkerbigpanel" ], [1, "bunkertv" ]  ]
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "bunkerwires" ], [0.4, "bunkercomputer" ], [0.4, "bunkerconsole3" ], [0.4, "bunkerserver" ]  ]
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "prisonsecuritycamera" ] ]
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "magmaflower", "magmaflower2", "magmaflower3", "magmaflower4", "testflower8", "magmaflower5" ]
+      }
+    ]
+  },
+
+  "hueShiftOptions" : [0]
+}

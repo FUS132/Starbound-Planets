@@ -1,0 +1,563 @@
+{
+  "name" : "nightshade",
+  "friendlyName" : "Nightshade",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.1111, "scandroid" ],
+          [ 0.1111, "petricub" ],
+          [ 0.1111, "smoglin" ],
+          [ 0.1111, "batong" ],
+          [ 0.1111, "spookit" ],
+          [ 0.1111, "crustoise" ],
+          [ 0.1111, "pteropod" ],
+          [ 0.1111, "scaveran" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.1, "xenofly" ],
+          [ 0.1, "shadowmoth" ],
+          [ 0.1, "smallgeodecritter" ],
+          [ 0.1, "largegeodecritter" ],
+          [ 0.1, "floatinggeodecritter" ],
+          [ 0.4, "aurorabee" ],
+          [ 0.3, "driftbell" ],
+          [ 0.3, "shardwing" ],
+          [ 0.3, "blueback" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      },
+      {
+        "select" : 3,
+        "pool" : "nightTerrors"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "darkwormcritter" ],
+          [ 1, "darkballcritter" ],
+          [ 1, "darkoneeyecritter" ],
+          [ 1, "darkthreeeyescritter" ],
+          [ 1, "bigwormcritter" ],
+          [ 1, "skywurmcritter" ],
+          [ 1, "krawlcritter" ],
+          [ 1, "darknessscabcritter" ],
+          [ 1, "dartcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "snow"
+    }
+  },
+
+     "hueShiftOptions" : [0, 0, 0, 0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:garden"
+    ]]
+  ],
+
+  "skyOptions" : [
+
+
+
+
+    {
+    // teal star mix
+    "mainColor" : [255, 255, 255],
+
+    "morningColors" : [ [108, 255, 209, 5], [58, 42, 70] ],
+    "dayColors" : [ [108, 255, 209, 5], [58, 42, 70] ],
+    "eveningColors" : [ [108, 255, 209, 5], [58, 42, 70] ],
+    "nightColors" : [ [108, 255, 209, 5], [58, 42, 70] ],
+
+    "morningLightColor" : [20, 60, 51],
+    "dayLightColor" : [20, 60, 51],
+    "eveningLightColor" : [20, 60, 51],
+    "nightLightColor" : [20, 60, 51]
+    },
+    {
+    // teal purple mix
+    "mainColor" : [255, 255, 255],
+
+    "morningColors" : [ [169, 108, 255, 5], [58, 42, 70] ],
+    "dayColors" : [ [169, 108, 255, 5], [58, 42, 70] ],
+    "eveningColors" : [ [169, 108, 255, 5], [58, 42, 70] ],
+    "nightColors" : [ [169, 108, 255, 5], [58, 42, 70] ],
+
+    "morningLightColor" : [37, 20, 60],
+    "dayLightColor" : [37, 20, 60],
+    "eveningLightColor" : [37, 20, 60],
+    "nightLightColor" : [37, 20, 60]
+    },
+    {
+    // teal blue mix
+    "mainColor" : [255, 255, 255],
+
+    "morningColors" : [ [108, 158, 255, 5], [58, 42, 70] ],
+    "dayColors" : [ [108, 158, 255, 5], [58, 42, 70] ],
+    "eveningColors" : [ [108, 158, 255, 5], [58, 42, 70] ],
+    "nightColors" : [ [108, 158, 255, 5], [58, 42, 70] ],
+
+    "morningLightColor" : [20, 35, 60],
+    "dayLightColor" : [20, 35, 60],
+    "eveningLightColor" : [20, 35, 60],
+    "nightLightColor" : [20, 35, 60]
+    },
+    {
+    // teal neon blue mix
+    "mainColor" : [255, 255, 255],
+
+    "morningColors" : [ [108, 112, 255, 5], [58, 42, 70] ],
+    "dayColors" : [ [108, 112, 255, 5], [58, 42, 70] ],
+    "eveningColors" : [ [108, 112, 255, 5], [58, 42, 70] ],
+    "nightColors" : [ [108, 112, 255, 5], [58, 42, 70] ],
+
+    "morningLightColor" : [20, 21, 60],
+    "dayLightColor" : [20, 21, 60],
+    "eveningLightColor" : [20, 21, 60],
+    "nightLightColor" : [20, 21, 60]
+    },
+    {
+    // teal pink mix
+    "mainColor" : [255, 255, 255],
+
+    "morningColors" : [ [255, 108, 249, 5], [58, 42, 70] ],
+    "dayColors" : [ [255, 108, 249, 5], [58, 42, 70] ],
+    "eveningColors" : [ [255, 108, 249, 5], [58, 42, 70] ],
+    "nightColors" : [ [255, 108, 249, 5], [58, 42, 70] ],
+
+    "morningLightColor" : [60, 20, 58],
+    "dayLightColor" : [60, 20, 58],
+    "eveningLightColor" : [60, 20, 58],
+    "nightLightColor" : [60, 20, 58]
+    },
+    {
+    // skyblue star mix
+    "mainColor" : [255, 255, 255],
+
+    "morningColors" : [ [108, 223, 255, 5], [58, 42, 70] ],
+    "dayColors" : [ [108, 223, 255, 5], [58, 42, 70] ],
+    "eveningColors" : [ [108, 223, 255, 5], [58, 42, 70] ],
+    "nightColors" : [ [108, 223, 255, 5], [58, 42, 70] ],
+
+    "morningLightColor" : [20, 58, 60],
+    "dayLightColor" : [20, 58, 60],
+    "eveningLightColor" : [20, 58, 60],
+    "nightLightColor" : [20, 58, 60]
+    }
+
+
+
+
+
+  ],
+
+  "mainBlock" : "obsidian",
+  "subBlocks" : [ "frozendirt", "biorock2" ],
+  "ores" : "surface",
+
+  "parallax" : "/parallax/surface/nightshade.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/tundra_night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/tundra_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/lava-exploration1.ogg", "/music/crystal-exploration1.ogg", "/music/crystal-exploration2.ogg", "/music/accretion-disc.ogg", "/music/arctic-exploration1.ogg", "/music/error-0xbfaf000.ogg", "/music/casiopeia.ogg", "/music/nomads.ogg", "/music/forsaken-grotto.ogg", "/music/accretion-disc.ogg", "/music/tranquility-base.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/lava-exploration1.ogg", "/music/crystal-exploration1.ogg", "/music/crystal-exploration2.ogg", "/music/accretion-disc.ogg", "/music/arctic-exploration1.ogg", "/music/error-0xbfaf000.ogg", "/music/casiopeia.ogg", "/music/nomads.ogg", "/music/forsaken-grotto.ogg", "/music/accretion-disc.ogg", "/music/tranquility-base.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "aliengrass" ],
+    "grassModDensity" : 1.0,
+
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.4,
+
+    "items" : [
+
+      // CHESTS and ARTIFICIAL PLACEABLES
+
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "gardenChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+
+      // MICRO DUNGEONS
+
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "bioluminescentmicrodungeons" ]
+      },
+
+
+      // TERRAIN
+
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+
+      // GRASS and TREES and PLANTS
+
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "grass" ]
+      },
+      {
+      "mode" : "floor",
+      "priority" : 2.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:denseLarge",
+
+      "type" : "tree",
+      "treeFoliageHueShiftMax" : 180,
+      "treeStemHueShiftMax" : 15,
+      "treeStemList" : [ "something" ],
+      "treeFoliageList" : [ "nightlotus" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "grass",
+        "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+          "pool" : [ [0.35, "glowtree1" ], [0.35, "glowtree2" ], [0.35, "glowtree3" ], [0.35, "glowtree4" ], [0.35, "glowtree5" ] ],
+          "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:moderateClumps",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "glowbush1" ], [0.35, "glowbush1" ], [0.35, "glowbush2" ], [0.35, "glowbush3" ], [0.35, "glowbush4" ], [0.35, "glowbush5" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "glowroot1" ], [0.35, "glowroot2" ], [0.35, "glowroot3" ], [0.35, "glowroot4" ], [0.35, "glowroot5" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "bioroots",
+            "baseHueShiftMax" : 40,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+
+      // CROPS
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildcottonseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildwheatseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildpearlpeaseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildcornseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildriceseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildpotatoseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "aliengrass" ],
+    "grassModDensity" : 0.2,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.3,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "gardenChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      }
+    ]
+  }
+}

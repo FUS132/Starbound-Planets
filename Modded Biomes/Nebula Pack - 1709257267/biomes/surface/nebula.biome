@@ -1,0 +1,102 @@
+{
+  "name" : "nebula",
+  "friendlyName" : "nebula",
+  "airless" : true,
+
+  "hueShiftOptions" : [],
+
+  "weather" : [
+    [1, [
+      "/weather.config:nebula"
+    ]]
+  ],
+
+  "spawnProfile" : {
+    "groups" : [
+    ]
+  },
+
+  "statusEffects" : [ "nebulasickness", "biomeairless", "lowgrav", "biomeheat", "biomecold", "biomeradiation" ],
+
+  "skyOptions" : [
+
+    {
+      "mainColor" : [125, 255, 0],
+
+      "morningColors" : [ [184, 255, 114], [160, 255, 66] ],
+      "dayColors" : [ [202, 255, 150], [220, 255, 186] ],
+      "eveningColors" : [ [254, 255, 69], [254, 255, 129] ],
+      "nightColors" : [ [50, 255, 0, 30], [120, 255, 0, 50] ],
+
+      "morningLightColor" : [184, 255, 114],
+      "dayLightColor" : [202, 255, 150],
+      "eveningLightColor" : [254, 255, 69],
+      "nightLightColor" : [50, 255, 20]
+    }
+  ],
+
+  "mainBlock" : "arcmatter",
+  "subBlocks" : [ "arcmatter" ],
+  "ores" : "nebula",
+
+  "parallax" : "/parallax/space/nebula.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/moon_surface.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/moon_surface.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : []
+    },
+    "night" : {
+      "tracks" : []
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [],
+
+    "items" : [
+
+      {
+        "mode": "floor",
+        "priority": 3.0,
+        "variants": 1,
+        "distribution": "/biomes/distributions.config:randomEncounter",
+
+        "type": "microdungeon",
+        "microdungeons": [ "nebulanwatchpost1", "nebulanwatchpost2" ]
+
+      }
+    ]
+
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [],
+
+    "items" : [
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  }
+}

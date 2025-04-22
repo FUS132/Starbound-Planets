@@ -1,0 +1,156 @@
+[
+  {
+    "op": "add",
+    "path": "/planetTypes/AM_aether",
+    "value": {
+      "threatRange": [
+        1,
+        2
+      ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [
+            "AM_aether"
+          ],
+          "secondaryRegions": [
+            "AM_aether"
+          ],
+          "dungeonCountRange": [
+            2,
+            4
+          ],
+          "dungeons": [
+            [
+              1,
+              "naturalcave"
+            ],
+            [
+              1,
+              "avianvillage"
+            ],
+            [
+              1,
+              "aviannativevillage"
+            ],
+            [
+              1,
+              "avianairship"
+            ]
+          ]
+        },
+// This determines the underground biomes ("subsurface", "underground1", "underground2", "underground3", "core")
+        "subsurface" : {
+          "primaryRegion" : [ "AM_underground1" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "AM_underground2" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "AM_underground3" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "AM_underground4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/AM_aether",
+    "value": {
+      "caveLiquid": [
+        "water"
+      ],
+      "blockSelector": [
+        "remixedMildSurface"
+      ],
+      "fgCaveSelector": [
+        "surfaceCaves"
+      ],
+      "bgCaveSelector": [
+        "empty"
+      ],
+      "biome": [
+        [
+          0,
+          [
+            "AM_aether"
+          ]
+        ]
+      ],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/AM_underground1",
+    "value": {
+      "caveLiquid": [
+        "water"
+      ],
+      "biome": [
+        [
+          0,
+          [
+            "AM_underground1"
+          ]
+        ]
+      ],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/AM_underground2",
+    "value": {
+      "caveLiquid": [
+        "water"
+      ],
+      "biome": [
+        [
+          0,
+          [
+            "AM_underground2"
+          ]
+        ]
+      ],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/AM_underground3",
+    "value": {
+      "caveLiquid": [
+        "water"
+      ],
+      "biome": [
+        [
+          0,
+          [
+            "AM_underground3"
+          ]
+        ]
+      ],
+      "subRegion": []
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/AM_underground4",
+    "value": {
+      "caveLiquid": [
+        "lava"
+      ],
+      "biome": [
+        [
+          0,
+          [
+            "AM_underground4"
+          ]
+        ]
+      ],
+      "subRegion": []
+    }
+  }
+]

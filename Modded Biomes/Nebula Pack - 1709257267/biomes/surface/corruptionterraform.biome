@@ -1,0 +1,129 @@
+{
+  "name" : "corruptionterraform",
+  "friendlyName" : "Corruption (Terraformed)",
+
+  "statusEffects" : [],
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "firedot" ],
+          [ 0.6, "darkmine" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "none",
+        "statusSettings" : {
+        "stats" : {
+          "lavaImmunity" : {
+            "baseValue" : 1.0
+          },
+          "fireStatusImmunity" : {
+            "baseValue" : 1.0
+          }
+        }
+      }
+    }
+  },
+
+  "weather" : [
+    [0, [
+      "/weather.config:volcanic"
+    ]]
+  ],
+
+  "mainBlock" : "corruptedmatter",
+  "subBlocks" : [ "corruptedmatter" ],
+  "ores" : "none",
+
+  "parallax" : "/parallax/surface/corruption.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/volcanic_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/volcanic_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/np_br_music3.ogg", "/music/np_br_music1.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/np_br_music3.ogg", "/music/np_br_music3.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "blackash" ],
+    "grassModDensity" : 0.8,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "witherweed" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildperennialseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode": "floor",
+        "priority": 2.0,
+        "variants": 2,
+        "distribution": "/biomes/distributions.config:randomEncounter",
+
+        "type": "microdungeon",
+        "microdungeons": [ "gaaptemple", "dioblyncamp"]
+
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "blackash" ],
+    "grassModDensity" : 0.5,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.3,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  }
+}

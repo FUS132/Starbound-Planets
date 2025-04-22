@@ -1,0 +1,13 @@
+{
+  "name" : "gic_unitanprotectoratefleetbattle",
+  "friendlyName" : "gic_unitanprotectoratefleetbattle",
+
+  "parallax" : "/parallax/space/gic_unitanprotectoratefleetbattle.parallax",
+
+  "spawnProfile" : {
+    "groups" : [],
+    "monsterParameters" : {}
+  },
+
+  "hueShiftOptions" : [0]
+}

@@ -1,0 +1,27 @@
+[{
+		"op": "add",
+		"path": "/planetTypes/astralinfectionplanet",
+		"value": {
+			"threatRange": [5, 5],
+			"layers": {
+				"surface": {
+					"primaryRegion": ["astralinfectionplanet"],
+					"secondaryRegions": []
+				}
+			}
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/astralinfectionplanet",
+		"value": {
+      "caveLiquid" : [ "fuel" ],
+			"blockSelector": ["remixedMildSurface"],
+			"fgCaveSelector": ["surfaceCaves"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[0, ["astralinfectionplanet"]]
+			]
+		}
+	}
+]

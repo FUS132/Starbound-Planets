@@ -1,0 +1,694 @@
+{
+  "name" : "om_grasslandplanet",
+  "friendlyName" : "Grassland",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1.0, "gleap" ],
+          [ 1.0, "nutmidge" ],
+          [ 1.0, "poptop" ],
+          [ 1.0, "tintic" ],
+          [ 1.0, "scaveran" ],
+          [ 1.0, "bobfae" ],
+          [ 1.0, "mandraflora" ],
+          [ 1.0, "bulbop" ],
+          [ 1.0, "hypnare" ]
+        ]
+      },
+      {
+        "select" : 3,
+        "pool" : [
+          [ 0.4, "butterbee" ],
+          [ 0.3, "fawnfly" ],
+          [ 0.3, "mudstag" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedFlying"
+      },
+      {
+        "select" : 16,
+        "pool" : [
+          [ 1, "birdcritter" ],
+          [ 1, "hedgehogcritter" ],
+          [ 1, "tortoisecritter" ],
+          [ 1, "mousecritter" ],
+          [ 1, "bunnycritter" ],
+          [ 1, "snailcritter" ],
+          [ 1, "fishcritter" ],
+          [ 1, "bigwormcritter" ],
+          [ 1, "bluebutterflycritter" ],
+		  
+          [ 0.5, "bowbirdcritter" ],
+          [ 1, "chevcritter" ],
+          [ 1, "dartcritter" ],
+          [ 1, "frogcritter" ],
+          [ 1, "frogpolecritter" ],
+          [ 1, "groopcritter" ],
+          [ 1, "harecritter" ],
+          [ 1, "spidercritter" ],
+          [ 0.5, "leafscabcritter" ],
+          [ 0.5, "maggotcritter" ],
+          [ 1, "petalcritter" ],
+          [ 0.5, "ravencritter" ],
+          [ 1, "redbreastcritter" ],
+          [ 1, "rolypolycritter" ],
+          [ 0.5, "savybirdcritter" ],
+          [ 1, "snakecritter" ],
+          [ 1, "snorecritter" ],
+          [ 1, "squirrelcritter" ],
+          [ 0.5, "swarmcritter" ],
+          [ 0.5, "swarmflyingcritter" ],
+          [ 1, "tritrotscritter" ],
+          [ 0.5, "vulturecritter" ],
+          [ 1, "wurmcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "garden"
+    }
+  },
+
+  "hueShiftOptions" : [-150, -145, -140, -135, -130, -125, -120, -115, -110, -105, -100, -95, -90, -85, -80, -75, -70, -65, -60, -55, -50, -45, -40, -35, -30, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150],
+
+  "weather" : [
+    [0, [
+      "/weather.config:om_grasslandplanet1",
+      "/weather.config:om_grasslandplanet2",
+      "/weather.config:om_grasslandplanet3",
+      "/weather.config:om_grasslandplanet4",
+      "/weather.config:om_grasslandplanet5",
+      "/weather.config:om_grasslandplanet6",
+      "/weather.config:om_grasslandplanet7",
+      "/weather.config:om_grasslandplanet8"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // sunny earth days, red/orange sunrise and purple/red sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [242, 120, 0], [255, 230, 176] ],
+      "dayColors" : [ [115, 224, 255], [255, 255, 255] ],
+      "eveningColors" : [ [125, 17, 158], [210, 52, 50] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [40, 20, 60]
+    },
+    {
+      // sunny lilac day, blue/orange sunrise and blue/green sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [0, 24, 55], [255, 140, 49] ],
+      "dayColors" : [ [176, 115, 255], [255, 255, 255] ],
+      "eveningColors" : [ [100, 86, 173], [0, 222, 73] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [40, 20, 60]
+    },
+    {
+      // sunny pink day, pink/peach sunrise and blue/pink sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [197, 48, 174], [253, 161, 96] ],
+      "dayColors" : [ [255, 116, 122], [255, 255, 255] ],
+      "eveningColors" : [ [88, 42, 91], [175, 20, 50] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [180, 120, 120],
+      "nightLightColor" : [40, 20, 60]
+    },
+    {
+      // sunny blue day, blue/yellow sunrise and purple/orange sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [112, 167, 205], [255, 238, 71] ],
+      "dayColors" : [ [76, 183, 255], [76, 183, 255] ],
+      "eveningColors" : [ [71, 87, 123], [255, 77, 46] ],
+      "nightColors" : [ [0, 19, 38, 80], [0, 19, 38, 160] ],
+
+      "morningLightColor" : [198, 214, 229],
+      "dayLightColor" : [169, 215, 242],
+      "eveningLightColor" : [120, 119, 133],
+      "nightLightColor" : [0, 31, 63]
+    },
+    {
+      // sunny baby blue day, blue/white sunrise and wine purple/yellow sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [15, 129, 139], [249, 249, 249] ],
+      "dayColors" : [ [132, 210, 212], [132, 210, 212] ],
+      "eveningColors" : [ [28, 25, 44], [243, 199, 12] ],
+      "nightColors" : [ [9, 9, 33, 80], [9, 9, 33, 160] ],
+
+      "morningLightColor" : [226, 217, 218],
+      "dayLightColor" : [181, 241, 242],
+      "eveningLightColor" : [108, 25, 43],
+      "nightLightColor" : [7, 7, 25]
+    },
+    {
+      // sunny light pink day, dark blue/bone white sunrise and orange/blood red sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [42, 67, 180], [236, 212, 191] ],
+      "dayColors" : [ [255, 165, 171], [255, 165, 171] ],
+      "eveningColors" : [ [204, 107, 26], [179, 0, 29] ],
+      "nightColors" : [ [12, 3, 2, 80], [12, 3, 2, 160] ],
+
+      "morningLightColor" : [229, 114, 120],
+      "dayLightColor" : [242, 205, 208],
+      "eveningLightColor" : [216, 60, 45],
+      "nightLightColor" : [10, 6, 6]
+    }
+  ],
+
+  "mainBlock" : "dirt",
+  "subBlocks" : [ "grassy", "mud", "grassyrock", "floweryblock" ],
+  "ores" : "surface",
+
+  "parallax" : "/parallax/surface/om_grasslandplanet.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/garden_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/garden_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/epsilon-indi.ogg", "/music/hymn-to-the-stars.ogg", "/music/procyon.ogg", "/music/stellarformation.ogg", "/music/vast-immortal-suns.ogg", "/music/atlas.ogg", "/music/blue-straggler.ogg", "/music/cygnus-x1.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/m54.ogg", "/music/on-the-beach-at-night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/psyche.ogg", "/music/accretion-disc.ogg", "/music/cygnus-x1.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/m54.ogg", "/music/nomads.ogg", "/music/on-the-beach-at-night.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "grass" ],
+    "grassModDensity" : 1.0,
+
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.4,
+
+    "items" : [
+
+// CHEST
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "gardenChest" ]
+      },
+	  
+// OTHER
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+
+// MICRO DUNGEONS
+      {
+        "mode" : "floor",
+        "priority" : 4.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gardenmicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "om_grasslandencounters" ]
+      },
+
+// TERRAIN
+      {
+        "mode" : "floor",
+        "priority" : 4.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "om_grasslandmicros" ]
+      },
+
+// VINES
+      {
+        "mode" : "ceiling",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      },
+	  
+// OBJECTS
+	  	{
+        "mode" : "floor",
+        "priority" : 4.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "haystack" ], [0.35, "wheelbarrow" ], [0.35, "crossroadssign" ], [0.35, "medievalstreetlamp" ], [0.35, "scarecrow" ], [0.35, "frontierwindmill" ], [0.35, "medievalbucket" ], [0.35, "haypile" ], [0.35, "hayroll" ], [0.35, "wickerbasket5" ], [0.35, "wickerbasket1" ], [0.35, "wickerbasket3" ], [0.35, "wickerbasket4" ], [0.35, "wickerbasket2" ], [0.35, "poop" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+// GRASS and TREES and PLANTS  
+	  {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "grass" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "grass",
+        "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "flowerred" ], [0.35, "flowerblue" ], [0.35, "floweryellow" ] ],
+            "parameters" : { "startingStage" : 2 }
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 4.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:everywhere",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [3.0, "springbush1" ], [3.0, "springbush2" ], [3.0, "springbush3" ], [3.0, "springbush4" ], [3.0, "springbush5" ], [3.0, "springbush6" ] ]
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 4.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:everywhere",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "springbush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "testbush",
+            "baseHueShiftMax" : 40,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+
+// CROPS
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildcottonseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSurfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildwheatseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 4.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildpearlpeaseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSurfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildcornseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildriceseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSurfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildpotatoseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildcarrotseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildtomatoseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+// UNDERGROUND
+  "undergroundPlaceables" : {
+    "grassMod" : [ "grass" ],
+    "grassModDensity" : 0.5,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.5,
+
+    "items" : [
+// Chest
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "gardenChest" ]
+      },
+	  
+// OTHER
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+
+// VINES
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      },
+
+// FLOWERS
+	  {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "grass" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "grass",
+        "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "flowerred" ], [0.35, "flowerblue" ], [0.35, "floweryellow" ] ],
+            "parameters" : { "startingStage" : 2 }
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:everywhere",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [3.0, "springbush1" ], [3.0, "springbush2" ], [3.0, "springbush3" ], [3.0, "springbush4" ], [3.0, "springbush5" ], [3.0, "springbush6" ] ]
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:everywhere",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "springbush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "testbush",
+            "baseHueShiftMax" : 40,
+            "modHueShiftMax" : 180
+          }
+        ]
+      }
+    ]
+  }
+}

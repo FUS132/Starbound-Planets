@@ -1,0 +1,119 @@
+{
+  "name" : "ct_tonnova_grove",
+  "friendlyName" : "Tonnova Grove",
+  "description" : "This land is lit by all the ^#c1ebf8;tonnova^reset; springs and trees. Watch out for falling ^#c1ebf8;tonnas^reset;!\n\nTonnova Groves are great mining sources of ^#299fc5;bionid^reset;.",
+  "icon" : "/items/active/alta/loot/ct_bionid_loot.png",
+  "mainBlock" : "moonrock",
+  "subBlocks" : [ "moonrock", "moonstone" ],
+
+  "hueShiftOptions" : [0],
+  "parallax" : "/parallax/underground/ct_alterash_underground.parallax",
+
+  "spawnProfile" : {
+    "groups" : [
+      {"select": 2, "pool": [[1, "ct_bionfly_spawn"], [1, "ct_bionid_pteropod_spawn"]]},
+      // Bugs
+      { "select" : 1, "pool" : [ [ 0.4, "polarmoth" ], [ 0.3, "orphanfly" ], [ 0.3, "snowskater" ] ] },
+      // Critters
+      { "select" : 1, "pool" : [ [ 1, "ct_glow_tortoise_spawn" ], [ 1, "ct_bionid_snail_spawn" ] ] }
+    ]
+  },
+
+  "ambientNoises" : {
+    "day" : { "tracks" : [ "/sfx/environmental/arctic_day.ogg" ] },
+    "night" : { "tracks" : [ "/sfx/environmental/arctic_night.ogg" ] }
+  },
+
+  "musicTrack" : {
+    "day" : { "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-exploration1.ogg", "/music/mercury.ogg", "/music/inviolate-loop.ogg", "/music/europa.ogg","/music/psyche.ogg", "/music/haiku.ogg", "/music/nomads.ogg", "/music/on-the-beach-at-night.ogg", "/music/error-0xbfaf000.ogg", "/music/large-magellanic-cloud.ogg" ]},
+    "night" : { "tracks" : [ "/music/jupiter.ogg", "/music/the-deep.ogg", "/music/arctic-constellation2.ogg", "/music/arctic-exploration2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/horsehead-nebula.ogg", "/music/nomads.ogg", "/music/error-0xbfaf000.ogg", "/music/casiopeia.ogg" ]}
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "snow", "colourfulgrass" ], "grassModDensity" : 0.3,
+    "items" : [
+      // Tech
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundCapsules", "type" : "object",
+        "objectSets" : [ { "pool" : [ [0.3, "ct_capsule_purple" ], [0.3, "ct_capsule_red" ], [0.3, "ct_capsule_blue" ], [1.3, "ct_capsule" ] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_alta_pod_tier3" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundweaponChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "ct_lifechamber" ], [1, "ct_eds_status_pod" ] ], "parameters" : { } } ]
+      },
+      // Dungeons
+      // Growth
+      {
+        "mode" : "floor", "priority" : 0.5, "variants" : 1, "distribution" : "/biomes/distributions.config:scatteredLarge", "type" : "bush",
+        "bushes" : [
+          { "name" : "ct_tonnova_spring", "baseHueShiftMax" : 0, "modHueShiftMax" : 0, "baseHueShiftMin" : 0, "modHueShiftMin" : 0 }
+        ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:scatteredSmall", "type" : "tree",
+        "treeFoliageHueShiftMax" : 0, "treeFoliageHueShiftMin" : 0, "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "ct_tonnova_stem", "ct_tonnova_spiral_stem", "ct_tonnova_wide_stem" ], "treeFoliageList" : [ "ct_tonnova_blob", "ct_tonnova_bulb" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:scatteredLarge", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "ct_bulbonid" ] ], "parameters" : { } } ]
+      },
+      // Other
+      {
+        "mode" : "floor", "priority" : 1.0, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_bionidChest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1.0, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_bionidChest" ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "snow", "colourfulgrass" ], "grassModDensity" : 0.3,
+    "items" : [
+      // Tech
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundCapsules", "type" : "object",
+        "objectSets" : [ { "pool" : [ [0.3, "ct_capsule_purple" ], [0.3, "ct_capsule_red" ], [0.3, "ct_capsule_blue" ], [1.3, "ct_capsule" ] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_alta_pod_tier3" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundweaponChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "ct_lifechamber" ], [1, "ct_eds_status_pod" ] ], "parameters" : { } } ]
+      },
+      // Dungeons
+      // Growth
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:scatteredSmall", "type" : "tree",
+        "treeFoliageHueShiftMax" : 0, "treeFoliageHueShiftMin" : 0, "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "ct_tonnova_stem", "ct_tonnova_spiral_stem", "ct_tonnova_wide_stem" ], "treeFoliageList" : [ "ct_tonnova_blob", "ct_tonnova_bulb" ]
+      },
+      // Other
+      {
+        "mode" : "floor", "priority" : 1.0, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_bionidChest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1.0, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_bionidChest" ]
+      }
+    ]
+  }
+}

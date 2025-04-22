@@ -1,0 +1,11 @@
+{
+  "version" : "1.3",
+  "tags" : "Planets and Environments",
+  "author" : "I Said No",
+  "description" : "Adds a new type of planet to the game: Radioactive Planets, which can be most commonly found orbiting Radioactive Stars.\n\nRadioactive Planets are uninviting, contaminated worlds that have been ruined by pollution. The intense radiation on these worlds may even be able to overwhelm an EPP in certain conditions, but they are a place to find Uranium, which can be used for a far more efficient ship fuel than Erchius. Beware however, as dangerous mutated creatures are eager to make a quick meal of unwary adventurers...\n\nThe threat level of Radioactive Planets tends to vary wildly from anywhere between threat levels 1 and 10, so be careful when exploring!\n\nWant to help me out in making more content for Starbound? [url=https://www.patreon.com/gaymonsterdad]Check out my Patreon[/url]! No pressure though. =)",
+  "name" : "Radioactive Planets",
+  "friendlyName" : "Radioactive Planets",
+  "steamContentId" : "1099963583",
+  "link" : "steam://url/CommunityFilePage/1099963583",
+  "includes" : ["TrueSpace", "Scientific Planet Descriptions"]
+}

@@ -1,0 +1,121 @@
+{
+	"name": "city",
+	"friendlyName": "City",
+
+	"hueShiftOptions": [0],
+
+	"weather": [
+		[0, [
+			"/weather.config:city"
+		]]
+	],
+
+	"skyOptions": [{
+		"mainColor": [255, 255, 255],
+
+		"morningColors": [
+			[242, 120, 0],
+			[255, 230, 176]
+		],
+		"dayColors": [
+			[115, 224, 255],
+			[255, 255, 255]
+		],
+		"eveningColors": [
+			[125, 17, 158],
+			[210, 52, 50]
+		],
+		"nightColors": [
+			[24, 38, 53, 80],
+			[58, 42, 70, 160]
+		],
+
+		"morningLightColor": [140, 71, 0],
+		"dayLightColor": [200, 200, 200],
+		"eveningLightColor": [160, 120, 180],
+		"nightLightColor": [40, 20, 60]
+	}],
+
+	"mainBlock": "dirt",
+	"subBlocks": ["cobblestone", "mud"],
+	"ores": "surface",
+
+	"parallax": "city.parallax",
+
+	"ambientNoises": {
+		"day": {
+			"tracks": ["/sfx/environmental/protectorate_peaceful.ogg"]
+		},
+		"night": {
+			"tracks": ["/sfx/environmental/protectorate_cityscape_loop.ogg"]
+		}
+	},
+	"musicTrack": {
+		"day": {
+			"tracks": ["/music/planetarium.ogg"]
+		},
+		"night": {
+			"tracks": ["/music/on-the-beach-at-night.ogg", "/music/crystal-exploration2.ogg", "/music/hymn-to-the-stars.ogg", "/music/jupiter.ogg", "/music/tranquility-base.ogg"]
+		}
+	},
+	"surfacePlaceables": {
+		"grassMod": ["grass"],
+		"grassModDensity": 1.0,
+
+		"ceilingGrassMod": ["undergrowth"],
+		"ceilingGrassModDensity": 0.4,
+
+		"items": []
+	},
+
+	"undergroundPlaceables": {
+		"grassMod": ["grass"],
+		"grassModDensity": 0.2,
+
+		"ceilingGrassMod": ["roots"],
+		"ceilingGrassModDensity": 0.3,
+
+		"items": [{
+				"mode": "floor",
+				"priority": 3.0,
+				"variants": 1,
+				"period": 5,
+				"distribution": "/biomes/distributions.config:scatteredSmall",
+
+				"type": "grass",
+				"grasses": ["testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7", "grass", "r"]
+			},
+			{
+				"mode": "floor",
+				"priority": 2.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:scatteredLarge",
+
+				"type": "tree",
+				"treeFoliageHueShiftMax": 40,
+				"treeStemHueShiftMax": 15,
+				"treeStemList": ["pineytree", "birch", "pine", "wood", "cocoa"],
+				"treeFoliageList": ["pinefoliage", "greenleaves", "redleaves", "lotus"]
+			},
+			{
+				"mode": "floor",
+				"priority": 1.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:rareClumpySmall",
+
+				"type": "object",
+				"objectSets": [{
+					"pool": [
+						[0.35, "flowerred"],
+						[0.35, "flowerblue"],
+						[0.35, "floweryellow"]
+					],
+					"parameters": {
+						"startingStage": 2
+					}
+				}]
+
+			}
+		]
+	}
+}

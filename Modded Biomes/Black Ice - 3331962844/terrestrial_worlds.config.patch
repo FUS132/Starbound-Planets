@@ -1,0 +1,29 @@
+[
+  {
+    "op": "add",
+    "path": "/planetTypes/csbi_blacktundra",
+    "value": {
+        "threatRange": [
+            6,
+            6
+        ],
+        "layers": {
+            "surface": {
+              "primaryRegion": ["csbi_tundra"]
+              }
+            }
+         }
+      },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/csbi_tundra",
+    "value" : {
+      "caveLiquid" : ["water"],
+      "blockSelector" : ["remixedMildSurface"],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgOreSelector" : [ "empty" ],
+      "biome" : [[0, [ "csbi_tundra" ]]],
+      "subRegion": []
+    }
+  }
+]

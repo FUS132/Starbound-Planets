@@ -1,0 +1,10 @@
+{
+  "version" : "0.01",
+  "tags" : "Planets and Environments",
+  "description" : "This mod adds a potentially high tier planet type called the drayx city. These colonized alpine worlds have a habitable aphmoshere and calm weather aside from the occasional rainstorm or snow fall. However one must be aware of the potentially hostile wildlife.\n\nThe drayx city is a great place to build your home or become a landlord, and the lights at night have been described as gorgeous.\n\nThe drayx city mod is compatable with Fu",
+  "name" : "Drayx_City",
+  "steamContentId" : "2253948929",
+  "friendlyName" : "Drayx City",
+  "link" : "steam://url/CommunityFilePage/2253948929",
+  "includes" : ["TrueSpace"]
+}

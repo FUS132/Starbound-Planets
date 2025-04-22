@@ -1,0 +1,15 @@
+{
+  "name" : "gic_deepspace",
+  "friendlyName" : "gic_deepspace",
+
+  "parallax" : "/parallax/space/gic_deepspace.parallax",
+
+  "statusEffects" : [ "biomeairless" ],
+
+  "spawnProfile" : {
+    "groups" : [],
+    "monsterParameters" : {}
+  },
+
+  "hueShiftOptions" : [0]
+}

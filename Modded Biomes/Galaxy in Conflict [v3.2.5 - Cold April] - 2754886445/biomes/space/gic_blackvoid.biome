@@ -1,0 +1,13 @@
+{
+  "name" : "gic_blackvoid",
+  "friendlyName" : "gic_blackvoid",
+
+  "parallax" : "/parallax/space/gic_blackvoid.parallax",
+
+  "spawnProfile" : {
+    "groups" : [],
+    "monsterParameters" : {}
+  },
+
+  "hueShiftOptions" : [0]
+}

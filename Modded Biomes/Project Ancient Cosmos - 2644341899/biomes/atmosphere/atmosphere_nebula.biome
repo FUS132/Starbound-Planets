@@ -1,0 +1,13 @@
+{
+  "name" : "pf_nebulaatmosphere",
+  "friendlyName" : "void",
+
+  "parallax" : "/parallax/atmosphere/atmosphere_nebula.parallax",
+
+  "spawnProfile" : {
+    "groups" : [],
+    "monsterParameters" : {}
+  },
+
+  "hueShiftOptions" : [0]
+}

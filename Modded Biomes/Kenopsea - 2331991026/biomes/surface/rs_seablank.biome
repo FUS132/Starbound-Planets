@@ -1,0 +1,191 @@
+{
+  "name" : "rs_seablank",
+  "friendlyName" : "Black Empty Ocean",
+
+  "spawnProfile" : {
+    "groups" : [
+        {
+        "select" : 1,
+        "pool" : [
+          [ 1, "csbi_tintrocoat" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "csbi_tintrillo" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 0.4, "frozenowlcritter" ],
+          [ 0.4, "sealcritter" ],
+          [ 0.4, "icescabcritter" ],
+          [ 0.4, "dancercritter" ],
+          [ 0.4, "snowbcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "arctic"
+    }
+  },
+
+  "statusEffects" : [ "biomecold" ],
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:ocean"
+    ]]
+  ],
+  "skyOptions" : [
+    {
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [0, 0, 0], [0, 0, 0] ],
+      "dayColors" : [ [0, 0, 0], [0, 0, 0] ],
+      "eveningColors" : [ [0, 0, 0], [0, 0, 0] ],
+      "nightColors" : [ [0, 0, 0], [0, 0, 0] ],
+
+      "morningLightColor" : [128, 103, 78],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [128, 103, 78],
+      "nightLightColor" : [20, 20, 20]
+    }
+  ],
+
+  "mainBlock" : "rs_peark",
+  "subBlocks" : [ "rs_kenos", "rs_dirt" ],
+  "ores" : "surface",
+
+  "parallax" : "/parallax/surface/rs_seablank.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/arctic_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/arctic_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/csbi_anchorage.ogg", "/music/rs_aulasy.ogg", "/music/rs_ereyesterday.ogg", "/music/rs_kenopsea.ogg", "/music/rs_paracosm.ogg", "/music/rs_reflection.ogg", "/music/rs_warmth.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/csbi_vacio.ogg", "/music/rs_falter.ogg", "/music/rs_formido.ogg", "/music/rs_bereft.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "rs_grassmod" ],
+    "grassModDensity" : 0.9,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDistTerrainfeatures",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "terrainfeatures" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 8,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "rs_tree1",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 6,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "rs_bush1",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  }
+}

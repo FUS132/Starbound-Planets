@@ -1,0 +1,7 @@
+{
+  "link" : "steam://url/CommunityFilePage/2438077302",
+  "description" : "Nightshade planets are worlds forever cast in night, never to see the light of day. However thanks to bioluminescent flora and minerals an ethereal glow illuminates these worlds. The Nightshade planet mod adds the night lotus tree, trees with fullbright foliage that drop phase matter when cut down; and the nightshade planet, tier 6 worlds that spawn around fiery stars and can have the bioluminescent sub-biome. You do not need any kind of EPP to survive on these worlds, though good armour and weapons will help you fight off the hostile wildlife.\n\nThis mod does not add any tiles or liquids.",
+  "name" : "nightshade planets",
+  "friendlyName" : "Nightshade Planets",
+  "steamContentId" : "2438077302"
+}

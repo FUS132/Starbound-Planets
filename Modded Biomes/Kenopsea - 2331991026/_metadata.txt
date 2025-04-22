@@ -1,0 +1,13 @@
+{
+  "version" : "1",
+  "tags" : "Crafting and Building|Planets and Environments|Musical Instruments and Songs|NPCs and Creatures|Weapons|User Interface|Furniture and Objects",
+  "author" : "Credo",
+  "description" : "Kenopsea is a large scale mod that aims to add Worlds, Weapons, Monsters, Objects, Tiles and more.\nAll tiles can be acquired by crafting the SEL Primary Workbench from the T3 Inventors table, from the Workbench the Black Ice Market can be acquired, which sells all weapons and objects.\n\nIf y'all wanna keep track of progress on the mod then feel free to join us on our discord:\nhttps://discord.gg/n9TqrpSj4N\n\nBig thanks to Fidelis, Nebulox, Aegonian, and all other contributors that have aided in making this project a reality!\n\nOST by Fidelis:\nSpotify - https://open.spotify.com/album/4BMOKHRbj2qOUV4WegB0tV?si=kdNUtL3ERfqP17Sg6g0Qkg\nSoundcloud - https://soundcloud.com/credosanchez/sets/kenopsea-ost?si=625da20a8a46424c8e6efbec2c09e90a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing\n\n(CURRENTLY ON EARLY RELEASE)\nas such there is likely to be a few issues here and there and it would be highly appreciated if y'all could let me know about them when they occur. A good way to keep track of what is updated/new and what need to be reworked can be observed by whether it's icon has a teal border, anything without it is either a weapon which are all already updated, or needs a rework.\nKnown tile id conflict with Protogen Race Mod which will crash your game if both mods are installed: https://steamcommunity.com/sharedfiles/filedetails/?id=1789115955\n\nHalo Reach © Microsoft Corporation. Kenopsea was created under Microsoft's \"Game Content Usage Rules\" using assets from Halo Reach, and it is not endorsed by or affiliated with Microsoft.\nImportant Rules:\nhttps://www.xbox.com/en-US/developers/rules",
+  "requires" : [],
+  "name" : "Kenopsea",
+  "friendlyName" : "Kenopsea",
+  "steamContentId" : "2331991026",
+  "priority" : -1,
+  "link" : "steam://url/CommunityFilePage/2331991026",
+  "includes" : []
+}

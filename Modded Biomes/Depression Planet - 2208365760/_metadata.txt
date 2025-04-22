@@ -1,0 +1,11 @@
+{
+  "version" : "2.8",
+  "tags" : "Planets and Environments",
+  "author" : "Projectmayhem1983",
+  "description" : "Adds a depressing Greyscale planet to the game. The entire surface of the planet is depressing and void of color except some random structures built by travellers who wanted to spruce the place up.\n\nBeing on the planet will give you depression, which can only be cured by leaving the planet far far behind.\n\nThere is no special loot to find here, there is no benefit to coming. This is a place for those of us who failed as a Protectorate to spend our last remaining days in isolation and depression. \n\n\n8-26  - added terraformer and new Crewtype Best Friend. Having your best friend will give you energy regen and keep you from being depressed. Best friend has a weight of 0.75, slightly higher than alchemist and slightly lower than the other types. Best friend also packs big guns. What else are friends for?\n8-28 - added hanging bodies and skeletons from trees as well as dead protectors to the landscape. Added Codex for lore.\n9-1 - revamped terrain generation some more. changed up micro dungeons. added some custom dialog for merchants and bandits\n9-3 - Fixed crew member issues and changed planet name to Depression",
+  "name" : "Depression Planet",
+  "friendlyName" : "Depression Planet",
+  "steamContentId" : "2208365760",
+  "link" : "steam://url/CommunityFilePage/2208365760",
+  "includes" : ["TrueSpace"]
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "op" : "add",
+    "path" : "/planetTypes/gloam",
+    "value" : {
+      "threatRange" : [3, 3],
+      "layers" : {
+        "surface" : {
+          "primaryRegion" : ["gloam"],
+          "secondaryRegions" : ["mushroom", "giantflowers", "garden" ],
+          "dungeons" : [
+            [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			[1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+			[1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"],
+			[1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+			[1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+			[1.0, "humanprison"], [1.0, "humancamp"],
+			[1.0, "glitchsewer"], [1.0, "novakidvillage"]
+          ]
+        },
+		"subsurface": {
+		  "primaryRegion": ["gloamunderground1"]
+		},
+		"underground1": {
+		  "primaryRegion": ["gloamunderground2"]
+		},
+		"underground2": {
+		  "primaryRegion": ["gloamunderground3"]
+		},
+		"underground3": {
+		  "primaryRegion": ["gloamunderground4"]
+		}
+      }
+    }
+  },
+  
+  {
+    "op" : "add",
+    "path" : "/regionTypes/gloam",
+    "value" : {
+      "caveLiquid" : ["water"],
+      "blockSelector" : ["remixedMildSurface"],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gloam" ]]
+      ],
+	  "subRegion" : ["mushroom", "giantflowers", "garden" ]
+    }
+  },
+  
+  {
+	"op": "add",
+	"path": "/regionTypes/gloamunderground1",
+	"value": {
+		"caveLiquid": ["water"],
+		"biome": [
+			[1, ["gloamunderground1"]]
+		]
+	}
+ },
+ {
+	"op": "add",
+	"path": "/regionTypes/gloamunderground2",
+	"value": {
+		"caveLiquid": ["water"],
+		"biome": [
+			[1, ["gloamunderground2"]]
+		],
+	"subRegion" : ["mushroomunderground", "wildernessunderground", "minivillageunderground"]
+	}
+ },
+ {
+	"op": "add",
+	"path": "/regionTypes/gloamunderground3",
+	"value": {
+		"caveLiquid": ["water"],
+		"biome": [
+			[1, ["gloamunderground3"]]
+		],
+	"subRegion" : ["luminouscaves", "stonecaves", "bonecaves", "icecaves"]
+	}
+ },
+ {
+	"op": "add",
+	"path": "/regionTypes/gloamunderground4",
+	"value": {
+		"caveLiquid": ["water"],
+		"biome": [
+			[1, ["gloamunderground4"]]
+		],
+	"subRegion" : ["cellcaves", "slimecaves"]
+	}
+ }
+
+]

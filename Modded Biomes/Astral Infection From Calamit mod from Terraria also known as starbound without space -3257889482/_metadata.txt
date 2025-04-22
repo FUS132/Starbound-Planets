@@ -1,0 +1,10 @@
+{
+  "version" : "1.3",
+  "tags" : "Planets and Environments",
+  "author" : "Joker",
+  "description" : "Adds the astral infection to starbound from calamit mod\n\nThe planet also comes with the astral infection theme from DM Dokuro or what/who ever\n(Ironically that is the only thing that I didn't have to make because unlike music, starbound sprites are different than terraria obviously)\n\nDoes not add calamit mobs because I don't know how to code ai and this took me like 3 days to make so as a replacement i used starbound enemies that are similar (also fennix can spawn here for some reason)\n\nFeel free to add a mod addon for mobs I probably wont make one.\n\nBug fixes:\nCompatable with Astral Desert Planet and Astral Snow Planet\nFixed the background affecting barron planets backgrounds. \nFixed this mod removing clouds from all planets.\n\n\n",
+  "name" : "Astral Infection Planet",
+  "friendlyName" : "Astral Infection From Calamit mod from Terraria also known as starbound without space",
+  "steamContentId" : "3257889482",
+  "link" : "steam://url/CommunityFilePage/3257889482"
+}

@@ -1,0 +1,100 @@
+[
+// Planets
+  // Nebula
+  { "op" : "add",
+    "path" : "/planetTypes/nebula",
+    "value" : {
+    "threatRange" : [6, 10],
+      "layers" : {
+      "surface" : {
+        "primaryRegion" : [ "nebula" ],
+        "dungeons" : []
+        },
+      "subsurface" : { "primaryRegion" : [ "nebulaunderground2" ] },
+      "underground1" : { "primaryRegion" : [ "nebulaunderground2" ] },
+      "underground2" : { "primaryRegion" : [ "nebulaunderground4" ] },
+      "underground3" : { "primaryRegion" : [ "nebulaunderground6" ] },
+      "core" : { "primaryRegion" : [ "nebulacorelayer" ] }
+      }
+    }
+  },
+
+  { "op" : "add",
+    "path" : "/regionTypes/nebula",
+    "value" : {
+      "caveLiquid" : [ "fuel" ],
+      "blockSelector" : [ "remixedSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "nebula" ]]
+      ]
+    }
+  },
+  { "op" : "add",
+    "path" : "/regionTypes/nebulaunderground2",
+    "value" : {
+      "caveLiquid" : [ "fuel" ],
+      "fgCaveSelector" : [ "moonCaves" ],
+      "caveLiquidSeedDensityRange" : [2.5, 2.5],
+      "biome" : [
+        [0, [ "nebulaunderground2" ]]
+      ]
+    }
+  },
+  { "op" : "add",
+    "path" : "/regionTypes/nebulaunderground4",
+    "value" : {
+      "caveLiquid" : [ "fuel" ],
+      "fgCaveSelector" : [ "moonCaves" ],
+      "caveLiquidSeedDensityRange" : [2.5, 2.5],
+      "biome" : [
+        [0, [ "nebulaunderground4" ]]
+      ]
+    }
+  },
+  { "op" : "add",
+    "path" : "/regionTypes/nebulaunderground6",
+    "value" : {
+      "caveLiquid" : [ "fuel" ],
+      "fgCaveSelector" : [ "moonCaves" ],
+      "caveLiquidSeedDensityRange" : [2.5, 2.5],
+      "biome" : [
+        [0, [ "nebulaunderground6" ]]
+      ]
+    }
+  },
+
+  { "op" : "add",
+    "path" : "/regionTypes/nebulacorelayer",
+    "value" : {
+      "caveLiquid" : [ "fuel" ],
+      "caveLiquidSeedDensityRange" : [4.0, 4.0],
+      "oceanLiquid" : [ "fuel" ],
+      "oceanLevelOffset" : -30,
+      "fgCaveSelector" : [ "coreCaves" ],
+      "bgCaveSelector" : [ "coreCaves" ],
+      "biome" : [
+        [0, ["nebulacorelayer" ] ]
+      ]
+    }
+  },
+
+  // Corrupted
+  { "op" : "add",
+    "path" : "/planetTypes/corrupted",
+    "value" : {
+    "threatRange" : [6, 10],
+      "layers" : {
+      "surface" : {
+        "primaryRegion" : [ "corruption" ],
+        "dungeons" : []
+        },
+      "core" : { "primaryRegion" : [ "magmarockcorelayer" ] }
+      }
+    }
+  }
+
+// Dungeons
+
+]

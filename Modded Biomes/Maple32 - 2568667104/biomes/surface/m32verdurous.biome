@@ -1,0 +1,252 @@
+{
+  "name" : "m32verdurous",
+  "friendlyName" : "Concealing Canopy",
+
+  "statusEffects" : [ ],
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 2,
+        "pool" : [
+          [ 0.2, "passiveLargeFlying" ],
+          [ 0.5, "aggroLargeFlying" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      },
+      {
+        "select" : 3,
+        "pool" : "nightTerrors"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "frogcritter" ],
+          [ 1, "birdcritter" ],
+          [ 1, "fireflyspawner" ],
+          [ 1, "chevcritter" ],
+          [ 1, "fireflyspawner" ],
+          [ 1, "fishcritter" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "fireflyspawner2" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "jungle"
+    }
+  },
+
+  "hueShiftOptions" : [-30, -20, -15, -10, -5, 0, 5, 10, 15, 20, 30],
+
+  "weather" : [
+    [0, [
+      "/m32weather.config:m32verdurous"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // sunny earth days, red/orange sunrise and purple/red sunset
+      "mainColor" : [117, 177, 149],
+
+      "morningColors" : [ [68, 168, 121], [68, 168, 121] ],
+      "dayColors" : [ [184, 233, 210], [184, 233, 210] ],
+      "eveningColors" : [ [0, 136, 73], [0, 136, 73] ],
+      "nightColors" : [ [0, 38, 21, 200], [0, 38, 21, 200] ],
+
+
+      "morningLightColor" : [50, 155, 100],
+      "dayLightColor" : [150, 255, 200],
+      "eveningLightColor" : [50, 100, 70],
+      "nightLightColor" : [40, 60, 50]
+    }
+  ],
+
+
+  "mainBlock" : "plantmatter",
+  "subBlocks" : [ "plantmatter", "petalblock", "fullwood2"  ],
+  "ores" : "none",
+
+  "parallax" : "/parallax/surface/jungle.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/jungle_day.ogg", "/sfx/environmental/jungle_day2.ogg" ]
+      },
+      "night" : {
+        "tracks" : [ "/sfx/environmental/jungle_night.ogg", "/sfx/environmental/jungle_night2.ogg" ]
+      }
+    },
+
+    "musicTrack" : {
+      "day" : {
+        "tracks" : [ "/music/forsaken-grotto.ogg", "/music/hymn-to-the-stars.ogg", "/music/vast-immortal-suns.ogg", "/music/drosera.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/horsehead-nebula.ogg", "/music/on-the-beach-at-night.ogg" ]
+      },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/crystal-exploration2.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/large-magellanic-cloud.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "junglegrass" ],
+    "grassModDensity" : 0.7,
+
+    "ceilingGrassMod" : [ "moss" ],
+    "ceilingGrassModDensity" : 0.4,
+
+    "items" : [
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:denseMedium",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.35, "flowerred" ], [0.35, "flowerblue" ], [0.35, "floweryellow" ], [0.35, "junglebush1" ], [0.35, "junglebush2" ], [0.35, "junglebush3" ], [0.35, "junglebush4" ], [0.35, "junglebush5" ], [0.35, "junglebush6" ], [0.35, "junglebush7" ], [0.35, "junglebush8" ], [0.35, "junglebush9" ], [0.35, "junglebush10" ], [0.35, "junglebush11" ], [0.35, "junglebush12" ], [0.35, "junglebush13" ], [0.35, "junglebush14" ], [0.35, "junglebush15" ], [0.35, "junglebush16" ], [0.35, "junglebush17" ], [0.35, "junglebush18" ] ],
+          "parameters" : { }
+        }
+      ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:denseLarge",
+
+      "type" : "tree",
+      "treeFoliageHueShiftMax" : 100,
+      "treeStemHueShiftMax" : 15,
+      "treeStemList" : [ "weeping" ],
+      "treeFoliageList" : [ "weepingleaves" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "encounterdungeons" ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 0.1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:superCommon",
+
+      "type" : "tree",
+      "treeFoliageHueShiftMax" : 100,
+      "treeStemHueShiftMax" : 100,
+      "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+      "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.2, "wickerbasket1" ], [0.2, "wickerbasket2" ], [0.2, "wickerbasket3" ], [0.2, "wickerbasket4" ], [0.2, "wickerbasket5" ] ],
+          "parameters" : { }
+        }
+      ]
+    }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "junglegrass" ],
+    "grassModDensity" : 0.7,
+
+    "ceilingGrassMod" : [ "moss" ],
+    "ceilingGrassModDensity" : 1.0,
+
+    "items" : [
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:common",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.35, "flowerred" ], [0.35, "flowerblue" ], [0.35, "floweryellow" ], [0.35, "junglebush1" ], [0.35, "junglebush2" ], [0.35, "junglebush3" ], [0.35, "junglebush4" ], [0.35, "junglebush5" ], [0.35, "junglebush6" ], [0.35, "junglebush7" ], [0.35, "junglebush8" ], [0.35, "junglebush9" ], [0.35, "junglebush10" ], [0.35, "junglebush11" ], [0.35, "junglebush12" ], [0.35, "junglebush13" ], [0.35, "junglebush14" ], [0.35, "junglebush15" ], [0.35, "junglebush16" ], [0.35, "junglebush17" ], [0.35, "junglebush18" ] ],
+          "parameters" : { }
+        }
+      ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:denseLarge",
+
+      "type" : "tree",
+      "treeFoliageHueShiftMax" : 100,
+      "treeStemHueShiftMax" : 15,
+      "treeStemList" : [ "weeping" ],
+      "treeFoliageList" : [ "weepingleaves" ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 0.1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:superCommon",
+
+      "type" : "tree",
+      "treeFoliageHueShiftMax" : 100,
+      "treeStemHueShiftMax" : 100,
+      "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+      "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:denseLarge",
+
+      "type" : "tree",
+      "treeFoliageHueShiftMax" : 100,
+      "treeStemHueShiftMax" : 15,
+      "treeStemList" : [ "weeping" ],
+      "treeFoliageList" : [ "weepingleaves" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.2, "wickerbasket1" ], [0.2, "wickerbasket2" ], [0.2, "wickerbasket3" ], [0.2, "wickerbasket4" ], [0.2, "wickerbasket5" ] ],
+          "parameters" : { }
+        }
+      ]
+    }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+[{
+        "op": "add",
+        "path": "/planetTypes/tidal_thermalsurge",
+        "value": {
+            "threatRange": [6, 7],
+            "layers": {
+                "surface": {
+                    "primaryRegion": ["tidal_thermalsurge"],
+                    "secondaryRegions" : [ "toxic", "tentacle", "midnight", "magma", "scorchedcity" ],
+                    "dungeonCountRange": [3, 3],
+                    "dungeons": [ [1.0, "dungeoncrawler"], [1.0, "humanprison"], [1.0, "evilfortress"] ]
+                }
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/tidal_thermalsurge",
+        "value": {
+            "caveLiquid": ["lava"],
+            "caveLiquidChanceRange": [20, 100],
+            "blockSelector": ["remixedSwampySurface", "remixedSurface", "remixedPoolsSurface"],
+            "fgCaveSelector": ["surfaceCaves"],
+            "bgOreSelector": ["normalVeins", "richVeins"],
+            "biome": [
+                [0, ["tidal_thermalsurge"]]
+            ],
+            "subRegion": ["hive", "tar", "geode", "swamp", "rust", "bones"]
+        }
+    }
+]

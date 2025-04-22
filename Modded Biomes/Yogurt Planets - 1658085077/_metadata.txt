@@ -1,0 +1,11 @@
+{
+  "version" : "yes",
+  "tags" : "Miscellaneous|Planets and Environments",
+  "author" : "pat",
+  "description" : "adds yogurt planets\nplanets made of yogurt\n\n[strike]you'll have to ignore the bugs because im not going to fix them[/strike]\nzacrabo fixed them\n\ngive me money\nhttps://www.patreon.com/pathiccstar\n\njoin discord\nhttps://discord.gg/GdsQSgV",
+  "name" : "pat_yogurtplanets",
+  "friendlyName" : "Yogurt Planets",
+  "steamContentId" : "1658085077",
+  "link" : "steam://url/CommunityFilePage/1658085077",
+  "includes" : ["pat_yogurtbomb"]
+}

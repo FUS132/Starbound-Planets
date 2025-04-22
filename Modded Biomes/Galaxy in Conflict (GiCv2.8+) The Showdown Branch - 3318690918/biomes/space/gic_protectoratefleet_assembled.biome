@@ -1,0 +1,13 @@
+{
+  "name" : "gic_protectoratefleet_assembled",
+  "friendlyName" : "gic_protectoratefleet_assembled",
+
+  "parallax" : "/parallax/space/gic_protectoratefleet_assembled.parallax",
+
+  "spawnProfile" : {
+    "groups" : [],
+    "monsterParameters" : {}
+  },
+
+  "hueShiftOptions" : [0]
+}

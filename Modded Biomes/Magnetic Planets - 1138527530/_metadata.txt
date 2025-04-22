@@ -1,0 +1,11 @@
+{
+  "version" : "1.3",
+  "tags" : "Planets and Environments",
+  "author" : "I Said No",
+  "description" : "Adds a new type of planet to the game: Magnetic Planets, which can be most commonly found orbiting Radioactive Stars.\n\nMagnetic Planets are dark and foreboding worlds that experience an array of strange gravitational anomalies due to their powerful magnetic fields. Glowing stones and floating islands are visible - and visitable - far across the landscape, which is often dotted by accumulating pools of the strange liquid metal that sometimes rains from the sky. Powerful creatures make their home here, so don't go unprepared.\n\nThe threat level of Magnetic Planets tends to vary wildly from anywhere between threat levels 1 and 10, so be careful when exploring!\n\nWant to help me out in making more content for Starbound? [url=https://www.patreon.com/gaymonsterdad]Check out my Patreon[/url]! No pressure though. =)",
+  "name" : "Magnetic Planets",
+  "friendlyName" : "Magnetic Planets",
+  "steamContentId" : "1138527530",
+  "link" : "steam://url/CommunityFilePage/1138527530",
+  "includes" : ["TrueSpace", "Scientific Planet Descriptions"]
+}

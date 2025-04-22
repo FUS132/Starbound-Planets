@@ -1,0 +1,366 @@
+{
+  "name" : "om_divineplanet",
+  "friendlyName" : "Divine Cloud Islands",
+
+  "airless" : false,
+  "statusEffects" : [ "biomeairless", "biomeom_divineplanet", "nofalldamage" ],
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      },
+      {
+        "select" : 3,
+        "pool" : "nightTerrors"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "om_divineplanet",
+        "statusSettings" : {
+        "stats" : {
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+          },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+          },
+		"iceResistance" : {
+          "baseValue" : 0.5
+        },
+		"electricResistance" : {
+          "baseValue" : 0.5
+        },
+		"fireResistance" : {
+          "baseValue" : -0.5
+        }
+        }
+      }
+    }
+  },
+
+  "weather" : [
+    [0, [
+      "/weather.config:om_divineplanet",
+      "/weather.config:om_divineplanet2",
+      "/weather.config:om_divineplanet3",
+      "/weather.config:om_divineplanet4",
+      "/weather.config:om_divineplanet5",
+      "/weather.config:om_divineplanet6"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      //Innocent Blues & Greens 
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [89, 255, 236], [89, 241, 121] ],
+      "dayColors" : [ [9, 241, 200], [59, 193, 88] ],
+      "eveningColors" : [ [0, 179, 151], [16, 152, 45] ],
+      "nightColors" : [ [11, 75, 65, 40], [14, 63, 25, 40] ],
+
+      "morningLightColor" : [196, 242, 213],
+      "dayLightColor" : [151, 216, 173],
+      "eveningLightColor" : [124, 165, 136],
+      "nightLightColor" : [31, 63, 40]
+    },
+	{
+      //Baby Blue
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [122, 237, 255], [122, 237, 255] ],
+      "dayColors" : [ [94, 185, 200], [94, 185, 200] ],
+      "eveningColors" : [ [31, 114, 127], [31, 114, 127] ],
+      "nightColors" : [ [0, 55, 63, 40], [0, 55, 63, 40] ],
+
+      "morningLightColor" : [165, 243, 255],
+      "dayLightColor" : [130, 205, 216],
+      "eveningLightColor" : [77, 132, 140],
+      "nightLightColor" : [45, 72, 76]
+    },
+	{
+      //Holy Yellow & Orange
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [255, 224, 140], [255, 188, 140] ],
+      "dayColors" : [ [255, 197, 50], [255, 136, 50] ],
+      "eveningColors" : [ [188, 125, 0], [191, 83, 0] ],
+      "nightColors" : [ [100, 55, 0, 40], [109, 32, 0, 40] ],
+
+      "morningLightColor" : [229, 213, 183],
+      "dayLightColor" : [178, 162, 133],
+      "eveningLightColor" : [114, 102, 80],
+      "nightLightColor" : [51, 44, 33]
+    },
+	{
+      //Glorious Golden
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [255, 216, 102], [255, 216, 102] ],
+      "dayColors" : [ [255, 191, 0], [255, 191, 0] ],
+      "eveningColors" : [ [178, 104, 0], [178, 104, 0] ],
+      "nightColors" : [ [63, 25, 0, 40], [63, 25, 0, 40] ],
+
+      "morningLightColor" : [255, 240, 204],
+      "dayLightColor" : [255, 215, 114],
+      "eveningLightColor" : [204, 146, 40],
+      "nightLightColor" : [63, 41, 18]
+    },
+	{
+      //Sky Blue
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [153, 255, 255], [153, 255, 255] ],
+      "dayColors" : [ [68, 229, 229], [68, 229, 229] ],
+      "eveningColors" : [ [21, 140, 140], [21, 140, 140] ],
+      "nightColors" : [ [0, 38, 38, 40], [0, 38, 38, 40] ],
+
+      "morningLightColor" : [191, 255, 255],
+      "dayLightColor" : [103, 229, 229],
+      "eveningLightColor" : [61, 153, 153],
+      "nightLightColor" : [19, 63, 63]
+    },
+	{
+      //Life and Death
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [166, 255, 166], [193, 189, 255] ],
+      "dayColors" : [ [119, 207, 99], [116, 113, 254] ],
+      "eveningColors" : [ [57, 120, 43], [62, 60, 140] ],
+      "nightColors" : [ [0, 38, 0, 40], [12, 10, 38, 40] ],
+
+      "morningLightColor" : [178, 225, 206],
+      "dayLightColor" : [117, 159, 176],
+      "eveningLightColor" : [59, 90, 90],
+      "nightLightColor" : [6, 22, 20]
+    },
+	{
+      //The Sun and the Flower
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [255, 240, 174], [249, 173, 233] ],
+      "dayColors" : [ [255, 222, 76], [242, 72, 205] ],
+      "eveningColors" : [ [166, 146, 22], [166, 34, 147] ],
+      "nightColors" : [ [51, 49, 0, 40], [51, 0, 51, 40] ],
+
+      "morningLightColor" : [251, 205, 204],
+      "dayLightColor" : [248, 145, 141],
+      "eveningLightColor" : [166, 93, 80],
+      "nightLightColor" : [51, 25, 24]
+    }
+  ],
+
+  "mainBlock" : "cloudblock",
+  "subBlocks" : [],
+  "ores" : "om_divineplanetsurface",
+
+  "parallax" : "/parallax/surface/om_divineplanet.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/tundra_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/tundra_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/accretion-disc.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/arctic-exploration1.ogg", "/music/atlas.ogg", "/music/blue-straggler.ogg", "/music/casiopeia.ogg", "/music/crystal-battle1-loop.ogg", "/music/crystal-exploration1.ogg", "/music/cygnus-x1.ogg", "/music/desert-exploration1.ogg", "/music/drosera.ogg", "/music/epsilon-indi.ogg", "/music/eridanus-supervoid.ogg", "/music/error-0xbfaf000.ogg", "/music/europa.ogg", "/music/event-horizon.ogg", "/music/forest-loop.ogg", "/music/forsaken-grotto.ogg", "/music/gravitational-collapse.ogg", "/music/haiku.ogg", "/music/home-concept-loop.ogg", "/music/horsehead-nebula.ogg", "/music/jupiter.ogg", "/music/large-magellanic-cloud.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/ocean-exploration2.ogg", "/music/on-the-beach-at-night.ogg", "/music/planetarium.ogg", "/music/procyon.ogg", "/music/stellar-acclimation.ogg", "/music/stellarformation.ogg", "/music/temple-of-kluex.ogg", "/music/the-apex.ogg", "/music/the-eternal-tide.ogg", "/music/title-menu-music.ogg", "/music/title-theme-concept-old.ogg", "/music/ultramarine.ogg", "/music/vast-immortal-suns.ogg", "/music/The-Haven-We-Know-Omeruin.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/accretion-disc.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/arctic-exploration2.ogg", "/music/body-electric-loop.ogg", "/music/crystal-exploration1.ogg", "/music/crystal-exploration2.ogg", "/music/cygnus-x1.ogg", "/music/epsilon-indi.ogg", "/music/eridanus-supervoid.ogg", "/music/error-0xbfaf000.ogg", "/music/europa.ogg", "/music/forsaken-grotto.ogg", "/music/haiku.ogg", "/music/horsehead-nebula.ogg", "/music/hymn-to-the-stars.ogg", "/music/jupiter.ogg", "/music/large-magellanic-cloud.ogg", "/music/M54.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/Nomads.ogg", "/music/ocean-exploration2.ogg", "/music/on-the-beach-at-night.ogg", "/music/procyon.ogg", "/music/psyche.ogg", "/music/temple-of-kluex.ogg", "/music/the-deep.ogg", "/music/title-menu-music.ogg", "/music/tranquility-base.ogg", "/music/The-Haven-We-Know-(Sad)-Omeruin.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "om_divineplanetChest" ]
+      },
+
+      // MICRO DUNGEONS
+
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "om_divineplanetmicrodungeons" ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "om_divineplanetencounters" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "om_divineplanetpot1" ], [0.35, "om_divineplanetpot2" ], [0.35, "om_divineplanetpot3" ], [0.35, "om_divineplanetfinial1" ], [0.35, "om_divineplanetfinial2" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "om_divineplanetlamppost1" ], [0.35, "om_divineplanetlamppost2" ], [0.35, "om_divineplanetopillar1" ], [0.35, "om_divineplanetopillar2" ], [0.35, "om_divineplanetopillar3" ], [0.35, "om_divineplanetopillar4" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "techChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      }
+    ]
+  }
+}

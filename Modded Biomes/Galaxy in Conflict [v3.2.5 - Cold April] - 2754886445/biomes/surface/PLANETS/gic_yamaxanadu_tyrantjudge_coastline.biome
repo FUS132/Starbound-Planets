@@ -1,0 +1,394 @@
+{
+  "name" : "gic_yamaxanadu_tyrantjudge_coastline",
+  "friendlyName" : "Crusade",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "birdcritter" ],
+          [ 1, "bunnycritter" ],
+          [ 1, "fishcritter" ]
+        ]
+      },
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "butterbee" ],
+          [ 1, "fawnfly" ],
+          [ 1, "mudstag" ]
+        ]
+      },
+	  
+      {
+        "select" : 7,
+        "pool" : [
+          [ 1.0, "birdcritter" ],
+          [ 1.0, "hedgehogcritter" ],
+          [ 1.0, "tortoisecritter" ],
+          [ 1.0, "mousecritter" ],
+          [ 1.0, "bunnycritter" ],
+          [ 1.0, "snailcritter" ],
+          [ 1.0, "fishcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "garden"
+    }
+  },
+  
+  "hueShiftOptions" : [ 0 ],
+
+//  "hueShiftOptions" : [-30, -20, -15, -10, -5, 0, 5, 10, 15, 20, 30],
+
+  "weather" : [
+    [0, [
+      "/weather.config:gic_crusade_coastline"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // sunny earth days, red/orange sunrise and purple/red sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [183, 148, 98], [254, 230, 97] ],
+	  
+      "dayColors" : [ [89, 117, 138], [190, 216, 232] ], //[217, 216, 232]
+	  
+	  
+	  
+	  
+      "eveningColors" : [ [180, 120, 90], [254, 180, 70] ],
+	  
+	  
+	  
+	  
+      "nightColors" : [ [43, 50, 60, 20], [104, 110, 124, 40] ],
+	  
+
+      "morningLightColor" : [183, 148, 98],
+	  
+      "dayLightColor" : [217, 216, 232],
+	  
+      "eveningLightColor" : [254, 180, 70],
+	  
+      "nightLightColor" : [43, 50, 60] //20, 10, 30 | 40, 20, 60
+    }
+  ],
+
+  "mainBlock" : "sand2",
+  "subBlocks" : [ "dirt", "cobblestone", "sandstone01" ],
+  "ores" : "gic_atmosphericplanetorespawn",
+
+  "parallax" : "/parallax/surface/gic_yamaxanadu_tyrantjudge_coastline.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/ocean_surface_calm.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/ocean_surface_calm.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ 
+	  "/music/Dishonored/gic_dishonored_wrenhavenriver.ogg",
+	  "/music/FAR/gic_farchangingtides_circling.ogg",
+	  "/music/FAR/gic_farchangingtides_round.ogg",
+	  "/music/FAR/gic_farchangingtides_travel.ogg"
+	  ]
+    },
+    "night" : {
+      "tracks" : [
+	  "/music/Dishonored/gic_dishonored_maintheme.ogg",
+	  "/music/Dishonored/gic_dishonored_aristocracyexploration.ogg",
+	  "/music/Dishonored/gic_dishonored_regentexploration.ogg",
+	  "/music/Dishonored/gic_dishonored_streetexploration.ogg"
+	  ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "grass" ],
+    "grassModDensity" : 1.0,
+
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.8, //0.4
+
+    "items" : [
+
+
+      // MICRO DUNGEONS
+	  
+      {
+        "mode" : "floor",
+        "priority" : 5.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gic_crusade_coastlinemicrodungeons" ]
+      },
+
+      // TERRAIN
+
+      // GRASS and TREES and PLANTS
+
+      {
+        "mode" : "floor",
+        "priority" : 0.9,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "grass" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.9,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 40,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "pineytree" ],
+        "treeFoliageList" : [ "pinefoliage" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.9,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 40,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "pineytree" ],
+        "treeFoliageList" : [ "pinefoliage" ]
+      },
+	  
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "reedseed1" ], [0.35, "reedseed2" ], [0.35, "reedseed3" ], [0.35, "reedseed4" ], [0.35, "reedseed5" ], [0.35, "junglebush14" ], [0.35, "junglebush15" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.9,
+        "variants" : 1,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "grass",
+        "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "flowerred" ], [0.35, "flowerblue" ], [0.35, "floweryellow" ] ],
+            "parameters" : { "startingStage" : 2 }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "testbush",
+            "baseHueShiftMax" : 40,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+
+      // CROPS
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildcottonseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildwheatseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildpearlpeaseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildcornseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildriceseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildpotatoseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "grass" ],
+    "grassModDensity" : 0.2,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.3,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "gardenChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      }
+    ]
+  }
+}

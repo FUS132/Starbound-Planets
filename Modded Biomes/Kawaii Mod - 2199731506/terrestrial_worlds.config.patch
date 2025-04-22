@@ -1,0 +1,90 @@
+[
+	{	"op" : "add",
+		"path" : "/planetTypes/kawaii",
+		"value" : {
+			"threatRange" : [3, 7],
+			"layers" : {
+				"atmosphere" : {
+				  "primaryRegion" : ["kawaii_sky"]
+				},
+				"surface" : {
+				  "primaryRegion" : ["kawaii"],
+				  "secondaryRegions" : [ ],
+				  "dungeons" :
+				  [
+				 
+				  [1.0, "dungeoncrawler"], [1.0, "apexcity"], [1.0, "glitchvillage"], [1.0, "novakidvillage"], [4.0, "floranhutvillage"], [1.0, "avianvillage"]
+				  ]
+				}
+			}
+		}
+	},
+	{	"op" : "add",
+		"path" : "/planetTypes/kawaiiocean",
+		"value" : {
+			"threatRange" : [2, 4],
+			"layers" : {
+				"surface" : {
+				  "primaryRegion" : ["kawaiiocean"],
+				  "secondaryRegions" : [ ],
+				  "dungeons" :	  [ ]
+				},
+				"subsurface" : {
+				"primaryRegion" : ["kawaiioceanfloor"],
+				"dungeons" : [[1.0, "hylotloceancity"], [1.0, "hylotlruinedcity"]]
+				}
+			}
+		}	
+	},
+	{	"op" : "add",
+		"path" : "/regionTypes/kawaii",
+		"value" : {
+		  "blockSelector" : [ "kawaii" ],
+		  "caveLiquidSeedDensityRange" : [20, 20],
+		  "encloseLiquids" : true,
+		  "fillMicrodungeons" : true,
+		  "fgCaveSelector" : [ "surfaceCaves" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "caveLiquid" : [ "kawaii" ],
+		  "biome" : [
+			[0, [ "kawaii" ]]
+		  ],
+		  "subRegion" : ["giantflowers", "colourful", "bioluminescence"]
+		}
+	},
+	{	"op" : "add",
+		"path" : "/regionTypes/kawaiiocean",
+		"value" : {
+		  "oceanLiquid" : [ "kawaii" ],
+		  "blockSelector" : [ "kawaiiIslandsSurface" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "kawaiiocean" ]]
+		  ]
+		}
+	},
+	{	"op" : "add",
+		"path" : "/regionTypes/kawaiioceanfloor",
+		"value" : {
+		  "oceanLiquid" : [ "kawaii" ],
+		  "oceanLevelOffset" : 1000,
+		  "blockSelector" : [ "kawaiiledgesSurface" ],
+		  "fgCaveSelector" : [ "emptier" ],
+		  "bgCaveSelector" : [ "emptiest" ],
+		  "biome" : [
+			[0, [ "kawaiioceanfloor" ]]
+		  ]
+		}
+	},
+	{	"op" : "add",
+		"path" : "/regionTypes/kawaii_sky",
+		"value" : {
+		  "blockSelector" : [ "asteroids" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "kawaii_sky" ]]
+		  ]
+		}
+	}
+]

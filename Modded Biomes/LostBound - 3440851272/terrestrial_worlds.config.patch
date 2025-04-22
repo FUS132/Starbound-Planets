@@ -1,0 +1,55 @@
+[
+  {
+    "op": "add",
+    "path": "/planetTypes/frostcity",
+    "value": {
+      "threatRange": [2, 4],
+      "layers": {
+        "surface": {
+          "primaryRegion": ["frostcity"],
+          "secondaryRegion": ["arctic"],
+          "dungeonCountRange": [1, 2],
+          "dungeons": [
+            [1, "naturalcave"],
+            [2.1, "ruinacity2"],
+            [0.1, "ruinacity"]
+          ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/frostcity",
+    "value": {
+      "caveLiquid": ["water"],
+      "caveLiquidChanceRange": [20, 100],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgOreSelector": ["normalVeins", "richVeins"],
+      "biome": [
+        [0, ["frostcity"]]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
+    "value": [2.1, "ruinacity"]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
+    "value": [0.1, "ruinacity2"]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
+    "value": [1.1, "ruinacity"]
+  },
+  {
+  "op": "add",
+  "path": "/planetTypes/frostcity/layers/surface/secondaryRegion/-",
+  "value": "tundra"
+  }
+]

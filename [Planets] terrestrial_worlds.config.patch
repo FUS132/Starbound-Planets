@@ -3,9 +3,13 @@
 		// DISCLAMER: Not a plug-and-play solution. You must still assemble your own patch even if with the help of this
 		// cheat sheet.
 		//==============================================================================================================|
-		// All planets are clustered together by their mod name (with ID's), if multiple mods share an author they've
-		// also been put next to each other. Certain entries have comments added (or commented out entirely) if patching
-		// them could cause issues. *So please test before publishing!*
+		// All planets are clustered together by their mod name (with ID's), and if multiple mods share an author
+		// they've also been put next to each other. Certain entries have comments added (or commented out entirely)
+		// if patching them could cause issues. *So please test before publishing!*
+		//==============================================================================================================|
+		// All planets except for vanilla have "test" operations added as a crash precaution and for ease of copying,
+		// but if you want to cut on load-time a bit, planets from the same mod can be merged together under 1 pair of
+		// square brackets (like, for example, Vanilla Planets down below) and just 1 planet test at the top.
 		//==============================================================================================================|
     [
 		// Template for future use
@@ -28,13 +32,6 @@
             "path": "/planetTypes/garden/layers/surface/dungeonCountRange",
             "inverse": true
         },
-        {
-            "op": "add",
-            "path": "/planetTypes/garden/layers/surface/dungeons/-",
-            "value": [1, "CHANGE_ME"]
-        }
-    ],
-    [
         {
             "op": "add",
             "path": "/planetTypes/garden/layers/surface/dungeons/-",
@@ -97,7 +94,8 @@
             "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
             "value": [1, "CHANGE_ME"]
         }
-		// While there *is* an array for dungeons on tentacle already, I decided to comment it out because it may or may not break the main story, not really sure though
+		// While there *is* an array for dungeons on tentacle already, I decided to comment it out because it may 
+		// (or may not) break the main story, not really sure though
       //  {
       //      "op": "add",
       //      "path": "/planetTypes/tentacle/layers/surface/dungeons/-",
@@ -467,8 +465,8 @@
     ],
 		//==============================================================================================================|
 		// Arcana - 2359135864
-		// Note: Some planets in this mod aren't supposed to have dungeons what aren't tailored for said planets, so please consult Arcana's
-		// terrestrial_worlds.config.patch before adding anything
+		// Note: Some planets in this mod aren't supposed to have dungeons what aren't tailored for said planets,
+		// so please consult Arcana's terrestrial_worlds.config.patch inside "Modded Biomes" before adding anything.
 		//==============================================================================================================|
 		
 		//-------------------------------------------------------|
@@ -763,7 +761,8 @@
     ],
 		//==============================================================================================================|
 		// Galaxy in Conflict - 2754886445
-		// Note: Most of these are probably instanced
+		// Note: Most of these are probably instanced.
+		// TODO: figure out which ones those are .
 		//==============================================================================================================|
     [
         {"op": "test", "path": "/planetTypes/gic_razed_forest"},
@@ -911,7 +910,7 @@
     ],
 		//==============================================================================================================|
 		// Landable Gas Giants v1 - 1475245421
-		// Note: Adding dungeons to gas giants might make the game crash, so test
+		// Note: Adding dungeons to gas giants might make the game crash, so test!
 		//==============================================================================================================|
     [
         {"op": "test", "path": "/planetTypes/gasgiant"},
@@ -931,7 +930,7 @@
     ],
 		//==============================================================================================================|
 		// Landable Gas Giants v2 - 3422280518
-		// Note: Adding dungeons to gas giants might make the game crash, so test
+		// Note: Adding dungeons to gas giants might make the game crash, so test!
 		//==============================================================================================================|
     [
         {"op": "test", "path": "/planetTypes/gasgiant"},
@@ -1356,7 +1355,7 @@
   //      }
   //  ],
 		//==============================================================================================================|
-		// Kenopsea - 2331991026
+		// Kenopsea - 2331991026 AND Black Ice - 3331962844
 		//==============================================================================================================|
     [
         {"op": "test", "path": "/planetTypes/csbi_blacktundra"},
@@ -1490,7 +1489,7 @@
         }
     ],
 		//==============================================================================================================|
-		// Superbarren Planet - 1462080052
+		// Superbarren Planet - 1462080052 AND 2596090207
 		//==============================================================================================================|
     [
         {"op": "test", "path": "/planetTypes/superbarren"},

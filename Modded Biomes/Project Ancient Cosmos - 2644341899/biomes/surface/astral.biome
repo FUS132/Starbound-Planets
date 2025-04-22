@@ -1,0 +1,365 @@
+{
+	"name": "pf_star",
+	"friendlyName": "Astral Plane",
+
+	"spawnProfile": {
+		"groups": [
+			{
+				"select": 1,
+				"pool": [
+					[0.5, "pf_protectoratescandroid"],
+					[0.5, "pf_ancientdrone"]
+				]
+			},
+			{
+				"select": 2,
+				"pool": [
+					[0.25, "pf_stargleap"],
+					[0.15, "pf_cosmotop"],
+					[0.15, "pf_ancientcharger"],
+					[0.1, "petricub"],
+					[0.1, "spookit"]
+				]
+			},
+			{
+				"select": 1,
+				"pool": "generatedGroundAggroDay"
+			},
+			{
+				"select": 3,
+				"pool": "nightTerrors"
+			},
+			{
+				"select": 2,
+				"pool": "generatedGround"
+			},
+			{
+				"select": 2,
+				"pool": "generatedFlying"
+			},
+			{
+				"select": 2,
+				"pool": [
+					[1, "darkwormcritter"],
+					[1, "darkballcritter"],
+					[1, "darkoneeyecritter"],
+					[1, "darkthreeeyescritter"],
+					[1, "bigwormcritter"],
+					[1, "skywurmcritter"],
+					[1, "krawlcritter"],
+					[1, "darknessscabcritter"],
+					[1, "dartcritter"]
+				]
+			}
+		],
+		"monsterParameters": {
+			"colors": "cosmic",
+			"statusSettings" : {
+        	"stats" : {
+          	  "biomeanomalyImmunity2" : {
+              "baseValue" : 1.0
+            }
+          }
+		}	
+	  }
+	},
+    "statusEffects" : [ "realitybreakbiome" ],
+
+	"hueShiftOptions": [0, 0, 0, 0],
+
+	"weather": [
+		[0, [
+			"/weather.config:pf_star"
+		]]
+	],
+
+	"skyOptions": [{
+		"mainColor": [255, 255, 255],
+
+		"morningColors": [
+			[24, 38, 100, 80],
+			[58, 42, 190, 160]
+		],
+		"dayColors": [
+			[24, 38, 100, 80],
+			[58, 42, 190, 160]
+		],
+		"eveningColors": [
+			[24, 38, 100, 80],
+			[58, 42, 190, 160]
+		],
+		"nightColors": [
+			[24, 38, 100, 80],
+			[58, 42, 190, 160]
+		],
+
+		"morningLightColor": [40, 40, 80],
+		"dayLightColor": [40, 40, 80],
+		"eveningLightColor": [40, 40, 80],
+		"nightLightColor": [40, 40, 80]
+	}],
+
+    "mainBlock" : "pf_starsidian",
+    "subBlocks" : [ "pf_stardust", "matterblock", "pf_plasmamaterial" ],
+    "ores" : "none",
+
+	"parallax": "/parallax/surface/star.parallax",
+
+	"ambientNoises": {
+		"day": {
+			"tracks": ["/sfx/environmental/arid_day.ogg"]
+		},
+		"night": {
+			"tracks": ["/sfx/environmental/crystal_underground.ogg"]
+		}
+	},
+	"musicTrack": {
+		"day": {
+			"tracks": ["/music/crystal-exploration2.ogg", "/music/crystal-exploration1.ogg", "/music/accretion-disc.ogg", "/music/tranquility-base.ogg"]
+		},
+		"night": {
+			"tracks": ["/music/crystal-exploration2.ogg", "/music/crystal-exploration1.ogg", "/music/accretion-disc.ogg", "/music/tranquility-base.ogg"]
+		}
+	},
+
+	"surfacePlaceables": {
+		"grassMod": ["pf_stardust"],
+		"grassModDensity": 0.9,
+
+		"items": [{
+				"mode": "floor",
+				"priority": 0.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:overgroundChests",
+
+				"type": "treasureBox",
+				"treasureBoxSets": ["pf_ancientPodChest"]
+			},
+			{
+				"mode": "floor",
+				"priority": 0.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:overgroundChests",
+
+				"type": "treasureBox",
+				"treasureBoxSets": ["pf_astralProtectorateChest"]
+			},
+			{
+				"mode": "floor",
+				"priority": 1.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:overgroundRareChests",
+
+				"type": "object",
+				"objectSets": [{
+					"pool": [
+						[1, "statuspod"]
+					],
+					"parameters": {}
+				}]
+			},
+			{
+				"mode": "floor",
+				"priority": 1.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:surfaceCapsules",
+
+				"type": "object",
+				"objectSets": [{
+					"pool": [
+						[0.35, "capsulesmall"],
+						[0.35, "capsulemed"],
+						[0.35, "capsulebig"]
+					],
+					"parameters": {}
+				}]
+			},
+			{
+				"mode": "floor",
+				"priority": 2.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:denseLarge",
+
+				"type": "tree",
+				"treeFoliageHueShiftMax": 0,
+				"treeStemHueShiftMax": 15,
+				"treeStemList": ["astral"],
+				"treeFoliageList": ["nebula"]
+			},
+			{
+				"mode": "floor",
+				"priority": 3.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:tiyDist",
+
+				"type": "microdungeon",
+				"microdungeons": ["block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none"]
+			},
+			{
+				"mode": "floor",
+				"priority": 3.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:tiyDistPlatform",
+
+				"type": "microdungeon",
+				"microdungeons": ["aridplatforming"]
+			},
+			{
+				"mode": "floor",
+				"priority": 3.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:tiyDistTerrainfeatures",
+
+				"type": "microdungeon",
+				"microdungeons": ["terrainfeatures"]
+			},
+			{
+				"mode": "floor",
+				"priority": 1.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:denseMedium",
+
+				"type": "object",
+				"objectSets": [{
+					"pool": [
+						[0.35, "shadowrock1"],
+						[0.35, "shadowrock2"],
+						[0.35, "shadowrock3"],
+						[0.35, "shadowrock4"],
+						[0.35, "shadowrock5"]
+					],
+					"parameters": {}
+				}]
+			},
+			{
+        		"mode" : "floor",
+        		"priority" : 2.0,
+				"variants" : 1,
+        		"distribution" : "/biomes/distributions.config:moderateClumps",
+
+        		"type" : "bush",
+        		"bushes" : [
+          			{
+            			"name" : "astralbush",
+            			"baseHueShiftMax" : 0,
+            			"modHueShiftMax" : 0
+          			}
+        		]
+      		},
+			{
+        		"mode" : "floor",
+        		"priority" : 1.0,
+        		"variants" : 1,
+        		"distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        		"type" : "object",
+        		"objectSets" : [
+          			{
+            			"pool" : [ [0.35, "pf_astralvine1" ], [0.35, "pf_astralvine2" ], [0.35, "pf_astralvine3" ], [0.15, "pf_astralrifttree" ] ],
+            			"parameters" : { }
+          			}
+        		]
+      		},
+			{
+        		"mode" : "floor",
+        		"priority" : 1.0,
+        		"variants" : 1,
+        		"distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        		"type" : "object",
+        		"objectSets" : [
+          		{
+            		"pool" : [ [0.15, "pf_astralarch" ], [0.35, "pf_astralobelisk" ], [0.35, "pf_astralruin" ] ],
+            		"parameters" : { }
+          			}
+        		]
+      		},
+			{
+				"mode" : "floor",
+				"priority" : 1,
+				"variants" : 1,
+				"distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+				"type" : "microdungeon",
+				"microdungeons" : [ "pf_astralplanemicrodungeons" ]
+			},
+			{
+				"mode" : "floor",
+				"priority" : 3,
+				"variants" : 1,
+				"distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+				"type" : "microdungeon",
+				"microdungeons" : [ "pf_protectorateglitched" ]
+			}
+		]
+	},
+
+	"undergroundPlaceables": {
+		"grassMod": ["blackash"],
+		"grassModDensity": 0.6,
+
+		"items": [{
+				"mode": "floor",
+				"priority": 0.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:undergroundChests",
+
+				"type": "treasureBox",
+				"treasureBoxSets": ["pf_ancientPodChest"]
+			},
+			{
+				"mode": "floor",
+				"priority": 0.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:undergroundweaponChests",
+
+				"type": "treasureBox",
+				"treasureBoxSets": ["weaponChest"]
+			},
+			{
+				"mode": "floor",
+				"priority": 1.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:undergroundChests",
+
+				"type": "object",
+				"objectSets": [{
+					"pool": [
+						[1, "statuspod"]
+					],
+					"parameters": {}
+				}]
+			},
+			{
+				"mode": "ceiling",
+				"priority": 2.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:denseSmall",
+
+				"type": "tree",
+				"treeFoliageHueShiftMax": 0,
+				"treeStemHueShiftMax": 0,
+				"treeStemList": ["darkvine"],
+				"treeFoliageList": [""]
+			},
+			{
+				"mode": "floor",
+				"priority": 1.0,
+				"variants": 1,
+				"distribution": "/biomes/distributions.config:undergroundCapsules",
+
+				"type": "object",
+				"objectSets": [{
+					"pool": [
+						[0.35, "capsulesmall"],
+						[0.35, "capsulemed"],
+						[0.35, "capsulebig"]
+					],
+					"parameters": {}
+				}]
+
+			}
+		]
+	}
+}

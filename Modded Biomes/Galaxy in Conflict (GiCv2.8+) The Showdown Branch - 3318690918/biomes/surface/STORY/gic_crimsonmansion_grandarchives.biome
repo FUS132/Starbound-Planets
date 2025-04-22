@@ -1,0 +1,42 @@
+{
+  "name" : "gic_crimsonmansion_grandarchives",
+  "friendlyName" : "Crimson Mansion Grand Archives",
+
+  "parallax" : "/parallax/surface/gic_crimsonmansion_grandarchives.parallax",
+
+  "mainBlock" : "rock02",
+  "subBlocks" : [ "rock03", "direstone", "rock15" ],
+  "ores" : "gic_barrenrockorespawn",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ ]
+    },
+    "night" : {
+      "tracks" : [ ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [
+	  "/music/thiswarofmine/gic_thiswarofmine_nogoodchoice.ogg",
+	  "/music/thiswarofmine/gic_thiswarofmine_whennightcomes.ogg",
+	  "/music/thiswarofmine/gic_thiswarofmine_alone.ogg"
+	  ]
+    },
+    "night" : {
+      "tracks" : [	  
+	  "/music/thiswarofmine/gic_thiswarofmine_stillaliveinside.ogg",
+	  "/music/thiswarofmine/gic_thiswarofmine_thesecolddays.ogg",
+	  "/music/thiswarofmine/gic_thiswarofmine_thingsrightandwrong.ogg"
+	  ]
+    }
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [ ]
+  },
+
+  "hueShiftOptions" : [0]
+}

@@ -1,0 +1,223 @@
+{
+  "name" : "gic_floranliberationfront_introstory",
+  "friendlyName" : "Liberation",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 7,
+        "pool" : [
+          [ 1, "squeekcritter" ],
+          [ 1, "mousecritter" ],
+          [ 1, "spidercritter" ],
+          [ 1, "ravencritter" ],
+          [ 1, "wurmcritter" ],
+          [ 1, "vulturecritter" ],
+          [ 1, "appofloatcritter" ]
+        ]
+      },
+      {
+        "select" : 7,
+        "pool" : [
+          [ 1, "birdcritter" ],
+          [ 1, "hedgehogcritter" ],
+          [ 1, "tortoisecritter" ],
+          [ 1, "mousecritter" ],
+          [ 1, "bunnycritter" ],
+          [ 1, "snailcritter" ],
+          [ 1, "fishcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "snow"
+    }
+  },
+
+  "hueShiftOptions" : [ -20, -10, 0, 10, 20 ],
+
+  "weather" : [
+    [0, [
+      "/weather.config:gic_firestorm"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // light reddish
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [255, 224, 129], [252, 230, 164] ],
+      "dayColors" : [ [255, 152, 107], [255, 183, 152] ],
+      "eveningColors" : [ [254, 121, 69], [254, 165, 129] ],
+      "nightColors" : [ [70, 20, 0, 60], [70, 20, 0, 160] ],
+
+      "morningLightColor" : [202, 177, 100],
+      "dayLightColor" : [202, 138, 100],
+      "eveningLightColor" : [202, 100, 100],
+      "nightLightColor" : [70, 20, 0]
+    }
+  ],
+
+  "mainBlock" : "dirt",
+  "subBlocks" : [ "dirt", "rock15", "stonerubble", "cobblestone" ],
+  "ores" : "surface",
+
+  "parallax" : "/parallax/surface/gic_wildlands_arboretum.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/arid_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/arid_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+	//Mostly metal. Mostly.
+    "day" : {
+      "tracks" : [ 
+	  
+	  
+      "/music/mixes/gic_Metal_Mix_4.ogg",
+      "/music/mixes/gic_Metal_Mix_2.ogg",
+      "/music/mixes/gic_Metal_Mix_3.ogg"
+	  
+	  ]
+    },
+//Metal, but slightly quieter.
+    "night" : {
+      "tracks" : [ 
+	  
+      "/music/mixes/gic_Metal_Mix_1.ogg",
+      "/music/mixes/gic_Metal_Mix_5.ogg",
+      "/music/mixes/gic_Metal_Mix_6.ogg"
+	  
+	  ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "grass" ],
+    "grassModDensity" : 1.0,
+	
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.4,
+
+    "items" : [
+
+
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "grass", "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "testbush",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 40,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "weeping" ],
+        "treeFoliageList" : [ "weepingleaves" ]
+      },
+	  
+	  
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      }
+  
+	  
+	  
+
+	  
+	  
+	  
+
+
+	  
+    ]
+  },
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  "undergroundPlaceables" : {
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 0.4,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.3,
+
+    "items" : [
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 10,
+        "treeStemList" : [ "desertvine" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "grass",
+        "grasses" : [ "testflower7", "testflower8" ]
+      }
+    ]
+  }
+}

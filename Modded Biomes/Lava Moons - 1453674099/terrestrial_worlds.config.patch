@@ -1,0 +1,83 @@
+[
+// check path for non-existence
+[
+{ "op" : "add", 
+	"path" : "/planetTypes/lavamoon", 
+	"value" : {
+	"threatRange" : [6, 10],
+		"layers" : {
+		"surface" : { 
+			"primaryRegion" : [ "lavamoon" ],
+			"dungeons" : []
+			},
+		"subsurface" : { "primaryRegion" : [ "lavamoonunderground2" ] },
+		"underground1" : { "primaryRegion" : [ "lavamoonunderground2" ] },
+		"underground2" : { "primaryRegion" : [ "lavamoonunderground4" ] },
+		"underground3" : { "primaryRegion" : [ "lavamoonunderground6" ] },
+		"core" : { "primaryRegion" : [ "lavamooncorelayer" ] }
+		}
+	}
+},
+
+{ "op" : "add", 
+	"path" : "/regionTypes/lavamoon", 
+	"value" : {
+		"caveLiquid" : [ "lava" ],
+		"blockSelector" : [ "remixedSurface" ],
+		"fgCaveSelector" : [ "surfaceCaves" ],
+		"bgCaveSelector" : [ "empty" ],
+		"biome" : [
+			[0, [ "lavamoon" ]]
+		]
+	}
+},
+{ "op" : "add", 
+	"path" : "/regionTypes/lavamoonunderground2", 
+	"value" : {
+		"caveLiquid" : [ "fuel" ],
+		"fgCaveSelector" : [ "moonCaves" ],
+		"caveLiquidSeedDensityRange" : [2.5, 2.5],
+		"biome" : [
+			[0, [ "lavamoonunderground2" ]]
+		]
+	}
+},
+{ "op" : "add", 
+	"path" : "/regionTypes/lavamoonunderground4", 
+	"value" : {
+		"caveLiquid" : [ "fuel" ],
+		"fgCaveSelector" : [ "moonCaves" ],
+		"caveLiquidSeedDensityRange" : [2.5, 2.5],
+		"biome" : [
+			[0, [ "lavamoonunderground4" ]]
+		]
+	}
+},
+{ "op" : "add", 
+	"path" : "/regionTypes/lavamoonunderground6", 
+	"value" : {
+		"caveLiquid" : [ "fuel" ],
+		"fgCaveSelector" : [ "moonCaves" ],
+		"caveLiquidSeedDensityRange" : [2.5, 2.5],
+		"biome" : [
+			[0, [ "lavamoonunderground6" ]]
+		]
+	}
+},
+
+{ "op" : "add", 
+	"path" : "/regionTypes/lavamooncorelayer", 
+	"value" : {
+		"caveLiquid" : [ "fuel" ],
+		"caveLiquidSeedDensityRange" : [4.0, 4.0],
+		"oceanLiquid" : [ "fuel" ],
+		"oceanLevelOffset" : -30,
+		"fgCaveSelector" : [ "coreCaves" ],
+		"bgCaveSelector" : [ "coreCaves" ],
+		"biome" : [
+			[0, ["lavamooncorelayer" ] ]
+		]
+	}
+}
+]
+]

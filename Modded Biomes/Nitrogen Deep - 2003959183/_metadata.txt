@@ -1,0 +1,12 @@
+{
+  "version" : "1.2.0.0",
+  "tags" : "Planets and Environments",
+  "author" : "SkyeRangerDelta",
+  "description" : "Mod that adds a new planet similar to Frackin Universe's Nitrogen Sea (but a bit colder). It is simply a massive liquid nitrogen expanse without a large terrain covering; like an Arctic world. The temperature here is insidiously cold; immunity won't save you - but having an 80% cold resist or above will. \n\nFound in Tier 5 & 6 star systems\nOre spawns: Thorium, Violium, Ferozium, Aegisalt, Prisilite, Trianglium, Isogen\nSecondary ore types: Crystal, Diamond, Sulphur, Magnesium, Cinnabar\n\nAtmospheric Condenser spawns:\n[list]\n[*]Common: Liquid Nitrogen, Nitrogen, Snowflake, Hydrogen, Liquid Water, Carbon, Salt, Carbon Dioxide\n[*]Uncommon: Methanol, Iodine, Potent Mutagene, Powerful Mutagene, Ice Crystal, Oxygen, Liquid Metallic Hydrogen\n[*]Rare: Mutagene, Isogen, Tritium, Alien Compound, Deuterium, Helium-3\n[/list]\n\nRegion layers:\n[list]\n[*]Space: Elder Asteroids, Asteroids, Erchius Asteroids, Gleaming Asteroids, Ice Asteroids\n[*]Atmosphere: Ice Clouds\n[*]Surface: Nitrogen Deep (Primary), Ice Fire, Precursor\n[*]Subsurface: Nitrogen Deep Sea (just ocean with rare ice chunks floating around)\n[*]Underground1: Nitrogen Deep Floor\n[*]Underground2: Ice Waste Underground (Primary); Precursor, Ice Cave, Coral Cave\n[*]Underground3: Ice Waste Underground (Primary); Precursor, Ice Cave, Coral Cave\n[/list]\n\nPossible Dungeons:\n[list]\n[*]Apex Test Facility\n[*]Sci-fi Dungeon\n[*]Apex Test Chamber\n[*]Ship1\n[/list]",
+  "requires" : [],
+  "name" : "nitrogendeep",
+  "steamContentId" : "2003959183",
+  "friendlyName" : "Nitrogen Deep",
+  "link" : "steam://url/CommunityFilePage/2003959183",
+  "includes" : ["FrackinUniverse"]
+}

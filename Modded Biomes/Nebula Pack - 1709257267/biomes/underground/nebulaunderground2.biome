@@ -1,0 +1,36 @@
+{
+  "name" : "nebulaunderground2",
+  "friendlyName" : "nebulaunderground2",
+
+  "parallax" : "/parallax/space/nebula.parallax",
+
+  "statusEffects" : [ "nebulasickness" ],
+
+  "mainBlock" : "arcmatter",
+  "subBlocks" : [ "arcmatter", "arcmatter" ],
+  "ores" : "nebula",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/moon_underground.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/moon_underground.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : []
+    },
+    "night" : {
+      "tracks" : []
+    }
+  },
+
+  "undergroundPlaceables" : {
+    "items" : []
+  },
+
+  "hueShiftOptions" : [0]
+}

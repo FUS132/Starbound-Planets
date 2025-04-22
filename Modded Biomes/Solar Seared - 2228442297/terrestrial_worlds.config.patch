@@ -1,0 +1,32 @@
+[
+  {
+    "op": "add",
+    "path": "/planetTypes/solarseared",     // your biome "name" (not "friendlyname")
+    "value": {
+      "threatRange": [10, 10],  //what tier is your planet? if its only tier 1, use 1,1. Otherwise, use what you want.
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "solarseared" ],   //its own "name" is used here.
+          "secondaryRegion": ["midnight"],  //here are your sub-biomes
+          "dungeonCountRange": [0, 5],  //how many dungeons does your biome have ?
+          //what dungeons does it pull from when it does generate them? This is the new format for Nightly/1.0
+          "dungeons": [ [1.0,"novakidvillage"], [1.0,"avianairship"], [1.0,"naturalcave"] ]
+        }
+	  }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/solarseared",   //again, your biomes "name" value
+    "value": {
+      "caveLiquid": [ "lava" ], //what liquids appear on your biome surface?
+      "caveLiquidChanceRange": [90, 100],  //how often does your liquid appear on the surface?
+      "blockSelector": [ "remixedSwampySurface", "remixedSurface", "remixedPoolsSurface" ],  //surface terrain generation
+      "fgCaveSelector": [ "surfaceCaves" ], //foreground cave terrain generation
+      "bgOreSelector": [ "normalVeins", "richVeins" ],  // background ore terrain selector
+      "biome": [
+        [0, [ "solarseared" ]]    // and one more case of the "name" value
+      ]
+    }
+  }
+]

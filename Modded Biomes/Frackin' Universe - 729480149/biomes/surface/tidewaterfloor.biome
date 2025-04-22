@@ -1,0 +1,342 @@
+{
+  "name" : "tidewaterfloor",
+  "friendlyName" : "Rocky Tidewater Floor",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 2,
+        "pool" : [
+          [ 0.05, "deathjelly" ],
+          [ 0.1, "seaclam" ],
+          [ 0.1, "deathjellypeaceful" ]
+        ]
+      },
+      {
+        "select" : 6,
+        "pool" : [
+          [ 0.07, "smallFishOcean1" ],
+          [ 0.07, "smallFishOcean2" ],
+          [ 0.06, "passiveLargeFish" ],
+          [ 0.05, "aggroLargeFish" ],
+          [ 0.05, "squidcritter" ],
+          [ 0.25, "jellycritter" ],
+          [ 0.15, "clearjelly" ],
+          [ 0.25, "fufish" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "statusSettings" : {
+        "stats" : {
+          "poisonResistance" : {
+            "baseValue" : 1.0
+          },
+          "poisonStatusImmunity" : {
+            "baseValue" : 1.0
+          },
+          "pusImmunity" : {
+            "baseValue" : 1.0
+          }
+        }
+      }
+    }
+  },
+
+  "parallax" : "/parallax/surface/tidewaterfloor.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/ocean_underwater.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/ocean_underwater.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/OceanExploration1.ogg","/music/ocean-exploration2.ogg","/music/forsaken-grotto.ogg", "/music/lava-exploration1.ogg", "/music/lava-exploration2.ogg", "/music/drosera.ogg", "/music/crystal-exploration1.ogg", "/music/inviolate-loop.ogg", "/music/body-electric-loop.ogg", "/music/europa.ogg", "/music/crystal-exploration2.ogg", "/music/forsaken-grotto.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/OceanExploration1.ogg","/music/ocean-exploration2.ogg","/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mira.ogg", "/music/the-deep.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/Nomads.ogg", "/music/forsaken-grotto.ogg", "/music/mercury.ogg", "/music/procyon.ogg" ]
+    }
+  },
+
+  "hueShiftOptions" : [-60, -50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50, 60],
+
+  "mainBlock" : "marestone",
+  "subBlocks" : [ "coral", "coral2", "oystershell", "clay" ],
+  "ores" : "surface",
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "clay" ],
+    "grassModDensity" : 0.9,
+
+    "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.35, "rockstony1" ],
+              [0.35, "rockstony2" ],
+              [0.35, "rockstony3" ],
+              [0.35, "rockstony4" ],
+              [0.35, "rockstony5" ],
+              [0.35, "rockstony6" ],
+              [0.35, "rockstony7" ],
+              [0.35, "rockstony8" ]
+              ],
+              "parameters" : { }
+            }
+          ]
+        },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest", "ffbasicChest", "ffbasicChest2" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "fftidewaterFloorChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "darkcorals", "oceangrass", "oceangrass2", "tidewatergrass" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.125, "seashell1" ], [0.125, "seashell2" ], [0.125, "seashell3" ], [0.125, "seashell4" ], [0.125, "seashell5" ], [0.125, "seashell6" ], [0.125, "seashell7" ], [0.125, "seashell8" ]]
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "darkcone",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "darkcoral",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "darkseagrass",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "oceanbush",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "darkoshroom1" ], [0.20, "darkoshroom2" ], [0.20, "darkoshroom3" ], [0.20, "darkoshroom4" ], [0.20, "darkoshroom5" ], [0.33, "tonguebush1" ], [0.33, "tonguebush2" ] ]
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:oceanRare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "brokenanchor" ]]
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "pebbles" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:ffAverage",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "kelp", "seaweed" ],
+        "treeFoliageList" : [ "flowy", "kelpy", "leafy", "wavy" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeRareMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "tidewatermini" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [
+            [0.5, "wildreefpodseed" ],
+            [0.5, "wildfuspongeweedseed" ],
+            [0.5, "wildgoldenseaspongeplant" ],
+            [0.5, "wildcoralcreepseed" ],
+            [0.25, "wildcellpodsplant" ],
+            [0.25, "wildkamaranpodsplant" ],
+            [0.35, "wildphasefruitseed" ],
+            [0.35, "wildnakatiseed" ],
+            [0.25, "wildaquapodseed" ]
+            ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "undergroundPlaceables" : {
+    "grassMod" : [ "clay" ],
+    "grassModDensity" : 0.9,
+
+    "items" : [
+           {
+             "mode" : "ceiling",
+             "priority" : 1.0,
+             "variants" : 1,
+             "distribution" : "/biomes/distributions.config:ffCommon",
+
+             "type" : "object",
+             "objectSets" : [
+               {
+                 "pool" : [
+                   [0.50, "wildlumivineseed" ]
+                 ],
+                 "parameters" : { "startingStage" : 3 }
+               }
+             ]
+           },
+      {
+            "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [
+            [0.5, "wildreefpodseed" ],
+            [0.5, "wildfuspongeweedseed" ],
+            [0.5, "wildgoldenseaspongeplant" ],
+            [0.5, "wildcoralcreepseed" ],
+            [0.5, "wildcellpodsplant" ],
+            [0.25, "wildcellpodsplant" ],
+            [0.25, "wildkamaranpodsplant" ],
+            [0.35, "wildnakatiseed" ],
+            [0.25, "wildaquapodseed" ]
+            ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDistTerrainfeatures",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "tidewatermini", "canyonmini", "terrainfeatures", "rockclimb","rocktunnel",  "sandstone", "blockpile", "loops", "flats", "spikes", "rods", "spiralspikes", "stripeblocks", "wiggles" ]
+        }
+    ]
+  }
+}

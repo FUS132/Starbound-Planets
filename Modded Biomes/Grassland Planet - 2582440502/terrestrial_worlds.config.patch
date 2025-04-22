@@ -1,0 +1,55 @@
+[
+// Planet Types and Region Types
+	{
+		"op": "add",
+		"path": "/planetTypes/om_grasslandplanet",
+		"value": {
+			"threatRange" : [1, 2],
+				"layers" : {
+					"surface" : {
+						"primaryRegion" : ["om_grasslandplanet"],
+						"secondaryRegions" : ["garden", "om_grasslandplanet2"],
+						"dungeons" : [ [1.0, "floranvillagetower"], [1.0, "floranhutvillage"], [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "humancamp"], [4.0, "novakidvillage"], [4.0, "om_grasslandfishing"], [4.0, "om_grasslandbunker"], [4.0, "om_grasslandfarm"] ]
+					}
+				}
+		}
+	},
+	
+// Region Types
+	{
+		"op": "add",
+		"path": "/regionTypes/om_grasslandplanet",
+		"value": {
+			"caveLiquid": ["water"],
+			"blockSelector" : [ "lowHillsSurface" ],
+			"fgCaveSelector" : [ "surfaceCaves" ],
+			"bgCaveSelector" : [ "empty" ],
+			"biome": [
+				[0, ["om_grasslandplanet"]]
+			],
+			"subRegion": []
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/om_grasslandplanet2",
+		"value": {
+			"caveLiquid": ["water"],
+			"blockSelector" : [ "lowHillsSurface" ],
+			"fgCaveSelector" : [ "surfaceCaves" ],
+			"bgCaveSelector" : [ "empty" ],
+			"biome": [
+				[0, ["om_grasslandplanet2"]]
+			],
+			"subRegion": []
+		}
+	},
+
+// Other Planets
+	{"op": "add","path": "/planetTypes/forest/layers/surface/secondaryRegions/-","value": "om_grasslandplanet"},
+	{"op": "add","path": "/planetTypes/forest/layers/surface/secondaryRegions/-","value": "om_grasslandplanet2"},
+	{"op": "add","path": "/planetTypes/jungle/layers/surface/secondaryRegions/-","value": "om_grasslandplanet"},
+	{"op": "add","path": "/planetTypes/jungle/layers/surface/secondaryRegions/-","value": "om_grasslandplanet2"},
+	{"op": "add","path": "/planetTypes/alien/layers/surface/secondaryRegions/-","value": "om_grasslandplanet"},
+	{"op": "add","path": "/planetTypes/alien/layers/surface/secondaryRegions/-","value": "om_grasslandplanet2"}
+]

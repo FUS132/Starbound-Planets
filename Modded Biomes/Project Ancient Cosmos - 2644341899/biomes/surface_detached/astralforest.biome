@@ -1,0 +1,196 @@
+{
+  "name" : "pf_astralforest",
+  "friendlyName" : "Astral Forest",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1.0, "pf_stargleap" ],
+		  [ 1.0, "pf_cosmotop" ]
+        ]
+      },
+	  {
+        "select" : 1,
+        "pool" : [
+          [ 0.5, "pf_protectoratescandroid" ],
+		  [ 0.5, "pf_ancientdrone" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "pf_cosmobunnycritter" ]
+        ]
+      },
+	  {
+				"select": 1,
+				"pool": "generatedGroundAggroDay"
+			},
+			{
+				"select": 3,
+				"pool": "nightTerrors"
+			},
+			{
+				"select": 2,
+				"pool": "generatedGround"
+			},
+			{
+				"select": 2,
+				"pool": "generatedFlying"
+			}
+    ],
+		"monsterParameters": {
+			"colors": "cosmic",
+			"statusSettings" : {
+        	"stats" : {
+          	  "biomeanomalyImmunity2" : {
+              "baseValue" : 1.0
+            }
+          }
+		}	
+	  }
+  },
+
+  "hueShiftOptions" : [0],
+
+  "mainBlock" : "pf_stardirt",
+  "subBlocks" : [ "pf_starsidian" ],
+  "ores" : "surface",
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "pf_astralgrass" ],
+    "grassModDensity" : 0.9,
+
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.5,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "pf_astralvine1" ], [0.35, "pf_astralvine2" ], [0.35, "pf_astralvine3" ], [0.25, "pf_astralflower" ], [0.25, "pf_astralstarflybush" ], [0.15, "pf_astralrifttree" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "pf_astralforestmicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "astral" ],
+        "treeFoliageList" : [ "nebula" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "astralbush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "jungleflower1", "jungleflower2", "jungleflower3" ]
+      },
+
+      // CROPS
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.5, "pf_starbulbseedwild" ], [0.5, "pf_gravitymelonseedwild" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "pf_astralgrass" ],
+    "grassModDensity" : 0.3,
+
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.3,
+
+    "items" : [
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "purplevine" ],
+        "treeFoliageList" : [ "nothing" ]
+      }
+    ]
+  }
+}

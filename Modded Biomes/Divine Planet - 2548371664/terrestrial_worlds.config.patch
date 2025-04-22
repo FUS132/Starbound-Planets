@@ -1,0 +1,121 @@
+[
+//Planet Types and Region Types
+	{
+		"op": "add",
+		"path": "/planetTypes/om_divineplanet",
+		"value": {
+			"threatRange": [8,8],
+			"layers": {
+				"atmosphere" : {
+					"primaryRegion" : ["om_divineplanettop"]
+				},
+				"surface": {
+					"primaryRegion": ["om_divineplanet"],
+					"secondaryRegions" : [],
+					"dungeons": [ [4.0, "om_divinebridge"] ]
+				},
+				"subsurface": {
+					"primaryRegion": ["om_divineplanetunderground0a"]
+				},
+				"underground1": {
+					"primaryRegion": ["om_divineplanetunderground3a"]
+				},
+				"underground2": {
+					"primaryRegion": ["om_divineplanetunderground5a"]
+				},
+				"underground3": {
+					"primaryRegion": ["om_divineplanetunderground5a"]
+				},
+				"core": {
+					"primaryRegion": ["om_divineplanetcorelayer"]
+				}
+			}
+		}
+	},
+	
+//Region Types
+	{
+		"op": "add",
+		"path": "/regionTypes/om_divineplanettop",
+		"value": {
+			"caveLiquid": ["healingliquid", "water"],
+			"caveLiquidSeedDensityRange": [1, 3],
+			"blockSelector": ["asteroids"],
+			"fgCaveSelector": ["asteroids"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[0, ["om_divineplanettop"]]
+			],
+			"subRegion": []
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/om_divineplanet",
+		"value": {
+			"caveLiquid": ["healingliquid", "water"],
+			"caveLiquidSeedDensityRange": [2, 3],
+			"blockSelector": ["om_divineplanetfloatingIslandsSurface"],
+			"fgCaveSelector": ["om_divineplanetfloatingIslandsSurface"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[0, ["om_divineplanet"]]
+			],
+			"subRegion": []
+		}
+	},
+	
+//Underground
+	{
+		"op": "add",
+		"path": "/regionTypes/om_divineplanetunderground0a",
+		"value": {
+			"caveLiquid": ["healingliquid", "water"],
+			"caveLiquidSeedDensityRange": [2, 3],
+			"blockSelector": ["mixedSurface"],
+			"fgCaveSelector": ["mixedSurface"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[1, ["om_divineplanetunderground0a"]]
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/om_divineplanetunderground3a",
+		"value": {
+			"caveLiquid": ["healingliquid", "water"],
+			"caveLiquidSeedDensityRange": [3, 3],
+			"biome": [
+				[1, ["om_divineplanetunderground3a"]]
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/om_divineplanetunderground5a",
+		"value": {
+			"caveLiquid": ["healingliquid", "water"],
+			"caveLiquidSeedDensityRange": [3, 3],
+			"biome": [
+				[1, ["om_divineplanetunderground5a"]]
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/om_divineplanetcorelayer",
+		"value": {
+			"caveLiquid": ["healingliquid"],
+			"caveLiquidSeedDensityRange": [4.0, 4.0],
+			"oceanLiquid": ["healingliquid"],
+			"oceanLevelOffset": -20,
+			"fgCaveSelector": ["coreCaves"],
+			"bgCaveSelector": ["coreBackgroundCaves"],
+			"biome": [
+				[1, ["om_divineplanetcorelayer"]]
+			]
+		}
+	}
+
+]

@@ -1,0 +1,85 @@
+{
+  "name" : "ct_ionic_hive",
+  "friendlyName" : "Ionic Hive",
+  "description" : "Sometimes hives can be found even on ^#2080f0;alterash prime^reset; planets. Bevare of added electricity!",
+  "icon" : "/items/active/alta/loot/tier3.png",
+  "mainBlock" : "hive",
+  "subBlocks" : [ "moonrock" ],
+  "ores" : "ct_alterash_depth2",
+
+  "hueShiftOptions" : [0],
+
+  "spawnProfile" : {
+    "groups" : [
+      { "select" : 1, "pool" : [ [ 1, "orbide" ] ] },
+      { "select" : 1, "pool" : [ [ 1, "wisper" ], [ 1, "skimbus" ], [ 1, "ct_nightmare_orbide_spawn" ] ] },
+      { "select" : 2, "pool" : [[1,"swarmcritter"],[1,"swarmflyingcritter"],[1,"rolypolycritter"],[1,"maggotcritter"]] }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "hivegrass" ], "grassModDensity" : 0.9,
+    "ceilingGrassMod" : [ "hiveceilinggrass" ], "ceilingGrassModDensity" : 0.9,
+    "items" : [
+      {
+        "mode" : "floor", "priority" : 1.0, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "hiveChest" ]
+      },
+      {
+        "mode" : "floor", "priority" : 0.1, "variants" : 11, "distribution" : "/biomes/distributions.config:denseSmall", "type" : "object",
+        "objectSets" : [ { "pool" : [ [0.35, "hivebush1" ], [0.35, "hivebush2" ], [0.35, "hivebush3" ], [0.35, "hivebush4" ], [0.35, "hivebush5" ], [0.35, "buglike1" ], [0.35, "buglike2" ], [0.35, "buglike3" ], [0.35, "buglike4" ], [0.35, "buglike5" ], [0.35, "hivelight1" ], [0.35, "hivelight2" ] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "ceiling", "priority" : 0.1, "variants" : 11, "distribution" : "/biomes/distributions.config:denseSmall", "type" : "object",
+        "objectSets" : [ { "pool" : [ [0.35, "buglike6" ], [0.35, "buglike7" ], [0.35, "buglike8" ], [0.35, "buglike9" ], [0.35, "buglike10" ] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "ceiling", "priority" : 0.1, "variants" : 1, "distribution" : "/biomes/distributions.config:denseMedium", "type" : "tree",
+        "treeFoliageHueShiftMax" : 180, "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "podvine" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundCapsules", "type" : "object",
+        "objectSets" : [ { "pool" : [ [0.3, "ct_capsule_blue" ], [1.7, "ct_capsule" ] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:undergroundChests", "type" : "treasureBox",
+        "treasureBoxSets" : [ "ct_alta_pod_tier3" ]
+      },
+      {
+        "mode" : "floor", "priority" : 1, "variants" : 1, "distribution" : "/biomes/distributions.config:minibiomeChests", "type" : "object",
+        "objectSets" : [ { "pool" : [ [1, "ct_eds_lifechamber" ], [1, "ct_eds_status_pod" ] ], "parameters" : { } } ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "hivemicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "hive" ],
+        "treeFoliageList" : [ "hive" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundBiomeEncounterDungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "undergroundencounterdungeons" ]
+      }
+    ]
+  }
+}

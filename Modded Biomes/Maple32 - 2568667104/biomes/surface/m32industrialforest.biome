@@ -1,0 +1,505 @@
+{
+  "name" : "m32industrialforest",
+  "friendlyName" : "Bioindustrial",
+
+  "statusEffects" : [ "toxicatmosphere" ],
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [
+        [ 3, "beepbot" ]//,
+        //[ 1, "rustickM32" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "butterbee" ],
+          [ 0.3, "fawnfly" ],
+          [ 0.3, "mudstag" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "birdcritter" ],
+          [ 1, "M32steamspiders" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "volcanic"
+    }
+  },
+
+  //"hueShiftOptions" : [-30, -20, -15, -10, -5, 0, 5, 10, 15, 20, 30],
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/m32weather.config:M32industrial"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // Ashy Skies
+      "mainColor" : [150, 150, 150],
+
+      "morningColors" : [ [181, 144, 122], [255, 135, 105] ],
+      "dayColors" : [ [150, 150, 150], [89, 81, 76] ],
+      "eveningColors" : [ [119, 81, 109], [181, 122, 136] ],
+      "nightColors" : [ [31, 25, 46, 200], [60, 26, 125, 255] ],
+
+
+      "morningLightColor" : [106, 94, 86],
+      "dayLightColor" : [194, 181, 174],
+      "eveningLightColor" : [97, 61, 87],
+      "nightLightColor" : [34, 19, 61]
+    },
+    {
+      // Smokey Skies
+      "mainColor" : [194, 106, 96],
+
+      "morningColors" : [ [130, 40, 29], [255, 28, 0] ],
+      "dayColors" : [ [255, 88, 68], [192, 61, 45] ],
+      "eveningColors" : [ [125, 44, 49], [181, 61, 69] ],
+      "nightColors" : [ [46, 11, 53, 200], [108, 26, 125, 255] ],
+
+
+      "morningLightColor" : [130, 40, 29],
+      "dayLightColor" : [255, 88, 68],
+      "eveningLightColor" : [125, 44, 49],
+      "nightLightColor" : [38, 16, 42]
+    },
+    {
+      // Sulfur Dust
+      "mainColor" : [205, 177, 130],
+
+      "morningColors" : [ [55, 43, 36], [121, 70, 44] ],
+      "dayColors" : [ [183, 150, 94], [128, 98, 66] ],
+      "eveningColors" : [ [89, 45, 35], [170, 78, 55] ],
+      "nightColors" : [ [46, 20, 7, 200], [76, 34, 20, 255] ],
+
+
+      "morningLightColor" : [183, 125, 95],
+      "dayLightColor" : [205, 177, 130],
+      "eveningLightColor" : [185, 111, 92],
+      "nightLightColor" : [48, 35, 28]
+    },
+    {
+      // Copper Bath
+      "mainColor" : [138, 177, 164],
+
+      "morningColors" : [ [25, 32, 37], [50, 65, 74] ],
+      "dayColors" : [ [94, 168, 143], [54, 87, 66] ],
+      "eveningColors" : [ [30, 59, 36], [73, 117, 83] ],
+      "nightColors" : [ [11, 23, 19, 200], [20, 42, 35, 255] ],
+
+
+      "morningLightColor" : [31, 45, 53],
+      "dayLightColor" : [138, 177, 164],
+      "eveningLightColor" : [48, 80, 55],
+      "nightLightColor" : [24, 33, 30]
+    },
+    {
+      // Trench Chlorine
+      "mainColor" : [163, 175, 129],
+
+      "morningColors" : [ [47, 53, 27], [88, 100, 52] ],
+      "dayColors" : [ [119, 130, 87], [73, 87, 31] ],
+      "eveningColors" : [ [53, 52, 27], [100, 100, 52] ],
+      "nightColors" : [ [24, 29, 7, 200], [47, 57, 16, 255] ],
+
+
+      "morningLightColor" : [68, 72, 55],
+      "dayLightColor" : [147, 155, 126],
+      "eveningLightColor" : [72, 72, 53],
+      "nightLightColor" : [40, 44, 29]
+    }
+  ],
+
+  "mainBlock" : "rockbrick",
+  "subBlocks" : [ "stonerubble", "rustyblock", "mud" ],
+  "ores" : "surface",
+
+  "parallax" : "/parallax/surface/industrialforest.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      //"tracks" : [ "/sfx/environmental/moon_surface.ogg" ]
+      "tracks" : [ "/sfx/biomes/m32industrialforest/Bioindustrial-Ambiance-1.ogg" ]
+    },
+    "night" : {
+      //"tracks" : [ "/sfx/environmental/crystal_underground.ogg" ]
+      "tracks" : [ "/sfx/biomes/m32industrialforest/Bioindustrial-Ambiance-1.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/lava-exploration1.ogg", "/sfx/M32music/homemade/3-legged-march.ogg", "/sfx/M32music/homemade/sucker-pumps.ogg", "/music/scorian-flow.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/M32music/homemade/gassy-geyser.ogg", "/music/drosera.ogg", "/music/body-electric-loop.ogg", "/music/lava-exploration2.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "m32fallenleaves" ],
+    "grassModDensity" : 1.0,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.4,
+
+    "items" : [
+
+      // CHESTS and ARTIFICIAL PLACEABLES
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+        {
+          "pool" : [ [0.5, "swampindustrialchest" ], [0.5, "wreckcrate1" ] ],
+          "parameters" : {
+          "treasurePools" : [ "refineryblueprints" ]
+          }
+        }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.4, "swamptanktall" ], [0.6, "swamptankround" ] ],
+            "parameters" : {
+            "treasurePools" : [ "swamptanktreasure" ]
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.24, "smashabledrink2" ], [0.23, "smashabledrink3" ], [0.23, "smashabledrink5" ], [0.44, "junkbottle1" ], [0.43, "junkbottle2" ], [0.43, "junkbottle3" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.2, "m32grave1" ], [0.8, "m32grave2" ] ],
+            "parameters" : { "treasurePools":["tombTreasure"] }
+          }
+        ]
+      },
+
+      // MICRO DUNGEONS
+
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "maple32industrialencounters" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingCore",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "foundrymicrodungeons" ]
+      },
+
+
+      // TERRAIN
+
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+
+      // GRASS and TREES and PLANTS
+
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "savannahgrass" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingLower",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "steamspring", "rust" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:hazardUndergroundCore",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "industrial" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "grass",
+        "grasses" : [ "toxicplains", "m32flower1" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "rustbush1" ], [0.35, "rustbush3" ], [0.35, "rustbush4" ] ],
+            "parameters" : { "startingStage" : 2 }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "savannahbush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+
+      // CROPS
+
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildwartweedseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSurfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildtoxictopseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "m32fallenleaves_dark" ],
+    "grassModDensity" : 0.5,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.3,
+
+    "items" : [
+    {
+      "mode" : "background",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:undergroundChests",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.1, "nuusymbol1" ], [0.1, "nuusymbol2" ], [0.1, "nuusymbol3" ], [0.1, "nuusymbol4" ], [0.1, "nuusymbol5" ], [0.1, "nuusymbol6" ], [0.2, "nuusymbol7" ], [0.1, "nuusymbol8" ], [0.1, "nuusymbol9" ], [0.1, "nuusymbol10" ], [0.1, "nuusymbol11" ], [0.1, "nuusymbol12" ], [0.1, "nuusymbol13" ], [0.1, "nuusymbol14" ], [0.1, "nuusymbol15" ], [0.1, "nuusymbol16" ], [0.1, "nuusymbol17" ], [0.1, "nuusymbol18" ], [0.1, "nuusymbol19" ], [0.1, "nuusymbol20" ], [0.1, "nuusymbol21" ], [0.1, "nuusymbol22" ], [0.1, "nuusymbol23" ], [0.1, "nuusymbol24" ], [0.1, "nuusymbol25" ] ]
+        }
+      ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:undergroundChests",
+
+      "type" : "object",
+      "objectSets" : [
+      {
+        "pool" : [ [0.5, "swampindustrialchest" ], [0.5, "wreckcrate1" ] ],
+        "parameters" : {
+        "treasurePools" : [ "refineryblueprints" ]
+        }
+      }
+      ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:undergroundChests",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.4, "swamptanktall" ], [0.6, "swamptankround" ] ],
+          "parameters" : {
+          "treasurePools" : [ "swamptanktreasure" ]
+          }
+        }
+      ]
+    },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.24, "smashabledrink2" ], [0.23, "smashabledrink3" ], [0.23, "smashabledrink5" ], [0.44, "junkbottle1" ], [0.43, "junkbottle2" ], [0.43, "junkbottle3" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "darkvine" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "toxicplains" ]
+      }
+    ]
+  }
+}

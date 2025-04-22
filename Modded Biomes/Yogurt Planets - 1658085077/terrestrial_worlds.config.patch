@@ -1,0 +1,43 @@
+[
+  {
+    "op": "add",
+    "path": "/planetTypes/yogurtocean",
+    "value": {
+      "blendSize": 30,
+      "threatRange": [3, 3],
+      "layers": {
+        "surface": {
+          "primaryRegion": ["yogurtocean"],
+          "baseHeight": 1150,
+          "layerLevel": 1050
+        },
+        "subsurface": {
+          "primaryRegion": ["yogurtoceanfloor"]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/yogurtocean",
+    "value": {
+      "oceanLiquid": ["pat_yogurt"],
+      "blockSelector": ["remixedIslandsSurface"],
+      "fgCaveSelector": ["empty"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0, ["yogurtocean"]]]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/yogurtoceanfloor",
+    "value": {
+      "oceanLevelOffset": 1000,
+      "oceanLiquid": ["pat_yogurt"],
+      "blockSelector": ["ledgesSurface"],
+      "fgCaveSelector": ["emptier"],
+      "bgCaveSelector": ["emptiest"],
+      "biome": [[0, ["yogurtoceanfloor"]]]
+    }
+  }
+]

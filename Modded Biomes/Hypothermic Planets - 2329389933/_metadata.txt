@@ -1,0 +1,9 @@
+{
+  "version" : "1.0",
+  "author" : "Aethermirage",
+  "description" : "Hypothermic planets are the cold, dead remains of once thriving cities. Found around frozen and fiery stars, these frozen-over metros require some form of cold protection and are geared for tier five progression. Aside from the cold the only threats to your safety are wildlife and raiders; harsh blizzards and dark skies may also make your travels more hazardous.",
+  "name" : "hypothermic planets",
+  "friendlyName" : "Hypothermic Planets",
+  "steamContentId" : "2329389933",
+  "link" : "steam://url/CommunityFilePage/2329389933"
+}

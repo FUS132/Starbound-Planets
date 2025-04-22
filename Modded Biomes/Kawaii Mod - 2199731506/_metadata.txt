@@ -1,0 +1,10 @@
+{
+  "version" : "1.9",
+  "tags" : "Miscellaneous|Planets and Environments|NPCs and Creatures|Weapons|Furniture and Objects",
+  "author" : "Projectmayhem1983",
+  "description" : "Adds Kawaii Planet and Biome.\nAdds Kawaii colors for randomly generated guns that come from the biome/planet\nAdds Kawaii themed weapons\nAdds Kawaii colored mobs\n\n\nFixed issues with crabcanos and removed small trees from parralax. Changed liquid Id number,\n\n",
+  "name" : "Kawaii Mod",
+  "friendlyName" : "Kawaii Mod",
+  "steamContentId" : "2199731506",
+  "link" : "steam://url/CommunityFilePage/2199731506"
+}

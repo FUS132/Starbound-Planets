@@ -1,0 +1,10 @@
+{
+  "version" : "0.4.0",
+  "tags" : "Crafting and Building|Planets and Environments|Food and Farming|Armor and Clothes",
+  "author" : "Lord Ironborne",
+  "description" : "A mod which adds a new planet: The Aether",
+  "name" : "The Aether Mod",
+  "friendlyName" : "The Aether Mod",
+  "steamContentId" : "1941217152",
+  "link" : "steam://url/CommunityFilePage/1941217152"
+}

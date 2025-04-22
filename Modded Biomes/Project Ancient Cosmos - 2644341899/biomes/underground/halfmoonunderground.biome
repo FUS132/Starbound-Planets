@@ -1,0 +1,70 @@
+{
+  "name" : "pf_halfmoonunderground",
+  "friendlyName" : "Halfmoon Caverns",
+
+  "parallax" : "/parallax/underground/halfmoonunderground.parallax",
+
+  "mainBlock" : "moondust",
+  "subBlocks" : [ "moonstone", "moonrock", "pf_slopedstars", "matterblock" ],
+  "ores" : "pf_halfmoonunderground",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/moon_underground.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/moon_underground.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : []
+    },
+    "night" : {
+      "tracks" : []
+    }
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:hazardUndergroundLower",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "groundspike1" ], [0.20, "groundspike2" ], [0.20, "groundspike3" ], [0.20, "groundspike4" ] ]
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:layer1Chests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "pf_halfmoonChest" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingLower",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "ceilingspike1" ], [0.20, "ceilingspike2" ], [0.20, "ceilingspike3" ], [0.20, "ceilingspike4" ] ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "hueShiftOptions" : [0]
+}

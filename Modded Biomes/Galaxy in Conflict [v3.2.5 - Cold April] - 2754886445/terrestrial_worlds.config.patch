@@ -1,0 +1,1455 @@
+[ 
+
+
+
+
+//--- --- ---
+
+[
+
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_floranliberationfront_territory",
+      "value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_floranliberationfront_territory" ]]
+      ]
+    }
+  },  
+
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_floranliberationfront_wartorn",
+      "value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "bgOreSelector" : [ "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "richVeins" ],
+      "caveLiquid" : [ "swampwater" ], //what liquids appear on your biome surface?
+      "caveLiquidChanceRange" : [5, 20],  //how often does your liquid appear on the surface?
+      "caveLiquidSeedDensityRange" : [0, 2],
+      "biome" : [
+        [0, [ "gic_floranliberationfront_wartorn" ]]
+      ]
+    }
+  }, 
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/gic_razed_forest",
+    "value": {
+      "gravityRange": [
+        70,
+        90
+      ],
+      "threatRange": [
+        1,
+        1
+      ],
+      "layers" : {
+        "space" : {
+          "primaryRegion" : ["gic_barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["gic_atmosphere"]
+        },
+        "surface" : {
+          "primaryRegion" : ["gic_floranliberationfront_wartorn"],
+          "secondaryRegions" : [],
+	      "dungeons" :[[999, "gic_razed_floranfortifiedtown"]],
+		  
+// OLD DUNGEON PARAMETERS	      "dungeons" :[[999, "gic_floranfortress"], [999, "gic_spawn_razedmarket"], [999, "gic_floranvillagetower_razed"]],
+		  
+          "dungeonCountRange" : [1, 1]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["gic_barrenrock_underground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["core"]
+        }
+      }
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_protectedcolony_forest",
+      "value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "bgOreSelector" : [ "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "richVeins" ],
+      "caveLiquid" : [ "water" ], //what liquids appear on your biome surface?
+      "caveLiquidChanceRange" : [5, 20],  //how often does your liquid appear on the surface?
+      "caveLiquidSeedDensityRange" : [0, 2],
+      "biome" : [
+        [0, [ "gic_protectedcolony_forest" ]]
+      ]
+    }
+  },
+  
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_protectedcolony_snow",
+      "value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "bgOreSelector" : [ "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "richVeins" ],
+      "caveLiquid" : [ "water" ], //what liquids appear on your biome surface?
+      "caveLiquidChanceRange" : [5, 20],  //how often does your liquid appear on the surface?
+      "caveLiquidSeedDensityRange" : [0, 2],
+      "biome" : [
+        [0, [ "gic_protectedcolony_snow" ]]
+      ]
+    }
+  }, 
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/gic_protectedcolony",
+    "value": {
+      "gravityRange": [
+        70,
+        90
+      ],
+      "threatRange": [
+        1,
+        1
+      ],
+      "layers" : {
+        "space" : {
+          "primaryRegion" : ["gic_barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["gic_atmosphere"]
+        },
+        "surface" : {
+          "primaryRegion" : ["gic_protectedcolony_snow"],
+          "secondaryRegions" : [],
+	      "dungeons" :[ [999, "gic_protectedcolony"], [999, "gic_spawn_abandonedhouse"]],
+          "dungeonCountRange" : [2, 2]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["gic_barrenrock_underground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["core"]
+        }
+      }
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/gic_crusade_underground",
+"value" :
+   {
+      "fgCaveSelector" : [ "empty" ],
+      "fgOreSelector" : ["normalVeins"],
+      "bgOreSelector" : ["normalBackgroundVeins"],
+      "caveLiquid" : [],
+      "caveLiquidSeedDensityRange" : [0, 0],
+      "biome" : [
+        [0, [ "gic_crusade_underground"]]
+      ]
+    }
+},
+
+
+
+
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_crusade_forest",
+      "value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "bgOreSelector" : [ "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "richVeins" ],
+      "caveLiquid" : [ "gic_mutedwater" ], //what liquids appear on your biome surface?
+      "caveLiquidChanceRange" : [5, 20],  //how often does your liquid appear on the surface?
+      "caveLiquidSeedDensityRange" : [0, 2],
+      "biome" : [
+        [0, [ "gic_crusade_forest" ]]
+      ]
+    }
+  }, 
+  
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_crusade_coastline",
+      "value" :
+    {
+      "oceanLiquid" : [ "gic_mutedwater" ],
+      "oceanLevelOffset" : -10,
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "bgOreSelector" : [ "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "richVeins" ],
+      "caveLiquid" : [ "gic_mutedwater" ], //what liquids appear on your biome surface?
+      "caveLiquidChanceRange" : [5, 20],  //how often does your liquid appear on the surface?
+      "caveLiquidSeedDensityRange" : [0, 2],
+      "biome" : [
+        [0, [ "gic_crusade_coastline" ]]
+      ]
+    }
+  }, 
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/gic_crusade",
+    "value": {
+      "gravityRange": [
+        70,
+        90
+      ],
+      "threatRange": [
+        1,
+        1
+      ],
+      "layers" : {
+        "space" : {
+          "primaryRegion" : ["gic_barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["gic_atmosphere"]
+        },
+        "surface" : {
+          "primaryRegion" : ["gic_crusade_coastline"],
+          "secondaryRegions" : [],
+	      "dungeons" :[[999, "gic_besiegedglitchtown"], [999, "gic_spawn_abandonedwarcamp"] ],
+          "dungeonCountRange" : [2, 2]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["gic_crusade_underground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["gic_crusade_underground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["gic_crusade_underground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["gic_crusade_underground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["core"]
+        }
+      }
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_wildlands_forest",
+      "value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "bgOreSelector" : [ "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "richVeins" ],
+      "caveLiquid" : [ "water" ], //what liquids appear on your biome surface?
+      "caveLiquidChanceRange" : [5, 20],  //how often does your liquid appear on the surface?
+      "caveLiquidSeedDensityRange" : [0, 2],
+      "biome" : [
+        [0, [ "gic_wildlands_forest" ]]
+      ]
+    }
+  }, 
+  
+  
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_wildlands_coastline",
+      "value" :
+    {
+      "oceanLiquid" : [ "gic_mutedwater" ],
+      "oceanLevelOffset" : -10,
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "bgOreSelector" : [ "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "richVeins" ],
+      "caveLiquid" : [ "gic_mutedwater" ], //what liquids appear on your biome surface?
+      "caveLiquidChanceRange" : [5, 20],  //how often does your liquid appear on the surface?
+      "caveLiquidSeedDensityRange" : [0, 2],
+      "biome" : [
+        [0, [ "gic_wildlands_coastline" ]]
+      ]
+    }
+  }, 
+  
+  
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_wildlands_coastline_island",
+      "value" :
+    {
+      "oceanLiquid" : [ "gic_mutedwater" ],
+      "oceanLevelOffset" : -10,
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "bgOreSelector" : [ "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "richVeins" ],
+      "caveLiquid" : [ "gic_mutedwater" ], //what liquids appear on your biome surface?
+      "caveLiquidChanceRange" : [5, 20],  //how often does your liquid appear on the surface?
+      "caveLiquidSeedDensityRange" : [0, 2],
+      "biome" : [
+        [0, [ "gic_wildlands_coastline_island" ]]
+      ]
+    }
+  }, 
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/gic_wildlands",
+    "value": {
+      "gravityRange": [
+        70,
+        90
+      ],
+      "threatRange": [
+        1,
+        1
+      ],
+      "layers" : {
+        "space" : {
+          "primaryRegion" : ["gic_barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["gic_atmosphere"]
+        },
+        "surface" : {
+          "primaryRegion" : ["gic_wildlands_forest"], //gic_wildlands_forest    gic_wildlands_coastline_island
+          "secondaryRegions" : [],
+	      "dungeons" :[ [999, "gic_spawn_abandonedoutpost"], [999, "gic_wildlandslaboratory"], [999, "gic_abandonedrangeroutpost"]],
+//	      "dungeons" :[ [999, "gic_wildlands_island"] ],
+          "dungeonCountRange" : [4, 4]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["gic_barrenrock_underground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["core"]
+        }
+      }
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_barrenrock_fumaroles",
+      "value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_barrenrock" ]]
+      ]
+    }
+  },  
+
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_barrenrock_geysers",
+      "value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_barrenrock" ]]
+      ]
+    }
+  },  
+
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_barrenrock_gasvents",
+      "value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_barrenrock" ]]
+      ]
+    }
+  },  
+
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_barrenrock_lavaspouts",
+      "value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ], //foreground cave terrain generation
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_barrenrock" ]]
+      ]
+    }
+  },  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/gic_barrenrock",
+"value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_barrenrock" ]]
+      ]
+    }
+},	
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/gic_barrenrock",
+    "value": {
+      "gravityRange": [
+        1,
+        200
+      ],
+      "threatRange": [
+        1,
+        1
+      ],
+      "layers" : {
+        "space" : {
+          "primaryRegion" : ["gic_barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["gic_void"]
+        },
+        "surface" : {
+          "primaryRegion" : ["gic_barrenrock"]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["gic_barrenrock_underground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["gic_barrenrock_underground"]
+        }
+      }
+    }
+  },
+  
+
+
+{"op" : "add",
+"path" : "/regionTypes/gic_barrenrock_underground",
+"value" :
+   {
+      "fgCaveSelector" : [ "empty" ],
+      "fgOreSelector" : ["normalVeins"],
+      "bgOreSelector" : ["normalBackgroundVeins"],
+      "caveLiquid" : [],
+      "caveLiquidSeedDensityRange" : [0, 0],
+      "biome" : [
+        [0, [ "gic_barrenrock_underground"]]
+      ]
+    }
+},
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/gic_colonized_barrenrock_underground",
+"value" :
+   {
+      "fgCaveSelector" : [ "empty" ],
+      "fgOreSelector" : ["normalVeins"],
+      "bgOreSelector" : ["normalBackgroundVeins"],
+      "caveLiquid" : [],
+      "caveLiquidSeedDensityRange" : [0, 0],
+      "biome" : [
+        [0, [ "gic_colonized_barrenrock_underground"]]
+      ]
+    }
+},
+
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/gic_colonized_barrenrock",
+"value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_colonized_barrenrock" ]]
+      ]
+    }
+},	
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/gic_colonized_barrenrock",
+    "value": {
+      "gravityRange": [
+        60,
+        100
+      ],
+      "threatRange": [
+	    1,
+        1
+      ],
+      "layers" : {
+        "space" : {
+          "primaryRegion" : ["gic_barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["gic_void"]
+        },
+        "surface" : {
+          "primaryRegion" : ["gic_colonized_barrenrock"],
+		  "dungeons" :[[999.0, "gic_surfacecolony"]]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["gic_colonized_barrenrock_underground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["gic_colonized_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["gic_colonized_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["gic_colonized_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["gic_colonized_barrenrock_underground"]
+        }
+      }
+    }
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  {"op" : "add",
+"path" : "/regionTypes/gic_afflictedcolonized_barrenrock_underground",
+"value" :
+   {
+      "fgCaveSelector" : [ "empty" ],
+      "fgOreSelector" : ["normalVeins"],
+      "bgOreSelector" : ["normalBackgroundVeins"],
+      "caveLiquid" : [],
+      "caveLiquidSeedDensityRange" : [0, 0],
+      "biome" : [
+        [0, [ "gic_afflictedcolonized_barrenrock_underground"]]
+      ]
+    }
+},
+
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/gic_afflictedcolonized_barrenrock",
+"value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_afflictedcolonized_barrenrock" ]]
+      ]
+    }
+},	
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/gic_afflictedcolonized_barrenrock",
+    "value": {
+      "gravityRange": [
+        60,
+        100
+      ],
+      "threatRange": [
+	    1,
+        1
+      ],
+      "layers" : {
+        "space" : {
+          "primaryRegion" : ["gic_barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["gic_void"]
+        },
+        "surface" : {
+          "primaryRegion" : ["gic_afflictedcolonized_barrenrock"],
+		  "dungeons" :[[999.0, "gic_afflictedcolony"]]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["gic_afflictedcolonized_barrenrock_underground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["gic_afflictedcolonized_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["gic_afflictedcolonized_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["gic_afflictedcolonized_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["gic_afflictedcolonized_barrenrock_underground"]
+        }
+      }
+    }
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+
+
+{"op" : "add",
+"path" : "/regionTypes/gic_anomalies_underground1a",
+"value" :
+   {
+      "fgOreSelector" : ["normalVeins"],
+      "bgOreSelector" : ["normalBackgroundVeins"],
+      "caveLiquid" : ["water"],
+      "caveLiquidSeedDensityRange" : [0, 0],
+      "biome" : [
+        [0, [ "gic_anomalies_underground1a"]]
+      ]
+    }
+},
+
+  
+{"op" : "add",
+"path" : "/regionTypes/gic_abandoned_wartorn",
+"value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "caveLiquid" : [],
+      "caveLiquidSeedDensityRange" : [0, 0],
+      "biome" : [
+        [0, [ "gic_abandoned_wartorn" ]]
+      ]
+    }
+},  
+  
+  
+  
+{"op" : "add",
+"path" : "/regionTypes/gic_forest_wartorn",
+"value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "caveLiquid" : [],
+      "caveLiquidSeedDensityRange" : [0, 0],
+      "biome" : [
+        [0, [ "gic_forest_wartorn" ]]
+      ]
+    }
+},  
+  
+{"op" : "add",
+"path" : "/regionTypes/gic_jungle_wartorn",
+"value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "caveLiquid" : [],
+      "caveLiquidSeedDensityRange" : [0, 0],
+      "biome" : [
+        [0, [ "gic_jungle_wartorn" ]]
+      ]
+    }
+},    
+  
+  
+  
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/gic_atmospheric_wartorn",
+    "value": {
+      "gravityRange": [
+        70,
+        80
+      ],
+      "threatRange": [
+	    1,
+        1
+      ],
+      "layers" : {
+        "space" : {
+          "primaryRegion" : ["gic_barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["gic_atmosphere"]
+        },
+        "surface" : {
+          "primaryRegion" : ["gic_atmospheric_wartorn"],
+		  "secondaryRegions" : [ "gic_jungle_wartorn" ],
+		  "dungeons" :[[999.0, "gic_urbanbattle"], [999.0, "gic_highwaybattle"]],
+		  "dungeonCountRange" : [4, 4]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground1" : {
+          "primaryRegion" : ["gic_anomalies_underground1a"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["gic_barrenrock_underground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["core"]
+        }
+      }
+    }
+  },
+
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/gic_atmospheric_wartorn",   //again, your biomes "name" value
+"value" :
+{
+"caveLiquid" : [ "swampwater" ], //what liquids appear on your biome surface?
+"caveLiquidChanceRange" : [20, 100],  //how often does your liquid appear on the surface?
+"blockSelector" : [ "remixedMildSurface" ],  //surface terrain generation
+"fgCaveSelector" : [ "surfaceCaves" ], //foreground cave terrain generation
+"bgCaveSelector" : [ "empty" ],
+"bgOreSelector" : [ "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "normalBackgroundVeins", "richVeins" ],  // background ore terrain selector
+"biome" : [
+[0, [ "gic_atmospheric_wartorn" ]]    // and one more case of the "name" value
+],
+		  "subRegion" : []
+}
+},
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/gic_barrenfreeze",
+"value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_barrenfreeze" ]]
+      ]
+    }
+},	
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/gic_barrenfreeze",
+    "value": {
+      "gravityRange": [
+        1,
+        200
+      ],
+      "threatRange": [
+        1,
+        1
+      ],
+      "layers" : {
+        "space" : {
+          "primaryRegion" : ["gic_barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["gic_atmosphere"]
+        },
+        "surface" : {
+          "primaryRegion" : ["gic_barrenfreeze"]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["gic_barrenfreeze_underground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["gic_barrenfreeze_underground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["gic_barrenfreeze_underground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["gic_barrenfreeze_underground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["gic_barrenfreeze_underground"]
+        }
+      }
+    }
+  },
+  
+
+
+{"op" : "add",
+"path" : "/regionTypes/gic_barrenfreeze_underground",
+"value" :
+   {
+      "fgCaveSelector" : [ "empty" ],
+      "fgOreSelector" : ["normalVeins"],
+      "bgOreSelector" : ["normalBackgroundVeins"],
+      "caveLiquid" : [],
+      "caveLiquidSeedDensityRange" : [0, 0],
+      "biome" : [
+        [0, [ "gic_barrenfreeze_underground"]]
+      ]
+    }
+},
+
+
+
+
+
+
+
+
+
+
+
+// FROSTED
+
+
+{
+"op" : "add",
+"path" : "/regionTypes/gic_colonized_frosted",
+"value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "caveLiquid" : [],
+      "caveLiquidSeedDensityRange" : [0, 0],
+      "biome" : [
+        [0, [ "gic_khurtovyna_entrenchedcity_snowstorm" ]]
+      ]
+    }
+},	
+
+{
+"op" : "add",
+"path" : "/regionTypes/gic_anomalies_frosted",
+"value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "caveLiquid" : [],
+      "caveLiquidSeedDensityRange" : [0, 0],
+      "biome" : [
+        [0, [ "gic_anomalies_frosted" ]]
+      ]
+    }
+},	
+
+{
+"op" : "add",
+"path" : "/regionTypes/gic_khurtovyna_entrenchedcity_snowstorm",
+"value" :
+    {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "caveLiquid" : [],
+      "caveLiquidSeedDensityRange" : [0, 0],
+      "biome" : [
+        [0, [ "gic_khurtovyna_entrenchedcity_snowstorm" ]]
+      ]
+    }
+},	
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/gic_frosted",
+    "value": {
+      "gravityRange": [
+        70,
+        90
+      ],
+      "threatRange": [
+        1,
+        1
+      ],
+      "layers" : {
+        "space" : {
+          "primaryRegion" : ["gic_barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["gic_atmosphere"]
+        },
+        "surface" : {
+          "primaryRegion" : ["gic_khurtovyna_entrenchedcity_snowstorm"],
+          "secondaryRegions" : [],
+	      "dungeons" :[[999, "gic_khurtovyna_entrenchedcity"]], //gic_spawn_abandonedoutpost
+          "dungeonCountRange" : [3, 3]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["gic_anomalies_frosted_underground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["gic_anomalies_frosted_underground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["gic_frosted_underground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["gic_frosted_underground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["core"]
+        }
+      }
+    }
+  },
+  
+{
+"op" : "add",
+"path" : "/regionTypes/gic_frosted_underground",
+"value" :
+   {
+      "fgOreSelector" : ["normalVeins"],
+      "bgOreSelector" : ["normalBackgroundVeins"],
+      "caveLiquid" : ["water"],
+      "caveLiquidSeedDensityRange" : [1.5, 3.5],
+      "biome" : [
+        [0, [ "gic_frosted_underground"]]
+      ]
+    }
+},
+  
+{
+"op" : "add",
+"path" : "/regionTypes/gic_anomalies_frosted_underground",
+"value" :
+   {
+      "fgOreSelector" : ["normalVeins"],
+      "bgOreSelector" : ["normalBackgroundVeins"],
+      "caveLiquid" : ["water"],
+      "caveLiquidSeedDensityRange" : [1.5, 3.5],
+      "biome" : [
+        [0, [ "gic_anomalies_frosted_underground"]]
+      ]
+    }
+},
+  
+{"op" : "add",
+"path" : "/regionTypes/gic_colonized_frosted_underground",
+"value" :
+   {
+      "fgCaveSelector" : [ "empty" ],
+      "fgOreSelector" : ["normalVeins"],
+      "bgOreSelector" : ["normalBackgroundVeins"],
+      "caveLiquid" : ["water"],
+      "caveLiquidSeedDensityRange" : [1.5, 3.5],
+      "biome" : [
+        [0, [ "gic_colonized_frosted_underground"]]
+      ]
+    }
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/gic_denseplanetsurface",
+"value" :
+   {
+      "caveLiquid" : [ "lava" ],
+      "caveLiquidSeedDensityRange" : [10, 10],
+      "encloseLiquids" : true,
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_denseplanetsurface" ]]
+      ]
+    }
+},	
+
+{"op" : "add",
+"path" : "/regionTypes/gic_denseplanetunderground",
+"value" :
+   {
+      "fgCaveSelector" : [ "empty" ],
+      "fgOreSelector" : ["normalVeins"],
+      "bgOreSelector" : ["normalBackgroundVeins"],
+      "caveLiquid" : ["lava"],
+      "caveLiquidSeedDensityRange" : [10, 80],
+      "biome" : [
+        [0, [ "gic_denseplanetunderground"]]
+      ]
+    }
+},
+
+{"op" : "add",
+"path" : "/regionTypes/gic_denseplanet_underground_cirnonium",
+"value" :
+   {
+      "fgCaveSelector" : [ "empty" ],
+      "fgOreSelector" : ["normalVeins"],
+      "bgOreSelector" : ["normalBackgroundVeins"],
+      "caveLiquid" : ["lava"],
+      "caveLiquidSeedDensityRange" : [10, 80],
+      "biome" : [
+        [0, [ "gic_denseplanet_underground_cirnonium"]]
+      ]
+    }
+},
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/gic_denseplanet",
+    "value": {
+      "gravityRange": [
+        200,
+        700
+      ],
+      "threatRange": [
+	    1,
+        1
+      ],
+      "layers" : {
+        "space" : {
+          "primaryRegion" : ["gic_barrenasteroids"]
+        },
+        "atmosphere" : {
+          "primaryRegion" : ["gic_atmosphere"]
+        },
+        "surface" : {
+          "primaryRegion" : ["gic_denseplanetsurface"],
+          "dungeons" : []
+        },
+        "subsurface" : {
+          "primaryRegion" : ["gic_denseplanetunderground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["gic_denseplanetunderground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["gic_denseplanet_underground_cirnonium"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["gic_denseplanet_underground_cirnonium"],
+          "secondaryRegions" : [],
+          "dungeons" : []
+        },
+        "core" : {
+          "primaryRegion" : ["core"],
+          "secondaryRegions" : []
+        }
+      }
+    }
+  },
+  
+  
+
+  
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_atmosphere",
+      "value" :
+    {
+      "blockSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_atmosphere" ]]
+      ]
+    }
+  },
+
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_void",
+      "value" :
+    {
+      "blockSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_void" ]]
+      ]
+    }
+  },    
+  
+  {
+	  "op" : "add",
+      "path" : "/regionTypes/gic_barrenasteroids",
+      "value" :
+    {
+      "blockSelector" : [ "asteroids" ],
+      "fgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "gic_barrenasteroids" ]]
+      ]
+    }
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/garden/layers/surface/dungeons/-",
+   "value": [ 4.0, "gic_garden_shockbanditoutpost" ]
+  }
+  
+  
+  
+  
+  
+  
+], 
+  
+//--- --- ---  
+  
+//Reminder that the extra brackets are due to the operations below requiring TEST functions. All functions that do not need a TEST function should go above.
+  
+  
+  
+  
+  
+  
+  
+  
+[
+    {
+      "op": "test",
+      "path": "/planetTypes/garden/layers/surface/dungeonCountRange/0",
+      "value": 2
+    },
+    {
+      "op": "replace",
+      "path": "/planetTypes/garden/layers/surface/dungeonCountRange/0",
+      "value": 3
+    }
+], 
+ 
+[
+    {
+      "op": "test",
+      "path": "/planetTypes/garden/layers/surface/dungeonCountRange/1",
+      "value": 2
+    },
+    {
+      "op": "replace",
+      "path": "/planetTypes/garden/layers/surface/dungeonCountRange/1",
+      "value": 3
+    }
+],
+
+
+
+ 
+[
+    {
+      "op": "test",
+      "path": "/planetTypes/garden/layers/surface/dungeonCountRange/0",
+      "value": 4
+    },
+    {
+      "op": "replace",
+      "path": "/planetTypes/garden/layers/surface/dungeonCountRange/0",
+      "value": 5
+    }
+],
+
+[
+    {
+      "op": "test",
+      "path": "/planetTypes/garden/layers/surface/dungeonCountRange/1",
+      "value": 4
+    },
+    {
+      "op": "replace",
+      "path": "/planetTypes/garden/layers/surface/dungeonCountRange/1",
+      "value": 5
+    }
+]
+
+
+
+  
+  
+  
+  
+  
+]

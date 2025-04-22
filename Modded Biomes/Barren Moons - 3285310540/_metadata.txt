@@ -1,0 +1,10 @@
+{
+  "version" : "1.0",
+  "author" : "Tidalbelt",
+  "tags" : "Planets and Environments",
+  "description" : "Enables Barren biomes to spawn as moons via the dark magic of a single line in a CelestialConfig.Patch. Not sure if it'll work with truespace, you'll have to test that yourself.",
+  "name" : "Barren Moons",
+  "friendlyName" : "Barren Moons",
+  "steamContentId" : "3285310540",
+  "link" : "steam://url/CommunityFilePage/3285310540"
+}

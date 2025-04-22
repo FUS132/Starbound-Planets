@@ -1,0 +1,13 @@
+{
+  "version" : "2",
+  "author" : "Credo",
+  "tags" : "Crafting and Building|Planets and Environments|Weapons|User Interface|Furniture and Objects",
+  "description" : "THIS IS JUST A RE-UPLOAD OF THE ORIGINAL BLACK ICE MOD. NO SUPPORT, UPDATES, OR FIXES WILL BE PROVIDED. ALL CREDIT TO THE ORIGINAL AUTHOR.\n\nBlack Ice is a weapons manufacturing corporation with a focus on crygenic munitions and equipment.\n\nAll brand tiles and objects can be found at the dedicated vendor which can be crafted from the tier three inventors table. All weapons and armor can be purchased from the secondary merchant whom is available from the brand vendor.\nWhile dungeons aren't yet implimented in the mod, there are planets you can find which have a couple themed enemies you can fight as well as just being nice changes of scenery.\n\nKnown tile id conflict with Protogen Race Mod which will crash your game if both mods are installed: https://steamcommunity.com/sharedfiles/filedetails/?id=1789115955\n\nHalo Reach © Microsoft Corporation. Black Ice was created under Microsoft's \"Game Content Usage Rules\" using assets from Halo Reach, and it is not endorsed by or affiliated with Microsoft.  \n\nImportant Rules:\nhttps://www.xbox.com/en-US/developers/rules",
+  "requires" : [],
+  "name" : "Black Ice",
+  "priority" : -1,
+  "friendlyName" : "Black Ice",
+  "steamContentId" : "3331962844",
+  "link" : "steam://url/CommunityFilePage/3331962844",
+  "includes" : []
+}

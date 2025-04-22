@@ -1,0 +1,13 @@
+{
+  "name" : "pf_blackholeatmosphere",
+  "friendlyName" : "void",
+
+  "parallax" : "/parallax/atmosphere/atmosphere_blackhole.parallax",
+
+  "spawnProfile" : {
+    "groups" : [],
+    "monsterParameters" : {}
+  },
+
+  "hueShiftOptions" : [0]
+}

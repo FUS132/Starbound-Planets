@@ -1,0 +1,135 @@
+[
+    {
+        "op": "add",
+        "path": "/regionTypes/SMspiritmooncore",
+        "value": {
+            "fgCaveSelector": [
+                "empty"
+            ],
+            "subBlockSelector": [
+                "lowHillsSurface"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "SMspiritmooncorelayer"
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/SMspiritmoon",
+        "value": {
+            "blockSelector": [
+                "remixedSurface"
+            ],
+            "fgCaveSelector": [
+                "moonSurfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "SMspiritmoon"
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/SMspiritmoonunderground",
+        "value": {
+            "fgCaveSelector": [
+                "moonCaves"
+            ],
+            "fgOreSelector": [
+                "richVeins"
+            ],
+            "bgOreSelector": [
+                "richVeins"
+            ],
+            "caveLiquid": [
+                "SMspiritfuel"
+            ],
+            "caveLiquidSeedDensityRange": [
+                3.5,
+                3.5
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "SMspiritmoonunderground"
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "op": "add",
+        "path": "/planetTypes/SMspiritmoon",
+        "value": {
+            "gravityRange": [
+                20,
+                20
+            ],
+            "threatRange": [
+                1,
+                1
+            ],
+            "layers": {
+                "space": {
+                    "primaryRegion": [
+                        "barrenasteroids"
+                    ]
+                },
+                "atmosphere": {
+                    "primaryRegion": [
+                        "void"
+                    ]
+                },
+                "surface": {
+                    "primaryRegion": [
+                        "SMspiritmoon"
+                    ]
+                },
+                "subsurface": {
+                    "primaryRegion": [
+                        "SMspiritmoonunderground"
+                    ]
+                },
+                "underground1": {
+                    "primaryRegion": [
+                        "SMspiritmoonunderground"
+                    ],
+                    "secondaryRegions": []
+                },
+                "underground2": {
+                    "primaryRegion": [
+                        "SMspiritmoonunderground"
+                    ],
+                    "secondaryRegions": []
+                },
+                "underground3": {
+                    "primaryRegion": [
+                        "SMspiritmoonunderground"
+                    ],
+                    "secondaryRegions": []
+                },
+                "core": {
+                    "primaryRegion": [
+                        "SMspiritmooncore"
+                    ],
+                    "baseHeight": 150
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,458 @@
+[
+  /* {
+    "op": "add",
+    "path": "/planetTypes/magma/layers/surface/dungeons",
+    "value": [[1.0, "v-strongholdgateway"]]
+  }, */
+  {
+    "op" : "add",
+    "path" : "/planetTypes/v-voltage",
+    "value" : {
+      "threatRange" : [8, 8],
+      "gravityRange" : [80, 100],
+
+      "worldEdgeForceRegions" : "TopAndBottom",  // Keep stuff from falling through the bottom
+
+      "layers" : {
+        "atmosphere" : {
+          "primaryRegion" : [ "v-voltageatmosphere" ]
+        },
+        "surface" : {
+          "primaryRegion" : [ "v-voltage" ],
+          "secondaryRegions" : [ "v-voltagespikes", "v-voltagewastes" ],
+          // "primaryRegion" : [ "v-voltagespikes" ],
+          "secondaryRegionCount" : [0, 2],
+          // "secondaryRegions" : [ "v-voltagewastes" ],
+          // "secondaryRegionCount" : [1, 1],
+
+          "dungeons" : [ ]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["v-subsurfacevoltage"],
+          "secondaryRegions" : [ "v-deepvoltagewastes", "v-coilcaves", "v-barrencaves" ],
+          // "secondaryRegions" : [ "v-deepvoltagewastes" ],
+          "secondaryRegionCount" : [1, 1]
+        },
+        "underground1" : {
+          "primaryRegion" : ["v-shallowundergroundvoltage"],
+          "secondaryRegions" : [ "v-deepvoltagewastes", "v-coilcaves" ],
+          "secondaryRegionCount" : [0, 1]
+        },
+        "underground2" : {
+          "primaryRegion" : ["v-undergroundvoltage"],
+          "secondaryRegions" : [ "v-pairingcaves", "v-deepvoltagewastes" ],
+          "secondaryRegionCount" : [0, 1]
+        },
+        "underground3" : {
+          "primaryRegion" : ["v-deepundergroundvoltage"],
+          "secondaryRegions" : [ "v-pairingcaves" ],
+          "secondaryRegionCount" : [1, 1]
+        },
+        "core" : {
+          "primaryRegion" : ["v-voltagecorelayer"],
+          "secondaryRegions" : [],
+
+          "dungeons" : [[1.0, "v-voltagecity"]]
+        }
+      }
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-voltageatmosphere",
+    "value" : {
+      "blockSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-voltageatmosphere", "v-voltageatmosphererusty" ]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-voltage",
+    "value" : {
+      "blockSelector" : [ "remixedMildSurface", "remixedStepsSurface", "remixedStepsSurfaceLarge", "remixedSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves", "normalCaves", "sparseCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-voltage", "v-voltagerusty" ]]
+        // [0, [ "v-voltage" ]]
+      ],
+      "subRegion" : ["v-voltagedesert", "v-voltageforest"]
+      //"subRegion" : ["v-voltageforest"]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-voltagespikes",
+    "value" : {
+      //"blockSelector" : [ "v-remixedColossalSpikesSurface" ],
+      "blockSelector" : [ "remixedSpikesSurface", "spikesSurface", "remixedSpikesSurface2",
+          "v-remixedGiantSpikesSurface", "v-remixedColossalSpikesSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-voltage", "v-voltagerusty", "v-voltagespikes", "v-voltagespikesrusty" ]]
+        // [0, [ "v-voltagespikes", "v-voltagespikesrusty" ]]
+      ],
+      "subRegion" : []
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-voltagedesert",
+    "value" : {
+      "blockSelector" : [ "lowHillsSurface", "medHillsSurface", "flatsSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves", "sparseCaves", "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "subBlockSelector" : ["v-copperDesertSubBlocks"],
+      "biome" : [
+        [0, [ "v-voltagedesertruins", "v-voltagedesertruinsoxidized" ]]
+      ],
+      "subRegion" : []
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-voltagewastes",
+    "value" : {
+      "blockSelector" : [ "lowHillsSurface", "mixedSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "caveLiquid" : ["v-electricity"],
+      "caveLiquidSeedDensityRange" : [1, 3],
+      "encloseLiquids" : true,
+      "biome" : [
+        [0, [ "v-voltagewastes", "v-voltagewastesoxidized" ]]
+      ],
+      "subRegion" : []
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-voltageforest",
+    "value" : {
+      "blockSelector" : [ "lowHillsSurface", "mixedSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-voltageforest" ]]
+      ],
+      "subRegion" : []
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-subsurfacevoltage",
+    "value" : {
+      "fgCaveSelector" : [ "normalCaves", "denseCaves", "sparseCaves" ],
+      "biome": [
+        [1,["v-shallowundergroundvoltage", "v-shallowundergroundvoltageruins", "v-shallowundergroundvoltagetraps",
+            "v-shallowundergroundvoltagerusty"]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-shallowundergroundvoltage",
+    "value" : {
+      "fgCaveSelector" : [ "normalCaves", "denseCaves", "sparseCaves" ],
+      "biome": [
+        [1,["v-shallowundergroundvoltage", "v-shallowundergroundvoltageruins", "v-shallowundergroundvoltagetraps"]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-deepvoltagewastes",
+    "value" : {
+      "fgCaveSelector" : ["normalCaves", "denseCaves"],
+      "caveLiquid" : ["v-electricity"],
+      "caveLiquidSeedDensityRange" : [1, 3],
+      "encloseLiquids" : true,
+      "biome" : [
+        [0, ["v-deepvoltagewastes"]]
+      ],
+      "subRegion" : []
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-coilcaves",
+    "value" : {
+      "fgCaveSelector" : ["normalCaves"],
+      "biome" : [
+        [0, ["v-coilcaves"]]
+      ],
+      "subRegion" : []
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-barrencaves",
+    "value" : {
+      "fgCaveSelector" : ["normalCaves"],
+      "biome" : [
+        [0, ["v-barrencaves"]]
+      ],
+      "subRegion" : []
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-undergroundvoltage",
+    "value" : {
+      "fgCaveSelector" : [ "normalCaves", "denseCaves", "sparseCaves" ],
+      "biome": [
+        [1,["v-undergroundvoltage", "v-undergroundvoltagetraps"]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-deepundergroundvoltage",
+    "value" : {
+      "fgCaveSelector" : [ "normalCaves", "denseCaves", "sparseCaves" ],
+      "biome": [
+        [1,["v-deepundergroundvoltage"]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-pairingcaves",
+    "value" : {
+      "fgCaveSelector" : [ "v-voltagePairingCaves" ],
+      "bgCaveSelector" : [ "v-voltagePairingCavesBackground" ],
+      "biome": [
+        [1,["v-pairingcaves"]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-voltagecorelayer",
+    "value" : {
+      "caveLiquid" : ["v-electricity"],
+      "oceanLiquid" : ["v-coreelectricity"],
+      "fgCaveSelector" : [ "v-voltageCoreCaves" ],
+      "bgCaveSelector" : [ "v-voltageCoreCavesBackground" ],
+      "oceanLevelOffset" : -20,
+      "caveLiquidSeedDensityRange" : [4, 4],
+      "biome": [
+        [1,["v-voltagecorelayer"]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/planetTypes/v-toxicwasteland",
+    "value" : {
+      "threatRange" : [8, 8],
+      "gravityRange" : [80, 100],
+      "layers" : {
+        "atmosphere" : {
+          "primaryRegion" : [ "v-toxicatmosphere" ]
+        },
+        "surface" : {
+          "primaryRegion" : [ "v-toxicwasteland" ],
+          "secondaryRegions" : [ "v-crystalmountains", "v-toxiclake" ],
+          "secondaryRegionCount" : [0, 2]
+          // "secondaryRegions" : [ "v-toxiclake" ],
+          // "secondaryRegionCount" : [1, 1]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["v-shallowundergroundtoxic"],
+          "secondaryRegions" : ["v-poisonfloodedcaves"],
+          "secondaryRegionCount" : [0, 1]
+        },
+        "underground1" : {
+          "primaryRegion" : ["v-undergroundtoxic"],
+          "secondaryRegions" : ["v-poisonfloodedcaves", "v-flowerfield"],
+          "secondaryRegionCount" : [0, 1]
+        },
+        "underground2" : {
+          "primaryRegion" : ["v-undergroundtoxic"],
+          "secondaryRegions" : ["v-flowerfield"],
+          "secondaryRegionCount" : [1, 1]
+        },
+        "underground3" : {
+          "primaryRegion" : ["v-deepundergroundtoxic"],
+          "secondaryRegions" : [],
+
+          "baseHeight" : 450,  // Force the dungeon to spawn REAL up high.
+
+          "dungeons" : [[1.0, "v-toxiclaboratory"]]
+        },
+        "core" : {
+          "primaryRegion" : ["v-toxicwastelandcorelayer"],
+          "secondaryRegions" : []
+        }
+      }
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-toxicatmosphere",
+    "value" : {
+      "blockSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-toxicatmosphere" ]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-toxicwasteland",
+    "value" : {
+      "blockSelector" : [ "ledgesSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-toxicwasteland" ]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-toxiclake",
+    "value" : {
+      "blockSelector" : [ "v-toxicLake" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "oceanLiquid" : ["v-endlesssuperpoison"],
+      "biome" : [
+        [0, [ "v-toxiclake" ]]
+      ],
+      "subRegion" : []
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-crystalmountains",
+    "value" : {
+      "blockSelector" : [ "v-crystalMountains" ],
+      "subBlockSelector" : ["v-crystalMountainsSubBlocks"],
+      "fgCaveSelector" : [ "v-crystalMountainsCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-crystalmountains" ]]
+      ],
+      "subRegion" : []
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-shallowundergroundtoxic",
+    "value" : {
+      "fgCaveSelector" : [ "normalCaves" ],
+      "biome": [
+        [1,["v-shallowundergroundtoxic"]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-undergroundtoxic",
+    "value" : {
+      "fgCaveSelector" : [ "normalCaves" ],
+      "caveLiquid" : ["poison"],
+      "biome": [
+        [1,["v-undergroundtoxic"]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-deepundergroundtoxic",
+    "value" : {
+      "fgCaveSelector" : [ "normalCaves" ],
+      "caveLiquid" : ["poison"],
+      "biome": [
+        [1,["v-deepundergroundtoxic"]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-toxicwastelandcorelayer",
+    "value" : {
+      "caveLiquid" : ["v-superpoison"],
+      "oceanLiquid" : ["v-endlesssuperpoison"],
+      "subBlockSelector" : ["v-fungalCoreSubBlocks"],
+      "fgCaveSelector" : [ "v-fungalCoreCaves" ],
+      "bgCaveSelector" : [ "v-fungalCoreCavesBackground" ],
+      "caveLiquidSeedDensityRange" : [4.0, 4.0],
+      "biome": [
+        [1,["v-toxicwastelandcorelayer"]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-flowerfield",
+    "value" : {
+      "fgCaveSelector" : [ "v-flowerField" ],
+      "biome": [
+        [1,["v-flowerfield"]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-poisonfloodedcaves",
+    "value" : {
+      "fgCaveSelector" : [ "normalCaves" ],
+      "bgCaveSelector" : [ "denseCaves" ],
+      "oceanLiquid" : ["poison"],
+      "oceanLevelOffset" : 1000,
+      "biome": [
+        [1,["v-poisonfloodedcaves"]]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/planetTypes/v-terraintest",
+    "value" : {
+      "threatRange" : [1, 1],
+      "gravityRange" : [80, 80],
+      "layers" : {
+        "surface" : {
+          "primaryRegion" : [ "v-toxiclake" ]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["v-terraintest"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["v-terraintest"]
+        },
+        "underground2" : {
+          "primaryRegion" : ["v-terraintest"]
+        },
+        "underground3" : {
+          "primaryRegion" : ["v-terraintest"]
+        },
+        "core" : {
+          "primaryRegion" : ["v-terraintest"]
+        }
+      }
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/regionTypes/v-terraintest",
+    "value" : {
+      // "blockSelector" : [ "v-experimental" ],
+      "fgCaveSelector" : [ "v-experimental" ],
+      "bgCaveSelector" : [ "empty" ],
+      "caveLiquid" : [ "poison" ],
+      "caveLiquidSeedDensityRange" : [1, 3],
+      "encloseLiquids" : true,
+      "biome" : [
+        [0, [ "v-terraintest" ]]
+      ]/*,
+      "subRegion" : ["v-voltagedesert", "rust", "v-voltageforest"]*/
+    }
+  }
+]

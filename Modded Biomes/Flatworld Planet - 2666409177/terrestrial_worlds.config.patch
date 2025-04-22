@@ -1,0 +1,71 @@
+[
+
+  // Planets
+  {
+    "op": "add",
+    "path": "/planetTypes/flat_wasteland",
+    "value": {
+      "threatRange" : [1, 1], // Planet tier
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["flat_wasteland_region"], // Planet primary region
+          "baseHeight" : 1000,
+          "layerLevel" : 900
+        },
+        "subsurface" : {
+          "primaryRegion" : ["flat_wasteland_subsurface"], // Planet subsurface region
+          "baseHeight" : 850,
+          "layerLevel" : 800
+        },
+        "core" : {
+          "primaryRegion" : ["flat_wasteland_core"], // Planet subsurface region
+          "baseHeight" : 50,
+          "layerLevel" : 0
+        }
+      }
+    }
+  },
+  
+  // Regions
+  {
+    "op": "add",
+    "path": "/regionTypes/flat_wasteland_region",
+    "value": {
+      "caveLiquid": ["tarliquid"],
+      "blockSelector": ["flatSurface"], // For a list of terrain types, check under /terrain in assets
+      "fgCaveSelector": ["empty"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["flat_wasteland"]]]
+    }
+   },
+   {
+    "op": "add",
+    "path": "/regionTypes/flat_wasteland_subsurface",
+    "value": {
+      "caveLiquid": ["tarliquid"],
+      "blockSelector": ["solid"], // For a list of terrain types, check under /terrain in assets
+      "fgCaveSelector": ["normalCaves"],
+      "bgCaveSelector": ["empty"],
+      "fgOreSelector" : ["richVeins"],
+      "bgOreSelector" : ["richVeins"],
+      "biome": [[0,["flat_wasteland"]]]
+    }
+   },
+   {
+   "op": "add",
+    "path": "/regionTypes/flat_wasteland_core",
+    "value": {
+      "caveLiquid" : [ "lava" ],
+      "caveLiquidSeedDensityRange" : [4.0, 4.0],
+      "oceanLiquid" : [ "corelava" ],
+      "oceanLevelOffset" : -20,
+      "fgCaveSelector" : [ "coreCaves" ],
+      "bgCaveSelector" : [ "coreBackgroundCaves" ],
+      "biome" : [
+        [1, [ "gardencorelayer"] ],
+        [2, [ "blaststonecorelayer", "magmarockcorelayer", "obsidiancorelayer" ]]
+      ]
+    }
+   }
+  
+]

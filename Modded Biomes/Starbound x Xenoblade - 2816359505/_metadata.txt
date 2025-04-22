@@ -1,0 +1,13 @@
+{
+  "version" : "1",
+  "tags" : "Crafting and Building|Planets and Environments|Weapons|In-Game Tools",
+  "author" : "EliteDragon",
+  "description" : "Starbound meets Xenoblade in this epic new mod! Explore new planets based on your favorite Bionis and Alrest locations, craft an arsenal of new, powerful weapons, and more! \n\nNOTE: This mod is still in-progress and more content will be coming in the future. Stay tuned for update logs!",
+  "requires" : [],
+  "name" : "Xenoblade",
+  "friendlyName" : "Starbound x Xenoblade",
+  "steamContentId" : "2816359505",
+  "priority" : -1,
+  "link" : "steam://url/CommunityFilePage/2816359505",
+  "includes" : []
+}

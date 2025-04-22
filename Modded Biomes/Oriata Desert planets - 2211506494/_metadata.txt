@@ -1,0 +1,11 @@
+{
+  "version" : "0.01",
+  "tags" : "Planets and Environments",
+  "author" : "rapture0214",
+  "description" : "description here",
+  "name" : "Oriata_Desert",
+  "friendlyName" : "Oriata Desert planets",
+  "steamContentId" : "2211506494",
+  "link" : "steam://url/CommunityFilePage/2211506494",
+  "includes" : ["TrueSpace"]
+}

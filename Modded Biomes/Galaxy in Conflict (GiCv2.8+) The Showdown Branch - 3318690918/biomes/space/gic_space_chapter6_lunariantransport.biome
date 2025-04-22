@@ -1,0 +1,15 @@
+{
+  "name" : "gic_space_chapter6_lunariantransport",
+  "friendlyName" : "Deep Space",
+
+  "parallax" : "/parallax/space/gic_space_chapter6_lunariantransport.parallax",
+
+  "statusEffects" : [ "biomeairless" ],
+
+  "spawnProfile" : {
+    "groups" : [],
+    "monsterParameters" : {}
+  },
+
+  "hueShiftOptions" : [0]
+}

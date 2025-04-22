@@ -1,0 +1,28 @@
+[
+  {
+  "op" : "add", 
+   "path" : "/planetTypes/populated",
+   "value" : 
+     {
+	  "threatRange" : [1, 1],
+      "layers" : {
+        "surface" : {
+          "primaryRegion" : ["populated"],
+		  "secondaryRegions" : ["populated"],
+          "dungeonCountRange" : [2, 3],
+          "dungeons" : [[4.0, "humancity"], [1.0, "avianvillage"], [1.0, "hylotlcity"], [1.0, "novakidvillage"]]
+        }
+      }
+    }},
+  {"op" : "add",
+  "path" : "/regionTypes/populated",
+ "value" : {
+      "caveLiquid" : [ "water" ],
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "sparseCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "populated" ]]
+      ]
+    }}
+]

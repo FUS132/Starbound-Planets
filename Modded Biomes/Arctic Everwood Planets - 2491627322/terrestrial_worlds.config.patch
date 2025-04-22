@@ -1,0 +1,33 @@
+[{
+        "op": "add",
+        "path": "/planetTypes/arcticeverwood",
+        "value": {
+            "threatRange": [5, 5],
+            "layers": {
+                "surface": {
+                    "primaryRegion": ["arcticeverwood"],
+                    "secondaryRegions": [],
+                    "dungeonCountRange": [0, 2],
+                    "dungeons": [
+                        [1.0, "florancanyon"]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/arcticeverwood",
+        "value": {
+            "caveLiquid": ["water"],
+            "caveLiquidChanceRange": [20, 100],
+            "blockSelector": ["remixedSwampySurface", "remixedSurface", "remixedPoolsSurface"],
+            "fgCaveSelector": ["surfaceCaves"],
+            "bgOreSelector": ["normalVeins", "richVeins"],
+            "biome": [
+                [0, ["arcticeverwood"]]
+            ],
+            "subRegion": ["prism"]
+        }
+    }
+]

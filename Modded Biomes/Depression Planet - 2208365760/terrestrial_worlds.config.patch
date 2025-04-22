@@ -1,0 +1,60 @@
+[
+	{	"op" : "add",
+		"path" : "/planetTypes/greyscale",
+		"value" : {
+			"threatRange" : [6,9],
+			"layers" : {
+				"surface" : {
+				  "primaryRegion" : ["greyscale"],
+				  "secondaryRegions" : [ ],
+				  "dungeons" :
+				  [
+				  [1.0, "dungeoncrawler"]
+				  ]
+				},
+				"subsurface" : {
+				"primaryRegion" : ["greyscaleunderground"]
+				}
+			}
+		}
+	},
+	
+	{	"op" : "add",
+		"path" : "/regionTypes/greyscaleunderground",
+		"value" : {
+		  "blockSelector" : [ "greyscale" ],
+		  "caveLiquid" : [ "greyscale" ],
+		  "biome" : [
+			[0, [ "greyscaleunderground" ]]
+		  ],
+		  "subRegion" : ["bonecaves"]
+		}
+	},
+	{	"op" : "add",
+		"path" : "/regionTypes/greyscale",
+		"value" : {
+		  "blockSelector" : [ "greyscale" ],
+		  "fgCaveSelector" : [ "surfaceCaves" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "caveLiquid" : [ "greyscale" ],
+		  "biome" : [
+			[0, [ "greyscale" ]]
+		  ],
+		  "subRegion" : [  ]
+		}
+	},
+	{	"op" : "add",
+		"path" : "/regionTypes/depressedbones",
+		"value" : {
+		  "blockSelector" : [ "depressedbones" ],
+		  "fgCaveSelector" : [ "surfaceCaves" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "caveLiquid" : [ "greyscale" ],
+		  "biome" : [
+			[0, [  ]]
+		  ],
+		  "subRegion" : [ ]
+		}
+	}
+	
+]

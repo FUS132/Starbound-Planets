@@ -1,0 +1,106 @@
+{
+  "name" : "gic_colonized_barrenrock",
+  "friendlyName" : "Colonized Barren Rock",
+  "airless" : false,
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:gic_clear"
+    ]]
+  ],
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "gic_sentryskimmer_neutral" ]
+        ]
+      }
+    ]
+  },
+
+//  "statusEffects" : ["breathProtection"],
+
+  "skyOptions" : [
+
+    {
+      "mainColor" : [0, 0, 0],
+
+      "morningColors" : [ [0, 0, 0], [0, 0, 0] ],
+      "dayColors" : [ [0, 0, 0], [0, 0, 0] ],
+      "eveningColors" : [ [0, 0, 0], [0, 0, 0] ],
+      "nightColors" : [ [0, 0, 0, 0], [0, 0, 0, 0] ],
+
+      "morningLightColor" : [25, 25, 25],
+      "dayLightColor" : [25, 25, 25],
+      "eveningLightColor" : [25, 25, 25],
+      "nightLightColor" : [25, 25, 25]
+    }
+  ],
+
+  "mainBlock" : "moondust",
+  "subBlocks" : [ "rock03", "direstone", "rock15" ],
+  "ores" : "gic_barrenrockorespawn",
+
+  "parallax" : "/parallax/surface/gic_colonized_barrenrock.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ ]
+    },
+    "night" : {
+      "tracks" : [ ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [
+	  "/music/touhou/gic_stasgavrik_farawayvoyageof380000kilometers_ambient.ogg",
+	  "/music/touhou/gic_stasgavrik_eternalfrozencapital_ambient.ogg",
+	  "/music/touhou/gic_stasgavrik_awakeningoftheearthspirits_ambient.ogg",
+	  "/music/touhou/gic_stasgavrik_uforomanceinthenightsky_ambient.ogg"
+	  ]
+    },
+    "night" : {
+      "tracks" : [
+	  "/music/stellaris/gic_stellaris_hegemonicdominion.ogg",
+	  "/music/stellaris/gic_stellaris_unityandpaperwork.ogg",
+	  "/music/stellaris/gic_stellaris_calltoassembly.ogg",
+	  "/music/stellaris/gic_stellaris_abrightertomorrow.ogg"
+	  ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "ash" ],
+    "grassModDensity" : 0.2,
+    "items" : [
+
+	  
+	  
+//      {
+//        "mode" : "floor",
+//        "priority" : 1,
+//        "variants" : 1,
+//        "distribution" : "/biomes/gic_customdistributions.config:gic_moondungeonMicrodungeon",
+//
+//        "type" : "microdungeon",
+//        "microdungeons" : [ "gic_barrenworldmicrodungeons" ]
+//      }
+	  
+    ]
+
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 0.2,
+
+    "items" : [
+    ]
+  }
+}

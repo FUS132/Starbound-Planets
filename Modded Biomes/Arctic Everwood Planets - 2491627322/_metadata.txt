@@ -1,0 +1,9 @@
+{
+  "version" : "1.0",
+  "author" : "aethermirage",
+  "description" : "Arctic Everwood are planets well know for their tall trees, clear nights, and bitter cold. One must bring cold protection if they desire to come to these frigid forests. If you can stand to the sub-zero temperatures, forests unlike anything you have ever seen shall welcome you. Some worlds of this type seem to emit an energy that alters the moonlight that shines during the night.\n\nThis mod adds the Arctic Everwood biome/planet, two light objects, and eight tiles (all tiles and objects can be found at the penguin bar).",
+  "name" : "ArcticEverwood",
+  "friendlyName" : "Arctic Everwood Planets",
+  "steamContentId" : "2491627322",
+  "link" : "steam://url/CommunityFilePage/2491627322"
+}

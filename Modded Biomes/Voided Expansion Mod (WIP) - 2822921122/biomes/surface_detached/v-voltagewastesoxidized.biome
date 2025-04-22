@@ -1,0 +1,177 @@
+{
+  "name" : "v-voltagewastesoxidized",
+  "friendlyName" : "Charged Hills (Oxidized)",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1.0, "v-electricelemental" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "statusSettings" : {
+        "stats" : {
+          "electricResistance" : {
+            "baseValue" : 0.5
+          },
+          "poisonResistance" : {
+            "baseValue" : -0.25
+          },
+          "electricStatusImmunity" : {
+            "baseValue" : 1.0
+          },
+          "v-chargedgroundStatusImmunity" : {
+            "baseValue" : 1.0
+          },
+          "v-liquidElectricityEffectImmunity" : {
+            "baseValue" : 1.0
+          },
+          "protection" : {
+            "baseValue" : 15.0
+          }
+        }
+      }
+    }
+  },
+
+  "mainBlock" : "v-oxidizedcopperrock",
+  "subBlocks" : [ "v-oxidizeddeepcopperrock" ],
+  "ores" : "v-voltage",
+
+  "hueShiftOptions" : [-15, -10, -5, 0, 5, 10, 15],
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "v-copperpowder2" ],
+    "grassModDensity" : 0.75,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.6,
+
+    "baseHueShiftMax" : 120,
+    "modHueShiftMax" : 180,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1.0, "v-oxidizeddischargetrap" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "v-voltagewastesmicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1.0, "v-oxidizedcopperrock1" ], [1.0, "v-oxidizedcopperrock2" ], [1.0, "v-oxidizedcopperrock3" ], [1.0, "v-oxidizedcopperrock4" ], [1.0, "v-oxidizedcopperrock5" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "v-copperpowder2" ],
+    "grassModDensity" : 0.8,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.6,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1.0, "v-oxidizeddischargetrap" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1.0, "v-oxidizeddischargetrap" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1.0, "v-oxidizedcopperrock1" ], [1.0, "v-oxidizedcopperrock2" ], [1.0, "v-oxidizedcopperrock3" ], [1.0, "v-oxidizedcopperrock4" ], [1.0, "v-oxidizedcopperrock5" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  }
+}

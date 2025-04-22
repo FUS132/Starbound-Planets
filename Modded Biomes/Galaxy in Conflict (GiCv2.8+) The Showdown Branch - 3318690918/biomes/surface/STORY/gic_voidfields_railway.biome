@@ -1,0 +1,574 @@
+{
+  "name" : "gic_voidfields_railway",
+  "friendlyName" : "Void Fields Railway",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "butterbee" ],
+          [ 1, "fawnfly" ],
+          [ 1, "mudstag" ]
+        ]
+      },
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "shadowmoth" ],
+          [ 1, "cinderfly" ],
+          [ 1, "ashsprite" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : "nightTerrors"
+      },      
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "squeekcritter" ],
+          [ 1, "mousecritter" ],
+          [ 1, "spidercritter" ],
+          [ 1, "ravencritter" ],
+          [ 1, "wurmcritter" ],
+          [ 1, "vulturecritter" ],
+          [ 1, "appofloatcritter" ]
+        ]
+      },
+      {
+        "select" : 7,
+        "pool" : [
+          [ 1, "birdcritter" ],
+          [ 1, "hedgehogcritter" ],
+          [ 1, "tortoisecritter" ],
+          [ 1, "mousecritter" ],
+          [ 1, "bunnycritter" ],
+          [ 1, "snailcritter" ],
+          [ 1, "fishcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "snow"
+    }
+  },
+
+  "hueShiftOptions" : [ 0 ],
+
+  "weather" : [
+    [0, [
+      "/weather.config:gic_atmospheric_wartorn_lightconflict"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [255, 224, 129], [252, 230, 164] ],
+      "dayColors" : [ [255, 152, 107], [255, 183, 152] ],
+      "eveningColors" : [ [254, 121, 69], [254, 165, 129] ],
+      "nightColors" : [ [60, 0, 0, 30], [20, 0, 0, 50] ],
+
+      "morningLightColor" : [202, 177, 100],
+      "dayLightColor" : [202, 138, 100],
+      "eveningLightColor" : [202, 100, 100],
+      "nightLightColor" : [15, 6, 6] //[40, 17, 17]
+    },
+    {
+      // dark peachy massacre
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [221, 119, 51], [252, 30, 0] ],
+      "dayColors" : [ [200, 52, 7], [255, 83, 52] ],
+      "eveningColors" : [ [200, 21, 0], [254, 65, 29] ],
+      "nightColors" : [ [40, 17, 17, 60], [40, 17, 17, 160] ],
+
+      "morningLightColor" : [100, 77, 0],
+      "dayLightColor" : [194, 113, 59],
+      "eveningLightColor" : [180, 0, 0],
+      "nightLightColor" : [15, 6, 6] //[40, 17, 17]
+    },
+    {
+      // sunny earth days, red/orange sunrise and purple/red sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [242, 120, 0], [255, 230, 176] ],
+      "dayColors" : [ [115, 224, 255], [255, 255, 255] ],
+      "eveningColors" : [ [125, 17, 158], [210, 52, 50] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [140, 71, 71],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [20, 10, 30] //[40, 20, 60]
+    }
+  ],
+
+  "mainBlock" : "sand", //sand2
+  "subBlocks" : [ "drydirt", "rock15" ],
+  "ores" : "surface",
+
+  "parallax" : "/parallax/surface/gic_voidfields_railway.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ ]
+    },
+    "night" : {
+      "tracks" : [ ]
+    }
+  },
+
+  "musicTrack" : {
+  //Aggressive African Music
+    "day" : {
+      "tracks" : [ 
+	  
+	  "/music/farcry2/gic_farcry2_rageimplosion.ogg",
+	  "/music/farcry2/gic_farcry2_unleashed.ogg",
+	  "/music/farcry2/gic_farcry2_changeyourbattles.ogg",
+	  "/music/farcry2/gic_farcry2_letitburn.ogg",
+	  "/music/farcry2/gic_farcry2_thefuse.ogg",
+	  "/music/farcry2/gic_farcry2_theeyesmoveout.ogg",
+	  "/music/farcry2/gic_farcry2_lariumdreams.ogg",
+	  "/music/farcry2/gic_farcry2_firstmorning.ogg"
+
+	  ]
+    },
+	//Chillax African Beats to steal diamonds to
+    "night" : {
+      "tracks" : [ 
+	  
+	  "/music/farcry2/gic_farcry2_roadfromafrica.ogg",
+	  "/music/farcry2/gic_farcry2_speaktothedead.ogg",
+	  "/music/farcry2/gic_farcry2_eighteenbullets.ogg",
+	  "/music/farcry2/gic_farcry2_spirits.ogg",
+	  "/music/farcry2/gic_farcry2_youcarrywhatyoumust.ogg",
+	  "/music/farcry2/gic_farcry2_intotheillness.ogg",
+	  "/music/farcry2/gic_farcry2_darkriver.ogg",
+	  "/music/farcry2/gic_farcry2_northernwarlord.ogg",
+	  "/music/farcry2/gic_farcry2_thereisonlywar.ogg",
+	  "/music/farcry2/gic_farcry2_theedgeofthevillage.ogg",
+	  "/music/farcry2/gic_farcry2_theghostinthedrug.ogg",
+	  "/music/farcry2/gic_farcry2_tothosewhokill.ogg"
+	  
+	  ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "savannahgrass" ],
+    "grassModDensity" : 0.0,
+	
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.4,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "scorchedcityChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+
+
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "barbedwire" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "gic_uxo_mortar_10" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "gic_uxo_mortar_10" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "gic_uxo_aerialbomb" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "gic_rusted_landmine" ] ], //originally explosive barrel
+            "parameters" : { }
+          }
+        ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gic_atmospheric_wartornmicrodungeons" ]
+      },	  
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gic_atmospheric_wartornmicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gic_abandoned_wartornmicrodungeons" ]
+      },
+	 
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "grass",
+        "grasses" : [ "shrooms", "testflower7", "testflower8" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDistRare",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "rocktunnel", "rockclimb", "blank" ]
+      },
+//      {
+//        "mode" : "floor",
+//        "priority" : 3.0,
+//        "variants" : 1,
+//        "distribution" : "/biomes/distributions.config:tiyDistTerrainfeatures",
+//
+//        "type" : "microdungeon",
+//        "microdungeons" : [ "terrainfeatures" ]
+//      },
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpyLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "testbush2",
+            "baseHueShiftMax" : 40,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+	  
+	  
+	  
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      },
+	  
+	  
+	  
+	  
+	  
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "savannahgrass" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "savannahbush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "savannahgreenbush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+
+	  
+	  
+	  
+	  
+	  
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "grass",
+        "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },	  
+	  
+	  
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "bleake" ],
+        "treeFoliageList" : [ "flatte" ]
+      },
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "potatoseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+	  
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "tomatoseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+	  
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wheatseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+	  
+    ]
+  },
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  "undergroundPlaceables" : {
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 0.4,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.3,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "techChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 10,
+        "treeStemList" : [ "desertvine" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "grass",
+        "grasses" : [ "testflower7", "testflower8" ]
+      }
+    ]
+  }
+}

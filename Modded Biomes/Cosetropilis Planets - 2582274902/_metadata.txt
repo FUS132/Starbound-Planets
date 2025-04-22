@@ -1,0 +1,9 @@
+{
+  "version" : "1.0",
+  "tags" : "Planets and Environments|Dungeons",
+  "description" : "Cosetropilis planets are highly colonized worlds with an always starry sky. The high amount of stars in the sky give the healing water that can be found across these planets an extra strong glow. Ancient strctures can be found throughout, some more hazardous than others.\n\n\nThis mod ads the Cosetroplis planet/biome, and two new dungeons.\n\nCosetroplis planets are tier 2-3 and do not need an epp.\n\n\nArcana is required as some of the music that can play on these worlds is from that mod. \n\n\nCredit to Kae for removing the artifacts in the starry space in the parallax.",
+  "name" : "Starcity",
+  "friendlyName" : "Cosetropilis Planets",
+  "steamContentId" : "2582274902",
+  "link" : "steam://url/CommunityFilePage/2582274902"
+}

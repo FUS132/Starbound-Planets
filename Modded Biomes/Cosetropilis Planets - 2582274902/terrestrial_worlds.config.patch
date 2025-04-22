@@ -1,0 +1,31 @@
+[{
+        "op": "add",
+        "path": "/planetTypes/tidal_cosetropilis",
+        "value": {
+            "threatRange": [2, 2],
+            "layers": {
+                "surface": {
+                    "primaryRegion": ["tidal_cosetropilis"],
+                    "secondaryRegions" : [],
+                    "dungeonCountRange": [3, 4],
+                    "dungeons": [ [1.0, "hylotlcity"], [1.0, "ancientbridge"], [1.0, "novakidvillage"], [ 1.0, "ti_ancientpyramid"] ]
+                }
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/tidal_cosetropilis",
+        "value": {
+            "caveLiquid": ["healingliquid"],
+            "caveLiquidChanceRange": [20, 100],
+            "blockSelector": ["canyonsSurface", "lowHillsSurface", "remixedPoolsSurface", "ledgesSurface", "outposthills", "mixedSurface", "medHillsSurface", "remixedSwampySurface", "remixedSurface" ],
+            "fgCaveSelector": ["surfaceCaves"],
+            "bgOreSelector": ["normalVeins", "richVeins"],
+            "biome": [
+                [0, ["tidal_cosetropilis"]]
+            ],
+            "subRegion": ["hive", "tar", "geode", "swamp", "rust", "bones", "prism", "spring", "bioluminescence", "oasis", "steamspring" ]
+        }
+    }
+]

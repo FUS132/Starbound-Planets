@@ -1,0 +1,606 @@
+{
+  "name" : "slimeworld",
+  "friendlyName" : "Gelatinous",
+  "statusEffects" : [ "biomepoison1" ],
+
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 5,
+        "pool" : [
+          [ 0.1, "eyeslime" ],
+          [ 0.1, "eyeslimeking" ],
+          [ 0.1, "eyejelly" ],
+          [ 0.1, "eyejellyking" ],
+	  [ 0.1, "fuallergen" ],
+	  [ 0.1, "fualien" ],
+          [ 0.10, "slime" ],
+          [ 0.10, "oculob" ],
+          [ 0.1, "pogolem" ],
+          [ 0.1, "bulbopfriendly" ],
+          [ 0.1, "po" ],
+          [ 0.1, "slimetop" ],
+          [ 0.1, "gloop" ],
+          [ 0.1, "glump" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 0.15, "stinkjack" ],
+          [ 0.15, "stinkjack" ],
+          [ 0.15, "fuspidercritter" ],
+          [ 0.15, "bouncebagcritter" ],
+          [ 0.15, "sluggreencritter" ],
+          [ 0.1, "bee_isovapitdae" ],
+          [ 0.05, "fuslimeshoat" ],
+          [ 0.05, "fugooshoat" ],
+          [ 0.05, "fugreenshoat" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : "nightTerrors"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      }
+    ],
+    "monsterParameters" : {
+      "statusSettings" : {
+        "stats" : {
+            "poisonStatusImmunity" : {
+              "baseValue" : 1.0
+            },
+            "tarImmunity" : {
+              "baseValue" : 1.0
+            },
+            "biooozeImmunity" : {
+              "baseValue" : 1.0
+            },
+            "slimestickImmunity" : {
+              "baseValue" : 1.0
+            },
+            "slimefrictionImmunity" : {
+              "baseValue" : 1.0
+            }
+        }
+      }
+    }
+  },
+
+  "hueShiftOptions" : [ -180, -160, -140, -120, 0, 20, 40, 60, 80, 100, 120, 140, 160, 180 ],
+
+  "weather" : [
+    [0, [
+      "/weather.config:slimeworld"
+    ]]
+  ],
+
+  "skyOptions" : [
+
+    {
+      "mainColor" : [200, 250, 205],
+
+      "morningColors" : [ [130, 205, 130], [130, 205, 130] ],
+      "dayColors" : [ [100, 180, 100], [100, 189, 100] ],
+      "eveningColors" : [ [80, 150, 80], [80, 150, 80] ],
+      "nightColors" : [ [50, 100, 50], [50, 100, 50] ],
+
+      "morningLightColor" : [125, 205, 125],
+      "dayLightColor" : [100, 175, 100],
+      "eveningLightColor" : [70, 90, 70],
+      "nightLightColor" : [50, 70, 50]
+    },
+     {
+       "mainColor" : [255, 0, 255],
+
+       "morningColors" : [ [255, 224, 129], [252, 230, 164] ],
+       "dayColors" : [ [255, 152, 107], [255, 183, 152] ],
+       "eveningColors" : [ [254, 121, 69], [254, 165, 129] ],
+       "nightColors" : [ [60, 0, 0], [20, 0, 0] ],
+
+       "morningLightColor" : [202, 177, 100],
+       "dayLightColor" : [202, 138, 100],
+       "eveningLightColor" : [202, 100, 100],
+       "nightLightColor" : [40, 17, 17]
+    },
+    {
+      "mainColor" : [79, 200, 200],
+
+      "morningColors" : [ [255, 224, 129], [252, 230, 164] ],
+      "dayColors" : [ [255, 152, 107], [255, 183, 152] ],
+      "eveningColors" : [ [254, 121, 69], [254, 165, 129] ],
+      "nightColors" : [ [60, 0, 0], [20, 0, 0] ],
+
+      "morningLightColor" : [202, 177, 100],
+      "dayLightColor" : [202, 138, 100],
+      "eveningLightColor" : [202, 100, 100],
+      "nightLightColor" : [40, 17, 17]
+    },
+    {
+      "mainColor" : [255, 255, 80],
+
+      "morningColors" : [ [255, 224, 129], [252, 230, 164] ],
+      "dayColors" : [ [255, 152, 107], [255, 183, 152] ],
+      "eveningColors" : [ [254, 121, 69], [254, 165, 129] ],
+      "nightColors" : [ [60, 0, 0], [20, 0, 0] ],
+
+      "morningLightColor" : [202, 177, 100],
+      "dayLightColor" : [202, 138, 100],
+      "eveningLightColor" : [202, 100, 100],
+      "nightLightColor" : [40, 17, 17]
+    }
+
+  ],
+
+    "mainBlock" : "slimedirt",
+    "subBlocks" : [ "slime", "jellystone", "fujellyblock" ],
+    "ores" : "ff_surfaceslimeOres",
+
+  "parallax" : "/parallax/surface/slimeworld.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/arid_day.ogg", "/sfx/environmental/savannah_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/arid_night.ogg", "/sfx/environmental/savannah_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/TentacleExploration2.ogg","/music/hizzaque.ogg","/music/forsaken-grotto.ogg", "/music/lava-exploration1.ogg", "/music/drosera.ogg", "/music/crystal-exploration1.ogg", "/music/inviolate-loop.ogg", "/music/body-electric-loop.ogg", "/music/europa.ogg", "/music/haiku.ogg","/music/mira.ogg","/music/ultramarine.ogg", "/music/desert-exploration1.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/TentacleExploration2.ogg","/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mira.ogg", "/music/crystal-exploration1.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg","/music/lava-exploration2.ogg", "/music/Nomads.ogg", "/music/ultramarine.ogg", "/music/forsaken-grotto.ogg", "/music/desert-exploration2.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "greenslimegrass", "slimegrass" ],
+    "grassModDensity" : 0.9,
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDist",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseLarge",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.50, "blueprintblob" ], [0.50, "slimeblob1" ], [0.50, "slimeblob2" ], [0.50, "slimeblob3" ], [0.50, "slimeblob4" ], [0.50, "slimeblob5" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffunCommon",
+
+          "type" : "grass",
+          "grasses" : [ "gelatinousgrass", "glowmushroom", "jungleflower1", "jungleflower2", "jungleflower3", "minipod", "slime", "sticky" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "grass",
+          "grasses" : [ "gelatinousgrass" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffAverage",
+
+          "type" : "grass",
+          "grasses" : [ "minipod" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffunCommon",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.65, "wildalgaeseed" ],
+              [0.65, "wildslimeplantseed" ],
+	      [0.65, "wildguamseed" ],
+	      [0.35, "wildjillyrootseed" ],
+	      [0.65, "wildenergiflowerseed" ]
+              ],
+              "parameters" : { "startingStage" : 3 }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "slimeUndergroundChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "basicChest", "ffbasicChest", "ffbasicChest2" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "statuspod" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "weaponChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDistTerrainfeatures",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "terrainfeatures", "rockclimb","rocktunnel",  "toxicmicrodungeons", "sandstone", "blockpile", "loops", "flats", "reversepyramids" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "toxicmicrodungeons", "alienmicrodungeons" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:randomEncounter",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "fuencounters", "fu_dae_microdungeons","randomencounter", "eyeencounter", "fuslimebandits", "fulabs", "fuelders", "randomencounter", "furedhives", "furandomencounter" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDistPlatform",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "greenplatforming" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 0,
+          "treeStemHueShiftMax" : 180,
+          "treeStemList" : [ "slimestem" ],
+          "treeFoliageList" : [ "slimefoliage" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseLarge",
+
+          "type" : "bush",
+          "bushes" : [
+	            {
+	              "name" : "slimebush",
+	              "baseHueShiftMax" : 180,
+	              "modHueShiftMax" : 180
+	            },
+	            {
+	              "name" : "tendonbush",
+	              "baseHueShiftMax" : 60,
+	              "modHueShiftMax" : 220
+	            },
+	            {
+	              "name" : "podbush",
+	              "baseHueShiftMax" : 20,
+	              "modHueShiftMax" : 0
+	            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseSmall",
+
+          "type" : "bush",
+          "bushes" : [
+	            {
+	              "name" : "gelatinousbush",
+	              "baseHueShiftMax" : 180,
+	              "modHueShiftMax" : 180
+	            }
+          ]
+        }
+      ]
+    },
+    "undergroundPlaceables" : {
+      "grassMod" : [ "greenslimegrass", "slimegrass" ],
+      "grassModDensity" : 0.5,
+
+      "ceilingGrassMod" : [ "ceilingslimegrass" ],
+      "ceilingGrassModDensity" : 0.3,
+
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "basicChest", "ffbasicChest", "ffbasicChest2" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "slimeUndergroundChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "techChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "weaponChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "statuspod" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+           {
+             "mode" : "floor",
+             "priority" : 1.0,
+             "variants" : 1,
+             "distribution" : "/biomes/distributions.config:potsRare",
+
+             "type" : "object",
+             "objectSets" : [
+               {
+                 "pool" : [
+              [0.50, "ffbioshroom" ],
+              [0.50, "ffbioshroom1" ],
+              [0.50, "ffbioshroom2" ],
+              [0.50, "ffbioshroom3" ],
+              [0.50, "bioshroomblue" ],
+              [0.50, "bioshroomblue1" ],
+              [0.50, "bioshroomblue2" ],
+              [0.50, "bioshroomblue3" ],
+              [0.50, "bioshroomblue4" ],
+              [0.50, "bioshroomblue5" ],
+              [0.50, "bioshroomblue6" ],
+              [0.50, "bioshroomblue7" ]
+                 ],
+                 "parameters" : { "startingStage" : 3 }
+               }
+             ]
+           },
+           {
+             "mode" : "floor",
+             "priority" : 1.0,
+             "variants" : 1,
+             "distribution" : "/biomes/distributions.config:denseLarge",
+
+             "type" : "object",
+             "objectSets" : [
+               {
+                 "pool" : [ [0.50, "blueprintblob" ], [0.50, "slimeblob1" ], [0.50, "slimeblob2" ], [0.50, "slimeblob3" ], [0.50, "slimeblob4" ], [0.50, "slimeblob5" ] ],
+                 "parameters" : { }
+               }
+             ]
+           },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffunCommon",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [
+              [0.65, "wildalgaeseed" ],
+              [0.65, "wildslimeplantseed" ]
+              ],
+              "parameters" : { "startingStage" : 3 }
+            }
+          ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 0,
+          "treeStemHueShiftMax" : 180,
+          "treeStemList" : [ "slimevine" ],
+          "treeFoliageList" : [ "" ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffAverage",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 0,
+          "treeStemHueShiftMax" : 20,
+          "treeStemList" : [ "podvine2" ],
+          "treeFoliageList" : [ "nofoliagevine" ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "grass",
+          "grasses" : [ "gelatinousgrassceiling" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "grass",
+          "grasses" : [ "gelatinousgrass" ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffAverage",
+
+          "type" : "grass",
+          "grasses" : [ "ceilingminipod" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:ffAverage",
+
+          "type" : "grass",
+          "grasses" : [ "minipod" ]
+        },
+      {
+        "mode" : "ceiling",
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "dripslime1" ], [0.35, "ceilingslime1" ], [0.35, "ceilingslime2" ], [0.35, "ceilingslime3" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "bush",
+          "bushes" : [
+	            {
+	              "name" : "gelatinousbush",
+	              "baseHueShiftMax" : 180,
+	              "modHueShiftMax" : 180
+	            }
+          ]
+        }
+      ]
+    }
+}

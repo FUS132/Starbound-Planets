@@ -1,0 +1,11 @@
+{
+  "version" : "1.0.0",
+  "author" : "NoahNebula",
+  "tags" : "Crafting and Building|Miscellaneous|Planets and Environments|NPCs and Creatures|Weapons|Quests|Dungeons|Cheats and God Items|Ships|Species|User Interface|Furniture and Objects|Character Improvements|Food and Farming|In-Game Tools|Armor and Clothes",
+  "description" : "Nebula's Mod Pack! Become a Nebulan and explore all the cool stuff! \n\nLink to the community forums here;\nhttps://community.playstarbound.com/resources/nebula-pack-1-0-0.5537/\n\nI do want to add alot more to the mod, like a hole storyline. But I need modders that understand that stuff, so send me a message!",
+  "name" : "Npack",
+  "friendlyName" : "N-pack!",
+  "friendlyname" : "Nebula Pack",
+  "steamContentId" : "1709257267",
+  "link" : "steam://url/CommunityFilePage/1709257267"
+}

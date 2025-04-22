@@ -1,0 +1,11 @@
+{
+  "version" : "1.3",
+  "tags" : "Planets and Environments",
+  "author" : "rapture0214",
+  "description" : "Solar Seared planets are worlds locked in a never ending day, resulting in the average temperature being too high for even the cooling EPP to protect you. The moment you set foot on these blazingly hot planets you will be set alight like a torch, acquire an immunity to burning if you wish to explore them without combusting.\n\nIf you can survive the intense heat though great treasures await. These planets are littered with strange trees that give a special kind of wood and solarium when cut down, chests that may contain high tiered goods, and high levels of various ores.\n\nThis mod adds the Solar Seared planet, two naturally spawning blocks, two craftable blocks, and the solar palm.\n\nFU compatible\n\nmaterial ID's 339-342 used with this mod.\n\nupdate 1.2: replaced a sky colour option that was hard on the eyes, made all solar seared planets teir 10.\n\nupdate 1.3: made solarwood planks paintable",
+  "name" : "sol_Desert",
+  "friendlyName" : "Solar Seared",
+  "steamContentId" : "2228442297",
+  "link" : "steam://url/CommunityFilePage/2228442297",
+  "includes" : ["TrueSpace"]
+}

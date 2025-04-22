@@ -1,0 +1,242 @@
+{
+  "name" : "gasgiant_forest_underground_infested",
+  "friendlyName" : "Gas Giant Infested Underground",
+
+
+ "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [ 
+          [ 1, "orbide" ]
+        ]
+      },
+      {
+        "select" : 4,
+        "pool" : [
+          [ 1, "swarmcritter" ],
+          [ 1, "swarmflyingcritter" ],
+          [ 1, "rolypolycritter" ],
+          [ 1, "maggotcritter" ]      
+        ]
+      },
+	  {
+        "select" : 1,
+        "pool" : [
+          [ 0.1111, "scandroid" ],
+          [ 0.1111, "petricub" ],
+          [ 0.1111, "smoglin" ],
+          [ 0.1111, "batong" ],
+          [ 0.1111, "spookit" ],
+          [ 0.1111, "crustoise" ],
+          [ 0.1111, "pteropod" ],
+          [ 0.1111, "scaveran" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "xenofly" ],
+          [ 0.3, "shadowmoth" ],
+          [ 0.3, "blueback" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "darkwormcritter" ],
+          [ 1, "darkballcritter" ],
+          [ 1, "darkoneeyecritter" ],
+          [ 1, "darkthreeeyescritter" ],
+          [ 1, "bigwormcritter" ],
+          [ 1, "skywurmcritter" ],
+          [ 1, "krawlcritter" ],
+          [ 1, "darknessscabcritter" ],
+          [ 1, "dartcritter" ]
+        ]
+      }
+	  ],
+    "monsterParameters" : {
+      "colors" : "snow"
+    }
+  },
+
+    "mainBlock" : "obsidian",
+    "subBlocks" : [ "ash","meteoriterock","jellyblock" ],
+  "ores" : "asteroid",
+  
+  "parallax" : "/parallax/underground/gasgiant_forest_underground_glowshroom.parallax",
+  
+  "weather" : [
+    [0, [
+      "/weather.config:gasgiant"
+    ]]
+  ],
+
+ "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/tundra_night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/tundra_night.ogg" ]
+    }
+  },
+   "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/lava-exploration1.ogg", "/music/crystal-exploration1.ogg", "/music/crystal-exploration2.ogg", "/music/accretion-disc.ogg", "/music/arctic-exploration1.ogg", "/music/error-0xbfaf000.ogg", "/music/casiopeia.ogg", "/music/nomads.ogg", "/music/forsaken-grotto.ogg", "/music/accretion-disc.ogg", "/music/tranquility-base.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/lava-exploration1.ogg", "/music/crystal-exploration1.ogg", "/music/crystal-exploration2.ogg", "/music/accretion-disc.ogg", "/music/arctic-exploration1.ogg", "/music/error-0xbfaf000.ogg", "/music/casiopeia.ogg", "/music/nomads.ogg", "/music/forsaken-grotto.ogg", "/music/accretion-disc.ogg", "/music/tranquility-base.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "hivegrass" ],
+    "grassModDensity" : 0.5,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:uncommon",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.2, "bioshroom1" ], [0.2, "bioshroom2" ], [0.2, "bioshroom3" ], [0.2, "bioshroom4" ], [0.2, "bioshroom4" ]  ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 5,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "hivebush1" ], [0.35, "hivebush2" ], [0.35, "hivebush3" ], [0.35, "hivebush4" ], [0.35, "hivebush5" ], [0.35, "hivelight1" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "hivemicrodungeons" ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+		"type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "hive" ],
+        "treeFoliageList" : [ "hive" ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "mushroomglowingstalk" ],
+        "treeFoliageList" : [ "mushroomglowinggreentop" ]
+      },
+		
+      {
+        "mode" : "ceiling",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:uncommon",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.2, "biovine1" ], [0.2, "biovine2" ], [0.2, "biovine3" ], [0.2, "biovine4" ], [0.2, "biovine4" ]  ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:common",
+
+        "type" : "grass",
+        "grasses" : [ "glowmushroom" ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "hivegrass" ],
+    "grassModDensity" : 0.5,
+
+	"ceilingGrassMod" : [ "hiveceilinggrass" ],
+    "ceilingGrassModDensity" : 0.9,
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "luminousCaveChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:uncommon",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.2, "bioshroom1" ], [0.2, "bioshroom2" ], [0.2, "bioshroom3" ], [0.2, "bioshroom4" ], [0.2, "bioshroom4" ]  ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:uncommon",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.2, "biovine1" ], [0.2, "biovine2" ], [0.2, "biovine3" ], [0.2, "biovine4" ], [0.2, "biovine4" ]  ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:common",
+
+        "type" : "grass",
+        "grasses" : [ "glowmushroom" ]
+      }
+    ]
+  },
+   "hueShiftOptions" : [-180, -160, -120, -100, -90, -80, -70, -60, -50, -40, -20, 0, 20, 40, 60, 80, 100, 120, 140, 160, 180]
+}

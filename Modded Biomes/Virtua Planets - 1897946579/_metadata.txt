@@ -1,0 +1,11 @@
+{
+  "version" : "1.0.1",
+  "author" : "kokorogensou + MidnightChord™ + /u/Boxofcuriosity",
+  "tags" : "Planets and Environments",
+  "description" : "implements the cyberspace biome as barren 'virtua' planets, found on T4+ stars. ",
+  "name" : "kkgsvirtua",
+  "steamContentId" : "1897946579",
+  "friendlyName" : "virtua planets",
+  "link" : "steam://url/CommunityFilePage/1897946579",
+  "includes" : ["Polygon Blocks Patch", "[CUSTOM] Cyberspace Patch", "[CUSTOM] Cyberspace Patch"]
+}

@@ -1,0 +1,31 @@
+[{
+        "op": "add",
+        "path": "/planetTypes/tidal_overgrown",
+        "value": {
+            "threatRange": [2, 3],
+            "layers": {
+                "surface": {
+                    "primaryRegion": ["tidal_overgrown"],
+                    "secondaryRegions" : [ "toxic", "scorchedcity", "ocean", "jungle" ],
+                    "dungeonCountRange": [2, 3],
+                    "dungeons": [ [1.0, "florancanyon"], [1.0, "tidal_overgowntree"], [1.0, "humancamp"] ]
+                }
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/tidal_overgrown",
+        "value": {
+            "caveLiquid": ["water"],
+            "caveLiquidChanceRange": [20, 100],
+            "blockSelector": [ "lowHillsSurface" ],
+            "fgCaveSelector": ["surfaceCaves"],
+            "bgOreSelector": ["normalVeins", "richVeins"],
+            "biome": [
+                [0, ["tidal_overgrown"]]
+            ],
+            "subRegion": ["hive", "swamp", "spring", "giantflowers" ]
+        }
+    }
+]

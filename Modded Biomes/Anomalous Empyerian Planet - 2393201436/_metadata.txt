@@ -1,0 +1,10 @@
+{
+  "version" : "1.0",
+  "tags" : "Planets and Environments",
+  "author" : "Aethermirage",
+  "description" : "Anomalous Empyerians are odd worlds...they seem to always have a ring system and have a surface composed of clouds and erchius. The most intresting thing about them though is the alien gases that make up the atmosphere, giving these planets skies that can't be found anywhere else.\n\n\nThis mod adds 1 new planet type: the Anomalous Empyerian. This planet requires no epp and is typicaly found around gentle and temperate stars. All blocks found in this biome are from vanilla.\n\n\n\nUpdate log.\n-------------------------------------------------------------\n1.0: released mod.",
+  "name" : "anomemp",
+  "friendlyName" : "Anomalous Empyerian Planet",
+  "steamContentId" : "2393201436",
+  "link" : "steam://url/CommunityFilePage/2393201436"
+}

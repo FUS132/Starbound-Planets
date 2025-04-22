@@ -1,0 +1,239 @@
+{
+  "name" : "m32sunlessarctic",
+  "friendlyName" : "Gelid Grotto",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "narfin" ],
+          [ 1, "m32icepeblit" ],
+          [ 1, "batong" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "polarmoth" ],
+          [ 0.3, "orphanfly" ],
+          [ 0.3, "snowskater" ]
+        ]
+      },
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "jellycritter" ],
+          [ 1, "arcticfishcritter" ],
+          [ 1, "squidcritter" ],
+          [ 1, "steamfishcritter" ],
+          [ 1, "glowingfishcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "snow"
+    }
+  },
+
+  "hueShiftOptions" : [0],
+
+  "mainBlock" : "ice",
+  "subBlocks" : [ "frozenwater", "crystalblock" ],
+  "ores" : "prismore",
+
+  "parallax" : "/parallax/underground/m32sunlessarctic.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/biomes/m32sunlesssea/ambiance1.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/biomes/m32sunlesssea/ambiance1.ogg" ]
+    },
+    "volume" : 0.1
+  },
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/sfx/M32music/homemade/drafty-cavern.ogg", "/music/crystal-exploration2.ogg", "/sfx/M32music/homemade/cold-shard-sea.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/M32music/homemade/clockwork-anxiety.ogg", "/music/drosera.ogg", "/sfx/M32music/homemade/eerie.ogg" ]
+    }
+  },
+
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "snow" ],
+    "grassModDensity" : 0.3,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "oceanChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "pebbles" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "encounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "m32spiketophut", "m32spiketophut", "snowmicrodungeons" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "m32rooftophut" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:common",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "m32oceanic" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "cavespikes" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:uncommon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "cavespikes" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 2,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.25, "bluesignallight" ], [0.25, "bluesignallight_wrecked" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 2,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "frozensalttreetrunk" ],
+        "treeFoliageList" : [ "frozensalttreecrystals" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 3,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.1, "icepotssmall1" ], [0.1, "icepotssmall2" ], [0.1, "icepotssmall3"], [0.2, "icepotsmed1" ], [0.2, "icepotsmed2" ], [0.1, "icepotsbig1" ], [0.1, "icepotsbig2" ], [0.1, "icepotsbig3" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "prismrock1" ], [0.35, "prismrock2" ], [0.35, "prismrock3" ], [0.05, "prismrock4" ], [0.05, "prismrock5" ], [0.05, "prismrock6" ], [0.05, "prismrock7" ], [0.05, "prismrock8" ]  ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 4,
+        "distribution" : "/biomes/distributions.config:common",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "icestalagmite1" ], [0.20, "icestalagmite2" ], [0.20, "icestalagmite3" ], [0.20, "icestalagmite4" ] ]
+          }
+          ]
+      }
+    ]
+  }
+}

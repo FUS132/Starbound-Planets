@@ -1,0 +1,8 @@
+{
+  "version" : "1.0",
+  "description" : "Once thriving utopias, Overgrown worlds are almost devoid of sapiant life. Though this viod has been filled by an over abundance of flora and fauna, and not very freindly fauna. So do you, brave explorer, treck through these overgrown tropical wastes, or will you find another, less hostile planet to explore. The choice is yours.\n\nOvergrown Planets are tier 3, spawn around tier 2 stars, and require no EPP.",
+  "name" : "Overgrown Planets",
+  "friendlyName" : "Overgrown Planets",
+  "steamContentId" : "2587899098",
+  "link" : "steam://url/CommunityFilePage/2587899098"
+}

@@ -1,0 +1,31 @@
+[{
+		"op": "add",
+		"path": "/planetTypes/city",
+		"value": {
+			"threatRange": [1, 1],
+			"layers": {
+				"surface": {
+					"primaryRegion": ["city"],
+					"secondaryRegions": ["city"],
+					"dungeonCountRange": [2, 3],
+					"dungeons": [
+						[1.0, "naturalcave"]
+					]
+				}
+			}
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/city",
+		"value": {
+			"caveLiquid": ["water"],
+			"blockSelector": ["remixedMildSurface"],
+			"fgCaveSelector": ["sparseCaves"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[0, ["city"]]
+			]
+		}
+	}
+]

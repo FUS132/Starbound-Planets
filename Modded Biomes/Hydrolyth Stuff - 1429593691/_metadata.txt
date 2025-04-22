@@ -1,0 +1,10 @@
+{
+  "version" : "0.9",
+  "tags" : "Crafting and Building|Miscellaneous|Planets and Environments|Weapons|In-Game Tools|Armor and Clothes",
+  "author" : "blahblahbal",
+  "description" : "This mod adds two new tiers of armor and weapons, Impervium and Hydrolyth. It also adds a tier of tools, Osborgnen.\n\nIn addition to these, it adds a beta tech (Bubble Boost) back to the game, obtainable post-game. \n\nThere is a new planet type, Illusion, which generates around Frozen and Fiery stars. This planet type is plagued with high winds, and is only visitable after you obtain a Velocity EPP. This is only obtainable post-game. The Illusion planet's tiles are currently a work-in-progress.\n\nAlso included is Ancient Essence 'voxels.' Trade your essence to your friends to speed up various post-game tasks!\n\n(Various sprites in this mod are WIP.)\n\nUPDATE v0.71:\n-Fixed Illusory Sand tooltip\n-Fixed Hydrolyth Greatsword being 1-handed\n-Changed Hydrolyth Bar sprite\n-Fixed inconsistency with Osborgnen tools' recipes\n\nUPDATE v0.8:\n-Fixed Illusion planets' cores (hopefully... you may have to generate a new universe)\n\nUPDATE v0.81:\n-Improved Illusion planets' cockpit interface sprite and bookmark sprite\n-Improved Illusion planets' horizon/liquid sprites\n\nUPDATE v0.82\n-Added a way to craft Erchius Crystal Blocks (2 Crystal Erchius Fuel at a Furnace; they can also be used as fuel.)\n\nUPDATE v0.82.1:\n-Fixed Erchius Crystal Block recipe\n\nUPDATE v0.83:\n-Attempted to fix conflict with FU by changing matmod IDs to more obscure numbers; you may have to generate a new universe for these to take effect\n\nUPDATE v0.84:\n-Fixed Illusion planet's blocks dropping Perfectly Generic Items\n\nUPDATE v0.9:\n-Fixed droprates of Elemental Essence items",
+  "name" : "Hydrolyth Stuff",
+  "friendlyName" : "Hydrolyth Stuff",
+  "steamContentId" : "1429593691",
+  "link" : "steam://url/CommunityFilePage/1429593691"
+}

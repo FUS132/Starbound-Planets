@@ -1,0 +1,149 @@
+{
+  "name" : "pf_protectoratesettlement",
+  "friendlyName" : "Protectorate Landing Grounds",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1.0, "pf_cosmotop" ],
+		  [ 1.0, "pf_protectoratescandroid" ],
+		  [ 1.0, "pf_protectoraterepairbot" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "pf_cosmobunnycritter" ]
+        ]
+      },
+	  {
+		"select": 3,
+		"pool": "nightTerrors"
+	  },
+	  {
+		"select": 2,
+		"pool": "generatedGround"
+	  },
+   	  {
+		"select": 2,
+		"pool": "generatedFlying"
+	  }
+    ],
+		"monsterParameters": {
+			"colors": "cosmic",
+			"statusSettings" : {
+        	"stats" : {
+          	  "biomeanomalyImmunity2" : {
+              "baseValue" : 1.0
+            }
+          }
+		}	
+	  }
+  },
+
+  "hueShiftOptions" : [0],
+
+  "mainBlock" : "pf_starsidian",
+  "subBlocks" : [ "pf_plasmamaterial", "pf_stardust", "junk", "rustyblock" ],
+  "ores" : "surface",
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "pf_stardust" ],
+    "grassModDensity" : 0.9,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "metalbarrel2" ], [0.35, "floodlights" ], [0.35, "apextent" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.50, "scorchedcitybrokenelectricbox1" ], [0.50, "pf_wreckedpowerpole" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "pf_astralProtectorateChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "pf_protectoratecitymicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "astral" ],
+        "treeFoliageList" : [ "nebula" ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+
+    "items" : [
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "darkvine" ],
+        "treeFoliageList" : [ "nothing" ]
+      }
+    ]
+  }
+}

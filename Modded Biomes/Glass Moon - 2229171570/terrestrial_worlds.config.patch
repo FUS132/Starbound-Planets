@@ -1,0 +1,158 @@
+[
+    {
+        "op": "add",
+        "path": "/regionTypes/GMglassmooncore",
+        "value": {
+            "fgCaveSelector": [
+                "empty"
+            ],
+            "subBlockSelector": [
+                "lowHillsSurface"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "GMglassmooncorelayer"
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/GMglassmoon",
+        "value": {
+            "blockSelector": [
+                "remixedSurface"
+            ],
+            "fgCaveSelector": [
+                "moonSurfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "GMglassmoon"
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/GMglassmoonunderground",
+        "value": {
+            "fgCaveSelector": [
+                "moonCaves"
+            ],
+            "fgOreSelector": [
+                "richVeins"
+            ],
+            "bgOreSelector": [
+                "richVeins"
+            ],
+            "caveLiquid": [
+                "GMliquidglass"
+            ],
+            "caveLiquidSeedDensityRange": [
+                3.5,
+                3.5
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "GMglassmoonunderground"
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "op": "add",
+        "path": "/planetTypes/GMglassmoon",
+        "value": {
+            "gravityRange": [
+                20,
+                20
+            ],
+            "threatRange": [
+                1,
+                1
+            ],
+            "layers": {
+                "space": {
+                    "primaryRegion": [
+                        "GMglassasteroids"
+                    ]
+                },
+                "atmosphere": {
+                    "primaryRegion": [
+                        "void"
+                    ]
+                },
+                "surface": {
+                    "primaryRegion": [
+                        "GMglassmoon"
+                    ]
+                },
+                "subsurface": {
+                    "primaryRegion": [
+                        "GMglassmoonunderground"
+                    ]
+                },
+                "underground1": {
+                    "primaryRegion": [
+                        "GMglassmoonunderground"
+                    ],
+                    "secondaryRegions": []
+                },
+                "underground2": {
+                    "primaryRegion": [
+                        "GMglassmoonunderground"
+                    ],
+                    "secondaryRegions": []
+                },
+                "underground3": {
+                    "primaryRegion": [
+                        "GMglassmoonunderground"
+                    ],
+                    "secondaryRegions": []
+                },
+                "core": {
+                    "primaryRegion": [
+                        "GMglassmooncore"
+                    ],
+                    "baseHeight": 150
+                }
+            }
+        }
+    },
+	 {
+        "op": "add",
+        "path": "/regionTypes/GMglassasteroids",
+        "value": {
+            "blockSelector": [
+                "asteroids"
+            ],
+            "fgCaveSelector": [
+                "empty"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "GMglassasteroids"
+                    ]
+                ]
+            ]
+        }
+    }
+]

@@ -1,0 +1,10 @@
+{
+  "version" : "1.0",
+  "author" : "Projectmayem1983",
+  "tags" : "Planets and Environments",
+  "description" : "This mod will add several winter themed planets/biomes\n\n\n[h1]Winter City[/h1]\n\nThis planet has a city background and is full of various species. It is 100% civilized and no monsters will attack you.\n\n[h1]Winter Jungle [/h1]\n\nA mix of jungle and snowy. Plenty of monsters on this dangerous planet.\n\nUpdated the buildings in the back. No longer will every light be on.",
+  "name" : "Winter Planet Pack",
+  "steamContentId" : "2233339365",
+  "friendlyName" : "Winter Planet Pack",
+  "link" : "steam://url/CommunityFilePage/2233339365"
+}

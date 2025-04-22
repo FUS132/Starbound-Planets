@@ -1,0 +1,222 @@
+{
+  "name" : "om_starryplanetoceanfloor",
+  "friendlyName" : "Starry Ocean Floor",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 10,
+        "pool" : [
+          [ 1, "smallFishOcean1" ],
+          [ 1, "smallFishOcean2" ],
+          [ 1, "passiveLargeFish" ],
+          [ 1, "aggroLargeFish" ],
+          [ 1, "om_angrystar1" ],
+          [ 1, "squidcritter" ],
+          [ 1, "jellycritter" ],
+          [ 1, "fishlemoncritter" ],
+          [ 1, "fishberrycritter" ],
+          [ 1, "glowingballcritter" ],
+          [ 1, "glowingball2critter" ],
+          [ 1, "fishcritter" ],
+          [ 1, "fishchilicritter" ],
+          [ 1, "glowingfishcritter" ],
+          [ 1, "poisonfishcritter" ],
+          [ 1, "skellyfishcritter" ],
+          [ 2, "om_starryfloatingstarcritter" ],
+          [ 2, "om_starryfloatingstarcritter2" ],
+          [ 2, "prismelementalcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "om_starryplanet",
+      "statusSettings" : {
+        "stats" : {
+          "poisonStatusImmunity" : {
+            "baseValue" : 1.0
+          }
+        }
+      }
+    }
+  },
+
+  "parallax" : "/parallax/surface/om_starryplanetoceanfloor.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/ocean_underwater.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/ocean_underwater.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/accretion-disc.ogg", "/music/arctic-exploration1.ogg", "/music/arctic-exploration2.ogg", "/music/crystal-exploration2.ogg", "/music/crystal-exploration1.ogg", "/music/cygnus-x1.ogg", "/music/epsilon-indi.ogg", "/music/eridanus-supervoid.ogg", "/music/error-0xbfaf000.ogg","/music/europa.ogg","/music/forest-loop.ogg", "/music/forsaken-grotto.ogg", "/music/haiku.ogg", "/music/home-concept-loop.ogg", "/music/hymn-to-the-stars.ogg", "/music/large-magellanic-cloud.ogg", "/music/M54.ogg", "/music/mira.ogg", "/music/ocean-exploration2.ogg", "/music/stellarformation.ogg", "/music/title-theme-concept-old.ogg", "/music/The_Home_of_Stars-Omeruin.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/arctic-exploration1.ogg", "/music/arctic-exploration2.ogg", "/music/mira.ogg", "/music/crystal-exploration1.ogg", "/music/crystal-exploration2.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/forsaken-grotto.ogg", "/music/cygnus-x1.ogg", "/music/epsilon-indi.ogg", "/music/horsehead-nebula.ogg", "/music/hymn-to-the-stars.ogg", "/music/jupiter.ogg", "/music/large-magellanic-cloud.ogg", "/music/M54.ogg", "/music/ocean-exploration2.ogg", "/music/on-the-beach-at-night.ogg", "/music/The_Home_of_Stars2-Omeruin.ogg" ]
+    }
+  },
+
+  "hueShiftOptions" : [-165, -120, -15, 0, 50, 125, 170],
+
+  "mainBlock" : "om_starryplanetsand",
+  "subBlocks" : [ "om_starryplanetsandstone" ],
+  "ores" : "om_starryplanetsurface",
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "om_starrygrass2" ],
+    "grassModDensity" : 0.9,
+
+    "items" : [
+      // CHESTS
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "om_starryChest" ]
+      },
+      // PLANTS
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "corals", "seaweed", "waterplant2", "waterplant3" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "om_starbush7" ], [0.35, "om_starbush8" ], [0.35, "om_starbush9" ], [0.35, "om_startallgrass1" ], [0.35, "om_startallgrass2" ], [0.35, "om_startallgrass3" ], [0.35, "om_startallgrass4" ], [0.35, "seashell1" ], [0.35, "seashell2" ], [0.35, "seashell3" ], [0.35, "seashell4" ], [0.35, "seashell5" ], [0.35, "seashell6" ], [0.35, "seashell7" ], [0.35, "seashell8" ], [0.35, "om_starcone1" ], [0.35, "om_starcone2" ], [0.35, "om_starcone3" ], [0.35, "om_starcone4" ], [0.35, "om_starcone5" ], [0.35, "om_starcoral1" ], [0.35, "om_starcoral2" ], [0.35, "om_starcoral3" ], [0.35, "om_starcoral4" ], [0.35, "om_starcoral5" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      // TREES AND OBJECTS
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "cone",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "coral",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "seagrass",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "seaweed",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "oshroom1" ], [0.20, "oshroom2" ], [0.20, "oshroom3" ], [0.20, "oshroom4" ], [0.20, "oshroom5" ]]
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "pebbles" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "kelp", "seaweed" ],
+        "treeFoliageList" : [ "flowy", "kelpy", "leafy", "wavy" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildom_starrystarfruitseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

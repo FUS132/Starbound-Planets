@@ -1,0 +1,94 @@
+[{
+		"op": "add",
+		"path": "/planetTypes/hellishplanet",
+		"value": {
+			"threatRange": [6,7],
+			"layers": {
+				"surface": {
+					"primaryRegion": ["hellishplanet"],
+					"secondaryRegions": [],
+					"dungeons": [
+					[1, "hellishfortress1"]
+					]
+				},
+				"subsurface": {
+					"primaryRegion": ["hellishunderground0a"]
+				},
+				"underground1": {
+					"primaryRegion": ["hellishunderground3a"]
+				},
+				"underground2": {
+					"primaryRegion": ["hellishunderground5a"]
+				},
+				"underground3": {
+					"primaryRegion": ["hellishunderground5a"]
+				},
+				"core": {
+					"primaryRegion": ["hellishcorelayer"]
+				}
+			}
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/hellishplanet",
+		"value": {
+			"caveLiquid": ["lava", "poison"],
+			"caveLiquidSeedDensityRange": [1, 2],
+			"blockSelector": ["remixedMildSurface"],
+			"fgCaveSelector": ["surfaceCaves"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[0, ["hellishplanet"]]
+			],
+			"subRegion": ["flesh", "bones"]
+		}
+	},
+
+	{
+		"op": "add",
+		"path": "/regionTypes/hellishunderground0a",
+		"value": {
+			"caveLiquid": ["lava"],
+			"biome": [
+				[1, ["hellishunderground0a"]]
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/hellishunderground3a",
+		"value": {
+			"caveLiquid": ["lava"],
+			"biome": [
+				[1, ["hellishunderground3a"]]
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/hellishunderground5a",
+		"value": {
+			"caveLiquid": ["lava"],
+			"biome": [
+				[1, ["hellishunderground5a"]]
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/hellishcorelayer",
+		"value": {
+			"caveLiquid": ["lava"],
+			"caveLiquidSeedDensityRange": [4.0, 4.0],
+			"oceanLiquid": ["corelava"],
+			"oceanLevelOffset": -20,
+			"fgCaveSelector": ["coreCaves"],
+			"bgCaveSelector": ["coreBackgroundCaves"],
+			"biome": [
+				[1, ["hellishcorelayer"]]
+			]
+		}
+	}
+
+]

@@ -1,0 +1,59 @@
+{
+  "name" : "gasgiantunderground",
+  "friendlyName" : "Gas Giant Underground",
+
+  "spawnProfile" : {
+    "groups" : [
+		{
+			"select" : 1,
+			"pool" : [
+			[0.0005, "AncientSentinel"]
+			]
+		}
+	]
+  },
+
+
+    "mainBlock" : "meteoriterock",
+    "subBlocks" : [ "magmarock","sand2" ],
+	"ores" : "asteroid",
+  "weather" : [
+    [0, [
+      "/weather.config:gasgiant"
+    ]]
+  ],
+  
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/desert_underground.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/desert_underground.ogg" ]
+    }
+  },
+		"parallax" : "/parallax/underground/gasgiantunderground.parallax",
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/epsilon-indi.ogg", "/music/hymn-to-the-stars.ogg", "/music/planetarium.ogg", "/music/procyon.ogg", "/music/stellarformation.ogg", "/music/vast-immortal-suns.ogg", "/music/atlas.ogg", "/music/blue-straggler.ogg", "/music/cygnus-x1.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/M54.ogg", "/music/on-the-beach-at-night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/psyche.ogg", "/music/accretion-Disc.ogg", "/music/cygnus-x1.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/M54.ogg", "/music/Nomads.ogg", "/music/on-the-beach-at-night.ogg" ]
+    }
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [  ],
+    "grassModDensity" : 0,
+    "items" : [
+      {
+        "mode" : "ceiling",
+        "priority" : 3.0,
+        "variants" : 36,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gasgiantfeatures" ]
+      }
+    ]
+  }
+}

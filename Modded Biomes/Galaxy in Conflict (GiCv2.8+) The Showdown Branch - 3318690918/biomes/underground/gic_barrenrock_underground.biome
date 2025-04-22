@@ -1,0 +1,34 @@
+{
+  "name" : "gic_barrenrock_underground",
+  "friendlyName" : "Barren Rock Underground",
+
+  "parallax" : "/parallax/underground/barrenunderground.parallax",
+
+  "mainBlock" : "rock02",
+  "subBlocks" : [ "rock03", "direstone", "gic_rock15_invulnerable" ],
+  "ores" : "gic_barrenrockorespawn",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/arid_underground.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/arid_underground.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/thiswarofmine/gic_thiswarofmine_nogoodchoice.ogg" ]
+    },
+    "night" : {
+      "tracks" : [  "/music/thiswarofmine/gic_thiswarofmine_nogoodchoice.ogg" ]
+    }
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [ ]
+  },
+
+  "hueShiftOptions" : [0]
+}

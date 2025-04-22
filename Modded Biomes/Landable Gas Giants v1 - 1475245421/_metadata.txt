@@ -1,0 +1,11 @@
+{
+  "version" : "0.9.9",
+  "tags" : "Planets and Environments|NPCs and Creatures",
+  "author" : "Omega68",
+  "description" : "\nFor Starters:\n-YES, it is compatible with FU, TrueSpace and Allow Parallax Transition, but there seems to be a small conflict with FU in which somehow, the cores of the gas giants from this mod and the ones from FU gas giants get swaped sometimes, the bug shouldn't be a problem and from what I know, can't be fixed without breaking every existing gas giant planet already generated.\n\n-THIS MOD ONLY WORKS ON NEWLY GENERATED SYSTEMS, that is, systems that you have not loaded from the cockpit's hud (outide of the area that you can see).\n\n-Uninstalling the mod, for what I've tested, doesn't require a universe wipe. Instead, the custom trees from this mod will beam you back up (so destroy them if your planet has them and you want to uninstall) and biome textures (parallax, icons, etc.) will dissapear.\n\nA mod that replaces the current unlandable gas giants with two types of gas giants, both landable. Fall damage is the main danger on them, so you should be careful and use some mod that adds an air transport method. That said, fall damage is not the only danger in this biome, there are animals in the habitable areas, and mysterious machines in the lower, inhabitable areas.\n\nThere is two variants of this planet type:\n-The \"normal\" one with no life, basically an asteroid field with gravity. Has the same ores too. Kinda more dangerous since a few updates ago.\n\n-The habitable one, the surface and sub-surfacer of which are replaced with various floating island biomes, including biomes like forest, desert or frozen.\n\nAll main biomes have a terraformer that can be bought at the terraforge for 5k Ancient Essence each.\n\nFirst mod btw, pls don't do me a mean.\n\nGas Giants from this mod have the same ores as asteroid fields, so I recommend installing a mod like asteroids oresteroids for extra grofit: https://steamcommunity.com/sharedfiles/filedetails/?id=793531552",
+  "name" : "LandableGasGiantsMod",
+  "friendlyName" : "Landable Gas Giants",
+  "steamContentId" : "1475245421",
+  "link" : "steam://url/CommunityFilePage/1475245421",
+  "includes" : ["TrueSpace", "Asteroids OreSteroids", "Allow Parallax Transition", "sup_weather", "FrackinUniverse", "Elithian_Races_Mod"]
+}

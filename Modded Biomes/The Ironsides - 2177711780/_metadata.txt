@@ -1,0 +1,10 @@
+{
+  "version" : "1.0.3",
+  "tags" : "Crafting and Building|Planets and Environments|NPCs and Creatures|Weapons|Dungeons|Furniture and Objects|Armor and Clothes",
+  "author" : "Sva",
+  "description" : "[img]https://i.imgur.com/WE14mGk.png[/img]\n\n[img]https://i.imgur.com/CmXuZTg.png[/img]\n\n[h1]Ironsides, the Ancient Knights[/h1]\n\n[img]https://i.imgur.com/XQ4W33I.png[/img]\n\n[img]https://i.imgur.com/CmXuZTg.png[/img]\n\n[img]https://i.imgur.com/bZXAf8l.png[/img]\n\n[h1]The Grey Expanse[/h1]\n\nA new planet type, the Grey Expanse, is added. It can be found in tier 5-6 stars. For players with an existing world, simply navigate to an area in the universe where you haven't viewed before.\n\n[img]https://i.imgur.com/CmXuZTg.png[/img]\n\n[img]https://i.imgur.com/sBaq2yi.png/[img]\n\n[h1]Additional Content[/h1]\n\n[list]\n[*]Decorative furniture & tiles\n\n[*]Themed weapons and armor\n\n[*]Floaty augments\n\n[*]Encounters against shiny knights\n[/list]\n\nMost objects and items can be crafted via the Ironsides Replicator, forged at an inventor's table.\n\n[img]https://i.imgur.com/CmXuZTg.png[/img]\n\n[img]https://i.imgur.com/dGqovkB.png[/img]\n\nShould be compatible with most if not all mods. Compatible with Frackin Universe.\n\n\nThanks for reading, and enjoy the mod! ☆",
+  "name" : "The Ironsides",
+  "friendlyName" : "The Ironsides",
+  "steamContentId" : "2177711780",
+  "link" : "steam://url/CommunityFilePage/2177711780"
+}

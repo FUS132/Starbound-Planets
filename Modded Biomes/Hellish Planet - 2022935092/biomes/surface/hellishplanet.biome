@@ -1,0 +1,337 @@
+{
+  "name" : "hellishplanet",
+  "friendlyName" : "Hellish",
+
+  "statusEffects" : [ "biomeheat","biomehellish","biomehellish2" ],
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 5,
+        "pool" : [
+          [ 1, "eyedemon1" ],
+          [ 1, "hellishwalkingdemon1" ],
+          [ 1, "hellishwalkingdemon2" ],
+          [ 1, "hellishwalkingdemon3" ],
+          [ 1, "hellishghost1" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "volcanic",
+        "statusSettings" : {
+        "stats" : {
+          "lavaImmunity" : {
+            "baseValue" : 1.0
+          },
+          "fireStatusImmunity" : {
+            "baseValue" : 1.0
+          },
+		  "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+		"fireResistance" : {
+          "baseValue" : 0.5
+        },
+		"poisonResistance" : {
+          "baseValue" : 0.5
+        },
+		"electricResistance" : {
+          "baseValue" : -0.5
+        }
+        }
+      }
+    }
+  },
+
+  "weather" : [
+    [0, [
+      "/weather.config:hellishplanet",
+	  "/weather.config:hellishplanetMeteor"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      //Cursed Hell
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [255, 0, 63], [252, 30, 0] ],
+      "dayColors" : [ [165, 0, 69], [255, 83, 52] ],
+      "eveningColors" : [ [112, 0, 56], [254, 65, 29] ],
+      "nightColors" : [ [45, 0, 22, 40], [70, 20, 0, 40] ],
+
+      "morningLightColor" : [255, 0, 63],
+      "dayLightColor" : [165, 0, 69],
+      "eveningLightColor" : [112, 0, 56],
+      "nightLightColor" : [45, 0, 22]
+    },
+	{
+      //Cursed Yellow Darkness
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [255, 197, 104], [252, 30, 0] ],
+      "dayColors" : [ [204, 125, 0], [255, 83, 52] ],
+      "eveningColors" : [ [102, 33, 0], [254, 65, 29] ],
+      "nightColors" : [ [0, 0, 0, 40], [70, 20, 0, 40] ],
+
+      "morningLightColor" : [255, 197, 104],
+      "dayLightColor" : [204, 125, 0],
+      "eveningLightColor" : [102, 33, 0],
+      "nightLightColor" : [0, 0, 0]
+    }
+  ],
+
+  "mainBlock" : "hellishcobblestone",
+  "subBlocks" : [ "bonematerial", "hellishfleshblock", "tentacleblock" ],
+  "ores" : "hellishsurface",
+
+  "parallax" : "/parallax/surface/hellishplanet.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/volcanic_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/volcanic_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/lava-exploration1.ogg", "/music/drosera.ogg", "/music/inviolate-loop.ogg", "/music/desert-exploration2.ogg", "/music/ultramarine.ogg", "/music/body-electric-loop.ogg", "/music/mercury.ogg", "/music/nomads.ogg", "/music/psyche.ogg", "/music/crystal-battle1-loop.ogg", "/music/desert-battle-2.ogg", "/music/arctic-battle1-loop.ogg", "/music/arctic-battle3-loop.ogg", "/music/event-horizon.ogg", "/music/impact-event.ogg", "/music/tentacle-battle1-loop.ogg", "/music/scorian-flow.ogg", "/music/the-apex.ogg", "/music/Hummingdark2-Omeruin.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/lava-exploration2.ogg", "/music/nomads.ogg", "/music/casiopeia.ogg", "/music/crystal-exploration1.ogg", "/music/desert-exploration1.ogg", "/music/arctic-battle1-loop.ogg", "/music/arctic-battle2-loop.ogg", "/music/body-electric-loop.ogg", "/music/gravitational-collapse.ogg", "/music/the-apex.ogg", "/music/Nothingness-Omeruin.ogg", "/music/Hummingdark1-Omeruin.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "blackash" ],
+    "grassModDensity" : 0.9,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "smokegen" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+
+      // MICRO DUNGEONS
+
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "hellishplanetmicrodungeons" ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "hellishencounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDistPlatform",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "aridplatforming" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDistTerrainfeatures",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "terrainfeatures" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "hellishflower1", "hellishflower2" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "testbush2",
+            "baseHueShiftMax" : 40,
+            "modHueShiftMax" : 180
+          }
+        ]},
+//Surface Crops
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildhellishchiliseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "blackash" ],
+    "grassModDensity" : 0.6,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "techChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "hellishflower1", "hellishflower2" ]
+      }
+    ]
+  }
+}

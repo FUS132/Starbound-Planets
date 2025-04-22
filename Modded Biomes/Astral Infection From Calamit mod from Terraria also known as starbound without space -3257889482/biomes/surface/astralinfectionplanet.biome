@@ -1,0 +1,198 @@
+{
+  "name" : "astralinfectionplanet",
+  "friendlyName" : "Astral Infection",
+
+  "weather" : [
+    [0, [
+      "/weather.config:clear"
+    ]]
+  ],
+
+    "spawnProfile": {
+        "groups": [
+            {
+                "select": 9,
+                "pool": [
+                    [
+                        1,
+                        "scandroid"
+                    ],
+                    [
+                        1,
+                        "triplod"
+                    ],
+                    [
+                        1,
+                        "bobot"
+                    ],
+                    [
+                        1,
+                        "minidrone"
+                    ],
+                    [
+                        1,
+                        "kluexsentry"
+                    ],
+                    [
+                        1,
+                        "paratail"
+                    ],
+                    [
+                        1,
+                        "lumoth"
+                    ],
+                    [
+                        1,
+                        "trifangle"
+                    ],
+                    [
+                        1,
+                        "fennix"
+                    ]
+                ]
+            }
+        ]
+    },
+
+  "statusEffects" : [ "biomecold" ],
+
+  "skyOptions" : [
+
+    {
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [0, 40, 60, 30], [0, 10, 20, 50] ],
+      "dayColors" : [ [0, 40, 60, 30], [0, 10, 20, 50] ],
+      "eveningColors" : [ [0, 40, 60, 30], [0, 10, 20, 50] ],
+      "nightColors" : [ [0, 40, 60, 30], [0, 10, 20, 50] ],
+
+      "morningLightColor" : [24, 28, 24],
+      "dayLightColor" : [24, 28, 24],
+      "eveningLightColor" : [24, 28, 24],
+      "nightLightColor" : [24, 28, 24]
+    }
+  ],
+
+  "mainBlock" : "astraldirt",
+  "subBlocks" : [ "astraldirt" ],
+  "ores" : "moon",
+
+  "parallax" : "/parallax/surface/astralinfection.parallax",
+    "ambientNoises": {
+        "day": {
+            "tracks": [
+                "/sfx/environmental/moon_surface.ogg"
+            ]
+        },
+        "night": {
+            "tracks": [
+                "/sfx/environmental/moon_surface.ogg"
+            ]
+        }
+    },
+    "musicTrack": {
+        "day": {
+            "tracks": [
+                "/music/calamost.ogg"
+            ]
+        },
+        "night": {
+            "tracks": [
+                "/music/clamost.ogg"
+            ]
+        }
+    },
+    "surfacePlaceables": {
+        "grassMod": [
+            "astralgrass"
+        ],
+        "grassModDensity": 100,
+        "items": [
+            {
+                "mode": "floor",
+                "priority": 1,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:overgroundRareChests",
+                "type": "object",
+                "objectSets": [
+                    {
+                        "pool": [
+                            [
+                                1,
+                                "statuspod"
+                            ]
+                        ],
+                        "parameters": {}
+                    }
+                ]
+            },
+            {
+                "mode": "floor",
+                "priority": 2,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:denseLarge",
+                "type": "tree",
+                "treeFoliageHueShiftMax": 0,
+                "treeStemHueShiftMax": 15,
+                "treeStemList": [
+                    "astraltree"
+                ],
+                "treeFoliageList": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "undergroundPlaceables": {
+        "grassMod": [
+            "astralgrass"
+        ],
+        "grassModDensity": 100,
+        "items": [
+            {
+                "mode": "floor",
+                "priority": 1,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:undergroundChests",
+                "type": "object",
+                "objectSets": [
+                    {
+                        "pool": [
+                            [
+                                1,
+                                "statuspod"
+                            ]
+                        ],
+                        "parameters": {}
+                    }
+                ]
+            },
+            {
+                "mode": "floor",
+                "priority": 1,
+                "variants": 1,
+                "distribution": "/biomes/distributions.config:undergroundCapsules",
+                "type": "object",
+                "objectSets": [
+                    {
+                        "pool": [
+                            [
+                                0.35,
+                                "capsulesmall"
+                            ],
+                            [
+                                0.35,
+                                "capsulemed"
+                            ],
+                            [
+                                0.35,
+                                "capsulebig"
+                            ]
+                        ],
+                        "parameters": {}
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,251 @@
+{
+  "name" : "starrygarden",
+  "friendlyName" : "Starry Garden",
+
+ "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 4,
+        "pool" : [ 
+		  [ 0.1111, "om_starrydragon1" ],
+          [ 0.1111, "om_starrydragon2" ],
+          [ 0.1111, "om_angrystar1" ],
+          [ 0.2, "om_starrymoth1" ]
+        ]
+      },
+      {
+        "select" : 8,
+        "pool" : [
+          [ 0.25, "bioluminfireflyspawner" ],
+          [ 2, "om_starryfloatingstarcritter" ],
+          [ 2, "om_starryfloatingstarcritter2" ],
+          [ 2, "om_starrybutterflycritter" ],
+          [ 1, "sluggreencritter" ],
+          [ 1, "slugbluecritter" ],
+          [ 1, "slugcritter" ],
+          [ 2, "prismelementalcritter" ],
+          [ 1, "glowingballcritter" ],
+          [ 2, "glowingball2critter" ],
+          [ 2, "om_starmothcritter" ],
+          [ 2, "om_nyxmothcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "om_starryplanet",
+      "statusSettings" : {
+        "stats" : {
+          "poisonStatusImmunity" : {
+            "baseValue" : 1.0
+          }
+        }
+      }
+    }
+  },
+
+  "mainBlock" : "om_starryplanet_dirt",
+  "subBlocks" : ["floweryblock","om_starryplanet_rock","om_starryplanet_rock2"],
+  "ores" : "om_starryplanetsurface",
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "om_starrygrass" ],
+    "grassModDensity" : 0.9,
+
+    "ceilingGrassMod" : [ "om_starrymoss" ],
+    "ceilingGrassModDensity" : 0.5,
+
+    "items" : [
+//Capsules
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [3.0, "capsulesmall" ], [3.0, "capsulemed" ], [3.0, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+//Dungeons
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "starrygardenmicrodungeons" ]
+      },
+//Trees
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 255,
+        "treeStemHueShiftMax" : 35,
+        "treeStemList" : [ "om_starrystem1" ],
+        "treeFoliageList" : [ "om_starryfoliage1" ]
+      },
+//Chests
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "om_starryChest" ]
+      },
+//Plants
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:everywhere",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [3.0, "springbush1" ], [3.0, "springbush2" ], [3.0, "springbush3" ], [3.0, "springbush4" ], [3.0, "springbush5" ], [3.0, "springbush6" ], [3.0, "om_starbush1" ], [3.0, "om_starbush1" ], [3.0, "om_starbush2" ], [3.0, "om_starbush3" ], [3.0, "om_starbush4" ], [3.0, "om_starbush5" ], [3.0, "om_starbush6" ], [3.0, "om_starbush7" ], [3.0, "om_starbush8" ], [3.0, "om_starbush9" ], [3.0, "om_starbush10" ], [3.0, "om_starbush11"], [3.0, "om_starbush12" ], [3.0, "om_starbush13" ], [3.0, "om_starbush14" ], [3.0, "om_starbush15" ], [3.0, "om_starbush16" ], [3.0, "om_starbush17" ], [3.0, "om_starbush18" ] ]
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "om_stargrass1" ], [0.35, "om_stargrass2" ], [0.35, "om_stargrass3" ], [0.35, "om_stargrass4" ], [0.35, "om_stargrass5" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:everywhere",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "springbush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:common",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [3.0, "flowerred" ], [3.0, "flowerspring" ]],
+            "parameters" : { "startingStage" : 2 }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "grass" ]
+      },
+//Crops
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildom_starrystarfruitseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "om_starrygrass" ],
+    "grassModDensity" : 0.2,
+
+    "ceilingGrassMod" : [ "om_starrymoss" ],
+    "ceilingGrassModDensity" : 0.3,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [3.0, "capsulesmall" ], [3.0, "capsulemed" ], [3.0, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  {
+        "mode" : "ceiling",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "glowroot1" ], [0.35, "glowroot2" ], [0.35, "glowroot3" ], [0.35, "glowroot4" ], [0.35, "glowroot5" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 10,
+        "treeStemList" : [ "om_starryvine" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "om_starryChest" ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,606 @@
+{
+  "name" : "tidal_overgrown",
+  "friendlyName" : "overgrown",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 3,
+        "pool" : [
+        [ 0.1429, "lumoth" ],
+        [ 0.1429, "lilodon" ],
+        [ 0.1429, "capricoat" ],
+        [ 0.1429, "scandroid" ],
+        [ 0.1429, "sporgus" ],
+        [ 0.1429, "fennix" ],
+        [ 0.1429, "iguarmor" ],
+        [ 0.1429, "scaveran" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "brightstripe" ],
+          [ 0.3, "vineclimber" ],
+          [ 0.3, "thornbee" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      },
+      {
+        "select" : 3,
+        "pool" : "nightTerrors"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "frogcritter" ],
+          [ 1, "birdcritter" ],
+          [ 1, "fireflyspawner" ],
+          [ 1, "chevcritter" ],
+          [ 1, "fireflyspawner" ],
+          [ 1, "fishcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "jungle",
+        "statusSettings" : {
+          "stats" : {
+            "poisonStatusImmunity" : {
+              "baseValue" : 1.0
+            }
+          }
+        }
+    }
+  },
+
+  // hue shift options
+  "hueShiftOptions" : [ 0 ],
+
+  "weather" : [
+    [0, [
+      "/weather.config:jungle"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // sunny earth days, red/orange sunrise and purple/red sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [242, 120, 0], [255, 230, 176] ],
+      "dayColors" : [ [115, 224, 255], [255, 255, 255] ],
+      "eveningColors" : [ [125, 17, 158], [210, 52, 50] ],
+      "nightColors" : [ [24, 38, 53, 0], [58, 42, 70, 0] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [40, 20, 60]
+    },
+    {
+      // sunny green day, darkgreen/yellow sunrise and purple/blue sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [68, 164, 84], [243, 201, 115] ],
+      "dayColors" : [ [115, 255, 204], [255, 255, 255] ],
+      "eveningColors" : [ [43, 17, 118], [244, 161, 231] ],
+      "nightColors" : [ [24, 38, 53, 10], [58, 42, 70, 10] ],
+
+      "morningLightColor" : [20, 91, 100],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [20, 60, 42]
+    },
+    {
+      // sunny lilac day, blue/orange sunrise and blue/green sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [0, 24, 55], [255, 140, 49] ],
+      "dayColors" : [ [176, 115, 255], [255, 255, 255] ],
+      "eveningColors" : [ [100, 86, 173], [0, 222, 73] ],
+      "nightColors" : [ [24, 38, 53, 5], [58, 42, 70, 5] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [40, 20, 60]
+    },
+    {
+      // sunny pink day, pink/peach sunrise and blue/pink sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [197, 48, 174], [253, 161, 96] ],
+      "dayColors" : [ [255, 116, 122], [255, 255, 255] ],
+      "eveningColors" : [ [88, 42, 91], [175, 20, 50] ],
+      "nightColors" : [ [24, 38, 53, 0], [58, 42, 70, 0] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [180, 120, 120],
+      "nightLightColor" : [40, 20, 60]
+    },
+
+    {
+      // sunny green day, darkgreen/yellow sunrise and purple/blue sunset with not green night
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [68, 164, 84], [243, 201, 115] ],
+      "dayColors" : [ [115, 255, 204], [255, 255, 255] ],
+      "eveningColors" : [ [43, 17, 118], [244, 161, 231] ],
+      "nightColors" : [ [24, 38, 53, 10], [58, 42, 70, 10] ],
+
+      "morningLightColor" : [20, 91, 100],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [40, 20, 60]
+    },
+
+    {
+      // sunny orange day, orange/yellow sunrise and green/orange sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [174, 89, 47], [255, 197, 54] ],
+      "dayColors" : [ [255, 186, 116], [255, 255, 255] ],
+      "eveningColors" : [ [3, 90, 92], [250, 138, 77] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [180, 120, 120],
+      "nightLightColor" : [40, 20, 60]
+    },
+
+    {
+      // dark peachy massacre
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [221, 119, 51], [252, 30, 0] ],
+      "dayColors" : [ [200, 52, 7], [255, 83, 52] ],
+      "eveningColors" : [ [200, 21, 0], [254, 65, 29] ],
+      "nightColors" : [ [40, 17, 17, 60], [40, 17, 17, 160] ],
+
+      "morningLightColor" : [100, 77, 0],
+      "dayLightColor" : [194, 113, 59],
+      "eveningLightColor" : [180, 0, 0],
+      "nightLightColor" : [40, 17, 17]
+    },
+
+    {
+      // very sunny green day, darkgreen/yellow sunrise and purple/blue sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [89, 164, 84], [62, 176, 66] ],
+      "dayColors" : [ [68, 164, 84], [243, 201, 115] ],
+      "eveningColors" : [ [43, 17, 118], [244, 161, 231] ],
+      "nightColors" : [ [24, 53, 34, 80], [42, 70, 47, 160] ],
+
+      "morningLightColor" : [20, 91, 100],
+      "dayLightColor" : [120, 180, 120],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [20, 60, 42]
+    },
+
+
+    {
+      // pale blue/green day, grape nights
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [110, 200, 129], [251, 191, 187] ],
+      "dayColors" : [ [71, 214, 100], [155, 215, 248] ],
+      "eveningColors" : [ [33, 90, 62], [140, 21, 215] ],
+      "nightColors" : [ [96, 52, 76, 40], [42, 70, 47, 40] ],
+
+      "morningLightColor" : [135, 93, 99],
+      "dayLightColor" : [120, 180, 161],
+      "eveningLightColor" : [34, 26, 56],
+      "nightLightColor" : [14, 7, 21]
+    },
+
+
+    {
+      // orange/red days, palepurple/darkerorange sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [169, 7, 158], [162, 181, 224] ],
+      "dayColors" : [ [209, 76, 91], [248, 154, 76] ],
+      "eveningColors" : [ [138, 108, 154], [252, 118, 63] ],
+      "nightColors" : [ [25, 2, 26, 45], [45, 18, 47, 45] ],
+
+      "morningLightColor" : [110, 93, 135],
+      "dayLightColor" : [180, 144, 120],
+      "eveningLightColor" : [26, 47, 56],
+      "nightLightColor" : [18, 5, 21]
+    },
+
+
+
+    {
+      // lottablueish
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [97, 138, 156], [26, 155, 127] ],
+      "dayColors" : [ [45, 178, 171], [88, 190, 246] ],
+      "eveningColors" : [ [212, 197, 13], [239, 134, 103] ],
+      "nightColors" : [ [9, 26, 12, 30], [41, 14, 13, 50] ],
+
+      "morningLightColor" : [60, 87, 99],
+      "dayLightColor" : [136, 161, 160],
+      "eveningLightColor" : [131, 84, 59],
+      "nightLightColor" : [26, 17, 17]
+    },
+
+
+
+    {
+      // toxic sunny green day, darkgreen/yellow sunrise and purple/blue sunset
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [120, 164, 84], [243, 201, 115] ],
+      "dayColors" : [ [68, 164, 84], [243, 201, 115] ],
+      "eveningColors" : [ [43, 17, 118], [244, 161, 231] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [20, 91, 100],
+      "dayLightColor" : [120, 180, 120],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [40, 20, 60]
+    }
+
+  ],
+
+  "mainBlock" : "dirt",
+  "subBlocks" : [ "grassyrock", "floweryblock" ],
+  "ores" : "surface",
+
+  "parallax" : "/parallax/surface/tidal_overgrown.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/jungle_day.ogg", "/sfx/environmental/jungle_day2.ogg" ]
+      },
+      "night" : {
+        "tracks" : [ "/sfx/environmental/jungle_night.ogg", "/sfx/environmental/jungle_night2.ogg" ]
+      }
+    },
+
+    "musicTrack" : {
+      "day" : {
+        "tracks" : [ "/music/forsaken-grotto.ogg", "/music/hymn-to-the-stars.ogg", "/music/procyon.ogg", "/music/vast-immortal-suns.ogg", "/music/drosera.ogg", "/music/mira.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/horsehead-nebula.ogg", "/music/on-the-beach-at-night.ogg" ]
+      },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation2.ogg", "/music/crystal-exploration2.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/desert-exploration2.ogg", "/music/lava-exploration2.ogg", "/music/arctic-constellation1.ogg", "/music/body-electric-loop.ogg", "/music/mercury.ogg", "/music/nomads.ogg", "/music/casiopeia.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "junglegrass" ],
+    "grassModDensity" : 0.9,
+
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.8,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "junglemicrodungeons" ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "scorchedcitymicrodungeons" ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "encounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "jungleflower1", "jungleflower2", "jungleflower3" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "flowerred" ], [0.35, "flowerblue" ], [0.35, "floweryellow" ], [0.35, "junglebush1" ], [0.35, "junglebush2" ], [0.35, "junglebush3" ], [0.35, "junglebush4" ], [0.35, "junglebush5" ], [0.35, "junglebush6" ], [0.35, "junglebush7" ], [0.35, "junglebush8" ], [0.35, "junglebush9" ], [0.35, "junglebush10" ], [0.35, "junglebush11" ], [0.35, "junglebush12" ], [0.35, "junglebush13" ], [0.35, "junglebush14" ], [0.35, "junglebush15" ], [0.35, "junglebush16" ], [0.35, "junglebush17" ], [0.35, "junglebush18" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "jungleChest" ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "testbush",
+            "baseHueShiftMax" : 40,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "twisty", "woody", "oldwood", "crackly", "palmlike" ],
+        "treeFoliageList" : [ "lushy", "junglepalm", "jungly", "jungleleaf" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildbananaseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildcoffeeseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildavesmingoseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildsugarcaneseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildcocoaseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildpineappleseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "junglegrass" ],
+    "grassModDensity" : 0.4,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.6,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "techChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      }
+    ]
+  }
+}

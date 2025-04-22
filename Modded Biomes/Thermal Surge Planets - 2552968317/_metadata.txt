@@ -1,0 +1,9 @@
+{
+  "version" : "1.0",
+  "tags" : "Crafting and Building|Planets and Environments",
+  "description" : "Deep underground on these blazing worlds, sulphuric compounds combine with the ever-present molten rock creating a blue glowing lava. When this blue lava cools, it creates surgesulphur crystals. These blue glowing crystals often acummilate in large veins or onto growing trees.\n\nDespite their beauty, these worlds hide a dark secret and are not for the weak. \n\n\nThis mod adds the Thermal Surge biome/planet, three natrually spawning blocks, and two craftable blocks (Tile IDs 7700-7704 used) .\n\n\n\n\nYou will need Futara's fullbright shader in get the trees and tiles to have fullbright parts.\n\n\n\n\nI have a discord server if you desire to join.\nhttps://discord.gg/nNp6cMmpxS\n\n\n-------------------------------------------------------------\n1.0: released.\n\n\n",
+  "name" : "Thermal Surge Planets",
+  "friendlyName" : "Thermal Surge Planets",
+  "steamContentId" : "2552968317",
+  "link" : "steam://url/CommunityFilePage/2552968317"
+}

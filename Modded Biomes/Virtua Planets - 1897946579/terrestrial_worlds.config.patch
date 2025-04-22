@@ -1,0 +1,48 @@
+[
+  {
+  "op" : "add",
+   "path" : "/planetTypes/kkgsvirtua",
+   "value" :
+     {
+       "gravityRange" : [70, 90],
+       "threatRange" : [1, 1],
+       "layers" : {
+      "space" : {
+        "primaryRegion" : [ "void" ]
+      },
+		"atmosphere" : {
+          "primaryRegion" : [ "void" ]
+		},
+        "surface" : {
+          "primaryRegion" : [ "kkgsvirtua" ]
+        },
+        "subsurface" : {
+          "primaryRegion" : [ "void" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "void" ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "void" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "void" ]
+        },
+        "core" : {
+          "primaryRegion" : [ "void" ]
+        }
+       }
+     }
+   },
+  {"op" : "add",
+  "path" : "/regionTypes/kkgsvirtua",
+ "value" : {
+      "caveLiquid" : [ "water" ],
+      "blockSelector" : [ "remixedFlatsSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "kkgsvirtua" ]]
+      ]
+    }}
+]

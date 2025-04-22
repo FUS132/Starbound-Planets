@@ -1,0 +1,100 @@
+[{
+		"op": "add",
+		"path": "/planetTypes/hallowplanet",
+		"value": {
+			"threatRange": [5, 5],
+			"layers": {
+				"surface": {
+					"primaryRegion": ["hallowplanet"],
+					"secondaryRegions": ["snow", "tundra"],
+					"dungeons": [
+						[1.0, "apextestfacility"],
+						[1.0, "apexbase"],
+						[1.0, "apexcamp"],
+						[1.0, "apexcity"],
+						[1.0, "aviantemple"],
+						[1.0, "aviantomb"],
+						[1.0, "avianvillage"],
+						[1.0, "aviannativevillage"],
+						[1.0, "avianairship"],
+						[1.0, "floranhuntinggrounds"],
+						[1.0, "florancanyon"],
+						[1.0, "floranvillagetower"],
+						[1.0, "floranhutvillage"],
+						[1.0, "dungeoncrawler"],
+						[1.0, "evilfortress"],
+						[1.0, "glitchcastle"],
+						[1.0, "glitchvillage"],
+						[1.0, "humanprison"],
+						[1.0, "humancamp"],
+						[1.0, "glitchsewer"],
+						[1.0, "novakidvillage"]
+					]
+				}
+			}
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/hallowplanet",
+		"value": {
+			"caveLiquid": ["healingliquid"],
+			"blockSelector": ["remixedMildSurface"],
+			"fgCaveSelector": ["surfaceCaves"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[0, ["hallowplanet"]]
+			],
+			"subRegion": [ "ice" ]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/planetTypes/healingocean",
+		"value": {
+			"blendSize": 30,
+			"threatRange": [3, 3],
+			"layers": {
+				"surface": {
+					"primaryRegion": ["healingocean"],
+					"baseHeight": 1350,
+					"layerLevel": 1050
+				},
+				"subsurface": {
+					"primaryRegion": ["healingoceanfloor"],
+					"dungeons": [
+						[1.0, "hylotloceancity"],
+						[1.0, "hylotlruinedcity"]
+					]
+				}
+			}
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/healingocean",
+		"value": {
+			"oceanLiquid": ["healingliquid"],
+			"blockSelector": ["remixedIslandsSurface"],
+			"fgCaveSelector": ["empty"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[0, ["healingocean"]]
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/regionTypes/healingoceanfloor",
+		"value": {
+			"oceanLiquid": ["healingliquid"],
+			"oceanLevelOffset": 1000,
+			"blockSelector": ["ledgesSurface"],
+			"fgCaveSelector": ["emptier"],
+			"bgCaveSelector": ["emptiest"],
+			"biome": [
+				[0, ["healingoceanfloor"]]
+			]
+		}
+	}
+]

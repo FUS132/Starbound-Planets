@@ -1,0 +1,35 @@
+[{
+		"op": "add",
+		"path": "/planetTypes/om_moneyplanet",
+		"value": {
+			"threatRange": [7, 7],
+			"layers": {
+				"surface": {
+					"primaryRegion": ["om_moneyplanet"],
+					"secondaryRegions": [],
+					"dungeons": [
+					]
+				}
+			}
+		}
+	},
+
+
+
+	{
+		"op": "add",
+		"path": "/regionTypes/om_moneyplanet",
+		"value": {
+			"caveLiquid": ["fuel"],
+			"encloseLiquids": false,
+			"caveLiquidSeedDensityRange": [1, 3],
+			"blockSelector": ["remixedMildSurface"],
+			"fgCaveSelector": ["surfaceCaves"],
+			"bgCaveSelector": ["empty"],
+			"biome": [
+				[0, ["om_moneyplanet"]]
+			]
+		}
+	}
+	
+]

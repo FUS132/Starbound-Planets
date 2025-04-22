@@ -1,0 +1,323 @@
+{
+  "name" : "gic_wildlands_arboretum",
+  "friendlyName" : "Arboretum",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 7,
+        "pool" : [
+          [ 1, "squeekcritter" ],
+          [ 1, "mousecritter" ],
+          [ 1, "spidercritter" ],
+          [ 1, "ravencritter" ],
+          [ 1, "wurmcritter" ],
+          [ 1, "vulturecritter" ],
+          [ 1, "appofloatcritter" ]
+        ]
+      },
+      {
+        "select" : 7,
+        "pool" : [
+          [ 1, "birdcritter" ],
+          [ 1, "hedgehogcritter" ],
+          [ 1, "tortoisecritter" ],
+          [ 1, "mousecritter" ],
+          [ 1, "bunnycritter" ],
+          [ 1, "snailcritter" ],
+          [ 1, "fishcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "snow"
+    }
+  },
+
+  "hueShiftOptions" : [ -20, -10, 0, 10, 20 ],
+
+  "weather" : [
+    [0, [
+      "/weather.config:gic_realisticatmosphericplanet"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // light reddish
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [255, 224, 129], [252, 230, 164] ],
+      "dayColors" : [ [255, 152, 107], [255, 183, 152] ],
+      "eveningColors" : [ [254, 121, 69], [254, 165, 129] ],
+      "nightColors" : [ [70, 20, 0, 60], [70, 20, 0, 160] ],
+
+      "morningLightColor" : [202, 177, 100],
+      "dayLightColor" : [202, 138, 100],
+      "eveningLightColor" : [202, 100, 100],
+      "nightLightColor" : [70, 20, 0]
+    }
+  ],
+
+  "mainBlock" : "dirt",
+  "subBlocks" : [ "dirt", "rock15", "stonerubble", "cobblestone" ],
+  "ores" : "surface",
+
+  "parallax" : "/parallax/surface/gic_wildlands_arboretum.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/arid_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/arid_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+	//Mostly metal. Mostly.
+    "day" : {
+      "tracks" : [ 
+	  
+	  
+      "/music/mixes/gic_Metal_Mix_4.ogg",
+      "/music/mixes/gic_Metal_Mix_2.ogg",
+      "/music/mixes/gic_Metal_Mix_3.ogg"
+	  
+//	  "/music/independent/gic_metallica_entersandman.ogg",
+//	  "/music/independent/gic_metallica_forwhomthebelltolls.ogg",
+//	  "/music/independent/gic_blacksabbath_paranoid.ogg",
+//	  "/music/independent/gic_klkbmbid_cut.ogg",
+//	  "/music/independent/gic_ironmaiden_thetrooper.ogg",
+//	  "/music/independent/gic_ethanmeixsell_run.ogg",
+//	  "/music/independent/gic_credenceclearwaterrevival_fortunateson.ogg",
+//	  "/music/touhou/gic_touhou_pristinewarmachine_militant.ogg",
+//	  "/music/shogun2/gic_shogun2_anewenemy.ogg"
+	  
+	  ]
+    },
+//Metal, but slightly quieter.
+    "night" : {
+      "tracks" : [ 
+	  
+      "/music/mixes/gic_Metal_Mix_1.ogg",
+      "/music/mixes/gic_Metal_Mix_5.ogg",
+      "/music/mixes/gic_Metal_Mix_6.ogg"
+
+//	  "/music/independent/gic_lucasking_thelastbattle.ogg",
+//	  "/music/arma2/gic_arma2_operationarrowhead.ogg",
+//	  "/music/haloreach/gic_haloreach_engaged_extended.ogg",
+//	  "/music/independent/gic_chrischristodoulou_thisparrotisnomore_deadbolt2016.ogg",
+//	  "/music/independent/gic_conspiracytheorymusic_demiseofanation.ogg"
+	  
+	  ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "grass" ],
+    "grassModDensity" : 0.8,
+	
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.4,
+
+    "items" : [
+
+
+
+      {
+        "mode" : "floor",
+        "priority" : 0.3,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "barbedwire" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "gic_whitworth_cannon" ] ],
+            "parameters" : { }
+          }
+        ]
+      },	
+	  
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "gic_hwacha" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "gic_banner_greenfingerguard_ground" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "encounterdungeons" ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 4,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "gic_floranliberationfront_territorymicrodungeons" ]
+      },
+
+
+
+
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "grass", "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "testbush",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 40,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "pineytree" ],
+        "treeFoliageList" : [ "pinefoliage", "greenleaves" ]
+      },
+	  
+	  
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      }
+  
+	  
+	  
+
+	  
+	  
+	  
+
+
+	  
+    ]
+  },
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  "undergroundPlaceables" : {
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 0.4,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.3,
+
+    "items" : [
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 10,
+        "treeStemList" : [ "desertvine" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "grass",
+        "grasses" : [ "testflower7", "testflower8" ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "name" : "superbarren",
+  "friendlyName" : "Superbarren",
+  
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 0,
+        "pool" : [ 
+          [ 0, "glooper" ]
+        ]
+      }
+	]
+  },
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:clear"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [140, 140, 180], [120, 120, 180] ],
+      "dayColors" : [ [190, 190, 210], [170, 170, 210] ],
+      "eveningColors" : [ [160, 120, 180], [140, 100, 180] ],
+      "nightColors" : [ [0, 0, 0, 0], [0, 0, 0, 0] ],
+
+      "morningLightColor" : [140, 140, 180],
+      "dayLightColor" : [190, 190, 210],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [26, 26, 31]
+    }
+
+  ],
+
+  "mainBlock" : "lightmetal",
+  "subBlocks" : [ "lightmetal" ],
+  "ores" : "none",
+
+
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/arid_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/arid_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : []
+    },
+    "night" : {
+      "tracks" : []
+    }
+  },
+
+  "surfacePlaceables" : {
+    "items" : [ ]
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [ ]
+  }
+}

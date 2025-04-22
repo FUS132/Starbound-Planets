@@ -1,0 +1,1771 @@
+[
+{
+  "op" : "add",
+  "path" : "/planetTypes/desert/layers/surface/secondaryRegions/-",
+  "value" : "saltflats"
+},
+{
+  "op" : "add",
+  "path" : "/planetTypes/desert/layers/surface/secondaryRegions/-",
+  "value" : "m32dunes"
+},
+{
+  "op" : "add",
+  "path" : "/planetTypes/desert/layers/surface/secondaryRegions/-",
+  "value" : "m32hoodoos"
+},
+{
+  "op" : "add",
+  "path" : "/planetTypes/alien/layers/surface/secondaryRegions/-",
+  "value" : "m32ironsand"
+},
+{
+  "op" : "add",
+  "path" : "/planetTypes/alien/layers/surface/secondaryRegions/-",
+  "value" : "m32alienmountains"
+},
+{
+  "op" : "add",
+  "path" : "/planetTypes/midnight/layers/surface/secondaryRegions/-",
+  "value" : "m32ironsand"
+},/*
+{
+  "op" : "add",
+  "path" : "/regionTypes/scorchedcity/subRegion/-",
+  "value" : "m32ashyalps"
+},*/
+{
+  "op" : "add",
+  "path" : "/regionTypes/volcanic/subRegion/-",
+  "value" : "m32ashyalps"
+},
+{
+  "op" : "add",
+  "path" : "/regionTypes/volcanic/subRegion/-",
+  "value" : "m32geyser"
+},/*
+{
+  "op" : "add",
+  "path" : "/regionTypes/volcanic/subRegion/-",
+  "value" : "m32magmaswamp"
+},*/
+
+{"op" : "add",
+"path" : "/regionTypes/m32magmaswamp",
+"value" :
+{
+  "caveLiquid" : [ "lava" ],
+  "caveLiquidSeedDensityRange" : [20, 20],
+  "encloseLiquids" : true,
+  "fillMicrodungeons" : true,
+  "blockSelector" : [ "remixedSwampySurface" ],
+  "fgCaveSelector" : [ "empty" ],
+  "bgCaveSelector" : [ "empty" ],
+  "biome" : [
+    [0, [ "m32magmaswamp" ]]
+  ]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32geyser",
+"value" :
+{
+"caveLiquid" : [ "healingliquid" ],
+"caveLiquidSeedDensityRange" : [20, 20],
+"encloseLiquids" : true,
+"blockSelector" : [ "mineralbuildup" ],
+"fgCaveSelector" : [ "chasmcaves" ],
+"bgCaveSelector" : [ "empty" ],
+"biome" : [
+[0, [ "m32geyser" ]]
+],
+"subRegion" : [ "saltflats", "m32hoodoos", "geode", "swamp", "spring" ]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/saltflats",
+"value" :
+{
+"blockSelector" : [ "superflatsurface" ],
+"fgCaveSelector" : [ "empty" ],
+"bgCaveSelector" : [ "empty" ],
+"biome" : [
+[0, [ "saltflats" ]]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32dunes",
+"value" :
+{
+"blockSelector" : [ "dunesurface" ],
+"fgCaveSelector" : [ "empty" ],
+"bgCaveSelector" : [ "empty" ],
+"biome" : [
+[0, [ "m32dunes" ]]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32hoodoos",
+"value" :
+{
+"blockSelector" : [ "hoodoos" ],
+"fgCaveSelector" : [ "chasmcaves" ],
+"bgCaveSelector" : [ "empty" ],
+"biome" : [
+[0, [ "m32hoodoos" ]]
+]
+}
+},
+
+
+{"op" : "add",
+"path" : "/regionTypes/m32ashyalps",
+"value" :
+{
+"blockSelector" : [ "mountainsSurface" ],
+"fgCaveSelector" : [ "electriccaves" ],
+"bgCaveSelector" : [ "electriccavesback" ],
+"biome" : [
+[0, [ "m32ashyalps" ]]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32alienmountains",
+"value" :
+{
+"blockSelector" : [ "hoodoos" ],
+"fgCaveSelector" : [ "chasmcaves" ],
+"bgCaveSelector" : [ "empty" ],
+"biome" : [
+[0, [ "m32alienmountains" ]]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32snowdunes",
+"value" :
+{
+"blockSelector" : [ "dunesurface" ],
+"fgCaveSelector" : [ "empty" ],
+"bgCaveSelector" : [ "empty" ],
+"biome" : [
+[0, [ "m32snowdunes" ]]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32ironsand",
+"value" :
+{
+"blockSelector" : [ "remixedMildSurface" ],
+"fgCaveSelector" : [ "surfaceCaves" ],
+"bgCaveSelector" : [ "empty" ],
+"biome" : [
+[0, [ "m32ironsand" ]]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32steppe",
+"value" :
+{
+"blockSelector" : [ "remixedMildSurface" ],
+"fgCaveSelector" : [ "surfaceCaves" ],
+"bgCaveSelector" : [ "empty" ],
+"biome" : [
+[0, [ "m32steppe" ]]
+],
+"subRegion" : ["alpine"]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32verdurous",
+"value" :
+{
+"blockSelector" : [ "dunesurface" ],
+"fgCaveSelector" : [ "surfaceCaves" ],
+"bgCaveSelector" : [ "empty" ],
+"biome" : [
+[0, [ "m32verdurous" ]]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32verduroussubsurface",
+"value" :
+{
+"caveLiquid" : [ "swampwater" ],
+"caveLiquidChanceRange" : [10, 50],
+"encloseLiquids" : true,
+"blockSelector" : [ "solid" ],
+"fgCaveSelector" : [ "normalCaves" ],
+"bgCaveSelector" : [ "backgroundCaves" ],
+"biome" : [
+[0, [ "m32verduroussubsurface" ]]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32verduroustrunk",
+"value" :
+{
+"blockSelector" : [ "trunks" ],
+"fgCaveSelector" : [ "termiteholes" ],
+"bgCaveSelector" : [ "empty" ],
+"biome" : [
+[0, [ "m32verduroustrunk" ]]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32verdurousroots",
+"value" :
+{
+"caveLiquid" : [ "swampwater" ],
+"caveLiquidChanceRange" : [2, 3],
+"blockSelector" : [ "roots" ],
+"fgCaveSelector" : [ "termiteholes" ],
+"bgCaveSelector" : [ "empty" ],
+"encloseLiquids" : true,
+"biome" : [
+[0, [ "m32verdurousroots" ]]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32verdurouslitter",
+"value" :
+{
+"caveLiquid" : [ "swampwater" ],
+"caveLiquidChanceRange" : [100, 100],
+"fgCaveSelector" : [ "normalCaves" ],
+"bgCaveSelector" : [ "backgroundCaves" ],
+"encloseLiquids" : true,
+"biome" : [
+[0, [ "m32verdurouslitter" ]]
+]
+}
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"op" : "add",
+"path" : "/planetTypes/m32verdurous",
+"value" :
+{
+"threatRange" : [3, 3],
+"layers" : {
+  "surface" : {
+    "primaryRegion" : ["m32verdurous"],
+
+  "dungeonCountRange" : [2, 2],
+
+
+  "dungeons" : [
+  [1.0, "nuumansion"], [0.5, "nuufortress"],
+  [2.0, "m32superstructure"], [1.0, "hugecrashedship"],
+  [2.0, "floranhutvillage"], [2.0, "floranhuntinggrounds"], [2.0, "florancanyon"], [3.0, "floranvillagetower"],
+  [1.0, "apextestfacility"], [1.0, "apexcamp"],
+  [1.0, "humancamp"],
+  [1.0, "hylotlruinedcastle"],
+  [2.0, "avianairship"]
+  ]
+
+},
+  "space" : {
+    "primaryRegion" : ["asteroids"]
+  },
+  "atmosphere" : {
+    "primaryRegion" : ["atmosphere"]
+  },
+  "subsurface" : {
+    "primaryRegion" : [ "m32verduroussubsurface" ]
+  },
+  "underground1" : {
+    "primaryRegion" : [ "m32verduroustrunk" ]
+  },
+  "underground2" : {
+    "primaryRegion" : [ "m32verdurousroots" ]
+  },
+  "underground3" : {
+    "primaryRegion" : [ "m32verdurouslitter" ],
+    "secondaryRegions" : [ "m32mudplantcave", "m32gravelplantcave", "deeppreserve" ]
+  },
+  "core" : {
+    "primaryRegion" : ["core"]
+  }
+}
+}
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"op" : "add",
+"path" : "/planetTypes/m32geyser",
+"value" :
+{
+"threatRange" : [6, 6],
+"layers" : {
+  "surface" : {
+    "primaryRegion" : ["m32geyser"],
+
+
+
+  "secondaryRegions" : [ "jungle" ],
+
+  "dungeonCountRange" : [2, 2],
+
+
+  "dungeons" : [
+  [1.0, "m32superstructure"], [1.0, "hugecrashedship"],
+  [4.0, "nuucity"], [3.0, "nuutown"], [3.0, "nuufarms"], [1.0, "nuumansion"], [1.0, "nuufortress"],
+  [0.1, "hylotltower"],
+  [1.0, "apexcamp"], [1.0, "apexcity"], [1.0, "apexbase"], [1.0, "apextestfacility"],
+  [1.0, "avianvillage"], [1.0, "aviannativevillage"],
+  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [2.0, "floranhuntinggrounds"],
+  [0.5, "evilfortress"], [1.0, "glitchvillage"], [1.0, "dungeoncrawler"],
+  [1.0, "humancamp"], [1.0, "M32humancity"], [1.0, "humanprison"],
+  [2.5, "hylotlruinedcastle"], [2.5, "hylotlcity"],
+  [1.0, "novakidvillage"],
+  [1.0, "avianairship"]
+  ]
+
+},
+  "space" : {
+    "primaryRegion" : [ "asteroids" ]
+  },
+  "atmosphere" : {
+    "primaryRegion" : ["atmosphere"]
+  },
+  "subsurface" : {
+    "primaryRegion" : [ "bubblecaves" ],
+    "dungeons" : [[1.0, "shorthuts"]],
+    "dungeonCountRange" : [1, 1]
+  },
+  "underground1" : {
+    "primaryRegion" : [ "underchasms" ],
+    "secondaryRegions" : [ "bubblecaves", "caliginouscaves", "deeppreserve" ]
+  },
+  "underground2" : {
+    "primaryRegion" : [ "m32sunlesssea" ],
+    "secondaryRegions" : [ "underchasms" ]
+  },
+  "underground3" : {
+    "primaryRegion" : [ "m32sunlessseafloor" ]
+  },
+  "core" : {
+    "primaryRegion" : ["core"]
+  }
+}
+}
+},
+
+
+
+
+
+
+
+
+//===========================================================
+
+{"op" : "add",
+"path" : "/regionTypes/shatter",
+"value" : {
+"blockSelector" : [ "remixedFlatIslandsSurface" ],
+"fgCaveSelector" : [ "empty" ],
+"bgCaveSelector" : [ "empty" ],
+"bgOreSelector" : [ "m32smallClumps" ],
+"fgOreSelector" : [ "m32smallClumps" ],
+"biome" : [
+  [0, [ "shatter" ] ]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/shatterasteroids",
+"value" : {
+"blockSelector" : [ "asteroids" ],
+"fgCaveSelector" : [ "searock" ],
+"bgCaveSelector" : [ "searockback" ],
+"bgOreSelector" : [ "m32smallClumps" ],
+"fgOreSelector" : [ "m32smallClumps" ],
+"biome" : [
+  [0, [ "shatterasteroids" ] ]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/shatterdark",
+"value" : {
+"blockSelector" : [ "remixedTallIslandsSurface" ],
+"fgCaveSelector" : [ "searock" ],
+"bgCaveSelector" : [ "searockback" ],
+"bgOreSelector" : [ "m32smallClumps" ],
+"fgOreSelector" : [ "m32smallClumps" ],
+"biome" : [
+  [0, [ "shatterdark" ] ]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/shattermagma",
+"value" : {
+  "oceanLiquid" : [ "corelava" ],
+  "blockSelector" : [ "shatterpillars" ],
+  "fgCaveSelector" : [ "empty" ],
+  "bgCaveSelector" : [ "empty" ],
+  "fgOreSelector" : [ "m32smallClumps" ],
+  "bgOreSelector" : [ "m32smallClumps" ],
+  "biome" : [
+    [0, [ "shattermagma" ]]
+  ]
+}
+},
+
+
+{"op" : "add",
+"path" : "/regionTypes/safemoon",
+"value" :
+{
+"blockSelector" : [ "remixedSurface" ],
+"fgCaveSelector" : [ "moonSurfaceCaves" ],
+"bgCaveSelector" : [ "empty" ],
+"biome" : [
+  [0, [ "safemoon" ]]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/m32bluster",
+"value" :
+{
+  "blockSelector" : [ "giantLedgesSurface" ],
+  "fgCaveSelector" : [ "surfaceCaves" ],
+  "bgCaveSelector" : [ "empty" ],
+  "biome" : [
+    [0, [ "m32bluster" ]]
+  ],
+  "subRegion" : [ "steamspring" ]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/safemoonunderground",
+"value" : {
+"fgCaveSelector" : [ "moonCaves" ],
+"fgOreSelector" : ["normalVeins"],
+"bgOreSelector" : ["normalBackgroundVeins"],
+"biome" : [
+  [0, [ "safemoonunderground" ] ]
+]
+}
+},
+{"op" : "add",
+"path" : "/regionTypes/safemoonjellycaves",
+"value" : {
+"fgCaveSelector" : [ "moonCaves" ],
+"fgOreSelector" : ["normalVeins"],
+"bgOreSelector" : ["normalBackgroundVeins"],
+"biome" : [
+  [0, [ "safemoonjellycaves" ] ]
+]
+}
+},
+{"op" : "add",
+"path" : "/regionTypes/safemooncrystalcaves",
+"value" : {
+"fgCaveSelector" : [ "electriccaves" ],
+"bgCaveSelector" : [ "electriccavesback" ],
+"fgOreSelector" : ["richVeins"],
+"bgOreSelector" : ["richVeins"],
+"biome" : [
+  [0, [ "safemooncrystalcaves" ] ]
+]
+}
+},
+{"op" : "add",
+"path" : "/regionTypes/safemoonsaltcaves",
+"value" : {
+"fgCaveSelector" : [ "bubblecaves" ],
+"bgCaveSelector" : [ "bubblecavesback" ],
+"fgOreSelector" : ["normalVeins"],
+"bgOreSelector" : ["normalBackgroundVeins"],
+"biome" : [
+  [0, [ "safemoonsaltcaves" ] ]
+]
+}
+},
+
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/machinescore",
+"value" : {
+  "caveLiquid" : [ "lava" ],
+  "caveLiquidSeedDensityRange" : [4.0, 4.0],
+  "oceanLiquid" : [ "corelava" ],
+  "oceanLevelOffset" : -20,
+  "fgCaveSelector" : [ "coreCaves" ],
+  "bgCaveSelector" : [ "coreBackgroundCaves" ],
+  "biome" : [
+    [0, [ "machinescorelayer" ] ]
+  ]
+}
+},
+
+
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/m32industrialforest",
+"value" :
+{
+"caveLiquid" : [ "swampwater" ],
+"caveLiquidChanceRange" : [20, 20],
+"blockSelector" : [ "collapsingbuildings1" ],
+"encloseLiquids" : true,
+"fgCaveSelector" : [ "surfaceCaves" ],
+"bgCaveSelector" : [ "empty" ],
+"bgOreSelector" : [ "richVeins" ],
+"biome" : [
+[0, [ "m32industrialforest" ]]
+],
+"subRegion" : ["m32ashyalps", "swamp"]
+}
+},
+
+
+{"op" : "add",
+"path" : "/regionTypes/m32industrialunderground",
+"value" : {
+"caveLiquid" : [ "water" ],
+"caveLiquidChanceRange" : [70, 100],
+"fgCaveSelector" : [ "normalCaves" ],
+"bgCaveSelector" : [ "backgroundCaves" ],
+"fgOreSelector" : ["normalVeins"],
+"bgOreSelector" : ["normalBackgroundVeins"],
+"biome" : [
+  [0, [ "m32industrialunderground" ] ]
+]
+}
+},
+
+
+{"op" : "add",
+"path" : "/regionTypes/drownedcave",
+"value" : {
+"oceanLevelOffset" : 1000,
+"oceanLiquid" : [ "water" ],
+"fgCaveSelector" : [ "coralcaves" ],
+"bgCaveSelector" : [ "coralcavesback" ],
+"fgOreSelector" : ["normalVeins"],
+"bgOreSelector" : ["normalBackgroundVeins"],
+"biome" : [
+  [0, [ "drownedcave" ] ]
+]
+}
+},
+
+
+{"op" : "add",
+"path" : "/regionTypes/underchasms",
+"value" : {
+"caveLiquid" : [ "lava" ],
+"caveLiquidChanceRange" : [70, 100],
+"fgCaveSelector" : [ "chasmcaves" ],
+"bgCaveSelector" : [ "chasmcavesback" ],
+"bgOreSelector" : [ "richVeins" ],
+"fgOreSelector" : [ "richVeins" ],
+"biome" : [
+  [0, [ "underchasms" ] ]
+]
+}
+},
+
+
+{"op" : "add",
+"path" : "/regionTypes/bubblecaves",
+"value" : {
+"caveLiquid" : [ "healingliquid" ],
+"encloseLiquids" : true,
+"caveLiquidChanceRange" : [2, 2],
+"fgCaveSelector" : [ "bubblecaves" ],
+"bgCaveSelector" : [ "bubblecavesback" ],
+"fgOreSelector" : ["normalVeins"],
+"bgOreSelector" : ["normalBackgroundVeins"],
+"biome" : [
+  [0, [ "bubblecaves" ] ]
+]
+}
+},
+
+
+{"op" : "add",
+"path" : "/regionTypes/smoothicecaves",
+"value" : {
+"fgCaveSelector" : [ "bubblecaves" ],
+"bgCaveSelector" : [ "bubblecavesback" ],
+"fgOreSelector" : ["normalVeins"],
+"bgOreSelector" : ["normalBackgroundVeins"],
+"biome" : [
+  [0, [ "smoothicecaves" ] ]
+]
+}
+},
+
+
+{"op" : "add",
+"path" : "/regionTypes/deeppreserve",
+"value" : {
+"caveLiquid" : [ "water" ],
+"encloseLiquids" : true,
+"caveLiquidChanceRange" : [2, 2],
+"fgCaveSelector" : ["normalCaves"],
+"bgCaveSelector" : ["backgroundCaves"],
+"bgOreSelector" : [ "richVeins" ],
+"fgOreSelector" : [ "richVeins" ],
+"biome" : [
+  [0, [ "deeppreserve" ] ]
+]
+}
+},
+
+
+{"op" : "add",
+"path" : "/regionTypes/caliginouscaves",
+"value" : {
+"caveLiquid" : [ "tarliquid" ],
+"caveLiquidChanceRange" : [70, 100],
+"fgCaveSelector" : [ "bubblecaves" ],
+"bgCaveSelector" : [ "bubblecavesback" ],
+"fgOreSelector" : ["normalVeins"],
+"bgOreSelector" : ["normalBackgroundVeins"],
+"biome" : [
+  [0, [ "caliginouscaves" ] ]
+]
+}
+},
+
+{"op" : "add",
+"path" : "/regionTypes/electriccaves",
+"value" : {
+"caveLiquid" : [ "tarliquid" ],
+"caveLiquidChanceRange" : [70, 100],
+"fgCaveSelector" : [ "electriccaves" ],
+"bgCaveSelector" : [ "electriccavesback" ],
+"bgOreSelector" : [ "richVeins" ],
+"fgOreSelector" : [ "richVeins" ],
+"biome" : [
+  [0, [ "electriccaves" ] ]
+]
+}
+},
+
+
+{"op" : "add",
+"path" : "/regionTypes/m32sunlesssea",
+"value" : {
+"oceanLiquid" : [ "water" ],
+"blockSelector" : [ "caveTallIslandsAltered" ],
+"fgCaveSelector" : [ "empty" ],
+"bgCaveSelector" : [ "empty" ],
+"bgOreSelector" : [ "richVeins" ],
+"fgOreSelector" : ["richVeins"],
+"biome" : [
+  [0, [ "m32sunlesssea" ] ]
+]
+}
+},
+
+
+{"op" : "add",
+"path" : "/regionTypes/m32sunlessarctic",
+"value" : {
+"oceanLiquid" : [ "water" ],
+"blockSelector" : [ "caveTallIslandsAltered" ],
+"fgCaveSelector" : [ "empty" ],
+"bgCaveSelector" : [ "empty" ],
+"bgOreSelector" : [ "richVeins" ],
+"fgOreSelector" : ["richVeins"],
+"biome" : [
+  [0, [ "m32sunlessarctic" ] ]
+]
+}
+},
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/m32blusterunderground",
+"value" : {
+  "caveLiquid" : [ "water" ],
+  "caveLiquidSeedDensityRange" : [0.5, 1.0],
+"biome" : [
+  [0, [ "underground3c" ] ]
+]
+}
+},
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/m32redbricksunderground",
+"value" : {
+  "caveLiquid" : [ "water" ],
+  "caveLiquidSeedDensityRange" : [0.5, 1.0],
+"biome" : [
+  [0, [ "underground3b" ] ]
+]
+}
+},
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/m32pipesunderground",
+"value" : {
+  "caveLiquid" : [ "water" ],
+  "caveLiquidSeedDensityRange" : [0.5, 1.0],
+"biome" : [
+  [0, [ "underground5b" ] ]
+]
+}
+},
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/m32gravelplantcave",
+"value" : {
+  "caveLiquid" : [ "swampwater" ],
+  "caveLiquidSeedDensityRange" : [0.5, 1.0],
+"biome" : [
+  [0, [ "underground1b" ] ]
+]
+}
+},
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/m32mudplantcave",
+"value" : {
+  "caveLiquid" : [ "swampwater" ],
+  "caveLiquidSeedDensityRange" : [0.5, 1.0],
+"biome" : [
+  [0, [ "underground1c" ] ]
+]
+}
+},
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/m32sunlessseafloor",
+"value" : {
+"oceanLiquid" : [ "water" ],
+"oceanLevelOffset" : 1000,
+"blockSelector" : [ "ledgesSurface" ],
+"fgCaveSelector" : [ "emptier" ],
+"bgCaveSelector" : [ "emptiest" ],
+"bgOreSelector" : [ "richVeins" ],
+"fgOreSelector" : ["richVeins"],
+"biome" : [
+  [0, [ "m32sunlessseafloor" ] ]
+]
+}
+},
+
+
+
+{"op" : "add",
+"path" : "/regionTypes/m32stormyocean",
+"value" : {
+"oceanLiquid" : [ "water" ],
+//"caveLiquid" : [ "water" ],
+//"caveLiquidSeedDensityRange" : [10, 10],
+"blockSelector" : [ "remixedTallIslandsSurface" ],
+"fgCaveSelector" : [ "searock" ],
+"bgCaveSelector" : [ "searockback" ],
+"bgOreSelector" : [ "richVeins" ],
+"fgOreSelector" : ["richVeins"],
+"biome" : [
+  [0, [ "m32stormyocean" ] ]
+],
+"subRegion" : [ "ocean" ]
+}
+},
+
+
+
+//===========================================================
+
+{"op" : "add",
+"path" : "/planetTypes/shatter",
+"value" :
+{
+"gravityRange" : [35, 35],
+"threatRange" : [6, 6],
+"layers" : {
+  "surface" : {
+    "primaryRegion" : ["shatter"],
+    "secondaryRegions" : [ "shatterdark", "shatterasteroids" ],
+
+  "dungeonCountRange" : [1, 1],
+
+
+  "dungeons" : [
+  [1.0, "hugecrashedshiplunar"]
+  ]
+
+},
+  "space" : {
+    "primaryRegion" : ["asteroids"]
+  },
+  "atmosphere" : {
+    "primaryRegion" : ["barrenasteroids"]
+  },
+  "subsurface" : {
+    "primaryRegion" : ["shatter"],
+    "secondaryRegions" : [ "shatterdark", "shatterasteroids" ]
+  },
+  "underground1" : {
+    "primaryRegion" : ["shatter"],
+    "secondaryRegions" : [ "shatterdark", "shatterasteroids" ]
+  },
+  "underground2" : {
+    "primaryRegion" : ["shattermagma"]
+  },
+  "underground3" : {
+    "primaryRegion" : ["magmaoceanfloor"]
+  },
+  "core" : {
+    "primaryRegion" : ["core"]
+  }
+}
+}
+},
+
+
+
+
+
+
+
+{"op" : "add",
+"path" : "/planetTypes/m32industrialforest",
+"value" :
+{
+"threatRange" : [4, 4],
+"layers" : {
+  "surface" : {
+    "primaryRegion" : ["m32industrialforest"],
+
+
+
+  "secondaryRegions" : [ "forest" ],
+  "dungeonCountRange" : [2, 2],
+
+
+  "dungeons" : [
+  [3.0, "nuucity"], [2.0, "nuutown"], [2.0, "nuufarms"], [2.0, "nuumansion"], [3.0, "nuufortress"],
+  //[2.0, "apexunstablecity"],
+  [1.0, "apexcity"], [0.5, "apexcamp"], [0.5, "apexrebelradio"],
+  [1.0, "hylotlcity"], [0.5, "hylotltower"],
+  [1.0, "nuumine"], [2.0, "m32techmine"], [2.0, "M32rails"], [2.0, "m32superstructure"],
+  [1.0, "M32humancity"], [1.0, "m32protectoratetower"], [1.0, "humanprison"],
+  [1.0, "glitchsewer"]
+  ]
+
+},
+  "space" : {
+    "primaryRegion" : ["asteroids"]
+  },
+  "atmosphere" : {
+    "primaryRegion" : ["atmosphere"]
+  },
+  "subsurface" : {
+    "primaryRegion" : [ "m32industrialunderground" ]
+  },
+  "underground1" : {
+    "primaryRegion" : [ "m32industrialunderground" ],
+    "secondaryRegions" : [ "m32pipesunderground", "caliginouscaves", "deeppreserve", "electriccaves" ]
+  },
+  "underground2" : {
+    "primaryRegion" : [ "m32sunlesssea" ],
+    "secondaryRegions" : [ "m32sunlessarctic", "minivillageunderground", "mushroomunderground", "underchasms" ]
+  },
+  "underground3" : {
+    "primaryRegion" : ["m32sunlessseafloor"],
+    "dungeons" : [[1.0, "hylotlruinedcity"]],
+    "dungeonCountRange" : [1, 1]
+  },
+  "core" : {
+    "primaryRegion" : ["machinescore"]
+  }
+}
+}
+},
+
+
+
+
+
+{"op" : "add",
+"path" : "/planetTypes/m32stormyocean",
+"value" :
+{
+"threatRange" : [3, 3],
+"layers" : {
+  "space" : {
+    "primaryRegion" : ["asteroids"]
+  },
+  "atmosphere" : {
+    "primaryRegion" : ["atmosphere"],
+    "baseHeight" : 1400,
+    "layerLevel" : 1170
+  },
+  "surface" : {
+    "primaryRegion" : ["m32stormyocean"],
+    "baseHeight" : 1020,
+    "layerLevel" : 955,
+
+    "dungeonCountRange" : [1, 1],
+    "dungeons" : [[1.0, "m32powergrid"]]
+
+  },
+  "subsurface" : {
+    "primaryRegion" : ["oceanfloor"],
+    "dungeons" : [[1.0, "hylotloceancity"], [1.0, "hylotlruinedcity"]],
+    "dungeonCountRange" : [1, 2]
+  },
+  "underground1" : {
+    "primaryRegion" : [ "drownedcave" ]
+  },
+  "underground2" : {
+    "primaryRegion" : [ "drownedcave" ]
+  },
+  "underground3" : {
+    "primaryRegion" : [ "m32sunlessseafloor" ]
+  }
+}
+}
+},
+
+
+
+
+
+
+
+
+
+{"op" : "add",
+"path" : "/planetTypes/m32steppe",
+"value" :
+{
+"threatRange" : [5, 5],
+"layers" : {
+  "surface" : {
+    "primaryRegion" : ["m32steppe"],
+
+
+
+  "secondaryRegions" : [ "m32snowdunes", "m32dunes", "m32hoodoos", "barren", "snow", "saltflats" ],
+  "dungeonCountRange" : [1, 2],
+
+
+  "dungeons" : [
+  [0.7, "tundraHQ"], [2.0, "hugecrashedship"],
+  [2.0, "glutttown"],
+  [1.0, "novakidvillage"],
+  [2.0, "nuumine"],
+  [1.0, "glitchvillage"],
+  [1.0, "humanprison"],
+  [1.0, "hylotlcity"],
+  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"]
+  ]
+
+},
+  "space" : {
+    "primaryRegion" : [ "asteroids" ]
+  },
+  "atmosphere" : {
+    "primaryRegion" : [ "atmosphere" ]
+  },
+  "subsurface" : {
+    "primaryRegion" : [ /*"desertsubsurface"*/ "m32blusterunderground" ]
+  },
+  "underground1" : {
+    "primaryRegion" : ["bubblecaves"],
+    "secondaryRegions" : [ "m32industrialunderground", "tarunderground", "bubblecaves" ]
+  },
+  "underground2" : {
+    "primaryRegion" : [ "m32sunlessarctic" ],
+    "secondaryRegions" : [ "bubblecaves", "m32sunlesssea", "smoothicecaves", "underchasms" ]
+  },
+  "underground3" : {
+    "primaryRegion" : ["m32sunlessseafloor"],
+    "dungeons" : [[1.0, "hylotlruinedcity"]],
+    "dungeonCountRange" : [0, 1]
+  },
+  "core" : {
+    "primaryRegion" : ["core"]
+  }
+}
+}
+},
+
+
+
+
+
+
+
+
+
+
+{"op" : "add",
+"path" : "/planetTypes/m32bluster",
+"value" :
+{
+"threatRange" : [5, 5],
+"layers" : {
+  "surface" : {
+    "primaryRegion" : ["m32bluster"],
+
+
+
+  "secondaryRegions" : [ "m32snowdunes" ],
+  "dungeonCountRange" : [1, 1],
+
+
+  "dungeons" : [
+  [0.7, "tundraHQ"],
+  [1.0, "nuucolony"],
+  [0.7, "nuucolonyruin"],
+  [1.0, "hugecrashedship"],
+  [1.0, "m32techmine"]
+  ]
+
+},
+  "space" : {
+    "primaryRegion" : ["asteroids"]
+  },
+  "atmosphere" : {
+    "primaryRegion" : ["atmosphere"]
+  },
+  "subsurface" : {
+    "primaryRegion" : ["m32blusterunderground"]
+  },
+  "underground1" : {
+    "primaryRegion" : ["m32blusterunderground"],
+    "secondaryRegions" : [ "m32industrialunderground", "bubblecaves", "smoothicecaves", "caliginouscaves" ]
+  },
+  "underground2" : {
+    "primaryRegion" : ["m32sunlessarctic"],
+    "secondaryRegions" : [ "m32sunlesssea", "smoothicecaves", "smoothicecaves", "underchasms" ]
+  },
+  "underground3" : {
+    "primaryRegion" : ["m32sunlessseafloor"],
+    "dungeons" : [[1.0, "hylotlruinedcity"]],
+    "dungeonCountRange" : [1, 1]
+  },
+  "core" : {
+    "primaryRegion" : ["core"]
+  }
+}
+}
+},
+
+
+
+
+
+
+
+
+
+
+/*
+
+{"op" : "add",
+"path" : "/planetTypes/forest/layers/underground2",
+"value" : ["m32sunlesssea"]
+},
+{"op" : "add",
+"path" : "/planetTypes/forest/layers/underground3",
+"value" : ["m32sunlessseafloor"]
+},
+
+
+
+
+
+{
+  "op": "add",
+  "path": "/planetTypes/ocean/layers/surface/secondaryRegions",
+  "value": [ "m32stormyocean" ]
+},
+
+*/
+
+
+{"op" : "add",
+"path" : "/planetTypes/safemoon",
+"value" :
+{
+"gravityRange" : [20, 20],
+"threatRange" : [1, 1],
+"size" : [3000, 3000],
+"layers" : {
+  "surface" : {
+    "primaryRegion" : ["safemoon"],
+    "baseHeight" : 2175,
+    "layerLevel" : 2100,
+
+  "dungeonCountRange" : [1, 1],
+
+
+  "dungeons" : [
+  [ 1.0, "hugecrashedshiplunar" ]
+  ]
+
+},
+"space" : {
+  "baseHeight" : 2690,
+  "layerLevel" : 2500,
+  "primaryRegion" : ["barrenasteroids"]
+},
+"atmosphere" : {
+  "baseHeight" : 2490,
+  "layerLevel" : 2300,
+  "primaryRegion" : ["void"]
+},
+  "subsurface" : {
+    "baseHeight" : 2050,
+    "layerLevel" : 1900,
+    "primaryRegion" : [ "safemoonunderground" ]
+  },
+  "underground1" : {
+    "baseHeight" : 1950,
+    "layerLevel" : 1800,
+    "primaryRegion" : [ "safemoonunderground" ],
+    "secondaryRegions" : [ "safemoonsaltcaves" ]
+  },
+  "underground2" : {
+    "baseHeight" : 1750,
+    "layerLevel" : 1600,
+    "primaryRegion" : [ "safemoonunderground" ],
+    "secondaryRegions" : [ "safemoonjellycaves", "safemoonsaltcaves", "safemoonsaltcaves" ]
+  },
+  "underground3" : {
+    "baseHeight" : 1550,
+    "layerLevel" : 1400,
+    "primaryRegion" : [ "safemoonunderground" ],
+    "secondaryRegions" : [ "safemoonjellycaves", "safemoonsaltcaves" ]
+  },
+  "underground4" : {
+    "baseHeight" : 1350,
+    "layerLevel" : 1200,
+    "primaryRegion" : [ "safemoonunderground" ],
+    "secondaryRegions" : [ "safemoonjellycaves", "safemoonjellycaves", "safemoonsaltcaves" ]
+  },
+  "underground5" : {
+    "baseHeight" : 1150,
+    "layerLevel" : 1000,
+    "primaryRegion" : [ "safemoonunderground" ],
+    "secondaryRegions" : [ "safemoonjellycaves" ]
+  },
+  "underground6" : {
+    "baseHeight" : 950,
+    "layerLevel" : 800,
+    "primaryRegion" : [ "safemoonunderground" ],
+    "secondaryRegions" : [ "safemoonjellycaves", "safemoonjellycaves", "safemooncrystalcaves" ]
+  },
+  "underground7" : {
+    "baseHeight" : 750,
+    "layerLevel" : 600,
+    "primaryRegion" : [ "safemoonunderground" ],
+    "secondaryRegions" : [ "safemoonjellycaves", "safemooncrystalcaves" ]
+  },
+  "underground8" : {
+    "baseHeight" : 550,
+    "layerLevel" : 400,
+    "primaryRegion" : [ "safemoonunderground" ],
+    "secondaryRegions" : [ "safemoonjellycaves", "safemooncrystalcaves", "safemooncrystalcaves" ]
+  },
+  "underground9" : {
+    "baseHeight" : 450,
+    "layerLevel" : 300,
+    "primaryRegion" : [ "safemoonunderground" ],
+    "secondaryRegions" : [ "safemooncrystalcaves" ]
+  },
+  "core" : {
+    "baseHeight" : 100,
+    "layerLevel" : 0,
+    "primaryRegion" : [ "core" ]
+  }
+}
+}
+},
+//===========================================================
+
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "M32rails"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "nuutown"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "nuucity"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "M32humancity"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      2.0,
+      "nuufarms"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "nuumansion"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "hylotltower"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "giantwaterfallcave"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "m32superstructure"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "apexrebelradio"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/forest/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "m32protectoratetower"
+    ]
+  },
+    //forest^
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/desert/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "M32rails"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/desert/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "M32humancity"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/desert/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "apexrebelradio"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/desert/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "giantwaterfallcave"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/desert/layers/surface/dungeons/-",
+    "value": [
+      2.0,
+      "glutttown"
+    ]
+  },
+  //desert^
+
+/*
+
+  {
+    "op": "add",
+    "path": "/planetTypes/ocean/layers/surface/dungeons",
+    "value": [
+
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/ocean/layers/surface/dungeonCountRange",
+    "value": [0, 1]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/ocean/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "hylotltower"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/ocean/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "apexrebelradio"
+    ]
+  },
+  */
+  //ocean^
+
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "M32rails"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "M32humancity"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "m32superstructure"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "apexrebelradio"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "giantwaterfallcave"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/savannah/layers/surface/dungeons/-",
+    "value": [
+      2.0,
+      "glutttown"
+    ]
+  },
+  //savannah^
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "nuucolony"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "nuucity"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
+    "value": [
+      0.5,
+      "nuufortress"
+    ]
+  },
+  //volcanic^
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "hugecrashedship"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "m32superstructure"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "m32protectoratetower"
+    ]
+  },
+  //scorchedcity^
+
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "m32superstructure"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "M32rails"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      0.5,
+      "nuutown"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "M32humancity"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      2.0,
+      "nuufarms"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      0.1,
+      "nuumansion"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      0.5,
+      "hylotltower"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "giantwaterfallcave"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "apexrebelradio"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "m32protectoratetower"
+    ]
+  },
+
+  //jungle^
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/midnight/layers/surface/dungeons/-",
+    "value": [
+      2.0,
+      "nuucolony"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/midnight/layers/surface/dungeons/-",
+    "value": [
+      2.0,
+      "nuucity"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/midnight/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "nuufortress"
+    ]
+  },
+
+  //midnight^
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/alien/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "nuucolony"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/alien/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "m32superstructure"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/alien/layers/surface/dungeons/-",
+    "value": [
+      0.5,
+      "nuumansion"
+    ]
+  },
+  //alien^
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/snow/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "M32rails"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/snow/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "nuutown"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/snow/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "nuucity"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/snow/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "M32humancity"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/snow/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "nuumansion"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/snow/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "hylotltower"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/snow/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "apexrebelradio"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/snow/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "giantwaterfallcave"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/snow/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "m32protectoratetower"
+    ]
+  },
+
+  //snow^
+
+
+  {
+    "op": "add",
+    "path": "/planetTypes/tundra/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "M32rails"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/tundra/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "M32humancity"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/tundra/layers/surface/dungeons/-",
+    "value": [
+      1.0,
+      "tundraHQ"
+    ]
+  }
+  //tundra^
+]

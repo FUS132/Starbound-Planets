@@ -1,0 +1,32 @@
+[
+  {
+    "op": "add",
+    "path": "/planetTypes/drayxcity",     // your biome "name" (not "friendlyname")
+    "value": {
+      "threatRange": [2, 4],  //what tier is your planet? if its only tier 1, use 1,1. Otherwise, use what you want.
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "drayxcity" ],   //its own "name" is used here.
+          "secondaryRegion": ["bioluminescence"],  //here are your sub-biomes
+          "dungeonCountRange": [0, 2],  //how many dungeons does your biome have ?
+          //what dungeons does it pull from when it does generate them? This is the new format for Nightly/1.0
+          "dungeons": [ [1.0,"naturalcave"] ]
+        }
+	  }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/drayxcity",   //again, your biomes "name" value
+    "value": {
+      "caveLiquid": [ "water" ], //what liquids appear on your biome surface?
+      "caveLiquidChanceRange": [20, 100],  //how often does your liquid appear on the surface?
+      "blockSelector": [ "remixedSwampySurface", "remixedSurface", "remixedPoolsSurface" ],  //surface terrain generation
+      "fgCaveSelector": [ "surfaceCaves" ], //foreground cave terrain generation
+      "bgOreSelector": [ "normalVeins", "richVeins" ],  // background ore terrain selector
+      "biome": [
+        [0, [ "drayxcity" ]]    // and one more case of the "name" value
+      ]
+    }
+  }
+]

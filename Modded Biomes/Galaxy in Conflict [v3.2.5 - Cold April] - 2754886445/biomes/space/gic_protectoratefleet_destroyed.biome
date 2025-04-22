@@ -1,0 +1,13 @@
+{
+  "name" : "gic_protectoratefleet_destroyed",
+  "friendlyName" : "gic_protectoratefleet_destroyed",
+
+  "parallax" : "/parallax/space/gic_protectoratefleet_destroyed.parallax",
+
+  "spawnProfile" : {
+    "groups" : [],
+    "monsterParameters" : {}
+  },
+
+  "hueShiftOptions" : [0]
+}

@@ -1,0 +1,13 @@
+{
+  "version" : "1.0",
+  "author" : "Joseph K",
+  "tags" : "Planets and Environments|NPCs and Creatures",
+  "requires" : [],
+  "description" : "THIS IS NOT MY MOD, IT WAS MADE BY \"JOSEPH K\" ( https://community.playstarbound.com/members/joseph-k.825472/ ) \nBut I have his permission to upload it because he didn´t have Steam.\n\nLava moons can be found orbiting fiery stars (and frozen stars, don't remember why though). \nOn lava moons you will find a unique type of Erchius Ghost as well as a large reward for reaching the planets core.\nBut the unique type of Erchius Ghost can´t be killed so since careful!",
+  "name" : "Lava Moons",
+  "priority" : -1,
+  "steamContentId" : "1453674099",
+  "friendlyName" : "Lava Moons",
+  "link" : "steam://url/CommunityFilePage/1453674099",
+  "includes" : []
+}

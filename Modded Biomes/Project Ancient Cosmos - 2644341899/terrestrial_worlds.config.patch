@@ -1,0 +1,1083 @@
+[
+	//GENERAL
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_blackholeatmosphere",
+        "value": {
+            "blockSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_blackholeatmosphere"
+                    ]
+                ]
+            ]
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_nebulaatmosphere",
+        "value": {
+            "blockSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_nebulaatmosphere"
+                    ]
+                ]
+            ]
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_darkbarrenasteroids",
+        "value": {
+            "blockSelector": [
+                "asteroids"
+            ],
+            "fgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_darkbarrenasteroids"
+                    ]
+                ]
+            ]
+        }
+    },
+	
+	//COSMIC PLANET
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_star",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_star"
+                    ]
+                ]
+            ],
+            "subRegion": [
+                "pf_astralforest", "pf_ancientcity", "pf_protectoratesettlement"
+            ]
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_ancientruins",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "caveLiquidSeedDensityRange": [
+                0.5,
+                1
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_ancientruins"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_starwilds",
+        "value": {
+            "caveLiquid": [
+                "water"
+            ],
+            "caveLiquidSeedDensityRange": [
+                0.5,
+                1
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_starwilds"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_dimensionlake",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "caveLiquidSeedDensityRange": [
+                2,
+                2
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_dimensionlake"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_starwaste",
+        "value": {
+            "caveLiquid": [
+                "poison"
+            ],
+            "fgOreSelector": [
+                "richVeins"
+            ],
+            "bgOreSelector": [
+                "richVeins"
+            ],
+            "caveLiquidSeedDensityRange": [
+                0.5,
+                1
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_starwaste"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_celesteelcaverns",
+        "value": {
+            "caveLiquid": [],
+            "fgOreSelector": [
+                "richVeins"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_celesteelcaverns"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+    //{
+    //    "op": "add",
+    //    "path": "/regionTypes/pf_carinacaverns",
+    //    "value": {
+    //        "caveLiquid": [],
+    //        "biome": [
+    //            [
+    //                0,
+    //                [
+    //                    "pf_carinacaverns"
+    //                ]
+    //            ]
+    //        ],
+    //        "subRegion": []
+    //    }
+    //},
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_starlava",
+        "value": {
+            "fgOreSelector": [
+                "richVeins"
+            ],
+            "caveLiquid": [
+                "lava"
+            ],
+            "caveLiquidSeedDensityRange": [
+                2,
+                2
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_starlava"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_startundra",
+        "value": {
+            "fgOreSelector": [
+                "richVeins"
+            ],
+            "caveLiquid": [
+                "water"
+            ],
+            "caveLiquidSeedDensityRange": [
+                0.5,
+                0.5
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_startundra"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_dimensionrift",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "caveLiquidSeedDensityRange": [
+                3,
+                3
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_dimensionrift"
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_voidcore",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "caveLiquidSeedDensityRange": [
+                4,
+                4
+            ],
+            "oceanLiquid": [
+                "pf_eventhorizon"
+            ],
+            "oceanLevelOffset": -30,
+            "fgCaveSelector": [
+                "coreCaves"
+            ],
+            "bgCaveSelector": [
+                "coreBackgroundCaves"
+            ],
+            "biome": [
+                [
+                    1,
+                    [
+                        "pf_voidcore"
+                    ]
+                ]
+            ]
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_astralforest",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_astralforest"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_ancientcity",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_ancientcity"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_protectoratesettlement",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_protectoratesettlement"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+    {
+        "op": "add",
+        "path": "/planetTypes/pf_star",
+        "value": {
+            "gravityRange": [
+                40,
+                70
+            ],
+            "threatRange": [
+                6,
+                7
+            ],
+            "layers": {
+                "space": {
+                    "primaryRegion": [
+                        "pf_darkbarrenasteroids"
+                    ]
+                },
+                "atmosphere": {
+                    "primaryRegion": [
+                        "pf_nebulaatmosphere"
+                    ]
+                },
+                "surface": {
+                    "primaryRegion": [
+                        "pf_star"
+                    ]
+                },
+                "subsurface": {
+                    "primaryRegion": [
+                        "pf_dimensionlake",
+                        "pf_ancientruins"
+                    ]
+                },
+                "underground1": {
+                    "primaryRegion": [
+                        "pf_starwilds",
+                        "pf_ancientruins",
+                        "pf_dimensionlake"
+                    ],
+                    "secondaryRegions": []
+                },
+                "underground2": {
+                    "primaryRegion": [
+                        "pf_starwaste",
+                        "pf_celesteelcaverns"
+                    ],
+                    "secondaryRegions": []
+                },
+                "underground3": {
+                    "primaryRegion": [
+                        "pf_starlava",
+                        "pf_startundra",
+                        "pf_dimensionrift"
+                    ],
+                    "secondaryRegions": []
+                },
+                "core": {
+                    "primaryRegion": [
+                        "pf_voidcore"
+                    ],
+                    "baseHeight": 150
+                }
+            }
+        }
+    },
+	//CYBERNETIC
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_cybernetic",
+        "value": {
+            "caveLiquid": [
+                "pf_electricliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_cybernetic"
+                    ]
+                ]
+            ],
+            "subRegion": ["pf_arboretum", "pf_artificialindustrial", "pf_artificialresidential"]
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_arboretum",
+        "value": {
+            "caveLiquid": [
+                "water"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_arboretum"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_artificialindustrial",
+        "value": {
+            "caveLiquid": [
+                "pf_electricliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_artificialindustrial"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_artificialresidential",
+        "value": {
+            "caveLiquid": [
+                "pf_electricliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_artificialresidential"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_industriallayer",
+        "value": {
+            "caveLiquid": [
+                "pf_electricliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "emptiest"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_industriallayer"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_serverlayer",
+        "value": {
+            "caveLiquid": [
+                "pf_electricliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+			"fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "emptiest"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_serverlayer"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_citylayer",
+        "value": {
+            "caveLiquid": [
+                "pf_electricliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "emptiest"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_citylayer"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_solarcore",
+        "value": {
+            "caveLiquid": [
+                "pf_electricliquid"
+            ],
+            "caveLiquidSeedDensityRange": [
+                4,
+                4
+            ],
+            "oceanLiquid": [
+                "pf_solarliquid"
+            ],
+            "oceanLevelOffset": -30,
+            "fgCaveSelector": [
+                "coreCaves"
+            ],
+            "bgCaveSelector": [
+                "coreBackgroundCaves"
+            ],
+            "biome": [
+                [
+                    1,
+                    [
+                        "pf_solarcore"
+                    ]
+                ]
+            ]
+        }
+    },
+	{
+        "op": "add",
+        "path": "/planetTypes/pf_cybernetic",
+        "value": {
+            "gravityRange": [
+                70,
+                80
+            ],
+            "threatRange": [
+                7,
+                7
+            ],
+            "layers": {
+                "space": {
+                    "primaryRegion": [
+                        "pf_darkbarrenasteroids"
+                    ]
+                },
+                "atmosphere": {
+                    "primaryRegion": [
+                        "pf_blackholeatmosphere"
+                    ]
+                },
+                "surface": {
+                    "primaryRegion": [
+                        "pf_cybernetic"
+                    ]
+                },
+                "subsurface": {
+                    "primaryRegion": [
+                        "pf_industriallayer"
+                    ]
+                },
+                "underground1": {
+                    "primaryRegion": [
+                        "pf_citylayer"
+                    ],
+                    "secondaryRegions": []
+                },
+                "underground2": {
+                    "primaryRegion": [
+                        "pf_serverlayer"
+                    ],
+                    "secondaryRegions": []
+                },
+                "underground3": {
+                    "primaryRegion": [
+                        "pf_industriallayer"
+                    ],
+                    "secondaryRegions": []
+                },
+                "core": {
+                    "primaryRegion": [
+                        "pf_solarcore"
+                    ],
+                    "baseHeight": 150
+                }
+            }
+        }
+    },
+	
+	//CORRUPT GARDEN
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_darkgarden",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_darkgarden"
+                    ]
+                ]
+            ],
+            "subRegion": [ ]
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_darkgarden_underground2",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "underground1c", "underground1d", "underground3a", "underground3b", "underground3c", "underground3d", "underground0c", "pf_starwilds"
+                    ]
+                ]
+            ],
+            "subRegion": [ "luminouscaves", "stonecaves", "bonecaves", "icecaves" ]
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_darkgarden_underground3",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "underground5a", "underground5b", "underground5c", "underground5d", "underground0d", "underground1c", "pf_starlava", "pf_dimensionrift"
+                    ]
+                ]
+            ],
+            "subRegion": [ "cellcaves", "fleshcaves", "slimecaves" ]
+        }
+    },
+	{
+        "op": "add",
+        "path": "/planetTypes/pf_darkgarden",
+        "value": {
+            "gravityRange": [
+                40,
+                70
+            ],
+            "threatRange": [
+                7,
+                7
+            ],
+            "layers": {
+                "space": {
+                    "primaryRegion": [
+                        "pf_darkbarrenasteroids"
+                    ]
+                },
+                "atmosphere": {
+                    "primaryRegion": [
+                        "pf_blackholeatmosphere"
+                    ]
+                },
+                "surface": {
+                    "primaryRegion": [
+                        "pf_darkgarden"
+                    ],
+					"secondaryRegions" : ["pf_darkforest"],
+					
+					"dungeonCountRange" : [1, 1],
+					"dungeons" : [[1.0, "pf_corruptgardengate"]]
+                },
+                "underground2": {
+                    "primaryRegion": [
+						"pf_darkgarden_underground2"
+                    ],
+                    "secondaryRegions": []
+                },
+                "underground3": {
+                    "primaryRegion": [
+						"pf_darkgarden_underground3"
+                    ],
+                    "secondaryRegions": []
+                },
+                "core": {
+                    "primaryRegion": [
+                        "pf_voidcore"
+                    ],
+                    "baseHeight": 150
+                }
+            }
+        }
+    },
+	//FORKED FOREST
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_darkforest",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "surfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_darkforest"
+                    ]
+                ]
+            ],
+            "subRegion": [ ]
+        }
+    },
+	//HALF-MOON
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_halfmoon",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+            "blockSelector": [
+                "remixedMildSurface"
+            ],
+            "fgCaveSelector": [
+                "moonSurfaceCaves"
+            ],
+            "bgCaveSelector": [
+                "empty"
+            ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_halfmoon"
+                    ]
+                ]
+            ],
+            "subRegion": [
+            ]
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_halfmoonsubsurface",
+        "value": {
+            "caveLiquid": [
+                "fuel"
+            ],
+			"fgCaveSelector" : [ "moonCaves" ],
+			"fgOreSelector" : ["richVeins"],
+			"bgOreSelector" : ["richVeins"],
+			"caveLiquidSeedDensityRange" : [3.5, 3.5],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_halfmoonsubsurface"
+                    ]
+                ]
+            ],
+            "subRegion": [
+            ]
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_halfmoonunderground",
+        "value": {
+            "caveLiquid": [
+                "fuel"
+            ],
+			"fgCaveSelector" : [ "moonCaves" ],
+			"fgOreSelector" : ["richVeins"],
+			"bgOreSelector" : ["richVeins"],
+			"caveLiquidSeedDensityRange" : [3.5, 3.5],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_halfmoonunderground"
+                    ]
+                ]
+            ],
+            "subRegion": [
+            ]
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_halfmoonaether",
+        "value": {
+            "caveLiquid": [
+                "dimensionliquid"
+            ],
+			"fgCaveSelector" : [ "moonCaves" ],
+			"fgOreSelector" : ["richVeins"],
+			"bgOreSelector" : ["richVeins"],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_halfmoonaether"
+                    ]
+                ]
+            ],
+            "subRegion": [
+            ]
+        }
+    },
+	{
+        "op": "add",
+        "path": "/regionTypes/pf_solidvoidcore",
+        "value": {
+			"fgCaveSelector" : [ "empty" ],
+			"subBlockSelector" : [ "lowHillsSurface" ],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_solidvoidcore"
+                    ]
+                ]
+            ],
+            "subRegion": [
+            ]
+        }
+    },
+	{
+        "op": "add",
+        "path": "/planetTypes/pf_halfmoon",
+        "value": {
+            "gravityRange" : [20, 20],
+            "threatRange": [
+                7,
+                7
+            ],
+            "layers": {
+                "space": {
+                    "primaryRegion": [
+                        "pf_darkbarrenasteroids"
+                    ]
+                },
+                "atmosphere": {
+                    "primaryRegion": [
+                        "pf_blackholeatmosphere"
+                    ]
+                },
+                "surface": {
+                    "primaryRegion": [
+                        "pf_halfmoon"
+                    ]
+                },
+                "subsurface": {
+                    "primaryRegion": [
+                        "pf_halfmoonsubsurface"
+                    ]
+                },
+                "underground1": {
+                    "primaryRegion": [
+                        "pf_halfmoonunderground"
+                    ],
+                    "secondaryRegions": []
+                },
+                "underground2": {
+                    "primaryRegion": [
+                        "pf_halfmoonaether"
+                    ],
+                    "secondaryRegions": []
+                },
+                "underground3": {
+                    "primaryRegion": [
+                        "pf_halfmoonaether"
+                    ],
+                    "secondaryRegions": []
+                },
+                "core": {
+                    "primaryRegion": [
+                        "pf_solidvoidcore"
+                    ],
+                    "baseHeight": 150
+                }
+            }
+        }
+    }
+]

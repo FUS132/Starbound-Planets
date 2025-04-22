@@ -1,0 +1,299 @@
+[
+	{"op" : "add","path" : "/planetSizes/bigger",
+    "value" : {
+      "size" :           [11000, 7000],
+      "gravityRange" :   [90   , 110 ],
+      "dayLengthRange" : [700  , 1000],
+      "layerDefaults" : {
+        "secondaryRegionPeriod" : [1500, 3000],
+        "secondaryRegionSize" :   [0.2 , 0.92],
+        "secondaryRegionCount" :  [1   , 4   ],
+        "subRegionSize" :         [0.15, 0.5 ],
+        "dungeonCountRange" :     [0   , 6   ]
+      },
+      "layers" : {
+        "space"        : { "baseHeight" : 6500, "layerLevel" : 6200 },
+        "atmosphere"   : { "baseHeight" : 5500, "layerLevel" : 5000 },
+        "surface"      : { "baseHeight" : 4000, "layerLevel" : 3700 },
+        "subsurface"   : { "baseHeight" : 3000, "layerLevel" : 2700 },
+        "underground1" : { "baseHeight" : 1500, "layerLevel" : 1300 },
+        "underground2" : { "baseHeight" : 900 , "layerLevel" : 750  },
+        "underground3" : { "baseHeight" : 700 , "layerLevel" : 400  },
+        "core"         : { "baseHeight" : 200 , "layerLevel" : 0    }
+    }
+  }
+},
+	{"op" : "add","path" : "/planetTypes/gasgiant",
+		"value" : {
+			"threatRange" : [6,8],
+			"layers" : {
+				"surface" : {
+					"primaryRegion" : [ "gasgiant"],
+					"secondaryRegions" : [],
+					"dungeons" : [ ]
+				},
+				"subsurface" : {
+					"primaryRegion" : [ "gasgiantunderground" ]
+				},
+				"underground1" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+					"secondaryRegions" : [  ]
+				},
+				"underground2" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+					"secondaryRegions" : [  ]
+				},
+				"underground3" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+					"secondaryRegions" : [  ]
+				},
+				"core" : {
+					"primaryRegion" : [ "gasgiantcorelayer2","gasgiantcorelayer" ],
+					"secondaryRegions" : ["gasgiantcorelayer","gasgiantcorelayer2" ]
+				}
+			}
+		}
+	},   
+
+	{"op" : "add","path" : "/planetTypes/gasgiant_forest",
+		"value" : {
+			"threatRange" : [2,6],
+			"layers" : {
+				"surface" : {
+					"primaryRegion" : [ "gasgiant_forest","gasgiant_lush","gasgiant_savannah","gasgiant_desert","gasgiant_alien","gasgiant_ice","gasgiant_toxic","gasgiant_water"],
+					"secondaryRegions" : ["gasgiant_forest","gasgiant_desert","gasgiant_lush","gasgiant_savannah","gasgiant_alien","gasgiant_ice","gasgiant_toxic","gasgiant_water"],
+					"dungeons" : []
+				},
+				"subsurface" : {
+					"primaryRegion" : [ "gasgiant_forest_underground","gasgiant_forest_underground_glowshroom","gasgiant_toxic","gasgiant_forest_underground_infested","gasgiant_geode" ],
+					"secondaryRegions" : ["gasgiant_forest_underground","gasgiant_forest_underground_glowshroom","gasgiant_snowbio","gasgiant_forest_underground_infested","gasgiant_geode" ]
+				},
+				"underground1" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+					"secondaryRegions" : [  ]
+				},
+				"underground2" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+					"secondaryRegions" : [  ]
+				},
+				"underground3" : {
+					"primaryRegion" : [ "gasgiantunderground" ],
+					"secondaryRegions" : [  ]
+				},
+				"core" : {
+					"primaryRegion" : [ "gasgiantcorelayer2" ],
+					"secondaryRegions" : ["gasgiantcorelayer","gasgiantcorelayer2"  ]
+				}
+			}
+		}
+	}, 
+	{"op" : "add","path" : "/regionTypes/gasgiant",
+		"value" :
+		{
+			"blockSelector" : [ "asteroids", "asteroidfield", "remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			
+			"fgCaveSelector" : [ "empty" ],
+			
+			"fgOreSelector" : ["largeClumps"],
+			"bgOreSelector" : ["largeClumps"],
+			
+			"biome" : [ [ 0, [ "gasgiant" ] ] ],
+			
+			"subRegion" : [ ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_forest",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_forest"]]],
+			"subRegion" : [ ]
+		}
+	},
+		{"op" : "add","path" : "/regionTypes/gasgiant_geode",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_geode"]]],
+			"subRegion" : [ ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_lush",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_lush"]]],
+			"subRegion" : [ ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_water",
+		"value" :
+		{
+		    "oceanLevelOffset" : 20,
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_water"]]],
+			"caveLiquid" : ["water"],
+			"subRegion" : [ ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_desert",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "surfaceCaves","empty" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_desert" ]]],
+			"subRegion" : [ ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_savannah",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "surfaceCaves","empty" ],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_savannah" ]]],
+			"subRegion" : [ ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_alien",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "surfaceCaves","empty"],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_alien" ]]],
+			"subRegion" : [ ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_ice",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "surfaceCaves","empty"],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_ice" ]]],
+			"subRegion" : [ "gasgiant_snow","gasgiant_snowbio"]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_snow",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "surfaceCaves","empty"],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_snow" ]]],
+			"subRegion" : [ ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_snowbio",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "surfaceCaves","empty"],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_snowbio" ]]],
+			"subRegion" : [ ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_toxic",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "surfaceCaves","empty"],
+			"bgCaveSelector" : ["empty"],
+			"biome" : [ [0, [ "gasgiant_toxic" ]]],
+			"subRegion" : [ ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_forest_underground",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface"  ],
+			"fgCaveSelector" : [ "surfaceCaves","empty" ],
+			"bgCaveSelector" : [ "empty" ],
+			"biome" : [ [0, [ "gasgiant_forest_underground" ]]],
+			"subRegion" : ["gasgiant_forest_underground_glowshroom","gasgiant_forest_underground_infested" ]
+
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_forest_underground_glowshroom",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface"  ],
+			"fgCaveSelector" : [ "surfaceCaves","empty" ],
+			"bgCaveSelector" : [ "empty" ],
+			
+			"biome" : [ [0, [ "gasgiant_forest_underground_glowshroom" ]]],
+			"subRegion" : ["gasgiant_forest_underground","gasgiant_forest_underground_infested"]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiant_forest_underground_infested",
+		"value" :
+		{
+			"blockSelector" : [ "asteroidfield","remixedFlatIslandsSurface","remixedIslandsSurface", "remixedFlatIslandsSurface"  ],
+			"fgCaveSelector" : [ "surfaceCaves","empty" ],
+			"bgCaveSelector" : [ "empty" ],
+			
+			"biome" : [ [0, [ "gasgiant_forest_underground_infested" ]]],
+			"subRegion" : ["gasgiant_forest_underground","gasgiant_forest_underground_glowshroom"]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiantunderground",
+		"value" :
+		{
+
+			"blockSelector" : [ "asteroids", "asteroidfield", "remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			
+			"fgCaveSelector" : [ "empty","surfaceCaves" ],
+			"bgCaveSelector" : [ "empty" ],
+			
+			"fgOreSelector" : ["largeClumps"],
+			"bgOreSelector" : ["largeClumps"],
+			
+			"biome" : [ [0, [ "gasgiantunderground"]]]
+			
+		}
+	},  
+	{"op" : "add","path" : "/regionTypes/gasgiantcorelayer",
+		"value" :
+		{
+			"blockSelector" : [ "asteroids", "asteroidfield", "remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			"subBlockSelector" : [ "asteroids", "asteroidfield", "remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			
+			"oceanLiquid" : [ "fuel" ],
+			"oceanLevelOffset" : 100,
+			
+			"fgcaveSelector" : [ "empty" ],
+			
+			"fgOreSelector" : ["largeClumps"],
+			"bgOreSelector" : ["largeClumps"],
+			
+			"biome" : [ [0, [ "gasgiantcorelayer" ]] ]
+		}
+	},
+	{"op" : "add","path" : "/regionTypes/gasgiantcorelayer2",
+		"value" :
+		{
+			"blockSelector" : [ "remixedMildSurface" ],
+			"subBlockSelector" : [ "asteroids", "asteroidfield", "remixedIslandsSurface", "remixedFlatIslandsSurface" ],
+			
+			"caveLiquid" : [ "fuel" ],
+			
+			"fgcaveSelector" : [ "empty" ],
+			
+			"fgOreSelector" : ["largeClumps"],
+			"bgOreSelector" : ["largeClumps"],
+			
+			"biome" : [ [0, [ "gasgiantcorelayer2" ]] ]
+		}
+	}
+]

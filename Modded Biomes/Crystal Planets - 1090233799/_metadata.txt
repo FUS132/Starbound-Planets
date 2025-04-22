@@ -1,0 +1,11 @@
+{
+  "version" : "1.3",
+  "tags" : "Planets and Environments",
+  "author" : "I Said No",
+  "description" : "Adds a new type of planet to the game: Crystal Planets, which can be most commonly found orbiting Frozen Stars.\n\nCrystal Planets are colorful worlds primarily made of crystal materials. You will find many different colors of glowing stone in the main crystalline areas, and by exploring you can find Geode, Prismatic and Rainbow areas on the surface too. The skies can be many different bright colors during the day, and at night shimmering auroras can be seen above the distant mountains. Occasional showers of crystalline dust can light up the night with iridescent displays of color, too.\n\nThe threat level of Crystal Planets tends to vary wildly from anywhere between threat levels 1 and 10, so be careful when exploring!\n\nWant to help me out in making more content for Starbound? [url=https://www.patreon.com/gaymonsterdad]Check out my Patreon[/url]! No pressure though. =)",
+  "name" : "Crystal Planets",
+  "friendlyName" : "Crystal Planets",
+  "steamContentId" : "1090233799",
+  "link" : "steam://url/CommunityFilePage/1090233799",
+  "includes" : ["TrueSpace", "Scientific Planet Descriptions"]
+}

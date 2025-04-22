@@ -1,0 +1,32 @@
+{
+  "name" : "pf_solidvoidcore",
+  "friendlyName" : "The Edge",
+
+  "parallax" : "/parallax/underground/nothing.parallax",
+
+  "mainBlock" : "pf_slopedstars",
+  "subBlocks" : [ "pf_voidsidian" ],
+  "ores" : "pf_solidvoid",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : []
+    },
+    "night" : {
+      "tracks" : []
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : []
+    },
+    "night" : {
+      "tracks" : []
+    }
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [ ]
+  }
+}

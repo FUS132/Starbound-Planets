@@ -1,0 +1,10 @@
+[
+
+
+//Barren Moons
+{ "op": "add", "path": "/satelliteTypes/Moon/baseParameters/terrestrialType/-", "value": "barren" }
+
+
+
+
+]
