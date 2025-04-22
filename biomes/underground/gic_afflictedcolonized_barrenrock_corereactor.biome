@@ -1,0 +1,43 @@
+{
+  "name" : "gic_afflictedcolonized_barrenrock_corereactor",
+  "friendlyName" : "Afflicted Colonized Barren Rock Core Reactor",
+
+  "parallax" : "/parallax/surface/gic_psychicrealm_abyssalvoid.parallax",
+
+  "mainBlock" : "rock02",
+  "subBlocks" : [ "rock03", "direstone", "rock15" ],
+  "ores" : "moon",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/arid_underground.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/arid_underground.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [
+	  "/music/projectwarlock/gic_projectwarlock_industrial_chemicalpower.ogg",	  
+	  "/music/projectwarlock/gic_projectwarlock_industrial_metallurgy.ogg",	 
+	  "/music/projectwarlock/gic_projectwarlock_industrial_gristle.ogg"	
+	  ]
+    },
+    "night" : {
+      "tracks" : [	  
+	
+	  "/music/projectwarlock/gic_projectwarlock_Industrial_Toxin2.ogg",	  	  
+	  "/music/projectwarlock/gic_projectwarlock_Industrial_Devastation.ogg"	  
+
+	  ]
+    }
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [ ]
+  },
+
+  "hueShiftOptions" : [0]
+}

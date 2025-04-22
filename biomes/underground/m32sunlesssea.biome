@@ -1,0 +1,353 @@
+{
+  "name" : "m32sunlesssea",
+  "friendlyName" : "Pelagic Subterrane",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "sporgus" ],
+          [ 1, "peblit" ],
+          [ 1, "batong" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "glowbug" ],
+          [ 0.3, "shadowmoth" ],
+          [ 0.3, "tidefly" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "crabcritter" ],
+          [ 1, "darkballcritter" ],
+          [ 1, "sporelingcritter" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "M32steamspiders" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "arcticfishcritter" ],
+          [ 1, "steamfishcritter" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "jellycritter" ],
+          [ 1, "glowingfishcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "snow"
+    }
+  },
+
+  "hueShiftOptions" : [0],
+
+  "mainBlock" : "clay",
+  "subBlocks" : [ "rock12", "wetlimestone", "glowcoral", "gravel"],
+  "ores" : "surface",
+
+  "parallax" : "/parallax/underground/m32sunlesssea.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/biomes/m32sunlesssea/ambiance1.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/biomes/m32sunlesssea/ambiance1.ogg" ]
+    },
+    "volume" : 0.1
+  },
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/sfx/M32music/homemade/eerie.ogg", "/music/ocean-exploration2.ogg", "/sfx/M32music/homemade/planetary-heartbeat.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/drosera.ogg", "/sfx/M32music/homemade/clockwork-anxiety.ogg", "/sfx/M32music/homemade/drafty-cavern.ogg" ]
+    }
+  },
+
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "m32fallenleaves_dark" ],
+    "grassModDensity" : 0.5,
+
+    "items" : [
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 3,
+      "distribution" : "/biomes/distributions.config:rare",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.25, "woestatue" ], [0.25, "violencestatue" ], [0.25, "schemingstatue" ] ],
+          "parameters" : { }
+        }
+      ]
+    },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "oceanChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "pebbles" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "m32spiketophut", "m32spiketophut", "oceanislandsmicrodungeons", "maple32industrialencounters" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "m32rooftophut" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:uncommon",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "ceilingstalactite1" ], [0.20, "ceilingstalactite2" ], [0.20, "ceilingstalactite3" ], [0.20, "ceilingstalactite4" ], [0.20, "ceilingstalactite5" ] ]
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "cavespikes" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:uncommon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "cavespikes" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:common",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "m32oceanic" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "encounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.2, "m32grave1" ], [0.8, "m32grave2" ] ],
+            "parameters" : { "treasurePools":["tombTreasure"] }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 2,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.25, "redsignallight" ], [0.25, "redsignallight_wrecked" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 3,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.14, "mossypotssmall1" ], [0.14, "mossypotssmall2" ], [0.14, "mossypotsmed1" ], [0.15, "mossypotsmed2" ], [0.14, "mossypotsmed3" ], [0.14, "mossypotsbig1" ], [0.15, "mossypotsbig2" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 4,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "groundspike1" ], [0.20, "groundspike2" ], [0.20, "groundspike3" ], [0.20, "groundspike4" ] ]
+          }
+          ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 2,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "mushroomstalk" ],
+        "treeFoliageList" : [ "mushroomyellowtop", "mushroomredtop" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.4, "wilddeepshroomseed" ], [0.6, "mushroomseed" ] ],
+            "parameters" : { "startingStage" : 2 }
+          }
+        ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildfunkgusseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "undergroundPlaceables" : {
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 0.9,
+
+    "items" : [
+      {
+        "mode" : "ceiling",
+        "priority" : 1,
+        "variants" : 10,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "m32rooftophut", "m32spiketophut" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 10,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "m32rooftophut", "m32spiketophut" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:uncommon",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "ceilingstalactite1" ], [0.20, "ceilingstalactite2" ], [0.20, "ceilingstalactite3" ], [0.20, "ceilingstalactite4" ], [0.20, "ceilingstalactite5" ] ]
+          }
+        ]
+      }
+    ]
+  }
+}

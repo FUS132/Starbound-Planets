@@ -1,0 +1,203 @@
+{
+  "name" : "pf_starlava",
+  "friendlyName" : "Novalcanic Mines",
+
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 2,
+        "pool" : [ 
+          [ 1.0, "pyromantle" ],
+          [ 1.0, "fennix" ],
+          [ 1.0, "ignome" ],
+          [ 1.0, "crustoise" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      },
+	  {
+        "select" : 1,
+        "pool" : [
+		  [1.0, "pf_redstargleap"]
+		]
+      }
+    ],
+      "monsterParameters" : {
+        "colors" : "volcanic",
+        "statusSettings" : {
+          "stats" : {
+            "lavaImmunity" : {
+              "baseValue" : 1.0
+            },
+            "fireStatusImmunity" : {
+              "baseValue" : 1.0
+            },
+            "biomeanomalyImmunity2" : {
+              "baseValue" : 1.0
+            }
+          }
+        }
+      }
+  },
+
+  "parallax" : "/parallax/underground/starlava.parallax",
+
+  "mainBlock" : "pf_redstarsidian",
+  "subBlocks" : [ "rock15", "ash", "pf_plasmamaterial", "pf_voidsidian" ],
+  "ores" : "starlava",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/savannah_underground.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/savannah_underground.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/casiopeia.ogg", "/music/lava-exploration2.ogg", "/music/drosera.ogg", "/music/the-apex.ogg", "/music/event-horizon.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/casiopeia.ogg", "/music/lava-exploration2.ogg", "/music/drosera.ogg", "/music/the-apex.ogg" ]
+    }
+  },
+
+  "undergroundPlaceables" : {
+
+    "grassMod" : [ "ash" ],
+    "grassModDensity" : 0.8,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "ancientpot1" ], [0.35, "ancientpot4" ], [0.35, "ancientpot3" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundOreRocks",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.18, "silverrocksmall" ], [0.06, "silverrock" ], [0.48, "goldrocksmall" ], [0.16, "goldrock" ], [0.09, "diamondrocksmall" ], [0.03, "diamondrock" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "background",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundFossils",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.15, "dirtyfossil1" ], [0.15, "dirtyfossil2" ], [0.15, "dirtyfossil3" ], [0.15, "dirtyfossil4" ], [0.1, "dirtyfossil5" ], [0.1, "dirtyfossil6" ], [0.1, "dirtyfossil7" ], [0.1, "dirtyfossil8" ] ],
+            "parameters" : {  "materials" : [  "dirt", "rock17", "bonematerial" ]}
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:hazardUndergroundLower",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "groundspike1" ], [0.20, "groundspike2" ], [0.20, "groundspike3" ], [0.20, "groundspike4" ] ]
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingLower",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "ceilingspike1" ], [0.20, "ceilingspike2" ], [0.20, "ceilingspike3" ], [0.20, "ceilingspike4" ] ]
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:layer3Chests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "pf_novalcanicChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChallengeDoors",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "challengedoor" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 99.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "underground5dmicrodungeons", "pf_starlavamicrodungeons" ]
+      }
+    ]
+  },
+
+  "hueShiftOptions" : [0]
+}
