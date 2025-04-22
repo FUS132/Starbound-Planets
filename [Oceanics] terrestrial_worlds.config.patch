@@ -122,8 +122,9 @@
     ],
 		//==============================================================================================================|
 		// Arcana - 2359135864
-		// Note: Some planets in this mod aren't supposed to have dungeons what aren't tailored for said planets, so please consult Arcana's
-		// terrestrial_worlds.config.patch before adding anything
+		// Note: Some planets in this mod aren't supposed to have dungeons what aren't tailored for said planets,
+		// so please consult Arcana's terrestrial_worlds.config.patch inside "Modded Biomes" before adding anything,
+		// and test the changes you do implement!
 		//==============================================================================================================|
 		
 		//-------------------------------------------------------|
