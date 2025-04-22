@@ -1,0 +1,327 @@
+{
+  "name" : "smoothicecaves",
+  "friendlyName" : "Cold Catacombs",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1.0, "icecavegosmet" ],
+          [ 0.3, "spookit" ],
+          [ 0.3, "petricub" ],
+          [ 0.4, "m32icepeblit" ]
+        ]
+      },
+      { "select" : 1, "pool" : [[ 1, "shardwingicecave" ]] },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      },
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "snowflakescritter" ],
+          [ 1, "icescabcritter" ],
+          [ 1, "hollowcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "ice"
+    }
+  },
+
+  "parallax" : "/parallax/underground/smoothicecaves.parallax",
+
+  "mainBlock" : "frozenwater",
+  "subBlocks" : [ "iceblock", "ice" ],
+  "ores" : "m32smoothicecaveores",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/tundra_underground.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/tundra_underground.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : ["/music/home-concept-loop.ogg", "/music/desert-exploration2.ogg", "/music/ocean-exploration2.ogg", "/music/arctic-exploration1.ogg"]
+    },
+    "night" : {
+      "tracks" : ["/music/crystal-exploration1.ogg", "/music/tranquility-base.ogg", "/music/on-the-beach-at-night.ogg", "/sfx/M32music/homemade/cold-shard-sea.ogg"]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "skaterink" ],
+    "grassModDensity" : 0.9,
+
+    "ceilingGrassMod" : [ "ceilingsnow" ],
+    "ceilingGrassModDensity" : 0.5,
+    "items" : [
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:uncommon",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [1.1, "frozenmistprimer" ], [0.5, "iceshard5" ], [0.1, "auroralamppost" ] ],
+          "parameters" : { }
+        }
+      ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 1,
+      "variants" : 10,
+      "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "m32rooftophut", "m32icecavedungeons" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1,
+      "variants" : 10,
+      "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "m32spiketophut", "m32icecavedungeons" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:rare",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "cavespikes" ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:rare",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "cavespikes" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:undergroundChests",
+
+      "type" : "treasureBox",
+      "treasureBoxSets" : [ "iceChest" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 0.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+      "type" : "object",
+      "objectSets" : [
+      {
+        "pool" : [ [1, "icechest" ] ],
+        "parameters" : {
+        "treasurePools" : [ "m32smoothicechest" ]
+        }
+      }
+      ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:hazardUndergroundMid",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.20, "icestalagmite1" ], [0.20, "icestalagmite2" ], [0.20, "icestalagmite3" ], [0.20, "icestalagmite4" ] ]
+        }
+      ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingMid",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.20, "icestalactite1" ], [0.20, "icestalactite2" ], [0.20, "icestalactite3" ], [0.20, "icestalactite4" ] ]
+        }
+      ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingCore",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.1, "icepotssmall1" ], [0.1, "icepotssmall2" ], [0.1, "icepotssmall3"], [0.2, "icepotsmed1" ], [0.2, "icepotsmed2" ], [0.1, "icepotsbig1" ], [0.1, "icepotsbig2" ], [0.1, "icepotsbig3" ] ],
+          "parameters" : { }
+        }
+      ]
+    }
+
+
+    ]
+  },
+  "undergroundPlaceables" : {
+    "grassMod" : [ "skaterink" ],
+    "grassModDensity" : 0.9,
+
+    "ceilingGrassMod" : [ "ceilingsnow" ],
+    "ceilingGrassModDensity" : 0.2,
+    "items" : [
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:hazardUndergroundCeilingCore",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [0.1, "icepotssmall1" ], [0.1, "icepotssmall2" ], [0.1, "icepotssmall3"], [0.2, "icepotsmed1" ], [0.2, "icepotsmed2" ], [0.1, "icepotsbig1" ], [0.1, "icepotsbig2" ], [0.1, "icepotsbig3" ] ],
+          "parameters" : { }
+        }
+      ]
+    },
+
+    {
+      "mode" : "floor",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "undergroundencounterdungeons" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:uncommon",
+
+      "type" : "object",
+      "objectSets" : [
+        {
+          "pool" : [ [1.1, "frozenmistprimer" ], [0.5, "iceshard5" ], [0.1, "auroralamppost" ] ],
+          "parameters" : { }
+        }
+      ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 1,
+      "variants" : 10,
+      "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "m32rooftophut", "m32icecavedungeons" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1,
+      "variants" : 10,
+      "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "m32spiketophut", "m32icecavedungeons" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:rare",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "cavespikes" ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:rare",
+
+      "type" : "microdungeon",
+      "microdungeons" : [ "cavespikes" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:undergroundChests",
+
+      "type" : "treasureBox",
+      "treasureBoxSets" : [ "iceChest" ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 0.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+      "type" : "object",
+      "objectSets" : [
+      {
+        "pool" : [ [1, "icechest" ] ],
+        "parameters" : {
+        "treasurePools" : [ "m32smoothicechest" ]
+        }
+      }
+      ]
+    },
+    {
+      "mode" : "ceiling",
+      "priority" : 1,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+      "type" : "bush",
+      "bushes" : [
+        {
+          "name" : "ceilingicicle",
+          "baseHueShiftMax" : 0,
+          "modHueShiftMax" : 0
+        }
+      ]
+    },
+    {
+      "mode" : "floor",
+      "priority" : 2.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+      "type" : "bush",
+      "bushes" : [
+        {
+          "name" : "iceblocks",
+          "baseHueShiftMax" : 0,
+          "modHueShiftMax" : 0
+        }
+      ]
+    }
+
+
+    ]
+  },
+
+  "hueShiftOptions" : [-10]
+}
