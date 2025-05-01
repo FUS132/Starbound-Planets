@@ -1,6 +1,6 @@
 {
   "name" : "pf_solidvoidcore",
-  "friendlyName" : "The Edge",
+  "friendlyName" : "Encroaching Void",
 
   "parallax" : "/parallax/underground/nothing.parallax",
 
@@ -27,6 +27,35 @@
   },
 
   "undergroundPlaceables" : {
-    "items" : [ ]
+    "items" : [ 
+      {
+        "mode" : "ceiling",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "dripblood1" ] ],
+            "parameters" : { "originBiome" : "core/solidvoidcore" }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:backerStatues",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "pf_pixelstatueold" ] ],
+            "parameters" : { "originBiome" : "core/solidvoidcore" }
+          }
+        ]
+      }
+    ]
   }
 }

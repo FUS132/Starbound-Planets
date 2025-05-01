@@ -1,6 +1,6 @@
 {
   "name" : "pf_starlava",
-  "friendlyName" : "Novalcanic Mines",
+  "friendlyName" : "Nova Mines",
 
 
   "spawnProfile" : {
@@ -83,7 +83,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "ancientpot1" ], [0.35, "ancientpot4" ], [0.35, "ancientpot3" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/starlava" }
           }
         ]
       },
@@ -97,21 +97,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.18, "silverrocksmall" ], [0.06, "silverrock" ], [0.48, "goldrocksmall" ], [0.16, "goldrock" ], [0.09, "diamondrocksmall" ], [0.03, "diamondrock" ] ],
-            "parameters" : { }
-          }
-        ]
-      },
-      {
-        "mode" : "background",
-        "priority" : 1.0,
-        "variants" : 1,
-        "distribution" : "/biomes/distributions.config:undergroundFossils",
-
-        "type" : "object",
-        "objectSets" : [
-          {
-            "pool" : [ [0.15, "dirtyfossil1" ], [0.15, "dirtyfossil2" ], [0.15, "dirtyfossil3" ], [0.15, "dirtyfossil4" ], [0.1, "dirtyfossil5" ], [0.1, "dirtyfossil6" ], [0.1, "dirtyfossil7" ], [0.1, "dirtyfossil8" ] ],
-            "parameters" : {  "materials" : [  "dirt", "rock17", "bonematerial" ]}
+            "parameters" : { "originBiome" : "underground/starlava" }
           }
         ]
       },
@@ -124,7 +110,8 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [0.20, "groundspike1" ], [0.20, "groundspike2" ], [0.20, "groundspike3" ], [0.20, "groundspike4" ] ]
+            "pool" : [ [0.20, "groundspike1" ], [0.20, "groundspike2" ], [0.20, "groundspike3" ], [0.20, "groundspike4" ] ],
+            "parameters" : { "originBiome" : "underground/starlava" }
           }
         ]
       },
@@ -137,7 +124,8 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [0.20, "ceilingspike1" ], [0.20, "ceilingspike2" ], [0.20, "ceilingspike3" ], [0.20, "ceilingspike4" ] ]
+            "pool" : [ [0.20, "ceilingspike1" ], [0.20, "ceilingspike2" ], [0.20, "ceilingspike3" ], [0.20, "ceilingspike4" ] ],
+            "parameters" : { "originBiome" : "underground/starlava" }
           }
         ]
       },
@@ -169,7 +157,21 @@
         "objectSets" : [
           {
             "pool" : [ [1, "statuspod" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/starlava" }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:veryRare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.5, "miningskip" ], [0.5, "miningcrusher" ], [0.5, "metalbarrel2" ], [0.5, "lavatanksmall" ], [0.5, "woodenutilitypole1" ] ],
+            "parameters" : { "originBiome" : "underground/starlava" }
           }
         ]
       },
@@ -183,7 +185,7 @@
         "objectSets" : [
           {
             "pool" : [ [1, "challengedoor" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/starlava" }
           }
         ]
       },

@@ -40,7 +40,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface_detached/artificialresidential" }
           }
         ]
       },
@@ -66,7 +66,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "rustbush1" ], [0.35, "rustbush2" ], [0.35, "rustbush3" ], [0.35, "rustbush4" ]],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface_detached/artificialresidential" }
           }
         ]
       },
@@ -80,7 +80,21 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "lamppost1" ], [0.35, "lamppost2" ], [0.35, "lamppost3" ], [0.35, "outdoorbench" ]],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface_detached/artificialresidential" }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.5, "pf_xenoutilitypolebroken" ], [0.1, "pf_xenoutilitypole" ] ],
+            "parameters" : { "originBiome" : "surface_detached/artificialresidential" }
           }
         ]
       },
@@ -117,7 +131,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface_detached/artificialresidential" }
           }
         ]
       }

@@ -1,6 +1,6 @@
 {
   "name" : "pf_darkforest",
-  "friendlyName" : "Forked Forest",
+  "friendlyName" : "F&re5t",
 
   "spawnProfile" : {
     "groups" : [
@@ -151,7 +151,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface/forest_blackhole" }
           }
         ]
       },
@@ -165,7 +165,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "flowerred" ], [0.35, "flowerblue" ], [0.35, "floweryellow" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface/forest_blackhole" }
           }
         ]
       },
@@ -189,7 +189,7 @@
         "objectSets" : [
           {
             "pool" : [ [1, "statuspod" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface/forest_blackhole" }
           }
         ]
       },
@@ -284,7 +284,7 @@
           {
             "pool" : [ [1, "wildcarrotseed" ] ],
             "parameters" : {
-              "startingStage" : 3
+              "startingStage" : 3, "originBiome" : "surface/forest_blackhole"
             }
           }
         ]
@@ -300,7 +300,7 @@
           {
             "pool" : [ [1, "wildtomatoseed" ] ],
             "parameters" : {
-              "startingStage" : 4
+              "startingStage" : 4, "originBiome" : "surface/forest_blackhole"
             }
           }
         ]
@@ -316,7 +316,7 @@
           {
             "pool" : [ [1, "wildcocoaseed" ] ],
             "parameters" : {
-              "startingStage" : 4
+              "startingStage" : 4, "originBiome" : "surface/forest_blackhole"
             }
           }
         ]
@@ -371,7 +371,7 @@
         "objectSets" : [
           {
             "pool" : [ [1, "statuspod" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface/forest_blackhole" }
           }
         ]
       },
@@ -394,7 +394,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface/forest_blackhole" }
           }
         ]
       },

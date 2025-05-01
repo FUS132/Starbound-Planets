@@ -198,22 +198,22 @@
             "subRegion": []
         }
     },
-    //{
-    //    "op": "add",
-    //    "path": "/regionTypes/pf_carinacaverns",
-    //    "value": {
-    //        "caveLiquid": [],
-    //        "biome": [
-    //            [
-    //                0,
-    //                [
-    //                    "pf_carinacaverns"
-    //                ]
-    //            ]
-    //        ],
-    //        "subRegion": []
-    //    }
-    //},
+    {
+        "op": "add",
+        "path": "/regionTypes/pf_carinacaverns",
+        "value": {
+            "caveLiquid": ["dimensionliquid"],
+            "biome": [
+                [
+                    0,
+                    [
+                        "pf_carinacaverns"
+                    ]
+                ]
+            ],
+            "subRegion": []
+        }
+    },
     {
         "op": "add",
         "path": "/regionTypes/pf_starlava",
@@ -442,7 +442,8 @@
                 "underground2": {
                     "primaryRegion": [
                         "pf_starwaste",
-                        "pf_celesteelcaverns"
+                        "pf_celesteelcaverns",
+                        "pf_carinacaverns"
                     ],
                     "secondaryRegions": []
                 },

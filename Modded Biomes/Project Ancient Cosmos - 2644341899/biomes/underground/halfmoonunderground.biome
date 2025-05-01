@@ -37,7 +37,8 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [0.20, "groundspike1" ], [0.20, "groundspike2" ], [0.20, "groundspike3" ], [0.20, "groundspike4" ] ]
+            "pool" : [ [0.20, "groundspike1" ], [0.20, "groundspike2" ], [0.20, "groundspike3" ], [0.20, "groundspike4" ] ],
+            "parameters" : { "originBiome" : "underground/halfmoonunderground" }
           }
         ]
       },
@@ -59,7 +60,22 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [0.20, "ceilingspike1" ], [0.20, "ceilingspike2" ], [0.20, "ceilingspike3" ], [0.20, "ceilingspike4" ] ]
+            "pool" : [ [0.20, "ceilingspike1" ], [0.20, "ceilingspike2" ], [0.20, "ceilingspike3" ], [0.20, "ceilingspike4" ] ],
+            "parameters" : { "originBiome" : "underground/halfmoonunderground" }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "pf_astralvine1" ], [0.35, "pf_astralvine2" ], [0.35, "pf_astralvine3" ], [0.35, "pf_astralrifttree" ] ],
+            "parameters" : { "originBiome" : "underground/halfmoonunderground" }
           }
         ]
       }

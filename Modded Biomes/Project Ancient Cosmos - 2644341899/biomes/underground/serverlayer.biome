@@ -53,7 +53,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/serverlayer" }
           }
         ]
       },
@@ -79,7 +79,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "rustbush1" ], [0.35, "rustbush2" ], [0.35, "rustbush3" ], [0.35, "rustbush4" ]],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/serverlayer" }
           }
         ]
       },
@@ -102,7 +102,21 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "bunkerserver" ], [0.35, "bunkercomputer" ], [0.35, "bunkerconsole1" ], [0.35, "bunkerconsole2" ]],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/serverlayer" }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.5, "pf_xenoutilitypolebroken" ], [0.1, "pf_xenoutilitypole" ] ],
+            "parameters" : { "originBiome" : "underground/serverlayer" }
           }
         ]
       },
@@ -139,7 +153,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/serverlayer" }
           }
         ]
       }

@@ -1,6 +1,6 @@
 {
   "name" : "pf_cybernetic",
-  "friendlyName" : "Derelict Ecumenopolis",
+  "friendlyName" : "Relic Ecumenopolis",
 
   "statusEffects" : [ "pf_electrostaticbiome" ],
 
@@ -111,7 +111,7 @@
         "objectSets" : [
           {
             "pool" : [ [1, "statuspod" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface/cybernetic" }
           }
         ]
       },
@@ -148,7 +148,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface/cybernetic" }
           }
         ]
       },
@@ -162,11 +162,11 @@
         "objectSets" : [
           {
             "pool" : [ [0.5, "pf_xenoutilitypolebroken" ], [0.1, "pf_xenoutilitypole" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface/cybernetic" }
           }
         ]
       },
-	  {
+	    {
         "mode" : "floor",
         "priority" : 1,
         "variants" : 1,
@@ -176,7 +176,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.2, "pf_xenotank" ], [0.1, "pf_xenotankbroken" ], [0.3, "pf_xenopipe1" ], [0.3, "pf_xenopipe2" ], [0.3, "pf_xenopipe3" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface/cybernetic" }
           }
         ]
       },
@@ -277,7 +277,7 @@
         "objectSets" : [
           {
             "pool" : [ [1, "statuspod" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface/cybernetic" }
           }
         ]
       },
@@ -300,7 +300,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface/cybernetic" }
           }
         ]
       }

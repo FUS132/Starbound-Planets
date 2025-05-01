@@ -1,6 +1,6 @@
 {
   "name" : "pf_voidcore",
-  "friendlyName" : "The Void",
+  "friendlyName" : "Event Horizon",
 
   "parallax" : "/parallax/underground/void.parallax",
 
@@ -38,7 +38,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "core/voidcore" }
           }
         ]
       },
@@ -51,19 +51,24 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [0.20, "thorns1" ], [0.20, "thorns2" ], [0.20, "thorns3" ], [0.20, "thorns4" ] ]
+            "pool" : [ [0.20, "thorns1" ], [0.20, "thorns2" ], [0.20, "thorns3" ], [0.20, "thorns4" ] ],
+            "parameters" : { "originBiome" : "core/voidcore" }
           },
           {
-            "pool" : [ [0.20, "desertgroundspike1" ], [0.20, "desertgroundspike2" ], [0.20, "desertgroundspike3" ], [0.20, "desertgroundspike4" ] ]
+            "pool" : [ [0.20, "desertgroundspike1" ], [0.20, "desertgroundspike2" ], [0.20, "desertgroundspike3" ], [0.20, "desertgroundspike4" ] ],
+            "parameters" : { "originBiome" : "core/voidcore" }
           },
           {
-            "pool" : [ [0.20, "greengroundspike1" ], [0.20, "greengroundspike2" ], [0.20, "greengroundspike3" ], [0.20, "greengroundspike4" ] ]
+            "pool" : [ [0.20, "greengroundspike1" ], [0.20, "greengroundspike2" ], [0.20, "greengroundspike3" ], [0.20, "greengroundspike4" ] ],
+            "parameters" : { "originBiome" : "core/voidcore" }
           },
           {
-            "pool" : [ [0.20, "savannahgroundspike1" ], [0.20, "savannahgroundspike2" ], [0.20, "savannahgroundspike3" ], [0.20, "savannahgroundspike4" ] ]
+            "pool" : [ [0.20, "savannahgroundspike1" ], [0.20, "savannahgroundspike2" ], [0.20, "savannahgroundspike3" ], [0.20, "savannahgroundspike4" ] ],
+            "parameters" : { "originBiome" : "core/voidcore" }
           },
           {
-            "pool" : [ [0.20, "magmagroundspike1" ], [0.20, "magmagroundspike2" ], [0.20, "magmagroundspike3" ] ]
+            "pool" : [ [0.20, "magmagroundspike1" ], [0.20, "magmagroundspike2" ], [0.20, "magmagroundspike3" ] ],
+            "parameters" : { "originBiome" : "core/voidcore" }
           }
         ]
       },
@@ -76,19 +81,24 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [0.20, "ceilingspike1" ], [0.20, "ceilingspike2" ], [0.20, "ceilingspike3" ], [0.20, "ceilingspike4" ] ]
+            "pool" : [ [0.20, "ceilingspike1" ], [0.20, "ceilingspike2" ], [0.20, "ceilingspike3" ], [0.20, "ceilingspike4" ] ],
+            "parameters" : { "originBiome" : "core/voidcore" }
           },
           {
-            "pool" : [ [0.20, "desertceilingspike1" ], [0.20, "desertceilingspike2" ], [0.20, "desertceilingspike3" ], [0.20, "desertceilingspike4" ] ]
+            "pool" : [ [0.20, "desertceilingspike1" ], [0.20, "desertceilingspike2" ], [0.20, "desertceilingspike3" ], [0.20, "desertceilingspike4" ] ],
+            "parameters" : { "originBiome" : "core/voidcore" }
           },
           {
-            "pool" : [ [0.20, "greenceilingspike1" ], [0.20, "greenceilingspike2" ], [0.20, "greenceilingspike3" ], [0.20, "greenceilingspike4" ] ]
+            "pool" : [ [0.20, "greenceilingspike1" ], [0.20, "greenceilingspike2" ], [0.20, "greenceilingspike3" ], [0.20, "greenceilingspike4" ] ],
+            "parameters" : { "originBiome" : "core/voidcore" }
           },
           {
-            "pool" : [ [0.20, "savannahceilingspike1" ], [0.20, "savannahceilingspike2" ], [0.20, "savannahceilingspike3" ], [0.20, "savannahceilingspike4" ] ]
+            "pool" : [ [0.20, "savannahceilingspike1" ], [0.20, "savannahceilingspike2" ], [0.20, "savannahceilingspike3" ], [0.20, "savannahceilingspike4" ] ],
+            "parameters" : { "originBiome" : "core/voidcore" }
           },
           {
-            "pool" : [ [0.20, "magmaceilingspike1" ], [0.20, "magmaceilingspike2" ], [0.20, "magmaceilingspike3" ] ]
+            "pool" : [ [0.20, "magmaceilingspike1" ], [0.20, "magmaceilingspike2" ], [0.20, "magmaceilingspike3" ] ],
+            "parameters" : { "originBiome" : "core/voidcore" }
           }
         ]
       },
@@ -111,7 +121,7 @@
         "objectSets" : [
           {
             "pool" : [ [1, "statuspod" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "core/pf_voidcore" }
           }
         ]
       },
@@ -125,7 +135,7 @@
         "objectSets" : [
           {
             "pool" : [ [1, "pf_anomstatue" ], [1, "pf_armokstatue" ], [1, "pf_nitrostatue" ], [1, "pf_pixelstatue" ], [1, "pf_raiizystatue" ], [1, "pf_silverstatue" ], [1, "pf_tealoverstatue" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "core/pf_voidcore" }
           }
         ]
       },

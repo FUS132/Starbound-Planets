@@ -60,7 +60,7 @@
 
   "undergroundPlaceables" : {
     "items" : [ 
-	  {
+	    {
         "mode" : "floor",
         "priority" : 0.0,
         "variants" : 1,
@@ -68,10 +68,22 @@
 
         "type" : "treasureBox",
         "treasureBoxSets" : [ "pf_halfmoonChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "pf_astralvine1" ], [0.35, "pf_astralvine2" ], [0.35, "pf_astralvine3" ], [0.35, "pf_astralrifttree" ] ],
+            "parameters" : { "originBiome" : "underground/halfmoonaether" }
+          }
+        ]
       }
-	
-	
-	]
+	  ]
   },
 
   "hueShiftOptions" : [0]

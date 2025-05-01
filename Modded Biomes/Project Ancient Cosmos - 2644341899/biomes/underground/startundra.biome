@@ -1,6 +1,6 @@
 {
   "name" : "pf_startundra",
-  "friendlyName" : "Aurora Tundra",
+  "friendlyName" : "Aurora Permafrost",
 
   "spawnProfile" : {
     "groups" : [
@@ -85,7 +85,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "ancientpot1" ], [0.35, "ancientpot4" ], [0.35, "ancientpot3" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/startundra" }
           }
         ]
       },
@@ -99,7 +99,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.18, "copperrocksmall" ], [0.06, "copperrock" ], [0.48, "silverrocksmall" ], [0.16, "silverrock" ], [0.09, "goldrocksmall" ], [0.03, "goldrock" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/startundra" }
           }
         ]
       },
@@ -135,7 +135,8 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [0.20, "icestalagmite1" ], [0.20, "icestalagmite2" ], [0.20, "icestalagmite3" ], [0.20, "icestalagmite4" ] ]
+            "pool" : [ [0.20, "icestalagmite1" ], [0.20, "icestalagmite2" ], [0.20, "icestalagmite3" ], [0.20, "icestalagmite4" ] ],
+            "parameters" : { "originBiome" : "underground/startundra" }
           }
         ]
       },
@@ -148,7 +149,8 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [0.20, "icestalactite1" ], [0.20, "icestalactite2" ], [0.20, "icestalactite3" ], [0.20, "icestalactite4" ] ]
+            "pool" : [ [0.20, "icestalactite1" ], [0.20, "icestalactite2" ], [0.20, "icestalactite3" ], [0.20, "icestalactite4" ] ],
+            "parameters" : { "originBiome" : "underground/startundra" }
           }
         ]
       },
@@ -162,7 +164,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "geometricshard1" ], [0.35, "geometricshard2" ], [0.35, "geometricshard3" ], [0.35, "geometricshard4" ], [0.35, "geometricshard5" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/startundra" }
           }
         ]
       },
@@ -170,13 +172,13 @@
         "mode" : "floor",
         "priority" : 1.0,
         "variants" : 1,
-        "distribution" : "/biomes/distributions.config:denseMedium",
+        "distribution" : "/biomes/distributions.config:veryRare",
 
         "type" : "object",
         "objectSets" : [
           {
             "pool" : [ [0.35, "floorpipe1" ], [0.35, "floorpipe2" ], [0.35, "floorpipe3" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/startundra" }
           }
         ]
       },
@@ -190,7 +192,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "prismrock1" ], [0.35, "prismrock2" ], [0.35, "prismrock3" ], [0.05, "prismrock4" ], [0.05, "prismrock5" ], [0.05, "prismrock6" ], [0.05, "prismrock7" ], [0.05, "prismrock8" ]  ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/startundra" }
           }
         ]
       },
@@ -204,7 +206,7 @@
         "objectSets" : [
           {
             "pool" : [ [1, "frozenmistprimer" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/startundra" }
           }
         ]
       },
@@ -236,7 +238,7 @@
         "objectSets" : [
           {
             "pool" : [ [1, "statuspod" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/startundra" }
           }
         ]
       },
@@ -250,7 +252,7 @@
         "objectSets" : [
           {
             "pool" : [ [1, "challengedoor" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/startundra" }
           }
         ]
       },

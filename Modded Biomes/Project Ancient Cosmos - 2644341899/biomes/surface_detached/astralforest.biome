@@ -77,7 +77,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface_detached/astralforest" }
           }
         ]
       },
@@ -91,7 +91,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "pf_astralvine1" ], [0.35, "pf_astralvine2" ], [0.35, "pf_astralvine3" ], [0.25, "pf_astralflower" ], [0.25, "pf_astralstarflybush" ], [0.15, "pf_astralrifttree" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface_detached/astralforest" }
           }
         ]
       },
@@ -163,7 +163,7 @@
           {
             "pool" : [ [0.5, "pf_starbulbseedwild" ], [0.5, "pf_gravitymelonseedwild" ] ],
             "parameters" : {
-              "startingStage" : 3
+              "startingStage" : 3, "originBiome" : "surface_detached/astralforest"
             }
           }
         ]

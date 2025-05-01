@@ -38,7 +38,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "core/solarcore" }
           }
         ]
       },
@@ -61,7 +61,7 @@
         "objectSets" : [
           {
             "pool" : [ [1, "statuspod" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "core/solarcore" }
           }
         ]
       },
@@ -75,7 +75,7 @@
         "objectSets" : [
           {
             "pool" : [ [1, "pf_anomstatue" ], [1, "pf_armokstatue" ], [1, "pf_nitrostatue" ], [1, "pf_pixelstatue" ], [1, "pf_raiizystatue" ], [1, "pf_silverstatue" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "core/solarcore" }
           }
         ]
       },

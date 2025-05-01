@@ -1,0 +1,10 @@
+{
+  "author" : "FUS",
+  "description" : "[u][b]Now on GitHub:[/b][/u] https://github.com/FUS132/Starbound-Planets\n\nGot really bored one evening, decided to catalogue all planets ever released on Steam Workshop and assemble them in terrestrial_worlds.config patches, I guess as a way to encourage people make their mods more interactive with each other.\n\n[h3][u][b]Disclamer:[/b] The mod does nothing on it's own.[/u][/h3]\n\nBut inside of it there are 3 terrestrial_worlds.config.patch files you can pick-and-choose the contents from to make patches for your own mods, 1 for land planets, 1 for moons, and 1 for oceanic planets, all categorised, and in places with additional comments.\n\n Eternally WiP, as more planets will (or will not) come in eventually and have to be added, but for everything else what's already in there it's pretty much done and ready to be used (assuming I didn't miss any mods, of course).\n\n[list][*]As an extra, I've included all .biome files I could find in related mods, also categorised, just in case you need to add critters or microdungeons to them or something (will have to make .patch files for those on your own though I'm afraid);\n\n[*]No terraformers were included which didn't had a patch to make them spawn around the universe (so basically all of them but 1), and no parallel dimensions, for obvious reasons;\n\n[*]For the included mods see the attached collection;\n\n[*]Mod thumbnail was found on Freepik as \"8 bit planet\", no author was provided.[/list]\n\n\n Enjoy",
+  "friendlyName" : "[Modder Resource] Dungeon Patch Cheat Sheet for Every Planet on the Workshop (with .biome files)",
+  "link" : "steam://url/CommunityFilePage/3468061577",
+  "name" : "DungeonPlanetaryCheatSheet",
+  "steamContentId" : "3468061577",
+  "tags" : "Miscellaneous|Planets and Environments|Cheats and God Items|In-Game Tools",
+  "version" : "1.3"
+}

@@ -64,7 +64,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface_detached/ancientcity" }
           }
         ]
       },
@@ -97,7 +97,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "pf_astralarch" ], [0.35, "pf_astralobelisk" ], [0.35, "pf_astralruin" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface_detached/ancientcity" }
           }
         ]
       },
@@ -111,7 +111,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.50, "ancientpillar" ], [0.50, "ancientbust" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface_detached/ancientcity" }
           }
         ]
       },
@@ -134,7 +134,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.5, "jumpbooster" ], [0.5, "speedbooster"] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "surface_detached/ancientcity" }
           }
         ]
       },

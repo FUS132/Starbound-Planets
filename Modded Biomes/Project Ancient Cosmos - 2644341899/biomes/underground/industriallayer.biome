@@ -54,7 +54,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/industriallayer" }
           }
         ]
       },
@@ -80,7 +80,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "rustbush1" ], [0.35, "rustbush2" ], [0.35, "rustbush3" ], [0.35, "rustbush4" ]],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/industriallayer" }
           }
         ]
       },
@@ -94,7 +94,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.2, "pf_xenotank" ], [0.1, "pf_xenotankbroken" ], [0.3, "pf_xenopipe1" ], [0.3, "pf_xenopipe2" ], [0.3, "pf_xenopipe3" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/industriallayer" }
           }
         ]
       },
@@ -141,7 +141,7 @@
         "objectSets" : [
           {
             "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
-            "parameters" : { }
+            "parameters" : { "originBiome" : "underground/industriallayer" }
           }
         ]
       }

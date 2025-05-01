@@ -1,6 +1,6 @@
 {
   "name" : "pf_halfmoonsubsurface",
-  "friendlyName" : "Halfmoon Subsurface",
+  "friendlyName" : "Halfmoon Lavatubes",
 
   "parallax" : "/parallax/underground/moonunderground.parallax",
 
@@ -37,7 +37,8 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [0.20, "groundspike1" ], [0.20, "groundspike2" ], [0.20, "groundspike3" ], [0.20, "groundspike4" ] ]
+            "pool" : [ [0.20, "groundspike1" ], [0.20, "groundspike2" ], [0.20, "groundspike3" ], [0.20, "groundspike4" ] ],
+            "parameters" : { "originBiome" : "underground/halfmoonsubsurface" }
           }
         ]
       },
@@ -50,7 +51,8 @@
         "type" : "object",
         "objectSets" : [
           {
-            "pool" : [ [0.20, "ceilingspike1" ], [0.20, "ceilingspike2" ], [0.20, "ceilingspike3" ], [0.20, "ceilingspike4" ] ]
+            "pool" : [ [0.20, "ceilingspike1" ], [0.20, "ceilingspike2" ], [0.20, "ceilingspike3" ], [0.20, "ceilingspike4" ] ],
+            "parameters" : { "originBiome" : "underground/halfmoonsubsurface" }
           }
         ]
       }
