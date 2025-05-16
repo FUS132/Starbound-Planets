@@ -1,0 +1,61 @@
+[
+{
+"op": "add",
+"path": "/surfacePlaceables/items/-",
+"value": {
+  "mode" : "floor",
+  "priority" : 1,
+  "variants" : 1,
+  "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+  "type" : "microdungeon",
+  "microdungeons" : [
+  "m32oceanic"
+  ]
+}
+},
+{
+"op": "replace",
+"path": "/surfacePlaceables/items/6/distribution",
+"value":"/biomes/distributions.config:superCommon"
+},
+{
+"op": "replace",
+"path": "/surfacePlaceables/items/6/objectSets/0/pool",
+"value":[[0.35, "tallgrass1" ], [0.35, "tallgrass2" ], [0.53, "tallgrass3" ], [0.35, "tallgrass4" ], [0.3, "junglebush1" ], [0.3, "junglebush2" ], [0.3, "junglebush3" ], [0.3, "junglebush4" ], [0.3, "junglebush9" ], [0.1, "junglebush11" ], [0.1, "junglebush12" ], [0.25, "junglebush13" ], [0.25, "junglebush14" ], [0.3, "junglebush15" ], [0.2, "junglebush16" ]]
+},
+{
+"op": "add",
+"path": "/surfacePlaceables/items/-",
+"value": {
+  "mode" : "floor",
+  "priority" : 3,
+  "variants" : 1,
+  "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+  "type" : "microdungeon",
+  "microdungeons" : ["coconuts"]
+}
+},
+{
+"op": "add",
+"path": "/surfacePlaceables/items/4",
+"value": {
+  "mode" : "floor",
+  "priority" : 1.0,
+  "variants" : 1,
+  "distribution" : "/biomes/distributions.config:overgroundChests",
+
+  "type" : "object",
+  "objectSets" : [
+    {
+      "pool" : [ [0.24, "smashabledrink2" ], [0.23, "smashabledrink3" ], [0.23, "smashabledrink5" ], [0.44, "junkbottle1" ], [0.43, "junkbottle2" ], [0.43, "junkbottle3" ] ],
+      "parameters" : {
+        "smashDropPool" : "m32driftingbottle",
+        "breakDropPool" : "m32driftingbottle"
+      }
+    }
+  ]
+}
+}
+]

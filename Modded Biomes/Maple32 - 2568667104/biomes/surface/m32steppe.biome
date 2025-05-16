@@ -39,13 +39,11 @@
           [ 1, "bunnycritter" ],
           [ 1, "reasonablecritter" ],
           [ 1, "crystaltortoisecritter" ],
+          [ 1, "cliffcritter" ],
           [ 1, "crystalbirdcritter" ],
-          [ 1, "snowflakescritter" ],
           [ 1, "snowymolecritter" ],
-          [ 1, "snorecritter" ],
-          [ 1, "hollowcritter" ],
-          [ 1, "poofincritter" ],
-          [ 1, "ciclesnailcritter" ]
+          [ 1, "snowbcritter" ],
+          [ 1, "poofincritter" ]
         ]
       }
     ],

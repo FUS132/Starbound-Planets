@@ -660,6 +660,20 @@
 
 
 {"op" : "add",
+"path" : "/regionTypes/m32redrocks",
+"value" : {
+"fgCaveSelector" : [ "electriccaves" ],
+"bgCaveSelector" : [ "searockback" ],
+"fgOreSelector" : ["normalVeins"],
+"bgOreSelector" : ["normalBackgroundVeins"],
+"biome" : [
+  [0, [ "m32redrocks" ] ]
+]
+}
+},
+
+
+{"op" : "add",
 "path" : "/regionTypes/deeppreserve",
 "value" : {
 "caveLiquid" : [ "water" ],
@@ -1042,7 +1056,7 @@
     "primaryRegion" : [ /*"desertsubsurface"*/ "m32blusterunderground" ]
   },
   "underground1" : {
-    "primaryRegion" : ["bubblecaves"],
+    "primaryRegion" : [ "m32redrocks" ],
     "secondaryRegions" : [ "m32industrialunderground", "tarunderground", "bubblecaves" ]
   },
   "underground2" : {

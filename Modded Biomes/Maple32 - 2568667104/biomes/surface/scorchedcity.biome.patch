@@ -1,0 +1,58 @@
+[
+{
+"op": "replace",
+"path": "/surfacePlaceables/grassMod",
+"value": [ "meteordust" ]
+},
+{
+"op": "replace",
+"path": "/surfacePlaceables/items/4",
+"value": {
+  "mode" : "floor",
+  "priority" : 1.0,
+  "variants" : 1,
+  "distribution" : "/biomes/distributions.config:rare",
+
+  "type" : "object",
+  "objectSets" : [
+    {
+      "pool" : [ [0.24, "smashabledrink2" ], [0.23, "smashabledrink3" ], [0.23, "smashabledrink5" ], [0.44, "junkbottle1" ], [0.43, "junkbottle2" ], [0.43, "junkbottle3" ] ],
+      "parameters" : { }
+    }
+  ]
+}
+},
+{
+"op": "replace",
+"path": "/undergroundPlaceables/items/4",
+"value": {
+  "mode" : "floor",
+  "priority" : 1.0,
+  "variants" : 1,
+  "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+  "type" : "object",
+  "objectSets" : [
+    {
+      "pool" : [ [0.24, "smashabledrink2" ], [0.23, "smashabledrink3" ], [0.23, "smashabledrink5" ], [0.44, "junkbottle1" ], [0.43, "junkbottle2" ], [0.43, "junkbottle3" ] ],
+      "parameters" : { }
+    }
+  ]
+}
+},
+{
+"op": "add",
+"path": "/surfacePlaceables/items/-",
+"value": {
+  "mode" : "floor",
+  "priority" : 1,
+  "variants" : 1,
+  "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+  "type" : "microdungeon",
+  "microdungeons" : [
+  "maple32industrialencounters"
+  ]
+}
+}
+]
