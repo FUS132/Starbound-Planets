@@ -11,9 +11,9 @@
 		// but if you want to cut on load-time a bit, planets from the same mod can be merged together under 1 pair of
 		// square brackets (like, for example, Vanilla Planets down below) and have just 1 planet test at the top.
 		//==============================================================================================================|
-    [
+		
 		// Template for future use
-	
+    [
         {"op": "test", "path": "/planetTypes/CHANGE_ME"},
         {
             "op": "add",
@@ -61,11 +61,6 @@
         {
             "op": "add",
             "path": "/planetTypes/jungle/layers/surface/dungeons/-",
-            "value": [1, "CHANGE_ME"]
-        },
-        {
-            "op": "add",
-            "path": "/planetTypes/toxic/layers/surface/dungeons/-",
             "value": [1, "CHANGE_ME"]
         },
         {
@@ -756,6 +751,246 @@
         {
             "op": "add",
             "path": "/planetTypes/m32bluster/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// New Stars With Mini-Biomes Themed Planets - 2032258885
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/heckplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/heckplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/prismatic"},
+        {
+            "op": "add",
+            "path": "/planetTypes/prismatic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/slimeplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/slimeplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/oasisdesert"},
+        {
+            "op": "add",
+            "path": "/planetTypes/oasisdesert/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/colorfuldesert"},
+        {
+            "op": "add",
+            "path": "/planetTypes/colorfuldesert/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/rockplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/rockplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/glowingplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/glowingplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/anatomic"},
+        {
+            "op": "add",
+            "path": "/planetTypes/anatomic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/industrial"},
+        {
+            "op": "add",
+            "path": "/planetTypes/industrial/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/mountains"},
+        {
+            "op": "add",
+            "path": "/planetTypes/mountains/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/eyes"},
+        {
+            "op": "add",
+            "path": "/planetTypes/eyes/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/soothingblossom"},
+        {
+            "op": "add",
+            "path": "/planetTypes/soothingblossom/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/mushroomforest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/mushroomforest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/mangrove"},
+        {
+            "op": "add",
+            "path": "/planetTypes/mangrove/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/skeletal"},
+        {
+            "op": "add",
+            "path": "/planetTypes/skeletal/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/geodeplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/geodeplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/darkhiveplanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/darkhiveplanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/impervious"},
+        {
+            "op": "add",
+            "path": "/planetTypes/impervious/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Vanilla Biome Planets with Tiers 7-10 - 2041790717
+		// Note: All planets in this mod just use Vanilla planet names with a number 7, 8, 9 or 10 added at the end, so
+		// for the sake of brevity tiers 8-10 will be left out from this section.
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/garden7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/garden7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/forest7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/forest7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/desert7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/desert7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/savannah7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/savannah7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/snow7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/snow7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/jungle7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/jungle7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/alien7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/alien7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/tundra7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/tundra7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/midnight7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/midnight7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/volcanic7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/volcanic7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/scorchedcity7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/scorchedcity7/layers/surface/dungeons/-",
             "value": [1, "CHANGE_ME"]
         }
     ],

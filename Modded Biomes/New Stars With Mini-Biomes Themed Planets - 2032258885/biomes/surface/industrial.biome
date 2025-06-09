@@ -1,0 +1,314 @@
+{
+  "name" : "industrial",
+  "friendlyName" : "Rusty Industry",
+
+  "statusEffects" : [ "weakpoison" ],
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "NSMBPpassiveHugeBiped" ],
+          [ 1, "NSMBPaggressiveHugeBiped" ]
+        ]
+      },
+      {
+        "select" : 4,
+        "pool" : [
+          [ 1, "orenibblercritter" ],
+          [ 1, "volcanicflowercritter" ],
+          [ 1, "loopacritter" ]
+        ]
+      },
+      {
+        "select" : 5,
+        "pool" : [
+          [ 1, "bobot" ],
+          [ 1, "scandroid" ],
+          [ 1, "pipkin" ],
+          [ 1, "NSMBPglitchspider" ],
+          [ 1, "lumoth" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      }, 
+      {
+        "select" : 3,
+        "pool" : "nightTerrors"
+      },      
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "passiveLargeFlying" ],
+          [ 1, "aggroLargeFlying" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "snow"
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/desert-battle-2.ogg", "/music/forest-loop.ogg", "/music/home-concept-loop.ogg", "/music/i-was-the-sun.ogg", "/music/ocean-exploration2.ogg", "/music/tentacle-exploration1.ogg", "/music/tentacle-battle1-loop.ogg", "/music/scorian-flow.ogg", "/music/title-theme-concept-old.ogg", "/music/ultramarine-loop.ogg", "/music/crystal-battle1-loop.ogg", "/music/body-electric-loop.ogg", "/music/forest-battle1.ogg", "/music/forest-exploration1.ogg", "/music/forest-exploration2.ogg", "/music/glacial-horizon.ogg", "/music/ocean-exploration1.ogg", "/music/tentacle-exploration2.ogg", "/music/via-aurora.ogg" ]
+    },
+
+    "night" : {
+      "tracks" : [ "/music/desert-battle-2.ogg", "/music/forest-loop.ogg", "/music/home-concept-loop.ogg", "/music/i-was-the-sun.ogg", "/music/ocean-exploration2.ogg", "/music/tentacle-exploration1.ogg", "/music/tentacle-battle1-loop.ogg", "/music/scorian-flow.ogg", "/music/title-theme-concept-old.ogg", "/music/ultramarine-loop.ogg", "/music/crystal-battle1-loop.ogg", "/music/body-electric-loop.ogg", "/music/forest-battle1.ogg", "/music/forest-exploration1.ogg", "/music/forest-exploration2.ogg", "/music/glacial-horizon.ogg", "/music/ocean-exploration1.ogg", "/music/tentacle-exploration2.ogg", "/music/via-aurora.ogg" ]
+    }
+  },
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/space_loop2.ogg", "/sfx/environmental/space_loop5.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/space_loop5.ogg", "/sfx/environmental/space_loop2.ogg" ]
+    }
+  },
+
+  "skyOptions" : [
+    {
+      // dark peachy massacre
+      "mainColor" : [50, 50, 50],
+
+      "morningColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+      "dayColors" : [ [24, 38, 45, 80], [51, 42, 60, 160] ],
+      "eveningColors" : [ [24, 38, 50, 80], [51, 42, 60, 160] ],
+      "nightColors" : [ [24, 38, 45, 80], [51, 42, 60, 160] ],
+
+      "morningLightColor" : [40, 40, 60],
+      "dayLightColor" : [40, 40, 60],
+      "eveningLightColor" : [40, 40, 60],
+      "nightLightColor" : [40, 40, 60]
+    }
+  ],
+
+  "weather" : [
+    [0, [
+      "/weather.config:industrial"
+    ]]
+  ],
+
+  "parallax" : "/parallax/surface/industrial.parallax",
+
+  "mainBlock" : "rustyblock",
+  "subBlocks" : [ "junk", "junktech", "techhull1" ],
+  "ores" : "surface",
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "ash" ],
+    "grassModDensity" : 0.8,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "rust" ],
+        "treeFoliageList" : [ "rustflower" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "steamspring" ],
+        "treeFoliageList" : [ "steamspring" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "metal" ],
+        "treeFoliageList" : [ "brains" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "rustbush1" ], [0.35, "rustbush2" ], [0.35, "rustbush3" ], [0.35, "rustbush4" ]],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "floorpipe1" ], [0.35, "floorpipe2" ], [0.35, "floorpipe3" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "foundryChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "rustChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "NSMBPsteamspringChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "foundrymicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "steamspringmicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "toxicmicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "encounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scorchedcityMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "scorchedcitymicrodungeons" ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "foundryChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "rustChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "NSMBPsteamspringChest" ]
+      }
+    ]
+  }
+}

@@ -9,9 +9,9 @@
 		//==============================================================================================================|
 		// WARNING: Adding non-oceanic dungeons to these planets may cause the game to crash, so test!
 		//==============================================================================================================|
-    [
+		
 		// Template for future use
-	
+    [
         {"op": "test", "path": "/planetTypes/CHANGE_ME"},
         {
             "op": "add",
@@ -29,6 +29,11 @@
         {
             "op": "add",
             "path": "/planetTypes/ocean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        },
+        {
+            "op": "add",
+            "path": "/planetTypes/toxic/layers/surface/dungeons/-",
             "value": [1, "CHANGE_ME"]
         },
         {
@@ -167,6 +172,54 @@
         {
             "op": "add",
             "path": "/planetTypes/arcana_ruinous/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// New Stars With Mini-Biomes Themed Planets - 2032258885
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/oilocean"},
+        {
+            "op": "add",
+            "path": "/planetTypes/oilocean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Vanilla Biome Planets with Tiers 7-10 - 2041790717
+		// Note: All planets in this mod just use Vanilla planet names with a number 7, 8, 9 or 10 added at the end, so
+		// for the sake of brevity tiers 8-10 will be left out from this section.
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/ocean7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ocean7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/toxic7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/toxic7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arctic7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arctic7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/magma7"},
+        {
+            "op": "add",
+            "path": "/planetTypes/magma7/layers/surface/dungeons/-",
             "value": [1, "CHANGE_ME"]
         }
     ],

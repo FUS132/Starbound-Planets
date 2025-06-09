@@ -1,0 +1,10 @@
+{
+  "version" : "1.24",
+  "author" : "Wiranum",
+  "tags" : "Crafting and Building|Planets and Environments|NPCs and Creatures|Dungeons|Furniture and Objects",
+  "description" : "=================THIS IS A REUPLOAD OF THIS MOD FOR THE FORUMS==================\nhttps://community.playstarbound.com/resources/new-stars-with-mini-biomes-themed-planets-tiers-7-to-10.5730\n================ALL CREDIT GOES TO WIRANUM FOR THERE GREAT MOD=================\n\nThis mod enhances the different planets and biomes you can find in the vanilla game by adding more planets themed in accordance with the mini-biomes that already spawn on normal planets.\n\nA total of 19 planets are added by the mod. All of them spawn around a new star type called Radiant star (shown in pink on the universe map)\n\nThe planets are made further than just adding biomes. For a better immersion and more fun :\n- Custom and unused weathers and musics are added.\n- Some parallaxes and sky colors are made exotic.\n- Environments have different conditions to take into account when exploring. Some biomes inflict a poisoned debuff, others have wild gravity conditions while different biomes are extremely dark (even more than Midnight) or a living paradise to explore.\n- All planets have a tier between 7 and 10 for a better challenge and interest for planet exploration. Tier for space encounters is raised to 7 around the new stars.\n- Large flying monsters spawn on surface level.\n- Tentacles biome can appear as a sub region on some planets.\n- A few unused elements are reintroduced on some planets (such as blocks, breakables, ambient sounds...)\n- Finally, some planets are more exotic that the ones you can find on vanilla and other can combine 2 mini-biomes at the same time.\n\nPlanets don't have an erchius ghost like shown on the pictures. I just used a custom augment that adds the ghost everywhere for more challenge.",
+  "name" : "new stars with min ibiome themed planets",
+  "friendlyName" : "New stars with mini-biomes themed Planets",
+  "steamContentId" : "2032258885",
+  "link" : "steam://url/CommunityFilePage/2032258885"
+}

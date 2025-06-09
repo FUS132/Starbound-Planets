@@ -1,0 +1,508 @@
+{
+  "name" : "soothingblossom",
+  "friendlyName" : "Soothing Blossom",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "NSMBPpassiveHugeBiped" ],
+          [ 1, "NSMBPaggressiveHugeBiped" ]
+        ]
+      },
+      {
+        "select" : 3,
+        "pool" : [ 
+          [ 1.0, "hypnare" ],
+          [ 1.0, "mandraflora" ],
+          [ 1.0, "bulbop" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 0.166, "blueback" ],
+          [ 0.166, "greentip" ],
+          [ 0.166, "redwing" ],
+          [ 0.166, "brightstripe" ],
+          [ 0.166, "vineclimber" ],
+          [ 0.166, "thornbee" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      }, 
+      {
+        "select" : 3,
+        "pool" : "nightTerrors"
+      },      
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "passiveLargeFlying" ],
+          [ 1, "aggroLargeFlying" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "snooglecritter" ],
+          [ 1, "birdcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "forest"
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/desert-battle-2.ogg", "/music/forest-loop.ogg", "/music/home-concept-loop.ogg", "/music/i-was-the-sun.ogg", "/music/ocean-exploration2.ogg", "/music/tentacle-exploration1.ogg", "/music/tentacle-battle1-loop.ogg", "/music/scorian-flow.ogg", "/music/title-theme-concept-old.ogg", "/music/ultramarine-loop.ogg", "/music/crystal-battle1-loop.ogg", "/music/body-electric-loop.ogg", "/music/forest-battle1.ogg", "/music/forest-exploration1.ogg", "/music/forest-exploration2.ogg", "/music/glacial-horizon.ogg", "/music/ocean-exploration1.ogg", "/music/tentacle-exploration2.ogg", "/music/via-aurora.ogg" ]
+    },
+
+    "night" : {
+      "tracks" : [ "/music/desert-battle-2.ogg", "/music/forest-loop.ogg", "/music/home-concept-loop.ogg", "/music/i-was-the-sun.ogg", "/music/ocean-exploration2.ogg", "/music/tentacle-exploration1.ogg", "/music/tentacle-battle1-loop.ogg", "/music/scorian-flow.ogg", "/music/title-theme-concept-old.ogg", "/music/ultramarine-loop.ogg", "/music/crystal-battle1-loop.ogg", "/music/body-electric-loop.ogg", "/music/forest-battle1.ogg", "/music/forest-exploration1.ogg", "/music/forest-exploration2.ogg", "/music/glacial-horizon.ogg", "/music/ocean-exploration1.ogg", "/music/tentacle-exploration2.ogg", "/music/via-aurora.ogg" ]
+    }
+  },
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/forest_day.ogg", "/sfx/environmental/forest_day2.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/forest_night.ogg", "/sfx/environmental/forest_night2.ogg" ]
+    }
+  },
+
+  "hueShiftOptions" : [-15, 0, 15],
+
+  "parallax" : "/parallax/surface/jungle.parallax",
+
+  "weather" : [
+    [0, [
+      "/weather.config:soothingblossom"
+    ]]
+  ],
+
+    "skyOptions" : [
+    {
+      // sunny green day, darkgreen/yellow sunrise and purple/blue sunset
+      "mainColor" : [0, 200, 0],
+
+      "morningColors" : [ [68, 164, 84], [243, 201, 115] ],
+      "dayColors" : [ [115, 255, 204], [255, 255, 255] ],
+      "eveningColors" : [ [43, 17, 118], [244, 161, 231] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [20, 91, 100],
+      "dayLightColor" : [50, 200, 50],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [40, 20, 60]
+    }
+    ],
+
+  "mainBlock" : "dirt",
+  "subBlocks" : [ "floweryblock", "clay", "mud", "grassyrock" ],
+  "ores" : "surface",
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "flowerygrass" ],
+    "grassModDensity" : 0.9,
+
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.5,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "giantflower1" ], [0.35, "giantflower2" ], [0.35, "giantflower3" ], [0.35, "giantflower4" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "testbush",
+            "baseHueShiftMax" : 40,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "jungleflower1", "jungleflower2", "jungleflower3" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildcocoaseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "springmicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "giantflowersmicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "encounterdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "magictree" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "giantflower" ],
+        "treeFoliageList" : [ "bluepetals", "redflower", "pinkflower", "whitepetals" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "grasstree" ],
+        "treeFoliageList" : [ "bluebell" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "bladetree" ],
+        "treeFoliageList" : [ "nothing" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "cocoa", "fleshy", "wood" ],
+        "treeFoliageList" : [ "rose", "cloudy", "lotus" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "springChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "giantflowerChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "techChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:everywhere",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [3.0, "springbush1" ], [3.0, "springbush2" ], [3.0, "springbush3" ], [3.0, "springbush4" ], [3.0, "springbush5" ], [3.0, "springbush6" ] ]
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:everywhere",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "springbush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:common",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "flowerred" ], [0.35, "flowerspring" ]],
+            "parameters" : { "startingStage" : 2 }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "grass",
+        "grasses" : [ "grass" ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildsugarcaneseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildcocoaseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "grass" ],
+    "grassModDensity" : 0.2,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.3,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 10,
+        "treeStemList" : [ "floweryvine" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+        "treeFoliageList" : [ "flowery" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "springChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "giantflowerChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "techChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      }
+    ]
+  }
+}

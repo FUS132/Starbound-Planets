@@ -1,0 +1,34 @@
+{
+  "name" : "imperviouscore",
+  "friendlyName" : "Impervious Core Layer",
+
+  "parallax" : "/parallax/underground/imperviouscore.parallax",
+
+  "mainBlock" : "deadcore",
+  "subBlocks" : [ "supermatter" ],
+  "ores" : "moon",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/moon_underground.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/moon_underground.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : []
+    },
+    "night" : {
+      "tracks" : []
+    }
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [ ]
+  },
+
+  "hueShiftOptions" : [-180, -135, -90, -45, 0, 45, 90, 135, 180]
+}
