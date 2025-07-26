@@ -1,0 +1,105 @@
+{
+  "name" : "box_dover",
+  "friendlyName" : "Chalk Seaside",
+
+"spawnProfile" : {
+    "groups" : [         
+      {
+        "select" : 7,
+        "pool" : [
+          [ 1, "gullcritter" ],
+          [ 1, "squidcritter" ],
+          [ 1, "jellycritter" ],
+          [ 1, "crabcritter" ],
+          [ 1, "fishlemoncritter" ],
+          [ 1, "fishberrycritter" ],
+          [ 1, "fishchilicritter" ]
+        ]
+      }
+    ]
+  },
+  
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:box_dover"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [242, 120, 0], [255, 230, 176] ],
+      "dayColors" : [ [115, 224, 255], [255, 255, 255] ],
+      "eveningColors" : [ [125, 17, 158], [210, 52, 50] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [30, 30, 30]
+    }
+  ],
+
+  "mainBlock" : "sand2",
+  "subBlocks" : ["rock12", "rock20", "grassy" ],
+
+  "parallax" : "/parallax/surface/box_dover.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/ocean_surface_calm.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/ocean_surface_calm.ogg" ]
+    }
+  },
+
+  "musicTrack" : { 
+    "day" : {
+      "tracks" : [ "/music/ocean-exploration2.ogg", "/music/epsilon-indi.ogg", "/music/stellarformation.ogg", "/music/atlas.ogg", "/music/blue-straggler.ogg", "/music/cygnus-x1.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/on-the-beach-at-night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/nomads.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "grass" ],
+    "grassModDensity" : 0.3,
+
+    "items" : [   
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "tree",
+		"treeStemList" : [ "pineytree" ],
+        "treeFoliageList" : [ "pinefoliage" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "tallgrass1" ], [0.35, "tallgrass2" ], [0.35, "tallgrass3" ], [0.35, "tallgrass4" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 0.9
+  }
+}

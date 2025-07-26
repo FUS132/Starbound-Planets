@@ -1,0 +1,179 @@
+{
+  "name" : "box_darkwood",
+  "friendlyName" : "Darkwood",
+
+  "spawnProfile" : {
+    "groups" : [     
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "squeekcritter" ],
+          [ 1, "snailcritter" ],
+          [ 1, "mousecritter" ]
+        ]
+      }
+    ]
+  },
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:clear"
+    ]]
+  ],
+
+   "skyOptions" : [
+    {
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [36, 48, 39], [20, 20, 20] ],
+      "dayColors" : [ [36, 48, 39], [20, 20, 20] ],
+      "eveningColors" : [ [36, 48, 39], [20, 20, 20] ],
+      "nightColors" : [ [0, 0, 0, 0], [46, 69, 51, 140] ],
+
+      "morningLightColor" : [20, 20, 20],
+      "dayLightColor" : [22, 22, 22],
+      "eveningLightColor" : [20, 20, 20],
+      "nightLightColor" : [15, 15, 15]
+    }
+	],
+
+  "mainBlock" : "plantmatter",
+  "subBlocks" : [ "dirt", "cobblestone" ],
+  "ores" : "none",
+
+  "parallax" : "/parallax/surface/box_darkwood.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/forest_day.ogg", "/sfx/environmental/forest_day2.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/forest_night.ogg", "/sfx/environmental/forest_night2.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/epsilon-indi.ogg", "/music/hymn-to-the-stars.ogg", "/music/procyon.ogg", "/music/stellarformation.ogg", "/music/vast-immortal-suns.ogg", "/music/atlas.ogg", "/music/blue-straggler.ogg", "/music/cygnus-x1.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/on-the-beach-at-night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/tranquility-base.ogg", "/music/psyche.ogg", "/music/accretion-disc.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/nomads.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "aridgrass" ],
+    "grassModDensity" : 0.9,
+
+    "ceilingGrassMod" : [ "moss" ],
+    "ceilingGrassModDensity" : 0.5,
+
+    "items" : [  
+	
+	
+	
+	{
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "grass", "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "testbush",
+            "baseHueShiftMax" : 180,
+            "modHueShiftMax" : 180
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "cocoa" ],
+        "treeFoliageList" : [ "frumpy" ]
+      },	  
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "bioshroom1" ], [0.35, "bioshroom2" ], [0.35, "bioshroom3" ], [0.35, "bioshroom4" ], [0.35, "bioshroom5" ]],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "gasprimer" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+	  {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "rootbush1" ], [0.35, "rootbush2" ], [0.35, "rootbush3" ], [0.35, "rootbush4" ], [0.35, "rootbush5" ], [0.35, "swamproot1" ], [0.35, "swamproot2" ], [0.35, "swamproot3" ], [0.35, "swamproot4" ], [0.35, "swamproot5" ], [0.35, "junglebush8" ], [0.35, "junglebush9" ], [0.35, "junglebush10" ], [0.35, "junglebush11" ], [0.35, "junglebush12" ], [0.35, "junglebush13" ], [0.35, "junglebush14" ], [0.35, "junglebush15" ], [0.35, "junglebush16" ], [0.35, "junglebush17" ], [0.35, "junglebush18" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "aridgrass" ],
+    "grassModDensity" : 0.9,
+
+    "ceilingGrassMod" : [ "moss" ],
+    "ceilingGrassModDensity" : 0.5,
+
+    "items" : []
+  }
+}

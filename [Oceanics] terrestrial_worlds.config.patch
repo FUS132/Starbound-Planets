@@ -3,14 +3,14 @@
 		// DISCLAMER: Not a plug-and-play solution. You must still assemble your own patch even if with the help of this
 		// cheat sheet.
 		//==============================================================================================================|
-		// All planets except for vanilla have "test" operations added as a crash precaution and for ease of copying,
+		// All planets except for Vanilla have "test" operations added as a crash precaution and for ease of copying,
 		// but if you want to cut on load-time a bit, planets from the same mod can be merged together under 1 pair of
 		// square brackets (like, for example, Vanilla Planets in the [Planets] patch) and just 1 planet test at the top.
 		//==============================================================================================================|
 		// WARNING: Adding non-oceanic dungeons to these planets may cause the game to crash, so test!
 		//==============================================================================================================|
 		
-		// Template for future use
+		// Template for future use.
     [
         {"op": "test", "path": "/planetTypes/CHANGE_ME"},
         {
@@ -176,6 +176,17 @@
         }
     ],
 		//==============================================================================================================|
+		// Box Building Planet Pack - 3534463795
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/box_dover"},
+        {
+            "op": "add",
+            "path": "/planetTypes/box_dover/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
 		// New Stars With Mini-Biomes Themed Planets - 2032258885
 		//==============================================================================================================|
     [
@@ -188,8 +199,8 @@
     ],
 		//==============================================================================================================|
 		// Vanilla Biome Planets with Tiers 7-10 - 2041790717
-		// Note: All planets in this mod just use Vanilla planet names with a number 7, 8, 9 or 10 added at the end, so
-		// for the sake of brevity tiers 8-10 will be left out from this section.
+		// Note: All planets in this mod just use Vanilla planet names with numbers 7, 8, 9 and 10 added at the end, so
+		// for the sake of brevity tiers 8-10 were left out from this section.
 		//==============================================================================================================|
     [
         {"op": "test", "path": "/planetTypes/ocean7"},

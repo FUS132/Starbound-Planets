@@ -7,12 +7,12 @@
 		// they've also been put next to each other. Certain entries have comments added (or commented out entirely)
 		// if patching them could cause issues. *So please test before publishing!*
 		//==============================================================================================================|
-		// All planets except for vanilla have "test" operations added as a crash precaution and for ease of copying,
+		// All planets except for Vanilla have "test" operations added as a crash precaution and for ease of copying,
 		// but if you want to cut on load-time a bit, planets from the same mod can be merged together under 1 pair of
 		// square brackets (like, for example, Vanilla Planets down below) and have just 1 planet test at the top.
 		//==============================================================================================================|
 		
-		// Template for future use
+		// Template for future use.
     [
         {"op": "test", "path": "/planetTypes/CHANGE_ME"},
         {
@@ -24,8 +24,9 @@
 		//==============================================================================================================|
 		// Vanilla Planets
 		//==============================================================================================================|
+		
+		// Garden has a preset number of 2 dungeons, so we test if someone removed it first.
     [
-		// Garden has a preset number of 2 dungeons, so we test if someone removed it first
         {
             "op": "test",
             "path": "/planetTypes/garden/layers/surface/dungeonCountRange",
@@ -89,12 +90,12 @@
             "value": [1, "CHANGE_ME"]
         }
 		// While there *is* an array for dungeons on tentacle already, I decided to comment it out because it may 
-		// (or may not) break the main story, not really sure though
-      //  {
-      //      "op": "add",
-      //      "path": "/planetTypes/tentacle/layers/surface/dungeons/-",
-      //      "value": [1, "CHANGE_ME"]
-      //  },
+		// (or may not) break the main story if you add dungeons to it, not really sure though.
+  //      {
+  //          "op": "add",
+  //          "path": "/planetTypes/tentacle/layers/surface/dungeons/-",
+  //          "value": [1, "CHANGE_ME"]
+  //      },
     ],
 		//==============================================================================================================|
 		// Frackin' Universe - 729480149
@@ -755,6 +756,106 @@
         }
     ],
 		//==============================================================================================================|
+		// Box Building Planet Pack - 3534463795
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/box_snowCity"},
+        {
+            "op": "add",
+            "path": "/planetTypes/box_snowCity/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/box_redGrass"},
+        {
+            "op": "add",
+            "path": "/planetTypes/box_redGrass/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/box_darkwood"},
+        {
+            "op": "add",
+            "path": "/planetTypes/box_darkwood/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/box_starry"},
+        {
+            "op": "add",
+            "path": "/planetTypes/box_starry/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/box_rainCity"},
+        {
+            "op": "add",
+            "path": "/planetTypes/box_rainCity/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/box_moonlight"},
+        {
+            "op": "add",
+            "path": "/planetTypes/box_moonlight/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/box_lightGrass"},
+        {
+            "op": "add",
+            "path": "/planetTypes/box_lightGrass/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/box_abscess"},
+        {
+            "op": "add",
+            "path": "/planetTypes/box_abscess/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/box_nimbus"},
+        {
+            "op": "add",
+            "path": "/planetTypes/box_nimbus/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/box_cat"},
+        {
+            "op": "add",
+            "path": "/planetTypes/box_cat/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/box_industrial"},
+        {
+            "op": "add",
+            "path": "/planetTypes/box_industrial/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		// Currently Unused.
+  //  [
+  //      {"op": "test", "path": "/planetTypes/box_fractured"},
+  //      {
+  //          "op": "add",
+  //          "path": "/planetTypes/box_fractured/layers/surface/dungeons/-",
+  //          "value": [1, "CHANGE_ME"]
+  //      }
+  //  ],
+		//==============================================================================================================|
 		// New Stars With Mini-Biomes Themed Planets - 2032258885
 		//==============================================================================================================|
     [
@@ -903,8 +1004,8 @@
     ],
 		//==============================================================================================================|
 		// Vanilla Biome Planets with Tiers 7-10 - 2041790717
-		// Note: All planets in this mod just use Vanilla planet names with a number 7, 8, 9 or 10 added at the end, so
-		// for the sake of brevity tiers 8-10 will be left out from this section.
+		// Note: All planets in this mod just use Vanilla planet names with numbers 7, 8, 9 and 10 added at the end, so
+		// for the sake of brevity tiers 8-10 were left out from this section.
 		//==============================================================================================================|
     [
         {"op": "test", "path": "/planetTypes/garden7"},
@@ -1155,6 +1256,7 @@
             "value": [1, "CHANGE_ME"]
         }
     ],
+		// Note: same planet ID as in V2.
     [
         {"op": "test", "path": "/planetTypes/gasgiant_forest"},
         {
@@ -1175,6 +1277,7 @@
             "value": [1, "CHANGE_ME"]
         }
     ],
+		// Note: same planet ID as in V1.
     [
         {"op": "test", "path": "/planetTypes/gasgiant_forest"},
         {
@@ -1548,7 +1651,7 @@
             "value": [1, "CHANGE_ME"]
         }
     ],
-		// Note: probably unused
+		// Note: probably unused.
   //  [
   //      {"op": "test", "path": "/planetTypes/v-terraintest"},
   //      {
@@ -1569,7 +1672,7 @@
         }
     ],
 		//==============================================================================================================|
-		// My Enternia 2.3: Alta Cafe & Monster Buffet - 2006558650
+		// My Enternia 2.4: Alta Hobbies - 2006558650
 		//==============================================================================================================|
     [
         {"op": "test", "path": "/planetTypes/ct_alterash_planet"},

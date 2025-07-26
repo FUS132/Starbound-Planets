@@ -1,0 +1,141 @@
+{
+  "name" : "box_redGrass",
+  "friendlyName" : "Carmine",
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:box_redGrass"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // orange day, red night
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [125, 125, 125], [160, 52, 52] ],
+      "dayColors" : [ [224, 186, 128], [160, 140, 140] ],
+      "eveningColors" : [ [125, 125, 125], [210, 52, 50] ],
+      "nightColors" : [ [90, 30, 30, 80], [120, 0, 0, 160] ],
+
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [224, 186, 128],
+      "eveningLightColor" : [140, 100, 100],
+      "nightLightColor" : [50, 20, 20]
+    }
+  ],
+
+  "mainBlock" : "moonrock",
+  "subBlocks" : [ "box_redleaf", "rustymetal", "rockbrick" ],
+  "ores" : "none",
+
+  "parallax" : "/parallax/surface/box_redGrass.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/garden_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/garden_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/epsilon-indi.ogg", "/music/hymn-to-the-stars.ogg", "/music/procyon.ogg", "/music/stellarformation.ogg", "/music/vast-immortal-suns.ogg", "/music/atlas.ogg", "/music/blue-straggler.ogg", "/music/cygnus-x1.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/on-the-beach-at-night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/psyche.ogg", "/music/accretion-disc.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/nomads.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "box_redgrass" ],
+    "grassModDensity" : 1.0,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+	
+	 	  
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:uncommon",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.02, "tombstone2" ], [0.02, "tombstone4" ], [0.02, "tombstone11" ], [0.02, "tombstone10" ], [0.02, "tombstone9" ], [0.02, "tombstone1" ] ],
+            "parameters" : { "color" : "default?multiply=c2ab95" }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:veryRare",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "box_fleshbonebush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+
+	  {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:veryRare",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "box_fleshcorpse",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+	  
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:veryRare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.5, "ancientpillar" ] ],
+            "parameters" : {
+			"lightColor" : [179, 30, 30]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "box_redgrass" ],
+    "grassModDensity" : 0.2,
+
+    "items" : []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "name" : "box_cat",
+  "friendlyName" : "Cat",
+  "airless" : true,
+  
+  "weather" : [
+    [0, [
+      "/weather.config:box_cat"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // nothing
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [0, 0, 0, 0], [0, 0, 0, 0] ],
+      "dayColors" : [ [0, 0, 0, 0], [0, 0, 0, 0] ],
+      "eveningColors" : [ [0, 0, 0, 0], [0, 0, 0, 0] ],
+      "nightColors" : [ [0, 0, 0, 0], [0, 0, 0, 0] ],
+
+      "morningLightColor" : [200, 200, 200],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [200, 200, 200],
+      "nightLightColor" : [200, 200, 200]
+    }
+  ],
+
+
+  "parallax" : "/parallax/surface/box_cat.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/space_loop1.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/space_loop1.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/stellar-acclimation.ogg"]
+    },
+    "night" : {
+      "tracks" : [ "/music/stellar-acclimation.ogg" ]
+    }
+  },
+
+  "mainBlock" : "redtoyblock",
+  "subBlocks" : [ "rainbowwoodblock", "coconutblock", "purplecrystal", "alienstripedblock" ],
+  
+  "undergroundPlaceables" : {
+    "items" : [     
+	{
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:common",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "floop" ] ],
+            "parameters" : {
+			"color" : "white"
+            }
+          }
+        ]
+      }
+	  ]
+	  }
+}

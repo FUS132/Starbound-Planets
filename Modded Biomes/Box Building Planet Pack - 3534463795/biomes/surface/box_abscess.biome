@@ -1,0 +1,120 @@
+{
+  "name" : "box_abscess",
+  "friendlyName" : "Abscess",
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:box_abscess"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      "mainColor" : [255, 0, 0],
+
+      "morningColors" : [ [34, 32, 52], [217, 87, 99] ],
+      "dayColors" : [ [34, 32, 52], [217, 87, 99] ],
+      "eveningColors" : [ [34, 32, 52], [217, 87, 99] ],
+      "nightColors" : [ [34, 32, 52], [217, 87, 99] ],
+
+	  //invert day and night
+      "morningLightColor" : [70, 55, 65],
+      "dayLightColor" : [50, 40, 65],
+      "eveningLightColor" : [70, 55, 65],
+      "nightLightColor" : [120, 95, 110]
+    }
+
+  ],
+
+  "mainBlock" : "box_abscessground",
+  "subBlocks" : [ "box_abscesstar", "shadowblock", "blackblock" ],
+  "ores" : "none",
+
+  "parallax" : "/parallax/surface/box_abscess.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/moon_underground.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/moon_underground.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/mira.ogg", "/music/crystal-exploration1.ogg", "/music/crystal-exploration2.ogg", "/music/accretion-disc.ogg", "/music/nomads.ogg", "/music/tranquility-base.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/aviantomb.ogg", "/sfx/environmental/aviantemple.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "box_abscessgrass" ],
+    "grassModDensity" : 0.5,
+
+    "items" : [ 
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "box_abscessmushroom1" ], [0.35, "box_abscessmushroom2" ], [0.35, "box_abscessmushroom3" ], [0.35, "box_abscessmushroom4" ], [0.35, "box_abscessmushroom5" ]],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.4, "box_abscesstree" ], [0.6, "box_abscessmushroom6" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpyLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [  [1, "box_abscesstree" ]],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 4.0,
+        "variants" : 2,
+        "distribution" : "/biomes/distributions.config:veryRare",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "box_abscessbigmushroom" ],
+        "treeFoliageList" : [ "box_abscessbigmushroomtop" ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [ ]
+  }
+}

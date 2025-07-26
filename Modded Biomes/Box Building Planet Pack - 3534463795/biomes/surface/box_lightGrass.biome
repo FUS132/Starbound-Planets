@@ -1,0 +1,137 @@
+{
+  "name" : "box_lightGrass",
+  "friendlyName" : "Light Grassland",
+
+  "spawnProfile" : {
+    "groups" : [         
+      {
+        "select" : 5,
+        "pool" : [
+          [ 1, "bunnycritter" ],
+          [ 1, "cliffcritter" ],
+          [ 1, "owlcritter" ],
+          [ 1, "hedgehogcritter" ],
+          [ 1, "harecritter" ]
+        ]
+      }
+    ]
+  },
+
+  "hueShiftOptions" : [-15],
+
+  "weather" : [
+    [0, [
+      "/weather.config:box_lightGrass"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [255, 207, 156], [140, 71, 0] ],
+      "dayColors" : [ [35, 155, 173], [255, 255, 255] ], 
+      "eveningColors" : [ [222, 82, 157], [255, 165, 69] ],
+      "nightColors" : [ [24, 38, 53, 80], [207, 201, 151, 180] ],
+
+      "morningLightColor" : [140, 120, 30],
+      "dayLightColor" : [225, 225, 225],
+      "eveningLightColor" : [176, 170, 157],
+      "nightLightColor" : [40, 35, 20]
+    }
+  ],
+
+  "mainBlock" : "rock17",
+  "subBlocks" : [ "dirt", "grassy" ],
+  "ores" : "none",
+
+  "parallax" : "/parallax/surface/box_lightGrass.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/garden_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/garden_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/epsilon-indi.ogg", "/music/hymn-to-the-stars.ogg", "/music/procyon.ogg", "/music/stellarformation.ogg", "/music/vast-immortal-suns.ogg", "/music/atlas.ogg", "/music/blue-straggler.ogg", "/music/cygnus-x1.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/on-the-beach-at-night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/tranquility-base.ogg", "/music/psyche.ogg", "/music/accretion-disc.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/nomads.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "aridgrass" ],
+    "grassModDensity" : 1.0,
+
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 0.4,
+
+    "items" : [
+      // TERRAIN
+
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+
+      // GRASS and TREES and PLANTS
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:veryRare",
+
+        "type" : "tree",
+        "treeStemList" : [ "something" ],
+        "treeFoliageList" : [ "redleaves" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "grass",
+        "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+      
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "testbush",
+            "baseHueShiftMax" : 40,
+            "modHueShiftMax" : 180
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "aridgrass" ],
+    "grassModDensity" : 0.2,
+
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.3,
+
+    "items" : []
+  }
+}

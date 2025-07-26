@@ -1,0 +1,599 @@
+[
+	{	"op" : "add",
+		"path" : "/planetTypes/box_dover",
+		"value" : {
+			"size" : [4020, 3000],
+			"blendSize" : 30,
+			"threatRange" : [1, 1],
+			"layers" : {
+				"space" : {
+					"baseHeight" : 2500,
+					"layerLevel" : 2000
+				},
+				"atmosphere" : {
+					"baseHeight" : 1700,
+					"layerLevel" : 1400
+				},
+				"surface" : {
+					"primaryRegion" : ["box_dover"],
+					"baseHeight" : 1150,
+					"layerLevel" : 1050
+				},
+				"subsurface" : {
+					"primaryRegion" : ["box_oceanCity"],
+					"baseHeight" : 850,
+          			"layerLevel" : 800
+				},
+				"underground1" : {
+					"primaryRegion" : ["barrenunderground"],
+					"baseHeight" : 700,
+					"layerLevel" : 600
+				},
+				"underground2" : {
+					"primaryRegion" : ["barrenunderground"],
+					"baseHeight" : 500,
+					"layerLevel" : 400
+				},
+				"underground3" : {
+					"primaryRegion" : ["barrenunderground"],
+					"baseHeight" : 300,
+					"layerLevel" : 200
+				},
+				"core" : {
+					"primaryRegion" : ["barrenunderground"],
+					"baseHeight" : 50,
+					"layerLevel" : 0
+				}
+			}
+		}
+	},
+	
+	{	"op" : "add",
+		"path" : "/planetTypes/box_snowCity",
+		"value" : {
+		  "threatRange" : [1, 1],
+		  "layers" : {
+			"surface" : {
+			  "primaryRegion" : ["box_snowCity"]
+			},
+			"subsurface" : {
+          	  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground1" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground2" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground3" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"core" : {
+			  "primaryRegion" : ["barrenunderground"]
+			}
+		  }
+		}
+	},	
+
+	{	"op" : "add",
+		"path" : "/planetTypes/box_redGrass",
+		"value" : {
+		  "threatRange" : [1, 1],
+		  "layers" : {
+			"surface" : {
+			  "primaryRegion" : ["box_redGrass"]
+			},
+			"subsurface" : {
+          	  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground1" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground2" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground3" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"core" : {
+			  "primaryRegion" : ["barrenunderground"]
+			}
+		  }
+		}
+	},		
+	
+	{	"op" : "add",
+		"path" : "/planetTypes/box_darkwood",
+		"value" : {
+		  "size" : [4020, 3000],
+		  "threatRange" : [1, 1],
+		  "layers" : {
+		  "space" : {
+			"primaryRegion" : ["atmosphere"],
+			"baseHeight" : 2500,
+          	"layerLevel" : 2000
+		  },
+		  "atmosphere" : {
+		    "primaryRegion" : ["box_darkwoodCanopy"],
+			"baseHeight" : 1150,
+		    "layerLevel" : 1042
+		  },
+		  "surface" : {
+			"primaryRegion" : ["box_darkwood"],
+			"baseHeight" : 1000,
+            "layerLevel" : 900
+		  },
+        "subsurface" : {
+		  "primaryRegion" : ["barrenunderground"],
+          "baseHeight" : 850,
+          "layerLevel" : 800
+        },
+        "underground1" : {
+		  "primaryRegion" : ["barrenunderground"],
+          "baseHeight" : 700,
+          "layerLevel" : 600
+        },
+        "underground2" : {
+		  "primaryRegion" : ["barrenunderground"],
+          "baseHeight" : 500,
+          "layerLevel" : 400
+        },
+        "underground3" : {
+		  "primaryRegion" : ["barrenunderground"],
+          "baseHeight" : 300,
+          "layerLevel" : 200
+        },
+        "core" : {
+		  "primaryRegion" : ["barrenunderground"],
+          "baseHeight" : 50,
+          "layerLevel" : 0
+        }
+	    }
+	  }
+	},		
+	
+	// {	"op" : "add",
+	// 	"path" : "/planetTypes/box_fractured",
+	// 	"value" : {
+	// 	  "threatRange" : [1, 1],
+	// 	  "layers" : {
+	// 		"surface" : {
+	// 		  "primaryRegion" : ["box_fractured"]
+	// 		},
+	//		"subsurface" : {
+    //      	  "primaryRegion" : ["barrenunderground"]
+	//		},
+	//		"underground1" : {
+	//		  "primaryRegion" : ["barrenunderground"]
+	//		},
+	//		"underground2" : {
+	//		  "primaryRegion" : ["barrenunderground"]
+	//		},
+	//		"underground3" : {
+	//		  "primaryRegion" : ["barrenunderground"]
+	//		},
+	//		"core" : {
+	//		  "primaryRegion" : ["barrenunderground"]
+	//		}
+	// 	  }
+	// 	}
+	// },
+	
+	{	"op" : "add",
+		"path" : "/planetTypes/box_starry",
+		"value" : {
+		  "threatRange" : [1, 1],
+		  "layers" : {
+			"surface" : {
+			  "primaryRegion" : ["box_starry"]
+			},
+			"subsurface" : {
+          	  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground1" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground2" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground3" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"core" : {
+			  "primaryRegion" : ["barrenunderground"]
+			}
+		  }
+		}
+	},
+	
+	{	"op" : "add",
+		"path" : "/planetTypes/box_rainCity",
+		"value" : {
+		  "threatRange" : [1, 1],
+		  "dayLengthRange" : [3, 3],
+		  "layers" : {
+			"surface" : {
+			  "primaryRegion" : ["box_rainCity"]
+			},
+			"subsurface" : {
+          	  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground1" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground2" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground3" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"core" : {
+			  "primaryRegion" : ["barrenunderground"]
+			}
+		  }
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/planetTypes/box_moonlight",
+		"value" : {
+		  "threatRange" : [1, 1],
+		  "layers" : {
+			"surface" : {
+			  "primaryRegion" : ["box_moonlight"]
+			},
+			"subsurface" : {
+          	  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground1" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground2" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground3" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"core" : {
+			  "primaryRegion" : ["barrenunderground"]
+			}
+		  }
+		}
+	},	
+
+	{	"op" : "add",
+		"path" : "/planetTypes/box_lightGrass",
+		"value" : {
+		  "threatRange" : [1, 1],
+		  "layers" : {
+			"surface" : {
+			  "primaryRegion" : ["box_lightGrass"]
+			},
+			"subsurface" : {
+          	  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground1" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground2" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground3" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"core" : {
+			  "primaryRegion" : ["barrenunderground"]
+			}
+		  }
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/planetTypes/box_abscess",
+		"value" : {
+		  "threatRange" : [1, 1],
+		  "layers" : {
+			"surface" : {
+			  "primaryRegion" : ["box_abscess"]
+			},
+			"subsurface" : {
+          	  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground1" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground2" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground3" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"core" : {
+			  "primaryRegion" : ["barrenunderground"]
+			}
+		  }
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/planetTypes/box_nimbus",
+		"value" : {
+		  "threatRange" : [1, 1],
+		  "layers" : {
+			"surface" : {
+			  "primaryRegion" : ["box_nimbus"]
+			},
+			"subsurface" : {
+              "primaryRegion" : ["void"]
+            },
+			"underground1" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground2" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground3" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"core" : {
+			  "primaryRegion" : ["barrenunderground"]
+			}
+		  }
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/planetTypes/box_cat",
+		"value" : {
+		  "threatRange" : [1, 1],
+		  "layers" : {
+			"space" : {
+			 "primaryRegion" : ["box_cat"],
+			  "baseHeight" : 2500,
+			  "layerLevel" : 2000
+			},
+			"atmosphere" : {
+			  "primaryRegion" : ["box_cat"],
+			  "baseHeight" : 1700,
+			  "layerLevel" : 1400
+			},
+			"surface" : { 
+			  "primaryRegion" : ["box_cat"]
+			},
+			"subsurface" : {
+			  "primaryRegion" : ["box_cat"]
+            },
+			"underground1" : {
+			  "primaryRegion" : ["box_cat"]
+			},
+			"underground2" : {
+			  "primaryRegion" : ["box_cat"]
+			},
+			"underground3" : {
+			  "primaryRegion" : ["box_cat"]
+			},
+			"core" : {
+			  "primaryRegion" : ["box_cat"]
+			}
+		  }
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/planetTypes/box_industrial",
+		"value" : {
+		  "threatRange" : [1, 1],
+		  "layers" : {
+			"surface" : {
+			  "primaryRegion" : ["box_industrial"]
+			},
+			"subsurface" : {
+              "primaryRegion" : ["barrenunderground"]
+            },
+			"underground1" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground2" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"underground3" : {
+			  "primaryRegion" : ["barrenunderground"]
+			},
+			"core" : {
+			  "primaryRegion" : ["barrenunderground"]
+			}
+		  }
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/regionTypes/box_dover",
+		"value" : {
+			"oceanLiquid" : [ "water" ],
+			"blockSelector" : [ "remixedFlatIslandsSurface" ],
+			"fgCaveSelector" : [ "empty" ],
+			"bgCaveSelector" : [ "empty" ],
+			"biome" : [
+				[0, [ "box_dover" ]]
+			]
+		}
+	},
+	
+	{	"op" : "add",
+		"path" : "/regionTypes/box_oceanCity",
+		"value" : {
+		  "oceanLiquid" : [ "water" ],
+		  "oceanLevelOffset" : 1000,
+		  "blockSelector" : [ "ledgesSurface" ],
+		  "fgCaveSelector" : [ "emptier" ],
+		  "bgCaveSelector" : [ "emptiest" ],
+		  "biome" : [
+			[0, [ "box_oceanCity" ]]
+		  ]
+		}
+	},
+	
+	{	"op" : "add",
+		"path" : "/regionTypes/box_snowCity",
+		"value" : {
+		  "blockSelector" : [ "remixedFlatsSurface" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "box_snowCity" ]]
+		  ]
+		}
+	},
+	
+	{	"op" : "add",
+		"path" : "/regionTypes/box_redGrass",
+		"value" : {
+		  "blockSelector" : [ "remixedFlatsSurface" ],
+		  "subBlockSelector" : ["box_subblockrandombullshit"],
+		  "fgCaveSelector" : [ "empty" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "box_redGrass" ]]
+		  ]
+		}
+	},
+	
+	{	"op" : "add",
+		"path" : "/regionTypes/box_darkwood",
+		"value" : {
+		"caveLiquid" : [ "water" ],
+		  "caveLiquidSeedDensityRange" : [20, 20],
+		  "encloseLiquids" : true,
+		  "fillMicrodungeons" : true,
+		  "blockSelector" : [ "box_darkwoodSurface" ],
+		  "subBlockSelector" : [ "box_darkwoodsubblock" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "box_darkwood" ]]
+		  ]
+		}
+	},
+	
+	{	"op" : "add",
+		"path" : "/regionTypes/box_darkwoodCanopy",
+		"value" : {
+		  "blockSelector" : [ "box_darkwoodCanopy" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "box_darkwoodCanopy" ]]
+		  ]
+		}
+	},
+	
+	{	"op" : "add",
+		"path" : "/regionTypes/box_fractured",
+		"value" : {
+		  "blockSelector" : [ "remixedPoolsSurface" ],
+		  "fgCaveSelector" : [ "surfaceCaves" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "box_fractured" ]]
+		  ]
+		}
+	},
+	
+	{	"op" : "add",
+		"path" : "/regionTypes/box_starry",
+		"value" : {
+		  "blockSelector" : [ "remixedFlatsSurface" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "box_starry" ]]
+		  ]
+		}
+	},
+	
+	{	"op" : "add",
+		"path" : "/regionTypes/box_rainCity",
+		"value" : {
+		  "blockSelector" : [ "remixedFlatsSurface" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "box_rainCity" ]]
+		  ]
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/regionTypes/box_moonlight",
+		"value" : {
+		  "blockSelector" : [ "ledgesSurface" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "box_moonlight" ]]
+		  ]
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/regionTypes/box_lightGrass",
+		"value" : {
+		  "blockSelector" : [ "remixedSwampySurface" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "box_lightGrass" ]]
+		  ]
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/regionTypes/box_abscess",
+		"value" : {
+		  "blockSelector" : [ "remixedSwampySurface" ],
+		  "subBlockSelector" : ["box_subblockrandombullshit"],
+		  "fgCaveSelector" : [ "empty" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "box_abscess" ]]
+		  ]
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/regionTypes/box_nimbus",
+		"value" : {
+		  "blockSelector" : [ "remixedIslandsSurface" ],
+		  "fgCaveSelector" : [ "surfaceCaves" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+		    [0, [ "box_nimbus" ]]
+		  ]
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/regionTypes/box_cat",
+		"value" : {
+		  "blockSelector" : [ "asteroids" ],
+		  "subBlockSelector" : ["box_subblockrandombullshit"],
+		  "fgCaveSelector" : [ "surfaceCaves" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+		    [0, [ "box_cat" ]]
+		  ]
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/regionTypes/box_industrial",
+		"value" : {
+		  "blockSelector" : [ "remixedFlatsSurface" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+		    [0, [ "box_industrial" ]]
+		  ]
+		}
+	}
+]	 

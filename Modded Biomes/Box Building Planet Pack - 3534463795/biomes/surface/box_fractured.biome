@@ -1,0 +1,169 @@
+{
+  "name" : "box_fractured",
+  "friendlyName" : "Fractured",
+  "airless" : true,
+  
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:clear"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      //TRY TO GENERALLY BE RED
+      "mainColor" : [255, 170, 170],
+
+      "morningColors" : [ [255, 151, 153], [255, 196, 197] ],
+      "dayColors" : [ [233, 179, 255], [245, 221, 225] ],
+      "eveningColors" : [ [195, 151, 255], [233, 217, 255] ],
+      "nightColors" : [ [50, 0, 0, 80], [50, 0, 0, 160] ],
+
+      "morningLightColor" : [145, 24, 24],
+      "dayLightColor" : [160, 30, 30],
+      "eveningLightColor" : [145, 24, 24],
+      "nightLightColor" : [130, 17, 17]
+    }
+  ],
+
+  "mainBlock" : "obsidian",
+  "subBlocks" : [ "rockbrick", "asphalt", "hellstone"],
+  "ores" : "none",
+
+  "parallax" : "/parallax/surface/box_fractured.parallax",
+  
+  
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/moon_surface.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/moon_surface.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/lava-exploration1.ogg", "/music/crystal-exploration1.ogg", "/music/error-0xbfaf000.ogg", "/music/casiopeia.ogg",  "/music/forsaken-grotto.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/lava-exploration2.ogg",  "/music/crystal-exploration2.ogg", "/music/accretion-disc.ogg", "/music/nomads.ogg",  "/music/tranquility-base.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "blackash" ],
+    "grassModDensity" : 0.9,
+
+    "items" : [ 
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "ancientpillar" ] ],
+            "parameters" : {
+			"lightColor" : [179, 30, 30]
+            }
+          }
+        ]
+      },
+	  	  
+	  	{
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "roofvent" ] ],
+            "parameters" : {
+			"color" : "?brightness=-40"
+            }
+          }
+        ]
+      }
+
+	]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "crystalgrass" ],
+    "grassModDensity" : 0.6,
+	
+    "items" : [ 
+	{
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "screen1" ] ],
+            "parameters" : {
+			"color" : "red"
+            }
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:veryRare",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "miningpowersign" ] ]
+          }
+        ]
+      },
+	  
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:moderateClumps",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "roofvent" ] ],
+			"parameters" : {
+			"color" : "?brightness=-40"
+            }
+          }
+        ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:moderateClumps",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wreckvent" ] ],
+            "parameters" : {
+			"color" : "black"
+            }
+          }
+        ]
+      }
+	
+	]
+  }
+}

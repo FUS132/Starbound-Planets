@@ -1,0 +1,92 @@
+{
+  "name" : "box_moonlight",
+  "friendlyName" : "Moonlight Ruins",
+  
+  "hueShiftOptions" : [0],
+
+  "spawnProfile" : {
+    "groups" : [         
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1, "ravencritter" ]
+        ]
+      }
+    ]
+  },
+
+  "weather" : [
+    [0, [
+      "/weather.config:box_moonlight"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      "mainColor" : [255,255,255],
+
+      "morningColors" : [ [ 70, 70, 70, 200], [160, 160, 160] ],
+      "dayColors" : [ [ 70, 70, 70, 200], [160, 160, 160] ],
+      "eveningColors" : [ [ 70, 70, 70, 200], [160, 160, 160] ],
+      "nightColors" : [ [ 70, 70, 70, 200], [160, 160, 160] ],
+
+      "morningLightColor" : [70, 70, 80], 
+      "dayLightColor" : [70, 70, 80],
+      "eveningLightColor" : [70, 70, 80],
+      "nightLightColor" : [70, 70, 80]
+    }
+  ],
+
+  "mainBlock" : "rockbrick",
+  "subBlocks" : [ "cobblestonebrick", "moonrock", "darksmoothstone", "pillarblock", "grassy"],
+  "ores" : "none",
+
+  "parallax" : "/parallax/surface/box_moonlight.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [  ]
+    },
+    "night" : {
+      "tracks" : [  ]
+    }
+  },
+
+
+   "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/accretion-disc.ogg", "/music/cygnus-x1.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/nomads.ogg", "/music/on-the-beach-at-night.ogg", "/music/crystal-exploration1.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/psyche.ogg", "/music/crystal-exploration2.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "alpinegrass" ],
+    "grassModDensity" : 0.5,
+	
+    "items" : [
+	  {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.1, "frontierlamppost" ]],
+            "parameters" : { "startingStage" : 1 }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [     
+
+    ]
+  }
+}

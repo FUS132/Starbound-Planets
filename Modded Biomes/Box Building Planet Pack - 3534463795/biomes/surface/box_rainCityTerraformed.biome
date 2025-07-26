@@ -1,0 +1,63 @@
+{
+  "name" : "box_rainCityTerraformed",
+  "friendlyName" : "Torrential (Terraformed)",
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:box_rainCity"
+    ]]
+  ],
+
+  "skyOptions" : [
+	{
+      //wip
+      "mainColor" : [255,255,255],
+
+      "morningColors" : [ [ 20, 75, 75, 200], [160, 160, 160] ],
+      "dayColors" : [ [ 20, 75, 75, 200], [160, 160, 160] ],
+      "eveningColors" : [ [ 20, 75, 75, 200], [160, 160, 160] ],
+      "nightColors" : [ [ 20, 75, 75, 200], [160, 160, 160] ],
+
+      "morningLightColor" : [35, 25, 40],
+      "dayLightColor" : [35, 25, 40],
+      "eveningLightColor" : [35, 25, 40],
+      "nightLightColor" : [35, 25, 40]
+  }
+
+  ],
+
+  "mainBlock" : "box_softcore",
+  "subBlocks" : [ "obsidian", "rockbrick" ],
+  "ores" : "none",
+
+  "parallax" : "/parallax/surface/box_rainCityTerraformed.parallax",
+
+  "ambientNoises" : {
+    "day" : {    },
+    "night" : { }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/accretion-disc.ogg", "/music/cygnus-x1.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/nomads.ogg", "/music/on-the-beach-at-night.ogg", "/music/crystal-exploration1.ogg", "/music/jupiter.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/psyche.ogg", "/music/crystal-exploration2.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "blackash" ],
+    "grassModDensity" : 0.3,
+
+    "items" : [ 
+	
+	]
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [ ]
+  }
+}
