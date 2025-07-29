@@ -1651,6 +1651,14 @@
             "value": [1, "CHANGE_ME"]
         }
     ],
+    [
+        {"op": "test", "path": "/planetTypes/v-ministar"},
+        {
+            "op": "add",
+            "path": "/planetTypes/v-ministar/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
 		// Note: probably unused.
   //  [
   //      {"op": "test", "path": "/planetTypes/v-terraintest"},
