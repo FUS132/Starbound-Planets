@@ -1,0 +1,95 @@
+{
+  "name" : "ashlion",  
+  "friendlyName" : "Ashlion Vitsou",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.1111, "crustoise" ],
+          [ 0.1111, "fennix" ],
+          [ 0.1111, "crabcano" ],
+          [ 0.1111, "ignome" ],
+          [ 0.1111, "pyromantle" ],
+          [ 0.1111, "smoglin" ],
+          [ 0.1111, "scandroid" ],
+          [ 0.1111, "peblit" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "flameroach" ],
+          [ 0.3, "lavahopper" ],
+          [ 0.3, "fireygiant" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      }, 
+      {
+        "select" : 3,
+        "pool" : "nightTerrors"
+      },      
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      },
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "firerockcritter" ],
+          [ 1, "loopacritter" ],
+          [ 1, "orenibblercritter" ],
+          [ 1, "magmawormcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "magma",
+      "statusSettings" : {
+        "stats" : {
+          "lavaImmunity" : {
+            "baseValue" : 1.0
+          },
+          "fireStatusImmunity" : {
+            "baseValue" : 1.0
+          }
+        }
+      }
+    }
+  },
+
+  "hueShiftOptions" : [-18, 0, 15],
+  
+  "surfaceParameters" : {
+    "mainBlock" : "ash",
+    "subBlocks" : [ "direstone" ],
+    "ores" : "surface",
+
+    "surfacePlaceables" : {
+      "grassMod" : [ "ash" ],
+      "grassModDensity" : 0.9,
+
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 4.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseSmall",
+
+          "type" : "grass",
+          "grasses" : [ "ashlion" ]
+        }
+      ]
+    }
+  }
+}
+
+

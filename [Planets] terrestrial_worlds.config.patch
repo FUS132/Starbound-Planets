@@ -12,6 +12,67 @@
 		// square brackets (like, for example, Vanilla Planets down below) and have just 1 planet test at the top.
 		//==============================================================================================================|
 		
+		//~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+		// Table of Contents
+		//~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+		// Vanilla Planets
+		// Frackin' Universe - 729480149
+		// Variety is the spice of the Universe - 3552917909
+		// Arcana - 2359135864
+		// Maple32 - 2568667104
+		// Box Building Planet Pack - 3534463795
+		// New Stars With Mini-Biomes Themed Planets - 2032258885
+		// Vanilla Biome Planets with Tiers 7-10 - 2041790717
+		// Galaxy in Conflict - 2754886445
+		// K'Rakoth Mod - 2604255131
+		// Crystal Planet - 1090233799
+		// Radioactive Planet - 1099963583
+		// Magnetic Planet - 1138527530
+		// Landable Gas Giants v1 - 1475245421
+		// Landable Gas Giants v2 - 3422280518
+		// CityBound - 742434873
+		// Another City Terraformer?! (Earth-Like City Planet) - 2444233793
+		// Grassland Planet - 2582440502
+		// Starry Planet - 2157200368
+		// Hallowed Planet - 1973038872
+		// Money Planet - 2289877827
+		// Divine Planet - 2548371664
+		// Project Ancient Cosmos - 2644341899
+		// Starburst Rework - 3025139283
+		// LostBound - 3440851272
+		// The Ironsides - 2177711780
+		// Nebula Pack - 1709257267
+		// Winter Planet Pack - 2233339365
+		// Hydrolyth Stuff - 1429593691
+		// Lepidia: Gloamfall Pt. 1 - 1755805853
+		// Cosetropilis Planet - 2582274902
+		// Overgrown Planet - 2587899098
+		// Oriata Desert planet - 2211506494
+		// Solar Seared - 2228442297
+		// Drayx City - 2253948929
+		// Arias City - 2287570791
+		// Hypothermic Planet - 2329389933
+		// Anomalous Empyerian Planet - 2393201436
+		// Nightshade Planet - 2438077302
+		// Arctic Everwood Planet - 2491627322
+		// Thermal Surge Planet - 2552968317
+		// Voided: Expansion Mod (WIP) - 2822921122
+		// The Aether - 1941217152
+		// My Enternia 2.4: Alta Hobbies - 2006558650
+		// Kenopsea - 2331991026 AND Black Ice - 3331962844
+		// Nitrogen Deep - 2003959183
+		// Kawaii Mod - 2199731506
+		// Starbound x Xenoblade - 2816359505
+		// Betabound - 2010607826
+		// Tentacle Planet - 1436287529
+		// Virtua Planet - 1897946579
+		// Astral Infection Planet - 3257889482
+		// Depression Planet - 2208365760
+		// Hellish Planet - 2022935092
+		// Superbarren Planet - 1462080052 AND 2596090207
+		// Flatworld Planet - 2666409177
+		//~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+		
 		// Template for future use.
     [
         {"op": "test", "path": "/planetTypes/CHANGE_ME"},
@@ -21,6 +82,7 @@
             "value": [1, "CHANGE_ME"]
         }
     ],
+	
 		//==============================================================================================================|
 		// Vanilla Planets
 		//==============================================================================================================|
@@ -455,6 +517,541 @@
         {
             "op": "add",
             "path": "/planetTypes/fugasgiant5/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Variety is the spice of the Universe - 3552917909
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Planets
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/vitsou"},
+        {
+            "op": "add",
+            "path": "/planetTypes/vitsou/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/TarArid"},
+        {
+            "op": "add",
+            "path": "/planetTypes/TarArid/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ToxicArid"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ToxicArid/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Aridvitsou"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Aridvitsou/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Asteroid_Field_VITSOU"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Asteroid_Field_VITSOU/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Barrenvitsou"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Barrenvitsou/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Boreal"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Boreal/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Charred_Forest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Charred_Forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Cloudlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/CHANGE_ME/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Desertvitsou"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Desertvitsou/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Crystalline_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Crystalline_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Desert_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Desert_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Frostfire_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Frostfire_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Grassy_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Grassy_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Jungle_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Jungle_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Living_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Living_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Mountainous_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Mountainous_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Rainbow_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Rainbow_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Savannah_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Savannah_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Snow_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Snow_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Spooky_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Spooky_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Tarball_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Tarball_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Tentacle_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Tentacle_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Volcanic_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Volcanic_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Floating_Islands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Floating_Islands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Crystalline_Forest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Crystalline_Forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Glowing_Mushroom_Forest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Glowing_Mushroom_Forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Rainbow_Forest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Rainbow_Forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Snowy_Forest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Snowy_Forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Spooky_Forest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Spooky_Forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Tar_Forest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Tar_Forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Forestvitsou"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Forestvitsou/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Volcanic_Forest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Volcanic_Forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Frostfire"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Frostfire/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Grasslands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Grasslands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Giant_Flower_Grasslands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Giant_Flower_Grasslands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Tar_Grasslands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Tar_Grasslands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Toxic_Grasslands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Toxic_Grasslands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Heck"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Heck/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Tar_Jungle"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Tar_Jungle/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Toxic_Jungle"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Toxic_Jungle/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Junglevitsou"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Junglevitsou/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Magmavitsou"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Magmavitsou/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Mountainous"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Mountainous/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Snowy_Mountains"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Snowy_Mountains/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Tar_Mountains"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Tar_Mountains/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Toxic_Mountains"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Toxic_Mountains/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Tar_Savannah"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Tar_Savannah/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Toxic_Forest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Toxic_Forest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Toxic_Savannah"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Toxic_Savannah/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Savannahvitsou"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Savannahvitsou/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Snowy_Icelands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Snowy_Icelands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Snowvitsou"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Snowvitsou/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Swamplands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Swamplands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Tarball"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Tarball/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Tentaclesvitsou"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Tentaclesvitsou/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Tropics"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Tropics/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Tundraicy"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Tundraicy/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Twilight"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Twilight/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Umbra"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Umbra/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Wastelandsvitsou"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Wastelandsvitsou/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/DebrisVitsou"},
+        {
+            "op": "add",
+            "path": "/planetTypes/DebrisVitsou/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ColorfulDesert"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ColorfulDesert/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Geometric_Snow"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Geometric_Snow/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/OvergrownJungle"},
+        {
+            "op": "add",
+            "path": "/planetTypes/OvergrownJungle/layers/surface/dungeons/-",
             "value": [1, "CHANGE_ME"]
         }
     ],
@@ -1256,7 +1853,7 @@
             "value": [1, "CHANGE_ME"]
         }
     ],
-		// Note: same planet ID as in V2.
+		// Note: same planet ID as in v2.
     [
         {"op": "test", "path": "/planetTypes/gasgiant_forest"},
         {
@@ -1277,7 +1874,7 @@
             "value": [1, "CHANGE_ME"]
         }
     ],
-		// Note: same planet ID as in V1.
+		// Note: same planet ID as in v1.
     [
         {"op": "test", "path": "/planetTypes/gasgiant_forest"},
         {
@@ -1344,7 +1941,7 @@
         }
     ],
 		//==============================================================================================================|
-		// Starry Planets - 2157200368
+		// Starry Planet - 2157200368
 		//==============================================================================================================|
     [
         {"op": "test", "path": "/planetTypes/om_starryplanet"},
@@ -1355,7 +1952,7 @@
         }
     ],
 		//==============================================================================================================|
-		// Hallowed Planets - 1973038872
+		// Hallowed Planet - 1973038872
 		//==============================================================================================================|
     [
         {"op": "test", "path": "/planetTypes/hallowplanet"},

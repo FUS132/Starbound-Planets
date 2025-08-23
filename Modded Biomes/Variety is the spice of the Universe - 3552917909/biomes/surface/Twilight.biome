@@ -1,0 +1,380 @@
+{
+  "name" : "Twilight",  
+  "friendlyName" : "Twilight Vitsou",
+
+  "hueShiftOptions" : [-180, -135, -90, -66, -45, 0, 45, 90, 135, 180],
+  "skyOptions" : [
+
+    {
+      "mainColor" : [60, 0, 0],
+
+      "morningColors" : [ [60, 0, 0], [20, 0, 0] ],
+      "dayColors" : [ [60, 0, 0], [20, 0, 0] ],
+      "eveningColors" : [ [60, 0, 0], [20, 0, 0] ],
+      "nightColors" : [ [60, 0, 0], [20, 0, 0] ],
+
+      "morningLightColor" : [40, 17, 17],
+      "dayLightColor" : [40, 17, 17],
+      "eveningLightColor" : [40, 17, 17],
+      "nightLightColor" : [40, 17, 17]
+    },
+    {
+      "mainColor" : [60, 0, 0],
+
+      "morningColors" : [ [60, 0, 0], [20, 0, 0] ],
+      "dayColors" : [ [60, 0, 0], [20, 0, 0] ],
+      "eveningColors" : [ [60, 0, 0], [20, 0, 0] ],
+      "nightColors" : [ [60, 0, 0], [20, 0, 0] ],
+
+
+      "morningLightColor" : [56, 17, 17],
+      "dayLightColor" : [56, 17, 17],
+      "eveningLightColor" : [56, 17, 17],
+      "nightLightColor" : [56, 17, 17]
+    },
+    {
+      "mainColor" : [40, 0, 60],
+
+      "morningColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "dayColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "eveningColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "nightColors" : [ [40, 0, 60], [10, 0, 20] ],
+
+      "morningLightColor" : [17, 19, 56],
+      "dayLightColor" : [17, 19, 56],
+      "eveningLightColor" : [17, 19, 56],
+      "nightLightColor" : [17, 19, 56]
+    },
+    {
+      "mainColor" : [40, 0, 60],
+
+      "morningColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "dayColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "eveningColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "nightColors" : [ [40, 0, 60], [10, 0, 20] ],
+
+      "morningLightColor" : [17, 19, 56],
+      "dayLightColor" : [17, 19, 56],
+      "eveningLightColor" : [17, 19, 56],
+      "nightLightColor" : [17, 19, 56]
+    },
+    {
+      "mainColor" : [40, 0, 60],
+
+      "morningColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "dayColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "eveningColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "nightColors" : [ [40, 0, 60], [10, 0, 20] ],
+
+      "morningLightColor" : [26, 26, 31],
+      "dayLightColor" : [26, 26, 31],
+      "eveningLightColor" : [26, 26, 31],
+      "nightLightColor" : [26, 26, 31]
+    },
+    {
+      "mainColor" : [40, 0, 60],
+
+      "morningColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "dayColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "eveningColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "nightColors" : [ [40, 0, 60], [10, 0, 20] ],
+
+      "morningLightColor" : [26, 26, 31],
+      "dayLightColor" : [26, 26, 31],
+      "eveningLightColor" : [26, 26, 31],
+      "nightLightColor" : [26, 26, 31]
+    },
+    {
+      "mainColor" : [40, 0, 60],
+
+      "morningColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "dayColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "eveningColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "nightColors" : [ [40, 0, 60], [10, 0, 20] ],
+
+      "morningLightColor" : [29, 26, 31],
+      "dayLightColor" : [29, 26, 31],
+      "eveningLightColor" : [29, 26, 31],
+      "nightLightColor" : [29, 26, 31]
+    },
+    {
+      "mainColor" : [40, 0, 60],
+
+      "morningColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "dayColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "eveningColors" : [ [40, 0, 60], [10, 0, 20] ],
+      "nightColors" : [ [40, 0, 60], [10, 0, 20] ],
+
+      "morningLightColor" : [28, 14, 14],
+      "dayLightColor" : [28, 14, 14],
+      "eveningLightColor" : [28, 14, 14],
+      "nightLightColor" : [28, 14, 14]
+    },
+    {
+      "mainColor" : [0, 40, 60],
+
+      "morningColors" : [ [0, 40, 60], [0, 10, 20] ],
+      "dayColors" : [ [0, 40, 60], [0, 10, 20] ],
+      "eveningColors" : [ [0, 40, 60], [0, 10, 20] ],
+      "nightColors" : [ [0, 40, 60], [0, 10, 20] ],
+
+      "morningLightColor" : [24, 28, 24],
+      "dayLightColor" : [24, 28, 24],
+      "eveningLightColor" : [24, 28, 24],
+      "nightLightColor" : [24, 28, 24]
+    }
+
+  ],
+
+    "mainBlock" : "cobblestone",
+    "subBlocks" : [ "dirt", "gravel", "rock03" ],
+    "ores" : "surface",
+
+    "parallax" : "/parallax/surface/twilight.parallax",
+
+    "weather" : [
+    [0, [
+      "/weather.config:twilight"
+    ]]
+    ],
+
+    "ambientNoises" : {
+      "day" : {
+        "tracks" : [ "/sfx/environmental/jungle_underground.ogg" ]
+      },
+      "night" : {
+        "tracks" : [ "/sfx/environmental/jungle_underground.ogg" ]
+      }
+    },
+	
+    "musicTrack" : {
+      "day" : {
+        "tracks" : [ "/music/psyche.ogg", "/music/error-0xbfaf000.ogg", "/music/Nomads.ogg", "/music/casiopeia.ogg" ]
+      },
+      "night" : {
+        "tracks" : [ "/music/psyche.ogg", "/music/error-0xbfaf000.ogg", "/music/Nomads.ogg", "/music/casiopeia.ogg" ]
+      }
+    },
+
+    "surfacePlaceables" : {
+      "grassMod" : [ "grass" ],
+      "grassModDensity" : 0.6,
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "basicChest" ]
+        },
+
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "techChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "statuspod" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "weaponChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredPots",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 10,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDistPlatform",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "aridplatforming" ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 180,
+          "treeStemHueShiftMax" : 180,
+          "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+          "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "period" : 5,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "grass",
+          "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 180,
+          "treeStemHueShiftMax" : 15,
+          "treeStemList" : [ "underwood" ],
+          "treeFoliageList" : [ "mossy", "scattered" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:minibossoverground",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "minibossoverground" ]
+        }
+      ]
+    },
+
+    "undergroundPlaceables" : {
+      "grassMod" : [ "grass" ],
+      "grassModDensity" : 0.6,
+
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "basicChest" ]
+        },
+
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundtechChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "techChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "statuspod" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "weaponChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredPots",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 10,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:tiyDistPlatform",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "aridplatforming" ]
+        },
+        {
+          "mode" : "ceiling",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 180,
+          "treeStemHueShiftMax" : 180,
+          "treeStemList" : [ "vine", "vine2", "vine3", "vine4" ],
+          "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "period" : 5,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "grass",
+          "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 180,
+          "treeStemHueShiftMax" : 15,
+          "treeStemList" : [ "underwood" ],
+          "treeFoliageList" : [ "mossy", "scattered" ]
+        }
+      ]
+  }
+}

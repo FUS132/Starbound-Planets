@@ -8,6 +8,21 @@
 		// square brackets (like, for example, Vanilla Planets in the [Planets] patch) and just 1 planet test at the top.
 		//==============================================================================================================|
 		
+		//~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+		// Table of Contents
+		//~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+		// Vanilla Planets
+		// Frackin' Universe - 729480149
+		// Variety is the spice of the Universe - 3552917909
+		// Arcana - 2359135864
+		// Maple32 - 2568667104
+		// K'Rakoth Mod - 2604255131
+		// Project Ancient Cosmos - 2644341899
+		// Lava Moon - 1453674099
+		// Spirit Moon - 2225929124
+		// Glass Moon - 2229171570
+		//~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+		
 		// Template for future use.
     [
         {"op": "test", "path": "/planetTypes/CHANGE_ME"},
@@ -17,6 +32,7 @@
             "value": [1, "CHANGE_ME"]
         }
     ],
+	
 		//==============================================================================================================|
 		// Vanilla Moons
 		//==============================================================================================================|
@@ -99,6 +115,93 @@
         }
     ],
 		//==============================================================================================================|
+		// Variety is the spice of the Universe - 3552917909
+		//==============================================================================================================|
+		
+		//-------------------------------------------------------|
+		// Moons
+		//-------------------------------------------------------|
+    [
+        {"op": "test", "path": "/planetTypes/Crystal_Moon_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Crystal_Moon_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Metallic_Moon_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Metallic_Moon_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Moon_Flatlands"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Moon_Flatlands/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Lunar_Metallic_Forest_Requires_an_oxygen_supply"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Lunar_Metallic_Forest_Requires_an_oxygen_supply/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Lunar_Barren_Desert_Requires_an_oxygen_supply"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Lunar_Barren_Desert_Requires_an_oxygen_supply/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Lunar_Crystalline_Forest_Requires_an_oxygen_supply"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Lunar_Crystalline_Forest_Requires_an_oxygen_supply/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Lunar_Frozen_Plains_Requires_an_oxygen_supply"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Lunar_Frozen_Plains_Requires_an_oxygen_supply/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Lunar_Barren_Rock_Requires_an_oxygen_supply"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Lunar_Barren_Rock_Requires_an_oxygen_supply/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Lunar_Acidic_Field_Requires_an_oxygen_supply"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Lunar_Acidic_Field_Requires_an_oxygen_supply/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/Lunar_Volcanic_Plains_Requires_an_oxygen_supply"},
+        {
+            "op": "add",
+            "path": "/planetTypes/Lunar_Volcanic_Plains_Requires_an_oxygen_supply/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
 		// Arcana - 2359135864
 		//==============================================================================================================|
 		
@@ -172,7 +275,7 @@
 		//==============================================================================================================|
 		
 		//-------------------------------------------------------|
-		// Moons(?)
+		// Moons (?)
 		//-------------------------------------------------------|
     [
         {"op": "test", "path": "/planetTypes/pf_halfmoon"},

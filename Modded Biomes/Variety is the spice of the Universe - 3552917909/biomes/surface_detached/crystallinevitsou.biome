@@ -1,0 +1,151 @@
+{
+  "name" : "crystallinevitsou",  
+  "friendlyName" : "Crystalline Vitsou",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.1111, "crustoise" ],
+          [ 0.1111, "fennix" ],
+          [ 0.1111, "crabcano" ],
+          [ 0.1111, "ignome" ],
+          [ 0.1111, "pyromantle" ],
+          [ 0.1111, "smoglin" ],
+          [ 0.1111, "scandroid" ],
+          [ 0.1111, "peblit" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : [
+          [ 0.4, "flameroach" ],
+          [ 0.3, "lavahopper" ],
+          [ 0.3, "fireygiant" ]
+        ]
+      },
+      {
+        "select" : 1,
+        "pool" : "generatedGroundAggroDay"
+      }, 
+      {
+        "select" : 3,
+        "pool" : "nightTerrors"
+      },      
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      },
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "firerockcritter" ],
+          [ 1, "loopacritter" ],
+          [ 1, "orenibblercritter" ],
+          [ 1, "magmawormcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "magma",
+      "statusSettings" : {
+        "stats" : {
+          "lavaImmunity" : {
+            "baseValue" : 1.0
+          },
+          "fireStatusImmunity" : {
+            "baseValue" : 1.0
+          }
+        }
+      }
+    }
+  },
+
+  "hueShiftOptions" : [-18, 0, 15],
+  
+    "mainBlock" : "obsidian",
+    "subBlocks" : [ "ash", "blaststone" ],
+    "ores" : "crystalSurfaceOres",
+
+    "surfacePlaceables" : {
+      "grassMod" : [ "blackash" ],
+      "grassModDensity" : 0.3,
+
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 2,
+          "distribution" : "/biomes/distributions.config:denseLarge",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 0,
+          "treeStemHueShiftMax" : 180,
+          "treeStemList" : [ "crystalline" ],
+          "treeFoliageList" : [ "crystallinenofoliage" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:potsRare",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "wildcrystalplantseed" ] ],
+              "parameters" : { "startingStage" : 2 }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "crystalChest" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 4.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "grass",
+          "grasses" : [ "crystalflower" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [0.35, "crystallinebush1" ], [0.35, "crystallinebush2" ], [0.35, "crystallinebush3" ], [0.35, "crystallinebush4" ] ],
+              "parameters" : { }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseLarge",
+
+          "type" : "microdungeon",
+          "microdungeons" : [ "oasis" ]
+        }
+      ]
+    }
+}
+
+

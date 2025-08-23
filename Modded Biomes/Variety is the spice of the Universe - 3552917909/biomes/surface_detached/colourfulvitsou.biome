@@ -1,0 +1,107 @@
+{
+  "name": "colourfulvitsou",
+  "friendlyName": "Colourful Vitsou",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1.0, "oogler" ]
+        ]
+      },
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1.0, "vulturecritter" ],
+          [ 1.0, "apexscabcritter" ],
+          [ 1.0, "avianscabcritter" ],
+          [ 1.0, "floranscabcritter" ],
+          [ 1.0, "humanscabcritter" ],
+          [ 1.0, "glitchscabcritter" ],
+          [ 1.0, "penguinscabcritter" ],
+          [ 1.0, "hylotlscabcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "desert"
+    }
+  },
+  
+  "hueShiftOptions": [-30, -20, -15, -10, -5, 0, 5, 10, 15, 20, 30],
+  
+  "mainBlock": "sand2",
+  "subBlocks": ["sand", "dirt"],
+  "ores": "surface",
+  
+  "surfacePlaceables": {
+    "grassMod": ["grass"],
+    "grassModDensity": 0.3,
+    "items": [
+      {
+        "mode": "floor",
+        "priority": 1.0,
+        "variants": 1,
+        "distribution": "common",
+        "type": "tree",
+        "treeFoliageHueShiftMax": 0,
+        "treeStemHueShiftMax": 0,
+        "treeStemList": ["colourfulstem"],
+        "treeFoliageList": ["colourfulpalm"]
+      },
+      {
+        "mode": "floor",
+        "priority": 1.0,
+        "variants": 1,
+        "distribution": "common",
+        "type": "treasureBox",
+        "treasureBoxSets": ["basicChest"]
+      },
+      {
+        "mode": "floor",
+        "priority": 2.0,
+        "variants": 1,
+        "distribution": "common",
+        "type": "object",
+        "objectSets": [
+          {
+            "pool": [[1, "wildneonmelonseed"]],
+            "parameters": {"startingStage": 1}
+          }
+        ]
+      },
+      {
+        "mode": "floor",
+        "priority": 4.0,
+        "variants": 1,
+        "distribution": "common",
+        "type": "grass",
+        "grasses": ["grass"]
+      },
+      {
+        "mode": "floor",
+        "priority": 3.0,
+        "variants": 1,
+        "distribution": "common",
+        "type": "object",
+        "objectSets": [
+          {
+            "pool": [[0.35, "colourfulbush1"], [0.35, "colourfulbush2"], [0.35, "colourfulbush3"], [0.35, "colourfulbush4"], [0.35, "colourfulbush5"]],
+            "parameters": {}
+          }
+        ]
+      },
+      {
+        "mode": "floor",
+        "priority": 1.0,
+        "variants": 1,
+        "distribution": "common",
+        "type": "microdungeon",
+        "microdungeons": ["randomencounter"]
+      }
+    ]
+  }
+}
+
+

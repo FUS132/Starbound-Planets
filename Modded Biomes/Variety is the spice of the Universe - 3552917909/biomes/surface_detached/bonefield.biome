@@ -1,0 +1,67 @@
+{
+  "name" : "bonefield",  
+  "friendlyName" : "Bonefield Vitsou",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 4,
+        "pool" : [
+          [ 1, "orenibblercritter" ],
+          [ 1, "volcanicflowercritter" ],
+          [ 1, "loopacritter" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "bobot" ],
+          [ 1, "scandroid" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "scorchedcity"
+    }
+  },
+  
+  "hueShiftOptions": [-30, -20, -15, -10, -5, 0, 5, 10, 15, 20, 30],
+  
+    "mainBlock" : "bonematerial",
+    "subBlocks" : [ "tar", "sewage" ],
+    "ores" : "surface",
+
+    "surfacePlaceables" : {
+      "grassMod" : [ "tar" ],
+      "modDensity" : 0.9,
+
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "grass",
+          "grasses" : [ "freebone" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 2.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseMedium",
+
+          "type" : "bush",
+          "bushes" : [
+            {
+              "name" : "skeletalbush",
+              "baseHueShiftMax" : 40,
+              "modHueShiftMax" : 180
+            }
+          ]
+        }
+      ]
+    }
+}
+
+

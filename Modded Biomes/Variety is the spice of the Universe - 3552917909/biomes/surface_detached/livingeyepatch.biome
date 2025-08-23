@@ -1,0 +1,101 @@
+{
+  "name" : "livingeyepatch",  
+  "friendlyName" : "Living Eyepatch Vitsou",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 6,
+        "pool" : [ 
+          [ 1, "tentaclecrawler" ],
+          [ 1, "tentaclegnat" ],
+          [ 1, "tentaclespawner" ],
+          [ 1, "tentaclebomb" ],
+          [ 1, "tentacleghost" ],
+          [ 1, "tentacleclam" ]
+        ]
+      },
+      {
+        "select" : 5,
+        "pool" : [
+          [ 1, "bigwormcritter" ],
+          [ 1, "fisheyecritter" ],
+          [ 1, "cellcritter" ],
+          [ 1, "cell2critter" ],
+          [ 1, "eggcellcritter" ]          
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "volcanic",
+        "statusSettings" : {
+        "stats" : {
+          "poisonStatusImmunity" : {
+            "baseValue" : 1.0
+          }
+        }
+      }
+    }
+  },
+
+  "hueShiftOptions" : [-45, 0, 45],
+
+    "mainBlock" : "fleshblock",
+    "subBlocks" : [ "corruptdirt", "brains", "bonematerial" ],
+    "ores" : "surface",
+
+    "surfacePlaceables" : {
+      "grassMod" : [ "tentaclegrass" ],
+      "grassModDensity" : 0.9,
+
+      "items" : [
+        {
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "grass",
+          "grasses" : [ "eyeplant" ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 0.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+          "type" : "treasureBox",
+          "treasureBoxSets" : [ "eyeChest" ]
+        },
+
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ [1, "wildoculemonseed" ] ],
+              "parameters" : { "startingStage" : 2 }
+            }
+          ]
+        },
+        {
+          "mode" : "floor",
+          "priority" : 1.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:denseLarge",
+
+          "type" : "tree",
+          "treeFoliageHueShiftMax" : 180,
+          "treeStemHueShiftMax" : 15,
+          "treeStemList" : [ "eyestem" ],
+          "treeFoliageList" : [ "eyefoliage" ]
+        }
+      ]
+    }
+}
+
+

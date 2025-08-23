@@ -1,0 +1,61 @@
+{
+  "name": "springvitsou",
+  "friendlyName": "Spring Vitsou",
+  
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [ 
+          [ 1.0, "narfin" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 1, "prismelementalcritter" ],
+          [ 1, "prismscabcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "snow"
+    }
+  },
+
+  "hueShiftOptions" : [0],
+ 
+  "mainBlock": "dirt",
+  "subBlocks": ["snow", "slush"],
+  "ores": "surface",
+  
+  "surfacePlaceables": {
+    "grassMod": ["grass"],
+    "grassModDensity": 0.4,
+    "items": [
+      {
+        "mode": "floor",
+        "priority": 1.0,
+        "variants": 1,
+        "distribution": "common",
+        "type": "object",
+        "objectSets": [
+          {
+            "pool": [[0.35, "flowerred"], [0.35, "flowerblue"], [0.35, "floweryellow"]],
+            "parameters": {}
+          }
+        ]
+      },
+      {
+        "mode": "floor",
+        "priority": 1.0,
+        "variants": 1,
+        "distribution": "common",
+        "type": "grass",
+        "grasses": ["grass"]
+      }
+    ]
+  }
+}
+
+
