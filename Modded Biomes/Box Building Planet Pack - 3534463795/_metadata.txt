@@ -1,10 +1,9 @@
 {
-  "version" : "1.0",
-  "tags" : "Crafting and Building|Planets and Environments",
   "author" : "Boxofcuriosity",
+  "tags" : "Crafting and Building|Planets and Environments",
   "description" : "A collection of planets, made for building.",
   "name" : "box_buildingPlanetPack",
-  "friendlyName" : "Box Building Planet Pack",
   "steamContentId" : "3534463795",
+  "friendlyName" : "Box Building Planet Pack",
   "link" : "steam://url/CommunityFilePage/3534463795"
 }

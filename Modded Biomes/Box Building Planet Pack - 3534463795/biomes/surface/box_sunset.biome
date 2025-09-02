@@ -1,0 +1,110 @@
+{
+  "name" : "box_sunset",
+  "friendlyName" : "Sunset",
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:box_sunset"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      "mainColor" : [242, 141, 39],
+
+      //same colour as the top of the fake sky parallax
+      "morningColors" : [ [154, 153, 172, 160], [154, 153, 172] ],
+      "dayColors" : [ [154, 153, 172, 160], [154, 153, 172] ],
+      "eveningColors" : [ [154, 153, 172, 160], [154, 153, 172] ],
+      "nightColors" : [ [154, 153, 172, 160], [154, 153, 172] ],
+
+      //no sky lighting
+      "morningLightColor" : [0, 0, 0],
+      "dayLightColor" : [0, 0, 0],
+      "eveningLightColor" : [0, 0, 0],
+      "nightLightColor" : [0, 0, 0]
+    }
+  ],
+
+  "mainBlock" : "blackblock",
+  "subBlocks" : [ "box_slopedblackblock" ],
+  "ores" : "none",
+
+  "parallax" : "/parallax/surface/box_sunset.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/ocean_surface_calm.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/ocean_surface_calm.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/ocean-exploration2.ogg", "/music/ocean-exploration2.ogg", "/music/epsilon-indi.ogg", "/music/stellarformation.ogg", "/music/atlas.ogg", "/music/blue-straggler.ogg", "/music/cygnus-x1.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/on-the-beach-at-night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/nomads.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+  "grassMod" : [ "box_shadowgrass" ],
+    "grassModDensity" : 0.8,
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeRareMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "box_sunsetdungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "jungleflower1", "jungleflower2", "jungleflower3" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "junglebush1" ], [0.35, "junglebush2" ], [0.35, "junglebush3" ], [0.35, "junglebush4" ], [0.35, "junglebush5" ], [0.35, "junglebush6" ], [0.35, "junglebush7" ], [0.35, "junglebush8" ], [0.35, "junglebush9" ], [0.35, "junglebush10" ], [0.35, "junglebush11" ], [0.35, "junglebush12" ], [0.35, "junglebush13" ], [0.35, "junglebush14" ], [0.35, "junglebush15" ], [0.35, "junglebush16" ], [0.35, "junglebush17" ], [0.35, "junglebush18" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "palmlike" ],
+        "treeFoliageList" : [ "junglepalm" ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [     
+    ]
+  }
+}

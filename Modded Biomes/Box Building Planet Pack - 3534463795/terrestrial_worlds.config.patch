@@ -152,33 +152,6 @@
 	  }
 	},		
 	
-	// {	"op" : "add",
-	// 	"path" : "/planetTypes/box_fractured",
-	// 	"value" : {
-	// 	  "threatRange" : [1, 1],
-	// 	  "layers" : {
-	// 		"surface" : {
-	// 		  "primaryRegion" : ["box_fractured"]
-	// 		},
-	//		"subsurface" : {
-    //      	  "primaryRegion" : ["barrenunderground"]
-	//		},
-	//		"underground1" : {
-	//		  "primaryRegion" : ["barrenunderground"]
-	//		},
-	//		"underground2" : {
-	//		  "primaryRegion" : ["barrenunderground"]
-	//		},
-	//		"underground3" : {
-	//		  "primaryRegion" : ["barrenunderground"]
-	//		},
-	//		"core" : {
-	//		  "primaryRegion" : ["barrenunderground"]
-	//		}
-	// 	  }
-	// 	}
-	// },
-	
 	{	"op" : "add",
 		"path" : "/planetTypes/box_starry",
 		"value" : {
@@ -407,6 +380,34 @@
 	},
 
 	{	"op" : "add",
+		"path" : "/planetTypes/box_sunset",
+		"value" : {
+		  "threatRange" : [1, 1],
+		  "globalDirectives" : ["?setcolor=000000"],
+		  "layers" : {
+			"surface" : {
+			  "primaryRegion" : ["box_sunset"]
+			},
+			"subsurface" : {
+              "primaryRegion" : ["box_sunsetUnderground"]
+            },
+			"underground1" : {
+			  "primaryRegion" : ["box_sunsetUnderground"]
+			},
+			"underground2" : {
+			  "primaryRegion" : ["box_sunsetUnderground"]
+			},
+			"underground3" : {
+			  "primaryRegion" : ["box_sunsetUnderground"]
+			},
+			"core" : {
+			  "primaryRegion" : ["box_sunsetUnderground"]
+			}
+		  }
+		}
+	},
+
+	{	"op" : "add",
 		"path" : "/regionTypes/box_dover",
 		"value" : {
 			"oceanLiquid" : [ "water" ],
@@ -593,6 +594,27 @@
 		  "bgCaveSelector" : [ "empty" ],
 		  "biome" : [
 		    [0, [ "box_industrial" ]]
+		  ]
+		}
+	},
+
+	{	"op" : "add",
+		"path" : "/regionTypes/box_sunset",
+		"value" : {
+		  "blockSelector" : [ "remixedFlatsSurface" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+		    [0, [ "box_sunset" ]]
+		  ]
+		}
+	},
+	{	"op" : "add",
+		"path" : "/regionTypes/box_sunsetUnderground",
+		"value" : {
+		  "fgCaveSelector" : [ "empty" ],
+		  "biome" : [
+		    [0, [ "box_sunsetUnderground" ]]
 		  ]
 		}
 	}
