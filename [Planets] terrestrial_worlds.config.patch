@@ -1074,6 +1074,14 @@
         }
     ],
     [
+        {"op": "test", "path": "/planetTypes/arcana_runicDesert"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_runicDesert/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
         {"op": "test", "path": "/planetTypes/arcana_arcaneDesert"},
         {
             "op": "add",
@@ -1294,6 +1302,14 @@
         {
             "op": "add",
             "path": "/planetTypes/arcana_redTerminus/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/arcana_ruinous"},
+        {
+            "op": "add",
+            "path": "/planetTypes/arcana_ruinous/layers/surface/dungeons/-",
             "value": [1, "CHANGE_ME"]
         }
     ],

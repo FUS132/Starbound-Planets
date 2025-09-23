@@ -271,9 +271,9 @@
           "secondaryRegions" : ["arcana_arcaneDesert","arcana_arcaneTundra"],
 		  "dungeonCountRange" : [3, 4],
           "dungeons": [
-		  	  [3.0, "arcana_arcanecity"],
-			  [3.0, "arcana_arcaneDesert_dungeon_2"],
-			  [3.0, "arcana_arcaneForest_dungeon_2"],
+		  	  [1.0, "arcana_arcanecity"],
+			  [4.0, "arcana_arcaneDesert_dungeon_2"],
+			  [4.0, "arcana_arcaneForest_dungeon_2"],
 			  [1.0, "arcana_dungeon_misc_1"],
 			  [1.0, "arcana_dungeon_misc_2"]
           ]
@@ -283,7 +283,12 @@
           "primaryRegion" : [ "arcana_arcaneForest_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_arcaneForest_underground_2" ]
+          "primaryRegion" : [ "arcana_arcaneForest_underground_2" ],
+          "dungeons": [
+			  [4.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
@@ -321,7 +326,7 @@
     "value": {
       "caveLiquid": [ "arcana_liquid_arcaneWater" ],
       "biome": [[0,["arcana_arcaneForest_underground_2"]]],
-      "subRegion": []
+      "subRegion": ["arcana_arcaneovergrowth"]
     }
   },
   {
@@ -330,7 +335,7 @@
     "value": {
       "caveLiquid": [ "arcana_liquid_arcaneWater" ],
       "biome": [[0,["arcana_arcaneForest_underground_3"]]],
-      "subRegion": []
+      "subRegion": ["arcana_arcaneovergrowth"]
     }
   },
   {
@@ -339,10 +344,65 @@
     "value": {
       "caveLiquid": [ "lava" ],
       "biome": [[0,["arcana_arcaneForest_underground_4"]]],
+      "subRegion": ["arcana_arcaneovergrowth"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_arcaneovergrowth",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_arcaneWater" ],
+      "biome": [[0,["arcana_arcaneovergrowth"]]],
       "subRegion": []
     }
   },
-  
+  {
+    "op": "add",
+    "path": "/planetTypes/arcana_runicDesert",
+    "value": {
+      "threatRange" : [6, 6],
+      "layers": {
+        "surface": {
+          "primaryRegion" : ["arcana_runicDesert"],
+          "secondaryRegions" : [],
+          "dungeons": [
+		  	  [4.0, "arcana_arcanecity"],
+		  	  [1.0, "avianvillage"],[1.0, "aviantomb"],[1.0, "aviantemple"],[1.0, "novakidvillage"]
+          ]
+        },
+		
+        "subsurface" : {
+          "primaryRegion" : [ "arcana_runicUnderground" ]
+        },
+        "underground1" : {
+          "primaryRegion" : [ "arcana_runicUnderground" ],
+          "dungeons": [
+			  [4.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
+        },
+        "underground2" : {
+          "primaryRegion" : [ "arcana_runicUnderground" ]
+        },
+        "underground3" : {
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_4" ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_runicDesert",
+    "value": {
+      "caveLiquid": ["arcana_liquid_arcaneWater"],
+      "blockSelector": ["remixedMildSurface"],
+      "fgCaveSelector": ["surfaceCaves"],
+      "bgCaveSelector": ["empty"],
+      "biome": [[0,["arcana_runicDesert"]]],
+      "subRegion": ["colourful"]
+    }
+  },
   {
     "op": "add",
     "path": "/planetTypes/arcana_arcaneDesert",
@@ -366,7 +426,10 @@
           "primaryRegion" : [ "arcana_arcaneDesert_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_arcaneDesert_underground_2" ]
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_2" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_arcaneDesert_underground_3" ]
@@ -389,6 +452,16 @@
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_arcaneDesert"]]],
       "subRegion": ["oasis","colourful"]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/arcana_runicUnderground",
+    "value": {
+      "caveLiquid": [ "arcana_liquid_arcaneWater" ],
+	  "blockSelector" : [ "denseCaves" ],
+      "biome": [[0,["arcana_runicUnderground"]]],
+      "subRegion": []
     }
   },
   {
@@ -489,7 +562,12 @@
           ]
         },
         "subsurface" : {
-          "primaryRegion" : [ "arcana_verdantUnderground" ]
+          "primaryRegion" : [ "arcana_verdantUnderground" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [4.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         }
       }
     }
@@ -553,7 +631,12 @@
           "primaryRegion" : [ "arcana_cinderedCavern" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_cinderedCeiling" ]
+          "primaryRegion" : [ "arcana_cinderedCeiling" ],
+          "dungeons": [
+			  [4.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_cinderedCavern" ]
@@ -689,7 +772,7 @@
     "path": "/regionTypes/arcana_turbulent",
     "value": {
       "oceanLiquid" : [ "water" ],
-      "blockSelector" : [ "remixedIslandsSurface" ],
+      "blockSelector" : [ "arcana_turbulent" ],
       "fgCaveSelector" : [ "surfaceCaves" ],
       "bgCaveSelector" : [ "empty" ],
       "biome": [[0,["arcana_turbulent"]]]
@@ -730,7 +813,12 @@
           "primaryRegion" : [ "arcana_arcaneSea_floor" ]
         },
         "underground2" : {
-          "primaryRegion" : [ "arcana_arcaneSea_underground_1" ]
+          "primaryRegion" : [ "arcana_arcaneSea_underground_1" ],
+          "dungeons": [
+			  [4.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground3" : {
           "primaryRegion" : [ "arcana_arcaneSea_underground_1" ]
@@ -797,7 +885,12 @@
           "primaryRegion" : [ "arcana_arcaneForest_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_arcaneForest_underground_2" ]
+          "primaryRegion" : [ "arcana_arcaneForest_underground_2" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [4.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
@@ -860,7 +953,12 @@
           "primaryRegion" : [ "arcana_illuminated_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_illuminated_underground_2" ]
+          "primaryRegion" : [ "arcana_illuminated_underground_2" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [4.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
@@ -925,7 +1023,12 @@
           "primaryRegion" : [ "arcana_desolate_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_desolate_underground_2" ]
+          "primaryRegion" : [ "arcana_desolate_underground_2" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [4.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
@@ -1102,7 +1205,12 @@
           "primaryRegion" : [ "arcana_animus_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_animus_underground_1" ]
+          "primaryRegion" : [ "arcana_animus_underground_1" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [4.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_animus_underground_2" ]
@@ -1166,7 +1274,12 @@
           "primaryRegion" : [ "arcana_mutatedCavern" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_mutatedCavern" ]
+          "primaryRegion" : [ "arcana_mutatedCavern" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [4.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_mutatedCavern" ]
@@ -1213,7 +1326,12 @@
           "primaryRegion" : [ "arcana_superstormExpanse_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_geoelectra" ]
+          "primaryRegion" : [ "arcana_geoelectra" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_geoelectra" ]
@@ -1310,11 +1428,9 @@
           "primaryRegion" : ["arcana_stahlernBadlands"],
           "secondaryRegions" : [],
           "dungeons": [
-			  [1.0, "dungeoncrawler"], [1.0, "glitchvillage"],
+			  [8.0, "arcana_scavengercamp"],
 			  [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
-			  [1.0, "humancamp"],
-			  [1.0, "glitchsewer"], [4.0, "novakidvillage"],
-              [1.0, "arcana_dungeon_misc_1"]
+			  [1.0, "glitchsewer"], [4.0, "novakidvillage"]
           ]
         },
 		
@@ -1322,7 +1438,12 @@
           "primaryRegion" : [ "arcana_arcaneDesert_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_arcaneDesert_underground_2" ]
+          "primaryRegion" : [ "arcana_arcaneDesert_underground_2" ],
+          "dungeons": [
+			  [4.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_arcaneDesert_underground_3" ]
@@ -1396,10 +1517,11 @@
         "surface": {
           "primaryRegion" : ["arcana_automated"],
           "secondaryRegions" : [],
-		  "dungeonCountRange" : [2, 2],
+		  "dungeonCountRange" : [2, 3],
           "dungeons": [
 			  [8.0, "arcana_workshop_dungeon_1"],
-			  [8.0, "arcana_anarkyon_dungeon_1"]
+			  [8.0, "arcana_anarkyon_dungeon_1"],
+			  [1.0, "arcana_scavengercamp"]
           ]
         },
 		
@@ -1407,7 +1529,12 @@
           "primaryRegion" : [ "arcana_automated_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_automated_underground_1" ]
+          "primaryRegion" : [ "arcana_automated_underground_1" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_scrapCeiling" ]
@@ -1521,7 +1648,12 @@
           "dungeons" : [[1.0, "hylotloceancity"], [1.0, "hylotlruinedcity"]]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_neonCave" ]
+          "primaryRegion" : [ "arcana_neonCave" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_neonCave" ]
@@ -1579,7 +1711,7 @@
           "dungeons": [
 			  [8.0, "arcana_anarkyon_dungeon_1"],
 			  [8.0, "arcana_viridescent_dungeon_1"],
-			  [1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+			  [1.0, "arcana_scavengercamp"],
 			  [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"]
           ]
         },
@@ -1588,7 +1720,12 @@
           "primaryRegion" : [ "arcana_automated_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_automated_underground_2" ]
+          "primaryRegion" : [ "arcana_automated_underground_2" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [4.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_automated_underground_3" ]
@@ -1633,7 +1770,12 @@
           "primaryRegion" : [ "arcana_aspiriteCave" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_noxionCave" ]
+          "primaryRegion" : [ "arcana_noxionCave" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_immoriteCave" ]
@@ -1775,7 +1917,12 @@
           "primaryRegion" : [ "arcana_aspiriteCave" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_noxionCave" ]
+          "primaryRegion" : [ "arcana_noxionCave" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_immoriteCave" ]
@@ -1855,7 +2002,12 @@
           "primaryRegion" : [ "arcana_aspiriteCave" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_noxionCave" ]
+          "primaryRegion" : [ "arcana_noxionCave" ],
+          "dungeons": [
+			  [4.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_immoriteCave" ]
@@ -1875,7 +2027,7 @@
       "fgCaveSelector": ["surfaceCaves"],
       "bgCaveSelector": ["empty"],
       "biome": [[0,["arcana_azureDesert"]]],
-      "subRegion": ["oasis"]
+      "subRegion": []
     }
   },
   
@@ -1900,7 +2052,12 @@
           "primaryRegion" : [ "arcana_aspiriteCave" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_noxionCave" ]
+          "primaryRegion" : [ "arcana_noxionCave" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_immoriteCave" ]
@@ -1969,7 +2126,12 @@
           "primaryRegion" : [ "arcana_aspiriteCave" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_noxionCave" ]
+          "primaryRegion" : [ "arcana_noxionCave" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_immoriteCave" ]
@@ -2012,7 +2174,12 @@
           "primaryRegion" : [ "arcana_volcanicCave" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_ashenCave" ]
+          "primaryRegion" : [ "arcana_ashenCave" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_vermilion_underground_2" ]
@@ -2123,7 +2290,12 @@
           "primaryRegion" : [ "arcana_arcaneForest_underground_1" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_arcaneForest_underground_2" ]
+          "primaryRegion" : [ "arcana_arcaneForest_underground_2" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_arcaneForest_underground_3" ]
@@ -2171,7 +2343,12 @@
           "primaryRegion" : [ "arcana_nightmistCavern" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_nightmistCavern" ]
+          "primaryRegion" : [ "arcana_nightmistCavern" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [4.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_nightmistCavern" ]
@@ -2232,10 +2409,16 @@
           "primaryRegion" : [ "arcana_gleamingBasin" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_gleamingBasin" ]
+          "primaryRegion" : [ "arcana_gleamingBasin" ],
+          "dungeons": [
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
-          "primaryRegion" : [ "arcana_gleamingBasin" ]
+          "primaryRegion" : [ "arcana_gleamingBasin" ],
+          "dungeons": [
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         }
       }
     }
@@ -2276,7 +2459,12 @@
           "primaryRegion" : [ "arcana_redTerminus" ]
         },
         "underground1" : {
-          "primaryRegion" : [ "arcana_redTerminusUnderground2" ]
+          "primaryRegion" : [ "arcana_redTerminusUnderground2" ],
+          "dungeons": [
+			  [1.0, "arcana_arcanetemple"],
+			  [1.0, "arcana_wildshrine"],
+			  [1.0, "arcana_keyforgeshrine"]
+          ]
         },
         "underground2" : {
           "primaryRegion" : [ "arcana_ancientCore"  ]
@@ -2428,7 +2616,6 @@
     "path": "/regionTypes/arcana_gleamingBasin",
     "value": {
       "caveLiquid": [ "healingliquid" ],
-	  "blockSelector" : [ "coreCaves" ],
       "biome": [[0,["arcana_gleamingBasin"]]],
       "subRegion": []
     }
