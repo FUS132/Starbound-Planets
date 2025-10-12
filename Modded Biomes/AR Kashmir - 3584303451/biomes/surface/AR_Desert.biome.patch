@@ -1,0 +1,625 @@
+[
+
+  {
+    "op": "add",
+    "path": "/surfacePlaceables/items/-",
+    "value": {
+      "mode" : "floor",
+      "priority" : 1.0,
+      "variants" : 1,
+      "distribution" : "/biomes/distributions.config:surfaceCrops",
+      "type" : "object",
+      "objectSets" : [
+          {
+          "pool" : [
+          [1, "arwildsunflowerseed"]						
+          ],
+          "parameters" : {
+          "startingStage" : 4
+          }
+          }
+          ]
+      }
+  },
+
+{"op":"add","path":"/spawnProfile/groups/-",
+"value":{
+
+        "select" : 1,
+        "pool" : [
+          [ 0.005, "arbeegiantqueenday" ],
+          [ 0.005, "arbeegiantqueennight" ],
+		  
+          [ 0.7, "ardesertbee" ]
+                 ]
+        }
+},
+
+{"op":"add","path":"/surfacePlaceables/items/-","value":{
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ 
+              [1, "desertbeehive" ]
+              ],
+              "parameters" : {"startingStage" : 4}
+            }
+          ]
+        }
+	},
+
+{"op":"add","path":"/undergroundPlaceables/items/-","value":{
+          "mode" : "floor",
+          "priority" : 3.0,
+          "variants" : 1,
+          "distribution" : "/biomes/distributions.config:undergroundCrops",
+
+          "type" : "object",
+          "objectSets" : [
+            {
+              "pool" : [ 
+              [1, "desertbeehive" ]
+              ],
+              "parameters" : {"startingStage" : 4}
+            }
+          ]
+        }
+	},
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+ //////////////////////////////////////////////////////////////////////////////////////// biome grass
+ 
+{  "op": "add", "path": "/surfacePlaceables/grassMod/2", "value": "AR_grassgrass" },
+{  "op": "add", "path": "/surfacePlaceables/grassMod/2", "value": "AR_doublegrass" },
+{  "op": "add", "path": "/surfacePlaceables/grassMod/3", "value": "AR_quartergrass" },
+{  "op": "add", "path": "/surfacePlaceables/grassMod/3", "value": "AR_mixgrass" },
+{  "op": "add", "path": "/surfacePlaceables/variants", "value": 2 },
+
+{  "op": "add", "path": "/undergroundPlaceables/grassMod/2", "value": "AR_grassgrass"},
+{  "op": "add", "path": "/undergroundPlaceables/grassMod/2", "value": "AR_doublegrass"},
+{  "op": "add", "path": "/undergroundPlaceables/grassMod/3", "value": "AR_quartergrass"},
+{  "op": "add", "path": "/undergroundPlaceables/grassMod/3", "value": "AR_mixgrass"},
+{  "op": "add", "path": "/undergroundPlaceables/variants", "value": 2 },
+
+ //////////////////////////////////////////////////////////////////////////////////////// biome tree plants
+
+{"op":"replace","path":"/surfacePlaceables/items/7/variants","value":2},
+{"op":"replace","path":"/surfacePlaceables/items/7/treeFoliageHueShiftMax","value":40},
+{"op":"replace","path":"/surfacePlaceables/items/7/treeStemHueShiftMax","value":15},
+  
+{"op": "add","path":"/surfacePlaceables/items/7/treeStemList/-","value": "ar_examplestem"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeStemList/-","value": "ar_examplestemblack"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeStemList/-","value": "ar_examplestemblue"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeStemList/-","value": "ar_examplestemred"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeStemList/-","value": "ar_examplestemwhite"},
+
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage1"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage2"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage3"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage4"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage5"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage6"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage7"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage8"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage9"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage10"},
+
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage11"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage12"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage13"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage14"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage15"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage16"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage17"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage18"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage19"},
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage20"},
+
+{"op": "add","path":"/surfacePlaceables/items/7/treeFoliageList/-","value": "ar_examplefoliage21"},
+
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+ //////////////////////////////////////////////////////////////////////////////////////// ar gas station
+
+{"op":"add","path":"/surfacePlaceables/items/-","value":{
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 6,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets":[{
+			"pool":[
+		      [0.02,"gasaegisaltore" ],
+			  [0.04,"gascoalore" ],
+			  [0.04,"gascopperore"],
+			  [0.04,"gasdurasteelore"],
+			  [0.02,"gasferoziumore"],
+			  [0.03,"gasgoldore"],
+			  [0.04,"gasironore"],
+			  [0.03,"gassilverore"],
+			  [0.02,"gassolariumore"],
+			  [0.03,"gastitaniumore"],
+			  [0.03,"gastungstenore"],
+			  [0.02,"gasvioliumore"]
+			  ],
+			"parameters" : {}
+			}
+			]
+		}
+	},
+
+{"op":"add","path":"/undergroundPlaceables/items/-","value":{
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 6,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets":[{
+			"pool":[
+		      [0.02,"gasaegisaltore" ],
+			  [0.04,"gascoalore" ],
+			  [0.04,"gascopperore"],
+			  [0.04,"gasdurasteelore"],
+			  [0.02,"gasferoziumore"],
+			  [0.03,"gasgoldore"],
+			  [0.04,"gasironore"],
+			  [0.03,"gassilverore"],
+			  [0.02,"gassolariumore"],
+			  [0.03,"gastitaniumore"],
+			  [0.03,"gastungstenore"],
+			  [0.02,"gasvioliumore"]
+			  ],
+			"parameters" : {}
+			}
+			]
+		}
+	},
+
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+ //////////////////////////////////////////////////////////////////////////////////////// nature geyser
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 5,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "geyser_alienjuice_liquid"],						
+						[0.05, "geyser_fuel_liquid"],						
+						[0.05, "geyser_healing_liquid"],						
+						[0.05, "geyser_lava_liquid"],						
+						[0.05, "geyser_milk_liquid"],						
+						[0.05, "geyser_oil_liquid"],						
+						[0.05, "geyser_poison_liquid"],						
+						[0.05, "geyser_swamp_liquid"],
+						[0.05, "geyser_water_liquid"]
+					]
+				}
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/undergroundPlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 5,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [			
+						[0.05, "geyser_alienjuice_liquid"],						
+						[0.05, "geyser_fuel_liquid"],						
+						[0.05, "geyser_healing_liquid"],						
+						[0.05, "geyser_lava_liquid"],						
+						[0.05, "geyser_milk_liquid"],						
+						[0.05, "geyser_oil_liquid"],						
+						[0.05, "geyser_poison_liquid"],						
+						[0.05, "geyser_swamp_liquid"],
+						[0.05, "geyser_water_liquid"]
+					]
+				}
+			]
+		}
+	}, 
+ 
+  //////////////////////////////////////////////////////////////////////////////////////// nature pods
+  
+	{
+		"op": "add",
+		"path": "/undergroundPlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 2,
+			"distribution" : "/biomes/distributions.config:veryRareClumpySmall",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "f_waterpod"],						
+						[0.05, "f_lavapod"],						
+						[0.05, "f_poisonpod"],
+						[0.05, "f_oilpod"]		
+					]
+				}
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/undergroundPlaceables/items/-",
+		"value": {
+			"mode" : "ceiling",
+			"priority" : 1.0,
+			"variants" : 2,
+			"distribution" : "/biomes/distributions.config:veryRareClumpySmall",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "c_waterpod"],						
+						[0.05, "c_lavapod"],						
+						[0.05, "c_poisonpod"],
+						[0.05, "c_oilpod"]		
+					]
+				}
+			]
+		}
+	},
+	
+ //////////////////////////////////////////////////////////////////////////////////////// lost vaults
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 1,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "lost_vault_1"],						
+						[0.05, "lost_vault_2"],
+						[0.05, "lost_vault_3"]
+					]
+				}
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/undergroundPlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 1,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [			
+						[0.05, "lost_vault_1"],						
+						[0.05, "lost_vault_2"],
+						[0.05, "lost_vault_3"]		
+					]
+				}
+			]
+		}
+	},
+	
+ //////////////////////////////////////////////////////////////////////////////////////// geodes ore
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 6,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "aegisaltoregeode"],						
+						[0.05, "copperoregeode"],
+						[0.05, "durasteeloregeode"],						
+						[0.05, "feroziumoregeode"],
+						[0.05, "goldoregeode"],						
+						[0.05, "ironoregeode"],
+						[0.05, "silveroregeode"],						
+						[0.05, "solariumoregeode"],
+						[0.05, "titaniumoregeode"],						
+						[0.05, "tungstenoregeode"],
+						[0.05, "violiumoregeode"]
+					]
+				}
+			]
+		}
+	},	
+	
+ //////////////////////////////////////////////////////////////////////////////////////// geodes geiser
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 5,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "alienjuice_geisergeode"],						
+						[0.05, "fuel_geisergeode"],
+						[0.05, "healing_geisergeode"],						
+						[0.05, "lava_geisergeode"],
+						[0.05, "milk_geisergeode"],						
+						[0.05, "oil_geisergeode"],		
+						[0.05, "poison_geisergeode"],
+						[0.05, "swamp_geisergeode"],
+						[0.05, "water_geisergeode"]
+					]
+				}
+			]
+		}
+	},	
+
+ //////////////////////////////////////////////////////////////////////////////////////// geodes gas
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 3,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "amoniumgasgeode"],						
+						[0.05, "carbonicgasgeode"],
+						[0.05, "hydrogengasgeode"],						
+						[0.05, "metanegasgeode"],
+						[0.05, "nitrogengasgeode"],						
+						[0.05, "oxigengasgeode"]
+					]
+				}
+			]
+		}
+	},	
+
+ //////////////////////////////////////////////////////////////////////////////////////// stones
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 5,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "stone_attract"],						
+						[0.05, "stone_bomb"],
+						[0.05, "stone_heal"],						
+						[0.05, "stone_lunar"],
+						[0.05, "stone_nest"],						
+						[0.05, "stone_power"],		
+						[0.05, "stone_repel"],
+						[0.05, "stone_solar"],						
+						[0.05, "stone_spawn"],
+						[0.05, "stone_treasure"]
+					]
+				}
+			]
+		}
+	},	
+
+ //////////////////////////////////////////////////////////////////////////////////////// protection generator
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 1,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "protectiongenerator"]
+					]
+				}
+			]
+		}
+	},	
+
+ //////////////////////////////////////////////////////////////////////////////////////// pods
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 1,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "broken_spacepod"]
+					]
+				}
+			]
+		}
+	},	
+
+ //////////////////////////////////////////////////////////////////////////////////////// nest
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 1,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "unknow_nest"]
+					]
+				}
+			]
+		}
+	},	
+
+ //////////////////////////////////////////////////////////////////////////////////////// poop
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 1,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "unknow_poop"]
+					]
+				}
+			]
+		}
+	},	
+	
+ //////////////////////////////////////////////////////////////////////////////////////// corpse
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 1,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "villager_corpse"]
+					]
+				}
+			]
+		}
+	},	
+
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+ //////////////////////////////////////////////////////////////////////////////////////// pop-up objects
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 3,
+			"distribution" : "/biomes/distributions.config:common",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "popupimagescenario_surface06"],						
+						[0.05, "popupimagescenario_surface07"],		
+						[0.05, "popupimagescenario_surface08"]
+					]
+				}
+			]
+		}
+	}, 
+ 
+ //////////////////////////////////////////////////////////////////////////////////////// skill objects
+
+	{
+		"op": "add",
+		"path": "/surfacePlaceables/items/-",
+		"value": {
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 8,
+			"distribution" : "/biomes/distributions.config:veryRare",
+			"type" : "object",
+			"objectSets" : [
+				{
+					"pool" : [
+						[0.05, "Bandit_object_skill"],						
+						[0.05, "BrokenMech_object_skill"],
+						[0.05, "BrokenVehicle_object_skill"],						
+						[0.05, "CorpseAnimal_object_skill"],
+						[0.05, "CorpseVillager_object_skill"],						
+						[0.05, "Crystal_object_skill"],		
+						[0.05, "Egg_object_skill"],
+						[0.05, "FallenStarship_object_skill"],						
+						[0.05, "Gems_object_skill"],
+						[0.05, "Magic_object_skill"],
+						[0.05, "OldChest_object_skill"],						
+						[0.05, "Plant_object_skill"],
+						[0.05, "Rock_object_skill"],						
+						[0.05, "Trap_object_skill"],		
+						[0.05, "Trash_object_skill"]
+					]
+				}
+			]
+		}
+	}
+	
+]

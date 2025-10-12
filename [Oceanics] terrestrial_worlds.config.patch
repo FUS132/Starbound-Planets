@@ -21,6 +21,7 @@
 		// Box Building Planet Pack - 3534463795
 		// New Stars With Mini-Biomes Themed Planets - 2032258885
 		// Vanilla Biome Planets with Tiers 7-10 - 2041790717
+		// AR Kashmir - 3584303451
 		// K'Rakoth Mod - 2604255131
 		// Starry Planets - 2157200368
 		// Hallowed Planets - 1973038872
@@ -340,6 +341,42 @@
         {
             "op": "add",
             "path": "/planetTypes/magma7/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// AR Kashmir - 3584303451
+		// Note: AR Arctic is missing from the mod's config patch and so was only added here just in case.
+		//==============================================================================================================|
+   //  [
+   //      {"op": "test", "path": "/planetTypes/ARArctic"},
+   //      {
+   //          "op": "add",
+   //          "path": "/planetTypes/ARArctic/layers/surface/dungeons/-",
+   //          "value": [1, "CHANGE_ME"]
+   //      }
+   //  ],
+    [
+        {"op": "test", "path": "/planetTypes/ARMagma"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARMagma/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/AROcean"},
+        {
+            "op": "add",
+            "path": "/planetTypes/AROcean/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARToxic"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARToxic/layers/surface/dungeons/-",
             "value": [1, "CHANGE_ME"]
         }
     ],

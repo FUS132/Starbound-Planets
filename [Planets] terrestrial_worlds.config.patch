@@ -23,6 +23,7 @@
 		// Box Building Planet Pack - 3534463795
 		// New Stars With Mini-Biomes Themed Planets - 2032258885
 		// Vanilla Biome Planets with Tiers 7-10 - 2041790717
+		// AR Kashmir - 3584303451
 		// Galaxy in Conflict - 2754886445
 		// K'Rakoth Mod - 2604255131
 		// Crystal Planet - 1090233799
@@ -1708,6 +1709,122 @@
             "value": [1, "CHANGE_ME"]
         }
     ],
+		//==============================================================================================================|
+		// AR Kashmir - 3584303451
+		// Note: AR Scorchedcity is missing from the mod's config patch and so was only added here just in case.
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/ARTestPlanet"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARTestPlanet/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARKashmir"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARKashmir/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARAlien"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARAlien/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARBarren"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARBarren/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARDesert"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARDesert/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARForest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARForest/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARGarden"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARGarden/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARJungle"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARJungle/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARMidnight"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARMidnight/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARSavannah"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARSavannah/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARSnow"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARSnow/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARTundra"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARTundra/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+    [
+        {"op": "test", "path": "/planetTypes/ARVolcanic"},
+        {
+            "op": "add",
+            "path": "/planetTypes/ARVolcanic/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+   //  [
+   //      {"op": "test", "path": "/planetTypes/ARScorchedcity"},
+   //      {
+   //          "op": "add",
+   //          "path": "/planetTypes/ARScorchedcity/layers/surface/dungeons/-",
+   //          "value": [1, "CHANGE_ME"]
+   //      }
+   //  ],
 		//==============================================================================================================|
 		// Galaxy in Conflict - 2754886445
 		// Note: All of these have preset dungeons and strict spawn limits assigned to them, leaving this section here

@@ -1,0 +1,1484 @@
+ [
+ 
+////////////////////////////////////////////////////////////////////////////// AR TEST PLANET //////////////////////////////////////////////////////////////////////////////
+
+  {
+    "op": "add", "path": "/planetTypes/ARTestPlanet", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARTestPlanet" ], 
+          "secondaryRegions": [  ],
+        "dungeonCountRange": [  1,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "ARunderground1" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARTestPlanet", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "PandoraSurface", "remixedMildSurface" ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARTestPlanet" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater"  ],
+      "biome": [  [  0, [  "ARunderground1" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "biome": [  [  0, [  "ARunderground2" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "biome": [  [  0, [  "ARunderground3" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  
+////////////////////////////////////////////////////////////////////////////// AR KASHMIR //////////////////////////////////////////////////////////////////////////////
+
+  {
+    "op": "add", "path": "/planetTypes/ARKashmir", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARKashmir" ],
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  1,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "ARunderground1" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARKashmir", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "PandoraSurface", "remixedMildSurface" ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARKashmir" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater"  ],
+      "biome": [  [  0, [  "ARunderground1" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "biome": [  [  0, [  "ARunderground2" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "biome": [  [  0, [  "ARunderground3" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+   
+////////////////////////////////////////////////////////////////////////////// AR Alien //////////////////////////////////////////////////////////////////////////////
+
+  {
+    "op": "add", "path": "/planetTypes/ARAlien", "value": {
+      "threatRange": [  1,  4  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARAlien" ],
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space" : { "primaryRegion" : [ "asteroids" ] },
+        "atmosphere" : { "primaryRegion" : [ "atmosphere" ] },
+        "subsurface" : {  "primaryRegion" : [ "ARunderground1" ]  },
+        "underground1" : { "primaryRegion" : [ "ARunderground2" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4" ]  },
+        "core" : { "primaryRegion" : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARAlien", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "remixedMildSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARAlien" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+
+   
+////////////////////////////////////////////////////////////////////////////// AR Barren /////////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/ARBarren", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARBarren" ],
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "ARunderground1_deep" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2_deep" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3_deep" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4_deep" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARBarren", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "remixedMildSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARBarren" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1_deep", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2_deep", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3_deep", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4_deep", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+    
+////////////////////////////////////////////////////////////////////////////// AR Desert /////////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/ARDesert", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARDesert" ],
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "ARunderground1" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARDesert", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "remixedMildSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARDesert" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+ 
+////////////////////////////////////////////////////////////////////////////// AR Forest /////////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/ARForest", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARForest" ],
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "ARunderground1" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARForest", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "remixedMildSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARForest" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  
+////////////////////////////////////////////////////////////////////////////// AR Garden /////////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/ARGarden", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARGarden" ],
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "ARunderground1" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARGarden", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "remixedMildSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARGarden" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+   
+////////////////////////////////////////////////////////////////////////////// AR Jungle /////////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/ARJungle", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARJungle" ],
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "ARunderground1" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARJungle", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "remixedMildSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARJungle" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+   
+////////////////////////////////////////////////////////////////////////////// AR Magma //////////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/ARMagma", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARMagma" ],
+          "baseHeight" : 1150,
+          "layerLevel" : 1100,
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "magmaoceanfloor" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2_deep" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3_deep" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4_deep" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARMagma", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "oceanLiquid" : [ "lava" ],
+      "blockSelector": [ "remixedIslandsSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARMagma" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1_deep", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2_deep", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3_deep", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4_deep", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  
+////////////////////////////////////////////////////////////////////////////// AR Midnight ///////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/ARMidnight", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARMidnight" ],
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "ARunderground1_deep" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2_deep" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3_deep" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4_deep" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARMidnight", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "remixedMildSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARMidnight" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1_deep", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2_deep", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3_deep", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4_deep", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+ 
+////////////////////////////////////////////////////////////////////////////// AR Ocean //////////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/AROcean", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "AROcean" ],
+          "baseHeight" : 1150,
+          "layerLevel" : 1100,
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "oceanfloor" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/AROcean", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "oceanLiquid" : [ "water" ],
+      "blockSelector": [ "remixedIslandsSurface" ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "AROcean" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+   
+////////////////////////////////////////////////////////////////////////////// AR Savannah ///////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/ARSavannah", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARSavannah" ],
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "ARunderground1" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARSavannah", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "remixedMildSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARSavannah" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  
+////////////////////////////////////////////////////////////////////////////// AR Snow /////////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/ARSnow", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARSnow" ],
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "ARunderground1" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARSnow", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "remixedMildSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARSnow" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+ 
+////////////////////////////////////////////////////////////////////////////// AR Toxic //////////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/ARToxic", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARToxic" ],
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "ARunderground1_deep" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2_deep" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3_deep" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4_deep" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARToxic", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "remixedMildSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARToxic" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1_deep", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2_deep", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3_deep", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4_deep", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+ 
+////////////////////////////////////////////////////////////////////////////// AR Tundra /////////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/ARTundra", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARTundra" ],
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "ARunderground1" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARTundra", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "blockSelector": [ "remixedMildSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARTundra" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+ 
+////////////////////////////////////////////////////////////////////////////// AR Volcanic ///////////////////////////////////////////////////////////////////////////
+
+
+  {
+    "op": "add", "path": "/planetTypes/ARVolcanic", "value": {
+      "threatRange": [  1,  10  ],
+      "layers": {
+        "surface": {
+          "primaryRegion": [ "ARVolcanic" ],
+          "baseHeight" : 1150,
+          "layerLevel" : 1100,
+          "secondaryRegions": [ ],
+        "dungeonCountRange": [  3,  5  ],
+        "dungeons": 
+        [
+            [1.0, "naturalcave"],         
+            [1.0, "apexbase"], 
+            [1.0, "apexcamp"], 
+            [1.0, "apexcity"],
+            [1.0, "apextestfacility"],
+            [1.0, "avianairship"],
+            [1.0, "aviannativevillage"],
+            [1.0, "aviantemple"],
+            [1.0, "aviantomb"],
+            [1.0, "avianvillage"],
+            [1.0, "florancanyon"],
+            [1.0, "floranhuntinggrounds"],
+            [1.0, "floranhutvillage"],
+            [1.0, "floranvillagetower"],
+            [1.0, "dungeoncrawler"],
+            [1.0, "evilfortress"],
+            [1.0, "glitchcastle"],
+            [1.0, "glitchvillage"],
+            [1.0, "humancamp"],
+            [1.0, "humanprison"],
+            [1.0, "hylotlcity"],
+            [1.0, "hylotlruinedcastle"],
+            [1.0, "novakidvillage"],
+            [1.0, "undergroundencounterdungeons"],
+            [1.0, "encounterdungeons"],
+            [1.0, "glitchsewer"],
+            [1.0, "alienmicrodungeons"]
+        ] },
+
+        "space"        : { "primaryRegion"  : [ "asteroids" ] },
+        "atmosphere"   : { "primaryRegion"  : [ "atmosphere" ] },
+        "subsurface"   : {  "primaryRegion" : [ "magmaoceanfloor" ]  },
+        "underground1" : { "primaryRegion"  : [ "ARunderground2_deep" ]  },
+        "underground2" : {  "primaryRegion" : [ "ARunderground3_deep" ]  },
+        "underground3" : {  "primaryRegion" : [ "ARunderground4_deep" ]  },
+        "core"         : { "primaryRegion"  : [ "core" ]  }
+      }
+    }
+  },
+  
+  {
+    "op": "add", "path": "/regionTypes/ARVolcanic", "value": {
+      "caveLiquid": [ "water", "poison", "lava", "tarliquid", "healingliquid", "swampwater" ],
+      "oceanLiquid" : [ "lava" ],
+      "blockSelector": [ "remixedIslandsSurface"  ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [  [  0, [  "ARVolcanic" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground1_deep", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquidgold", "liquidiron", "liquidsilver" ],
+      "biome": [  [  0, [  "ARunderground1_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground2_deep", "value": {
+      "caveLiquid": [ "liquiddurasteel", "liquidtungsten", "liquidtitanium" ],
+      "biome": [  [  0, [  "ARunderground2_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground3_deep", "value": {
+      "caveLiquid": [ "liquidcoal", "liquidcopper", "liquiddurasteel", "liquidferozium", "liquidgold", "liquidiron", "liquidsilver", "liquidsolarium", "liquidtungsten", "liquidtitanium", "liquidviolium", "liquidaegisalt" ],
+      "biome": [  [  0, [  "ARunderground3_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  },
+  {
+    "op": "add", "path": "/regionTypes/ARunderground4_deep", "value": {
+      "caveLiquid": [ "lava" ],
+      "biome": [  [  0, [  "ARunderground4_deep" ] ]  ],
+      "subRegion": 	[]
+    }
+  }
+
+////////////////////////////////////////////////////////////////////////////// NEXT PLANET ////////////////////////////////////////////////////////////////////////////
+
+ ]

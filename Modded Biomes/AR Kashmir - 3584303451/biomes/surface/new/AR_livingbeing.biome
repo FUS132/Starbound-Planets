@@ -1,0 +1,436 @@
+{
+
+ //////////////////////////////////////////////////////////////////////////////////////// NAME
+ 
+  "name" : "ARLivingBeing",
+  "friendlyName" : "AR_livingbeing",
+  //"statusEffects" : [ "biome_ar_planet" ],
+  
+ //////////////////////////////////////////////////////////////////////////////////////// SPAWN
+ 
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 2,
+        "pool" : [
+		  [ 0.1, "AR_birdbomb" ],
+		  [ 0.1, "AR_bugbomb" ],
+		  [ 0.1, "AR_fishbomb" ],
+		  [ 0.1, "AR_ghostbomb" ],
+		  [ 0.1, "AR_walkerbomb" ],
+		  [ 0.1, "AR_slimebomb" ],
+		  [ 0.1, "AR_turretbomb" ],
+		  [ 0.1, "AR_wormbomb_head" ]
+        ]
+      },	
+      {
+        "select" : 2,
+        "pool" : "nightTerrors"
+      },
+	  
+      {
+        "select" : 2,
+        "pool" : "generatedGround"
+      },
+	  
+      {
+        "select" : 2,
+        "pool" : "generatedFlying"
+      },
+	  
+      {
+        "select" : 2,
+        "pool" : [
+          [ 0.15, "birdcritter" ],
+          [ 0.15, "hedgehogcritter" ],
+          [ 0.15, "tortoisecritter" ],
+          [ 0.15, "mousecritter" ],
+          [ 0.15, "bunnycritter" ],
+          [ 0.15, "snailcritter" ],
+          [ 0.15, "owlcritter" ],
+          [ 0.15, "blipcritter" ],
+          [ 0.15, "fireflyspawner" ],		  
+          [ 0.15, "squirrelcritter" ],
+          [ 0.15, "fishcritter" ]
+        ]
+      }
+	  
+    ],
+	
+    "monsterParameters" : {  "colors" : "AR_planet"  } },
+  
+ //////////////////////////////////////////////////////////////////////////////////////// SKY
+
+  "hueShiftOptions" : [-30, -20, -15, -10, -5, 0, 5, 10, 15, 20, 30], 
+  //"hueShiftOptions" : [-30, -20, -15, -10, -5, 0, 5, 10, 15, 20, 30],
+ 
+  "weather" : [
+    [0, [
+      "/weather.config:AR_Kashmir"
+    ]]
+  ],
+
+  "skyOptions" : [
+    {
+      // sunny earth days, red/orange sunrise and purple/red sunset
+      "mainColor" : [255, 255, 255],
+      "morningColors" : [ [242, 120, 0], [255, 230, 176] ],
+      "dayColors" : [ [115, 224, 255], [255, 255, 255] ],
+      "eveningColors" : [ [125, 17, 158], [210, 52, 50] ],
+      "nightColors" : [ [24, 38, 53, 80], [58, 42, 70, 160] ],
+      "morningLightColor" : [140, 71, 0],
+      "dayLightColor" : [200, 200, 200],
+      "eveningLightColor" : [160, 120, 180],
+      "nightLightColor" : [40, 20, 60]
+    }
+  ],
+  
+ //////////////////////////////////////////////////////////////////////////////////////// BLOCKS
+ 
+  "mainBlock" : "AR_dirt",
+  "subBlocks" : [ "AR_rockite", "AR_canvas", "AR_sand", "AR_crudeScatterdirt", "AR_musgousdirt", "AR_webdirt" ],
+  "ores" : "AR_surface",
+  
+ //////////////////////////////////////////////////////////////////////////////////////// PARALLAX
+ 
+  "parallax" : "/parallax/surface/AR_Kashmir1.parallax",
+  
+ //////////////////////////////////////////////////////////////////////////////////////// MUSIC
+ 
+  "ambientNoises" : {
+    "day" : {  "tracks" : [ "/sfx/environmental/garden_day.ogg" ]  },
+    "night" : {  "tracks" : [ "/sfx/environmental/garden_night.ogg" ]  }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/epsilon-indi.ogg", "/music/hymn-to-the-stars.ogg", "/music/procyon.ogg", "/music/stellarformation.ogg", "/music/vast-immortal-suns.ogg", "/music/atlas.ogg", "/music/blue-straggler.ogg", "/music/cygnus-x1.ogg", "/music/europa.ogg", "/music/haiku.ogg", "/music/m54.ogg", "/music/on-the-beach-at-night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/procyon.ogg", "/music/tranquility-base.ogg", "/music/psyche.ogg", "/music/accretion-disc.ogg", "/music/cygnus-x1.ogg", "/music/eridanus-supervoid.ogg", "/music/horsehead-nebula.ogg", "/music/large-magellanic-cloud.ogg", "/music/m54.ogg", "/music/nomads.ogg", "/music/on-the-beach-at-night.ogg" ]
+    }
+  },
+  
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// SURFACE
+ 
+  "surfacePlaceables" : {
+    "grassMod" : [ "AR_grass" ],
+    "grassModDensity" : 1.0,
+    "ceilingGrassMod" : [ "undergrowth" ],
+    "ceilingGrassModDensity" : 1.0,
+	
+ //////////////////////////////////////////////////////////////////////////////////////// OBJECTS
+ 
+    "items" : [
+
+ ///////////// CHESTS and ARTIFICIAL PLACEABLES
+
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundChests",
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "gardenChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+
+ ///////////// MICRO DUNGEONS
+
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+        "type" : "microdungeon",
+        "microdungeons" : [ "gardenmicrodungeons" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeEncounterDungeon",
+        "type" : "microdungeon",
+        "microdungeons" : [ "encounterdungeons" ]
+      },
+
+ ///////////// TERRAIN
+
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 5,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+
+ ///////////// GRASS and TREES and PLANTS
+
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+        "type" : "grass",
+        "grasses" : [ "AR_grass" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 4,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 40,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "AR_treeroot", "AR_treegiantroot" ],
+        "treeFoliageList" : [ "AR_blueleaves", "AR_greenleaves", "AR_cloudy", "AR_scraggy", "AR_bubbles", "AR_lotus", "AR_scraggy" ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 2,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 40,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "AR_vine", "AR_vine2", "AR_vine3", "AR_vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 4,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+        "type" : "grass",
+        "grasses" : [ "AR_colourfulflower", "AR_geometricflower", "AR_jungleswirly", "AR_leafsy", "AR_rustflower", "AR_spikes", "AR_springy", "AR_thinstem", "AR_thickpetals" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 39,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "flowerred" ], [0.35, "flowerblue" ], [0.35, "floweryellow" ], 
+			
+			[0.35, "AR_junglebush1_b" ], [0.35, "AR_junglebush2_b" ], [0.35, "AR_junglebush3_b" ], [0.35, "AR_junglebush4_b" ], [0.35, "AR_junglebush5_b" ], 
+			[0.35, "AR_junglebush6_b" ], [0.35, "AR_junglebush7_b" ], [0.35, "AR_junglebush8_b" ], [0.35, "AR_junglebush9_b" ], [0.35, "AR_junglebush10_b" ], 
+			[0.35, "AR_junglebush11_b" ], [0.35, "AR_junglebush12_b" ], [0.35, "AR_junglebush13_b" ], [0.35, "AR_junglebush14_b" ], [0.35, "AR_junglebush15_b" ], 
+			[0.35, "AR_junglebush16_b" ], [0.35, "AR_junglebush17_b" ], [0.35, "AR_junglebush18_b" ],
+			
+			[0.35, "AR_junglebush1_t" ], [0.35, "AR_junglebush2_t" ], [0.35, "AR_junglebush3_t" ], [0.35, "AR_junglebush4_t" ], [0.35, "AR_junglebush5_t" ], 
+			[0.35, "AR_junglebush6_t" ], [0.35, "AR_junglebush7_t" ], [0.35, "AR_junglebush8_t" ], [0.35, "AR_junglebush9_t" ], [0.35, "AR_junglebush10_t" ], 
+			[0.35, "AR_junglebush11_t" ], [0.35, "AR_junglebush12_t" ], [0.35, "AR_junglebush13_t" ], [0.35, "AR_junglebush14_t" ], [0.35, "AR_junglebush15_t" ], 
+			[0.35, "AR_junglebush16_t" ], [0.35, "AR_junglebush17_t" ], [0.35, "AR_junglebush18_t" ] ],
+            "parameters" : {  }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "testbush",
+            "baseHueShiftMax" : 40,
+            "modHueShiftMax" : 15
+          }
+        ]
+      },
+	  
+ ///////////// DECORATION
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 12,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ 
+			[0.35, "ar_tallgrass1_t" ], [0.35, "ar_tallgrass2_t" ], [0.35, "ar_tallgrass3_t" ], [0.35, "ar_tallgrass4_t" ], [0.35, "ar_tallgrass5_t" ], 
+			[0.35, "ar_tallgrass6_t" ],	[0.35, "ar_tallgrass7_t" ],
+            [0.35, "ar_tallgrass1_b" ], [0.35, "ar_tallgrass2_b" ], [0.35, "ar_tallgrass3_b" ], [0.35, "ar_tallgrass4_b" ], [0.35, "ar_tallgrass5_b" ], 
+			[0.35, "ar_tallgrass6_b" ], [0.35, "ar_tallgrass7_b" ]
+           			],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+ ///////////// CROPS
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildAR_suntulipseed" ] ],
+            "parameters" : {  "startingStage" : 4  }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildAR_suntulipseed" ] ],
+            "parameters" : {  "startingStage" : 3  }
+          }
+        ]
+      }
+    ]
+  },
+
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// UNDERGROUND
+ 
+ 
+  "undergroundPlaceables" : {
+    "grassMod" : [ "AR_sand" ],
+    "grassModDensity" : 0.2,
+    "ceilingGrassMod" : [ "roots" ],
+    "ceilingGrassModDensity" : 0.3,
+	
+ //////////////////////////////////////////////////////////////////////////////////////// OBJECTS
+ 
+    "items" : [
+
+ ///////////// CHESTS and ARTIFICIAL PLACEABLES
+
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "gardenChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundweaponChests",
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "weaponChest" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+	  
+ ///////////// GRASS and TREES and PLANTS
+ 
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 40,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "AR_vine", "AR_vine2", "AR_vine3", "AR_vine4" ],
+        "treeFoliageList" : [ "flowery", "starry", "dreamy" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 3,
+        "period" : 5,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+        "type" : "grass",
+        "grasses" : [ "testflower", "testflower2", "testflower3", "testflower4", "testflower5", "testflower6", "testflower7" ]
+      },
+	  
+ ///////////// DECORATION
+
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 12,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ 
+			[0.35, "ar_tallgrass1_t" ], [0.35, "ar_tallgrass2_t" ], [0.35, "ar_tallgrass3_t" ], [0.35, "ar_tallgrass4_t" ], [0.35, "ar_tallgrass5_t" ], 
+			[0.35, "ar_tallgrass6_t" ],	[0.35, "ar_tallgrass7_t" ],
+            [0.35, "ar_tallgrass1_b" ], [0.35, "ar_tallgrass2_b" ], [0.35, "ar_tallgrass3_b" ], [0.35, "ar_tallgrass4_b" ], [0.35, "ar_tallgrass5_b" ], 
+			[0.35, "ar_tallgrass6_b" ], [0.35, "ar_tallgrass7_b" ]
+           			],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  }
+}
