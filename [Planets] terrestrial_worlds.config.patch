@@ -40,6 +40,7 @@
 		// Divine Planet - 2548371664
 		// Project Ancient Cosmos - 2644341899
 		// Starburst Rework - 3025139283
+		// The Viera of Ivalice - 732276079
 		// LostBound - 3440851272
 		// The Ironsides - 2177711780
 		// Nebula Pack - 1709257267
@@ -2164,6 +2165,17 @@
         {
             "op": "add",
             "path": "/planetTypes/pf_stormy/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// The Viera of Ivalice - 732276079
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/vieramajesticforest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/vieramajesticforest/layers/surface/dungeons/-",
             "value": [1, "CHANGE_ME"]
         }
     ],

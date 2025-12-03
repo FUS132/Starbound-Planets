@@ -1,0 +1,20 @@
+[
+	{ "op" : "add", "path": "/planetTypes/vieramajesticforest", 
+	"value": { "threatRange": [ 2, 5 ], 
+	"layers": { 
+	"surface": { 
+	"primaryRegion": [ "vieramajesticforest" ], 
+	"secondaryRegions": [ "vieramajesticforest" ], 
+	"dungeonCountRange": [ 2, 3 ], 
+	"dungeons": [
+	[ 2.0, "vieravillage" ]
+	]
+	} } } },
+	{ "op" : "add", "path": "/regionTypes/vieramajesticforest", 
+	"value": { "caveLiquid": [ "water", "healingliquid", "poison" ], 
+	"blockSelector": [ "remixedPoolsSurface" ], 
+	"fgCaveSelector": [ "surfaceCaves" ], 
+	"bgCaveSelector": [ "empty" ], 
+	"biome": [ [ 0, [ "vieramajesticforest" ] ] ], "subRegion": [ "vieramajesticforest" ] } }
+	
+]
