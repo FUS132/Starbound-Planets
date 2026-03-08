@@ -60,6 +60,7 @@
 		// Thermal Surge Planet - 2552968317
 		// Voided: Expansion Mod (WIP) - 2822921122
 		// The Aether - 1941217152
+		// Arcane Magus - 2746439524
 		// My Enternia 2.4: Alta Hobbies - 2006558650
 		// Kenopsea - 2331991026 AND Black Ice - 3331962844
 		// Nitrogen Deep - 2003959183
@@ -2426,6 +2427,17 @@
         {
             "op": "add",
             "path": "/planetTypes/AM_aether/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Arcane Magus - 2746439524
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/amenchantedforest"},
+        {
+            "op": "add",
+            "path": "/planetTypes/amenchantedforest/layers/surface/dungeons/-",
             "value": [1, "CHANGE_ME"]
         }
     ],

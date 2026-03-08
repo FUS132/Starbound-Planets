@@ -1,0 +1,41 @@
+[
+    {
+        "op": "add",
+        "path": "/planetTypes/amenchantedforest",
+        "value": {
+            "threatRange": [1, 4],
+            "layers": {
+                "surface": {
+                    "primaryRegion": ["amenchantedforest"],
+                    "secondaryRegion": [
+                        "birchforest",
+                        "swamp",
+                        "flowerforest",
+                        "forest"
+                    ],
+                    "dungeonCountRange": [0, 1],
+                    "dungeons": [
+                        [1.0, "wreck"],
+                        [1.0, "avianvillage"],
+                        [1.0, "floranhuntinggrounds"],
+                        [1.0, "naturalcave"]
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/regionTypes/amenchantedforest",
+        "value": {
+            "caveLiquid": ["water"],
+            "caveLiquidChanceRange": [35, 100],
+            "blockSelector": ["remixedMildSurface", "remixedPoolsSurface"],
+            "fgCaveSelector": ["surfaceCaves"],
+            "fgOreSelector": ["normalVeins"],
+            "bgOreSelector": ["normalBackgroundVeins"],
+            "biome": [[0, ["amenchantedforest"]]],
+            "subRegion": ["spring", "mushroom", "giantflowers", "swamp"]
+        }
+    }
+]

@@ -1,0 +1,10 @@
+{
+  "version" : "1.2.2",
+  "tags" : "Crafting and Building|Miscellaneous|Planets and Environments|NPCs and Creatures|Weapons|Furniture and Objects|In-Game Tools|Vehicles and Mounts|Armor and Clothes",
+  "author" : "LimeIsFruit",
+  "description" : "[img] https://i.imgur.com/TTVTfhz.png [/img]\n\nLong forgotten to time... The power of the Arcane is revealed once more... In Starbound...\n\nArcane Magus is a work in progress mod that aims to add a magical progression to Starbound.\nAny feedback you have on the mod is greatly appreciated!\n\nThe mod currently features a simple Magic Progression system that encourages travelling around the galaxy in search of ingredients for potions and runes, allowing you to craft magical items and weaponry.\n\n[img]https://i.imgur.com/XvE4RLK.png[/img]\nWiki Guide: https://docs.google.com/document/d/1M3_Z6dHPDJi0gO9W3oQsqnFj1CPHKQji8RcNyBfWcUg/edit?usp=sharing (It's on Google Docs so steam may flag the link up)\n\n\n[img]https://steamuserimages-a.akamaihd.net/ugc/1029580352612319507/B9E74269FF16C2DD7FAC5D6DDE2DEB545876D37B/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][img]https://steamuserimages-a.akamaihd.net/ugc/1023950321463944483/4DA2DF2141D83C1C4F74CCFD629D70377A30E6AE/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img]\n\n[img] https://i.imgur.com/cdOy1i1.png [/img]",
+  "name" : "Arcane Magus - A Starbound Magic Mod",
+  "friendlyName" : "Arcane Magus - A Starbound Magic Mod",
+  "steamContentId" : "2746439524",
+  "link" : "steam://url/CommunityFilePage/2746439524"
+}
