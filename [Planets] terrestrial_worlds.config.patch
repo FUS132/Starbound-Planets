@@ -65,6 +65,7 @@
 		// Kenopsea - 2331991026 AND Black Ice - 3331962844
 		// Nitrogen Deep - 2003959183
 		// Kawaii Mod - 2199731506
+		// StarKnight - 3020476911
 		// Starbound x Xenoblade - 2816359505
 		// Betabound - 2010607826
 		// Tentacle Planet - 1436287529
@@ -2515,6 +2516,17 @@
         {
             "op": "add",
             "path": "/planetTypes/kawaii/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// StarKnight - 3020476911
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/eldora"},
+        {
+            "op": "add",
+            "path": "/planetTypes/eldora/layers/surface/dungeons/-",
             "value": [1, "CHANGE_ME"]
         }
     ],
