@@ -19,6 +19,7 @@
 		// Arcana - 2359135864
 		// Maple32 - 2568667104
 		// Box Building Planet Pack - 3534463795
+		// Neoprimordial Planets - 3717339569
 		// New Stars With Mini-Biomes Themed Planets - 2032258885
 		// Vanilla Biome Planets with Tiers 7-10 - 2041790717
 		// AR Kashmir - 3584303451
@@ -285,6 +286,17 @@
         {
             "op": "add",
             "path": "/planetTypes/box_sunset/layers/surface/dungeons/-",
+            "value": [1, "CHANGE_ME"]
+        }
+    ],
+		//==============================================================================================================|
+		// Neoprimordial Planets - 3717339569
+		//==============================================================================================================|
+    [
+        {"op": "test", "path": "/planetTypes/neoprimordial"},
+        {
+            "op": "add",
+            "path": "/planetTypes/neoprimordial/layers/surface/dungeons/-",
             "value": [1, "CHANGE_ME"]
         }
     ],

@@ -1,0 +1,11 @@
+{
+  "version" : "1.0.0",
+  "tags" : "Planets and Environments|Dungeons",
+  "author" : "xbxbxb123",
+  "description" : "A new Tier 4 Ocean planet found around Gas giants. Includes unique dungeons. Supports MPI. \nOceanic world caves Reworked included for this planet, credit to Omega68nova for the patches.",
+  "name" : "neoprimordialplanets",
+  "friendlyName" : "Neoprimordial Planets",
+  "steamContentId" : "3717339569",
+  "link" : "steam://url/CommunityFilePage/3717339569",
+  "includes" : ["MorePlanetInfo"]
+}

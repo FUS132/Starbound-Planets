@@ -1,0 +1,201 @@
+[
+  {
+    "op": "add",
+    "path": "/planetTypes/neoprimordial",
+    "value": {
+      "blendSize": 30,
+      "threatRange": [
+        4,
+        4
+      ], // any values from 1 to 6. [1, 1] means that your planet can only have threat level 1. [1, 6] means any level from 1 to 6.
+      "layers": {
+        "space": {
+          "baseHeight": 2500,
+          "layerLevel": 2000
+        },
+        "atmosphere": {
+          "baseHeight": 1700,
+          "layerLevel": 1400
+        },
+        "surface": {
+          "primaryRegion": [
+            "neoprimordial"
+          ], // this is a primary biome on your planet.
+          "secondaryRegions": [
+            "neoprimordialalt"
+          ],
+          "dungeonCountRange": [
+            2,
+            3
+          ], // how many big dungeons can be on your planet?
+          "dungeons": [
+            [
+              1.0,
+              "np_avianairship"
+            ],
+            [
+              1.0,
+              "novakidvillage"
+            ],
+            [
+              1.0,
+              "apexcamp"
+            ],
+            [
+              2.0,
+              "humancamp"
+            ],
+            [
+              10.0,
+              "oceannaturalcave"
+            ]
+          ],
+          "baseHeight": 1150,
+          "layerLevel": 1050
+        },
+        "subsurface": { // biome right under the surface [optional].
+          "primaryRegion": [
+            "neoprimordialfloor"
+          ],
+          "baseHeight": 940, //normally 1000
+          "dungeons": [
+            [
+              1.0,
+              "hylotloceancity"
+            ]
+          ],
+          "dungeonCountRange": [
+            1,
+            1
+          ] // how many big dungeons can be on your planet?
+        },
+        "underground1": {
+          "primaryRegion": [
+            "neoprimordialUnderground"
+          ]
+        },
+        "underground2": {
+          "primaryRegion": [
+            "neoprimordialUnderground"
+          ]
+        },
+        "underground3": {
+          "primaryRegion": [
+            "neoprimordialUnderground"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neoprimordial",
+    "value": {
+      "oceanLiquid": [
+        "healingliquid"
+      ],
+      "blockSelector": [
+        "remixedIslandsSurface"
+      ],
+      "fgCaveSelector": [
+        "empty"
+      ],
+      "bgCaveSelector": [
+        "empty"
+      ],
+      "biome": [
+        [
+          0,
+          [
+            "neoprimordial"
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neoprimordialalt",
+    "value": {
+      "oceanLiquid": [
+        "healingliquid"
+      ],
+      "blockSelector": [
+        "remixedIslandsSurface"
+      ],
+      "fgCaveSelector": [
+        "empty"
+      ],
+      "bgCaveSelector": [
+        "empty"
+      ],
+      "biome": [
+        [
+          0,
+          [
+            "neoprimordialalt"
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neoprimordialfloor",
+    "value": {
+      "oceanLiquid": [
+        "healingliquid"
+      ],
+      "oceanLevelOffset": 1000,
+      "blockSelector": [
+        "ledgesSurface"
+      ],
+      "fillMicrodungeons": true,
+      "caveLiquid": [
+        "healingliquid"
+      ],
+      "fgCaveSelector": [
+        "moonCaves"
+      ],
+      "bgCaveSelector": [
+        "emptiest"
+      ],
+      "biome": [
+        [
+          0,
+          [
+            "neoprimordialfloor"
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neoprimordialUnderground",
+    "value": {
+      "oceanLiquid": [
+        "healingliquid"
+      ],
+      "oceanLevelOffset": 2000,
+      "fgCaveSelector": [
+        "moonCaves"
+      ],
+      "bgCaveSelector": [
+        "moonCaves"
+      ],
+      "fillMicrodungeons": true,
+      "caveLiquid": [
+        "healingliquid"
+      ],
+      "biome": [
+        [
+          0,
+          [
+            "neoprimordialUnderground"
+          ]
+        ]
+      ]
+    }
+  }
+]
